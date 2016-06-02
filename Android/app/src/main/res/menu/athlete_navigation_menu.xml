@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+    <group android:checkableBehavior="single">
+    <item
+        android:title="Home"
+        android:icon="@drawable/home"
+        android:id = "@+id/athleteHomeOption"/>
+
+    <item android:title="View Profile"
+        android:icon="@drawable/person_profile"
+          android:id = "@+id/athleteViewProfile"/>
+
+    <item android:title="Map a Route"
+        android:icon="@drawable/route"
+          android:id ="@+id/athleteMapRoute"/>
+
+    <item
+        android:title="Start Running"
+        android:icon="@drawable/start_run"
+        android:id="@+id/athleteStartRun"/>
+
+    <item android:title="Search Events / Routes"
+        android:icon="@drawable/search"
+          android:id = "@+id/athleteSearch"/>
+    </group>
+</menu>

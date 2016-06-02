@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<item android:id = "@+id/mapARouteOption"
+      android:icon="@drawable/route"
+      android:title = "Map A Route"
+      ></item>
+
+    <item android:id = "@+id/viewProfileOption"
+          android:icon="@drawable/person_profile"
+          android:title="View My Profile"></item>
+
+    <item android:id = "@+id/startRunOption"
+          android:icon="@drawable/start_run"
+          android:title = "Start Run"></item>
+</menu>

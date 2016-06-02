@@ -1,0 +1,136 @@
+<resources>
+    <string name="server_client_id">54659035894-0rbteijpdq27ht3nouove6gvrhvnn3du.apps.googleusercontent.com</string>
+    <string name="google_api_key">AIzaSyDXMQFRTA-9ljgH70jMmbKPasyoIqLzpks</string>
+    <string name="google_app_id">solar-melody-129713</string>
+    <string name="app_name">iBaleka Android Prototype</string>
+    <string name="username_text">Enter Username</string>
+    <string name="password_text">Enter Password</string>
+    <string name="login_text">Log In</string>
+    <string name="forgot_password_text">Forgot Password</string>
+    <string name="create_account_text">Create Account</string>
+    <string name="application_preferences_text">Application Settings</string>
+    <string name="about_application_text">About Application</string>
+    <string name="register_account_text">To use iBaleka, you will need to have an account
+        with us. To make registration simpler, we have split the process into two steps </string>
+    <string name="name_text">Enter Name</string>
+    <string name="surname_text">Enter Surname</string>
+    <string name="email_text">Enter E-Mail</string>
+    <string name="account_type_text">Select the type of account you registering for. This
+        can be changed at a later stage</string>
+    <string-array name="account_array">
+        <item>Athlete</item>
+        <item>Event Organizer</item>
+    </string-array>
+    <string name="security_question_text">Enter Security Question</string>
+    <string name="security_answer_text">Enter Security Answer</string>
+    <string name="register_user_activity_title">Register an Account</string>
+    <string name="app_loading">Brought to you by the All Blacks</string>
+    <string name="service_code">okuhle_ngada</string>
+    <string name="service_key">mapsdk_guest_user</string>
+    <string name="service_name">27523f32b9</string>
+    <string name="start_run">Start Run</string>
+    <string name="home_string">Home</string>
+    <string name="view_profile_string">View Profile</string>
+    <string name="search_string">Search Events / Routes</string>
+    <string name="view_history_string">View Run History</string>
+    <string name="getting_started_string">Getting Started</string>
+    <string name="map_route_string">Map a Route</string>
+    <string name="join_event_string">Register For Event</string>
+    <string name="admin_string">Administrative Tasks</string>
+    <string name="cancel_event_string">Cancel Event Registration</string>
+    <string name="upgrade_account_string">Upgrade Account</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="total_kilometres_string">Total Distance:</string>
+    <string name="sample_km_string">45.79</string>
+    <string name="sample_measurment">Kilometres</string>
+    <string name="total_calories_string">Total Calories Burnt:</string>
+    <string name="sample_calories">3801</string>
+    <string name="sample_calorie_measurment">kcal</string>
+    <string name="seven_day_activity">Last 7 Days:</string>
+    <string name="sample_total_seven_days">6.72</string>
+    <string name="next_step_string">Proceed to Next Step</string>
+    <string name="account_reg_text">Create your unique account with iBaleka. These details will be used for gaining access to our system, and recovering your credentials.</string>
+    <string name="map_route_description">To begin mapping a route, long tap a point on the
+        map. This will save the point as a checkpoint. Tap "Finalize Route" when you are
+        done. </string>
+    <string name="sample_profile_nameSurname">Shanice Williams</string>
+    <string name="sample_email_Address">shanice.williams@gmail.com</string>
+    <string name="drawer_open_string">Drawer Open</string>
+    <string name="drawer_close_string">Drawer Closed</string>
+    <string name="map_route_heading">Route Details</string>
+    <string name="map_route_button_string">Finalize Route</string>
+    <string name="profile_type_string">Athlete</string>
+    <string name="profile_header_string">Your Basic Information</string>
+    <string name="club_name_string">Registered Club Name</string>
+    <string name="sample_club_name_string">NMMU Casual Athletics Club</string>
+    <string name="date_registered_string">Date Registered</string>
+    <string name="sample_registration_date">12 January 2016</string>
+    <string name="total_personal_run_string">Total Personal Runs</string>
+    <string name="sample_personal_run_string">6</string>
+    <string name="total_event_run_string">Total Event Runs</string>
+    <string name="sample_total_event_runs_string">6</string>
+    <string name="position_in_club_string">Position in Club</string>
+    <string name="sample_position_in_club_string">10</string>
+    <string name="summarised_results_string">Your Summarised Results</string>
+    <string name="fastest_time_string">Your Fastest Time</string>
+    <string name="sample_finish_time">33:50</string>
+    <string name="average_time_string">Your Average Time</string>
+    <string name="sample_average_time_string">36:50</string>
+    <string name="wava_rating_string">Your WAVA Rating</string>
+    <string name="sample_wava_rating_string">42.2%</string>
+    <string name="sample_total_points_string">Your Total Points</string>
+    <string name="sample_total_points">394</string>
+    <string name="recommended_calorie_intake_string">Your Recommended Calorie Intake</string>
+    <string name="my_body_string">Your Build Information</string>
+    <string name="height_string">Your Height</string>
+    <string name="sample_height">183m</string>
+    <string name="weight_string">Your Weight</string>
+    <string name="sample_weight_String">82kg</string>
+    <string name="bmi_string">Your BMI</string>
+    <string name="sample_bmi_string">23.9</string>
+    <string name="current_run_heading">Current Run Information</string>
+    <string name="elapsed_time_string">Elapsed Time:</string>
+    <string name="sample_time_string">00:00</string>
+    <string name="total_distance_string">Total Distance Covered:</string>
+    <string name="sample_distance_covered">0.00</string>
+    <string name="end_run_string">End Run</string>
+    <string name="pause_run_string">Pause Run</string>
+    <string name="start_run_text">Start Run</string>
+    <string name="resume_run_string">Resume Run</string>
+    <string name="remember_login_credentials_string">Select this option if you want the iBaleka app to remember your login credentials. You won\'t be prompted to login each time you launch the app</string>
+    <string name="remember_login_credentials_title_String">Remember Login Credentials</string>
+    <string name="measurement_options_string">Measurment Options</string>
+    <string name="login_settings">App Authentication Settings</string>
+    <string name="app_measurement_string">App Measurement Settings</string>
+    <string name="select_measurment_string">Select the measurment unit you wish to use in the app</string>
+    <string name="route_information_header">Mapped Route Information</string>
+    <string name="total_checkpoints">Total Checkpoints:</string>
+    <string name="clear_mapped_route">Clear Points</string>
+    <string name="maps_api_key">AIzaSyDXMQFRTA-9ljgH70jMmbKPasyoIqLzpks</string>
+    <string name="finalize_route_string">Finalize Route</string>
+    <string-array name="metricsArray">
+        <item>Metric</item>
+        <item>Imperial</item>
+    </string-array>
+    <string name="about_allblacks">The iBaleka System was developed and planned by the All
+        Blacks. All Blacks are a software development team, formed at the NMMU in the 2016
+        Academic year. </string>
+    <string name="forgot_password_description">To reset the password for your account, you
+        will need to provide us with the email address that is linked to your account, or a
+    username. </string>
+    <string name="forgot_password_final_step_string">To reset your password, please answer the security question linked to your account. Your new password will only change if you provide a valid answer.</string>
+    <string name="confirm_password_string">Confirm Password</string>
+    <string name="change_password_string">Process Change Password</string>
+    <string name="runner_speed_string">Average Speed:</string>
+    <string name="begin_run_string">To begin running, simply tap on the start run button at the bottom of your screen. If you have a scheduled event, that information will be displayed below</string>
+    <string name="begin_run">Start Run</string>
+    <string name="heading_event_title">Event Information</string>
+    <string name="event_name_string">Event Name:</string>
+    <string name="sample_event_name">Spar Ladies Run</string>
+    <string name="event_location">Event Location:</string>
+    <string name="sample_location_string">Port Elizabeth</string>
+    <string name="event_date_string">Event Date:</string>
+    <string name="participants_label">Number of Participants:</string>
+    <string name="total_distance_label">Total Distance:</string>
+    <string name="map_information_string">Route Information</string>
+</resources>

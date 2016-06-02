@@ -1,0 +1,46 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             tools:context="Fragments.CreateAccountStepOneFragment">
+        <TextView
+            style="@style/TextViewStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/register_account_text"
+            android:layout_alignParentTop="true"
+            android:id = "@+id/registerUserDescription"/>
+        <EditText
+            style="@style/EditTexStyle"
+            android:hint="@string/name_text"
+            android:id = "@+id/NameEditText"
+            android:layout_below="@id/registerUserDescription"/>
+        <EditText
+            style="@style/EditTexStyle"
+            android:hint="@string/surname_text"
+            android:id = "@+id/SurnameEditText"
+            android:layout_below="@id/NameEditText"
+            />
+        <EditText
+            style="@style/EditTexStyle"
+            android:hint="@string/email_text"
+            android:id = "@+id/EmailEditText"
+            android:inputType="textEmailAddress"
+            android:layout_below="@id/SurnameEditText"
+            />
+        <TextView
+            style="@style/TextViewStyle"
+            android:text="@string/account_type_text"
+            android:layout_below="@id/EmailEditText"
+            android:id = "@+id/AccountTypeTip"/>
+        <Spinner
+            style="@style/EditTexStyle"
+            android:color = "#000"
+            android:id = "@+id/AccountTypeSpinner"
+            android:layout_below="@id/AccountTypeTip"></Spinner>
+    <Button
+        style="@style/ButtonStyle"
+        android:layout_below="@id/AccountTypeSpinner"
+        android:text="@string/next_step_string"
+        android:id = "@+id/NextStepButton"/>
+</RelativeLayout>
