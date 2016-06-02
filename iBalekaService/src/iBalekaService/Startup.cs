@@ -42,10 +42,11 @@ namespace iBalekaService
             // Add framework services.
             services.AddApplicationInsightsTelemetry(Configuration);
 
+            var connection = @"Server=(localdb)\mssqllocaldb;Database=iBalekaDB;Trusted_Connection=True;";
 
             services.AddDbContext<IBalekaContext>(options =>
             {
-                options.UseSqlServer(Configuration["Data:DefaultConnection:ConnectionString"]);
+                options.UseSqlServer(connection);
             });
             services.AddMvc().AddJsonOptions(options =>
             {
@@ -55,7 +56,7 @@ namespace iBalekaService
             services.AddScoped<IiBalekaRepository<Athlete>, AthleteRepository>();
             services.AddScoped<IiBalekaRepository<Club_Athlete>, ClubMemberRepository>();
             services.AddScoped<IiBalekaRepository<Club>, ClubRepository>();
-            services.AddScoped<IiBalekaRepository<Event_Registration>, EventRegistrationRepository>();
+            services.AddScoped<IiBalekaRepository<EventRegistration>, EventRegistrationRepository>();
             services.AddScoped<IiBalekaRepository<Event>, EventRepository>();
             services.AddScoped<IRouteRepository<Route, Checkpoint>, RouteRepository>();
             services.AddScoped<IiBalekaRepository<User>, UserRepository>();

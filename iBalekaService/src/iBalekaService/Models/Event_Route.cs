@@ -16,6 +16,7 @@ namespace iBalekaService.Models
             DateAdded = DateTime.Now;
             Deleted = false;
         }
+        [Key]
         public int EventRouteID { get; set; }
         public DateTime DateAdded { get; set; }
         public string Description { get; set; }

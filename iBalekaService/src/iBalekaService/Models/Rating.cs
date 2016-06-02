@@ -16,6 +16,7 @@ namespace iBalekaService.Models
             RouteID = route.RouteID;
             Deleted = false;
         }
+        [Key]
         public int RatingID { get; set; }
         public int Value { get; set; }
         public string Comment { get; set; }

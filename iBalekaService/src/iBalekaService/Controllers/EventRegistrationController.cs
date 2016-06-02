@@ -13,8 +13,8 @@ namespace iBalekaService.Controllers
     [Route("api/[controller]")]
     public class EventRegistrationController : Controller
     {
-        private IiBalekaRepository<Event_Registration> _eventRegRepo;
-        public EventRegistrationController(IiBalekaRepository<Event_Registration> _repo)
+        private IiBalekaRepository<EventRegistration> _eventRegRepo;
+        public EventRegistrationController(IiBalekaRepository<EventRegistration> _repo)
         {
             _eventRegRepo = _repo;
         }
@@ -29,7 +29,7 @@ namespace iBalekaService.Controllers
         [HttpGet("{id}",Name ="GetEventRegistration")]
         public IActionResult Get(int id)
         {
-            Event_Registration existingReg = _eventRegRepo.Get(id);
+            EventRegistration existingReg = _eventRegRepo.Get(id);
             if(existingReg==null)
             {
                 return NotFound();
@@ -39,7 +39,7 @@ namespace iBalekaService.Controllers
 
         // POST api/values
         [HttpPost]
-        public IActionResult Add([FromBody]Event_Registration evntReg)
+        public IActionResult Add([FromBody]EventRegistration evntReg)
         {
             if(ModelState.IsValid)
             {
@@ -54,11 +54,11 @@ namespace iBalekaService.Controllers
 
         // PUT api/values/5
         [HttpPut("{id}")]
-        public IActionResult Update([FromBody]Event_Registration evntReg)
+        public IActionResult Update([FromBody]EventRegistration evntReg)
         {
             if(ModelState.IsValid)
             {
-                Event_Registration eventReg = _eventRegRepo.Get(evntReg.RegistrationID);
+                EventRegistration eventReg = _eventRegRepo.Get(evntReg.RegistrationID);
                 if(eventReg==null)
                 {
                     return NotFound();

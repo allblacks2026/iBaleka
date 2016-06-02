@@ -28,6 +28,7 @@ namespace iBalekaService.Models
             AthleteID = athlete.AthleteID;
             Deleted = false;
         }
+        [Key]
         public int RunID { get; set; }
         public DateTime StartTime { get; set; }
         public DateTime EndTime { get; set; }

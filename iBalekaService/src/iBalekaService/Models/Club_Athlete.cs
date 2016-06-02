@@ -15,6 +15,7 @@ namespace iBalekaService.Models
             DateJoined = DateTime.Now.Date;
             IsaMember = true;
         }
+        [Key]
         public int MemberID { get; set; }
         public DateTime DateJoined { get; set; }
         public DateTime? DateLeft { get; set; }

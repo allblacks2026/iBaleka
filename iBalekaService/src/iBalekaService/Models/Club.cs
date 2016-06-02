@@ -16,6 +16,7 @@ namespace iBalekaService.Models
             DateCreated = DateTime.Now.Date;
             Deleted = false;
         }
+        [Key]
         public int ClubID { get; set; }
         public string Name { get; set; }
         public string Location { get; set; }

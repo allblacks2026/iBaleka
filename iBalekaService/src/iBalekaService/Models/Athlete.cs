@@ -27,6 +27,7 @@ namespace iBalekaService.Models
             Deleted = false;
         }
 
+        [Key]
         public int AthleteID { get; set; }
         public string Firstname { get; set; }
         public string Surname { get; set; }
@@ -37,7 +38,7 @@ namespace iBalekaService.Models
         public DateTime DateJoined { get; set; }
         public bool Deleted { get; set; }
         //navigational properties
-        public virtual ICollection<Event_Registration> EventsRegistered { get; set; }
+        public virtual ICollection<EventRegistration> EventsRegistered { get; set; }
         public virtual ICollection<Club_Athlete> Clubs { get; set; }
         public virtual ICollection<Run> Runs { get; set; }
 

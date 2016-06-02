@@ -17,11 +17,11 @@ namespace iBalekaService.Repository
         }
         public IEnumerable<Club_Athlete> GetAll()
         {
-            return _context.ClubMember.Where(x => x.IsaMember == true).ToList();
+            return _context.Club_Member.Where(x => x.IsaMember == true).ToList();
         }
         public Club_Athlete Get(int id)
         {
-            return _context.ClubMember.Where(x => x.MemberID == id && x.IsaMember == true).SingleOrDefault();
+            return _context.Club_Member.Where(x => x.MemberID == id && x.IsaMember == true).SingleOrDefault();
         }
         public void Add(Club_Athlete member)
         {
@@ -53,7 +53,7 @@ namespace iBalekaService.Repository
         }
         public void Delete(int id)
         {
-            Club_Athlete deletedMember = _context.ClubMember.SingleOrDefault(x => x.MemberID == id);
+            Club_Athlete deletedMember = _context.Club_Member.SingleOrDefault(x => x.MemberID == id);
             if (deletedMember != null)
             {
                 deletedMember.IsaMember = false;

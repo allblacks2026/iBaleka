@@ -15,6 +15,7 @@ namespace iBalekaService.Models
             MapImage = mapImage;
             Deleted = false;
         }
+        [Key]
         public int RouteID { get; set; }
         public int Distance { get; set; }
         public DateTime DateRecorded { get; set; }
