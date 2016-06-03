@@ -78,7 +78,7 @@ body {
 .main {
     width:100%;
     padding: 20px;
-    background-color:aqua;
+    
     padding-bottom:19%;
 }
 @media (min-width: 768px) {
