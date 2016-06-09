@@ -1,0 +1,6 @@
+C:\Users\Tulonga\Source\Repos\iBaleka\iBalekaService\UnitTests\bin\Debug\UnitTests.dll
+C:\Users\Tulonga\Source\Repos\iBaleka\iBalekaService\UnitTests\bin\Debug\UnitTests.pdb
+C:\Users\Tulonga\Source\Repos\iBaleka\iBalekaService\UnitTests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Users\Tulonga\Source\Repos\iBaleka\iBalekaService\UnitTests\obj\Debug\UnitTests.csprojResolveAssemblyReference.cache
+C:\Users\Tulonga\Source\Repos\iBaleka\iBalekaService\UnitTests\obj\Debug\UnitTests.dll
+C:\Users\Tulonga\Source\Repos\iBaleka\iBalekaService\UnitTests\obj\Debug\UnitTests.pdb

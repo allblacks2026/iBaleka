@@ -137,7 +137,31 @@ namespace iBalekaService.Migrations
                     b.ToTable("Event");
                 });
 
-            modelBuilder.Entity("iBalekaService.Models.Event_Registration", b =>
+            modelBuilder.Entity("iBalekaService.Models.Event_Route", b =>
+                {
+                    b.Property<int>("EventRouteID")
+                        .ValueGeneratedOnAdd();
+
+                    b.Property<DateTime>("DateAdded");
+
+                    b.Property<bool>("Deleted");
+
+                    b.Property<string>("Description");
+
+                    b.Property<int>("EventID");
+
+                    b.Property<int>("RouteID");
+
+                    b.HasKey("EventRouteID");
+
+                    b.HasIndex("EventID");
+
+                    b.HasIndex("RouteID");
+
+                    b.ToTable("Event_Route");
+                });
+
+            modelBuilder.Entity("iBalekaService.Models.EventRegistration", b =>
                 {
                     b.Property<int>("RegistrationID")
                         .ValueGeneratedOnAdd();
@@ -163,30 +187,6 @@ namespace iBalekaService.Migrations
                     b.ToTable("EventRegistration");
                 });
 
-            modelBuilder.Entity("iBalekaService.Models.Event_Route", b =>
-                {
-                    b.Property<int>("EventRouteID")
-                        .ValueGeneratedOnAdd();
-
-                    b.Property<DateTime>("DateAdded");
-
-                    b.Property<bool>("Deleted");
-
-                    b.Property<string>("Description");
-
-                    b.Property<int>("EventID");
-
-                    b.Property<int>("RouteID");
-
-                    b.HasKey("EventRouteID");
-
-                    b.HasIndex("EventID");
-
-                    b.HasIndex("RouteID");
-
-                    b.ToTable("Event_Route");
-                });
-
             modelBuilder.Entity("iBalekaService.Models.Rating", b =>
                 {
                     b.Property<int>("RatingID")
@@ -196,17 +196,19 @@ namespace iBalekaService.Migrations
 
                     b.Property<DateTime>("DateAdded");
 
-                    b.Property<DateTime>("DateModified");
-
                     b.Property<bool>("Deleted");
 
-                    b.Property<int>("RouteID");
+                    b.Property<int?>("RouteID");
+
+                    b.Property<int>("RunID");
 
                     b.Property<int>("Value");
 
                     b.HasKey("RatingID");
 
                     b.HasIndex("RouteID");
+
+                    b.HasIndex("RunID");
 
                     b.ToTable("Rating");
                 });
@@ -268,7 +270,8 @@ namespace iBalekaService.Migrations
                     b.Property<int>("UserID")
                         .ValueGeneratedOnAdd();
 
-                    b.Property<string>("Country");
+                    b.Property<string>("Country")
+                        .IsRequired();
 
                     b.Property<DateTime>("DateJoined");
 
@@ -276,9 +279,11 @@ namespace iBalekaService.Migrations
 
                     b.Property<bool>("Deleted");
 
-                    b.Property<string>("Name");
+                    b.Property<string>("Name")
+                        .IsRequired();
 
-                    b.Property<string>("Surname");
+                    b.Property<string>("Surname")
+                        .IsRequired();
 
                     b.HasKey("UserID");
 
@@ -303,8 +308,8 @@ namespace iBalekaService.Migrations
             modelBuilder.Entity("iBalekaService.Models.Club_Athlete", b =>
                 {
                     b.HasOne("iBalekaService.Models.Athlete")
-                        .WithMany()
-                        .HasForeignKey("AthleteID")
+                        .WithOne()
+                        .HasForeignKey("iBalekaService.Models.Club_Athlete", "AthleteID")
                         .OnDelete(DeleteBehavior.Cascade);
 
                     b.HasOne("iBalekaService.Models.Club")
@@ -321,19 +326,6 @@ namespace iBalekaService.Migrations
                         .OnDelete(DeleteBehavior.Cascade);
                 });
 
-            modelBuilder.Entity("iBalekaService.Models.Event_Registration", b =>
-                {
-                    b.HasOne("iBalekaService.Models.Athlete")
-                        .WithMany()
-                        .HasForeignKey("AthleteID")
-                        .OnDelete(DeleteBehavior.Cascade);
-
-                    b.HasOne("iBalekaService.Models.Event")
-                        .WithMany()
-                        .HasForeignKey("EventID")
-                        .OnDelete(DeleteBehavior.Cascade);
-                });
-
             modelBuilder.Entity("iBalekaService.Models.Event_Route", b =>
                 {
                     b.HasOne("iBalekaService.Models.Event")
@@ -347,11 +339,28 @@ namespace iBalekaService.Migrations
                         .OnDelete(DeleteBehavior.Cascade);
                 });
 
+            modelBuilder.Entity("iBalekaService.Models.EventRegistration", b =>
+                {
+                    b.HasOne("iBalekaService.Models.Athlete")
+                        .WithMany()
+                        .HasForeignKey("AthleteID")
+                        .OnDelete(DeleteBehavior.Cascade);
+
+                    b.HasOne("iBalekaService.Models.Event")
+                        .WithMany()
+                        .HasForeignKey("EventID")
+                        .OnDelete(DeleteBehavior.Cascade);
+                });
+
             modelBuilder.Entity("iBalekaService.Models.Rating", b =>
                 {
                     b.HasOne("iBalekaService.Models.Route")
                         .WithMany()
-                        .HasForeignKey("RouteID")
+                        .HasForeignKey("RouteID");
+
+                    b.HasOne("iBalekaService.Models.Run")
+                        .WithOne()
+                        .HasForeignKey("iBalekaService.Models.Rating", "RunID")
                         .OnDelete(DeleteBehavior.Cascade);
                 });
 

@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.EntityFrameworkCore.Metadata.Internal;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace iBalekaService.Models
 {
@@ -39,7 +41,7 @@ namespace iBalekaService.Models
         public bool Deleted { get; set; }
         //navigational properties
         public virtual ICollection<EventRegistration> EventsRegistered { get; set; }
-        public virtual ICollection<Club_Athlete> Clubs { get; set; }
+        public virtual Club_Athlete Club { get; set; }
         public virtual ICollection<Run> Runs { get; set; }
 
     }

@@ -29,9 +29,8 @@ namespace iBalekaService.Models
                 .WithMany(a => a.Runs)
                 .HasForeignKey(r => r.AthleteID);
             //route - rating one-to-one
-            modelBuilder.Entity<Rating>().HasOne(rt => rt.Route)
-                .WithMany(r => r.Ratings)
-                .HasForeignKey(rt => rt.RouteID);
+            modelBuilder.Entity<Rating>().HasOne(r => r.Run);
+                
             //event_route - event one-to-many
             modelBuilder.Entity<Event_Route>().HasOne(er => er.Event)
                 .WithMany(e => e.EventRoutes)
@@ -54,8 +53,7 @@ namespace iBalekaService.Models
                 .HasForeignKey(ca => ca.ClubID);
             //club_athlete - athlete(member) one to many
             modelBuilder.Entity<Club_Athlete>().HasOne(c => c.Athlete)
-                .WithMany(a => a.Clubs)
-                .HasForeignKey(c => c.AthleteID);
+                .WithOne(j => j.Club);
             //club - event one-to-many
             modelBuilder.Entity<Event>().HasOne(e => e.Club)
                 .WithMany(c => c.Events)
@@ -73,7 +71,7 @@ namespace iBalekaService.Models
         public virtual DbSet<Athlete> Athlete { get; set; }
         public virtual DbSet<Checkpoint> Checkpoint { get; set; }
         public virtual DbSet<Club> Club { get; set; }
-        public virtual DbSet<Club_Athlete> Club_Member { get; set; }
+        public virtual DbSet<Club_Athlete> ClubMember { get; set; }
         public virtual DbSet<Event> Event { get; set; }
         public virtual DbSet<EventRegistration> EventRegistration { get; set; }
         public virtual DbSet<Rating> Rating { get; set; }
