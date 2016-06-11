@@ -2,7 +2,6 @@
 html, body {
     overflow-y: hidden;
     overflow-x: hidden;
-    background-color: aquamarine;
     height: 100%;
 }
 
@@ -19,6 +18,7 @@ html, body {
         height: 101vh;
         width: 117%;
     }
+}
 
     @media only screen and (min-width: 320px) {
         #map {
@@ -27,6 +27,7 @@ html, body {
             width: 123%;
         }
     }
+
 
     @media only screen and (min-width: 360px) {
         #map {
@@ -43,7 +44,7 @@ html, body {
             width: 118%;
         }
     }
-}
+
 /* SMARTPHONES LANDSCAPE */
 @media only screen and (min-width: 480px) {
     #map {
