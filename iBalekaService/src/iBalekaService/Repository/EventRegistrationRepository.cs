@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace iBalekaService.Repository
 {
-    public class EventRegistrationRepository:IiBalekaRepository<Event_Registration>
+    public class EventRegistrationRepository:IiBalekaRepository<EventRegistration>
     {
         protected IBalekaContext _context { get; set; }
 
@@ -15,15 +15,15 @@ namespace iBalekaService.Repository
         {
             this._context = _context;
         }
-        public IEnumerable<Event_Registration> GetAll()
+        public IEnumerable<EventRegistration> GetAll()
         {
             return _context.EventRegistration.Where(x => x.Deleted == false).ToList();
         }
-        public Event_Registration Get(int id)
+        public EventRegistration Get(int id)
         {
             return _context.EventRegistration.Where(x => x.RegistrationID == id && x.Deleted == false).SingleOrDefault();
         }
-        public void Add(Event_Registration user)
+        public void Add(EventRegistration user)
         {
             try
             {
@@ -37,7 +37,7 @@ namespace iBalekaService.Repository
             }
             
         }
-        public void Update(Event_Registration user)
+        public void Update(EventRegistration user)
         {
             try
             {
@@ -52,7 +52,7 @@ namespace iBalekaService.Repository
         }
         public void Delete(int id)
         {
-            Event_Registration deletedUser = _context.EventRegistration.SingleOrDefault(x => x.RegistrationID == id);
+            EventRegistration deletedUser = _context.EventRegistration.SingleOrDefault(x => x.RegistrationID == id);
             if (deletedUser != null)
             {
                 deletedUser.Deleted = true;

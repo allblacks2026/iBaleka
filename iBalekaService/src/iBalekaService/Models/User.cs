@@ -17,9 +17,13 @@ namespace iBalekaService.Models
             Deleted = false;
             DateJoined = DateTime.Now.Date;
         }
+        [Key]
         public int UserID { get; set; }
+        [Required]
         public string Name { get; set; }
+        [Required]
         public string Surname { get; set; }
+        [Required]
         public string Country { get; set; }
         public DateTime DateOfBirth { get; set; }
         public DateTime DateJoined { get; set; }

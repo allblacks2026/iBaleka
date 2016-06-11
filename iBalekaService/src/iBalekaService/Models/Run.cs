@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -28,6 +29,7 @@ namespace iBalekaService.Models
             AthleteID = athlete.AthleteID;
             Deleted = false;
         }
+        [Key]
         public int RunID { get; set; }
         public DateTime StartTime { get; set; }
         public DateTime EndTime { get; set; }
@@ -42,5 +44,7 @@ namespace iBalekaService.Models
         public virtual Event Event { get; set;}
         public virtual Route  Route { get; set; }
         public virtual Athlete Athlete {get;set;}
+   
+        public virtual Rating Rating { get; set; }
     }
 }

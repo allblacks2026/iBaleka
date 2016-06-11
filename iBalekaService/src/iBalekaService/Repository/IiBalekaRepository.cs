@@ -14,7 +14,6 @@ namespace iBalekaService.Repository
         //flags entity
         void Delete(int id);
     }
-    public interface IMembership<Club_Athlete>:IDi
     public interface IRouteRepository<Route,Checkpoint> : IDisposable where Checkpoint:class
     {
         IEnumerable<Route> GetRoutes();

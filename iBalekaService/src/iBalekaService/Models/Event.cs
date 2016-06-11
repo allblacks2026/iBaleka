@@ -16,6 +16,7 @@ namespace iBalekaService.Models
             DateCreated = DateTime.Now.Date;
             Deleted = false;
         }
+        [Key]
         public int EventID { get; set; }
         [Required]
         public string Title { get; set; }
@@ -28,7 +29,7 @@ namespace iBalekaService.Models
         public int ClubID { get; set; }
         //navigation property
         public virtual Club Club { get; set; }
-        public virtual ICollection<Event_Registration> Participants { get; set; }
+        public virtual ICollection<EventRegistration> Participants { get; set; }
         public virtual ICollection<Event_Route> EventRoutes { get; set; }
         public virtual ICollection<Run> Runs { get; set; }
 

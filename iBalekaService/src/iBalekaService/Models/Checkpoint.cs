@@ -14,6 +14,7 @@ namespace iBalekaService.Models
             Longitude = lng;
             Deleted = false;
         }
+        [Key]
         public int CheckpointID { get; set; }
         public string Latitude { get; set; }
         public string Longitude { get; set; }
