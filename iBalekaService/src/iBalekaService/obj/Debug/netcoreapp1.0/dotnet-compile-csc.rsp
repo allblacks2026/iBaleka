@@ -8,6 +8,8 @@
 -nostdlib
 -nologo
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
 "C:\Users\blaze\Source\Repos\iBaleka\iBalekaService\src\iBalekaService\obj\Debug\netcoreapp1.0\dotnet-compile.assemblyinfo.cs"
 -out:"C:\Users\blaze\Source\Repos\iBaleka\iBalekaService\src\iBalekaService\bin\Debug\netcoreapp1.0\iBalekaService.dll"
 -r:"C:\Users\blaze\.nuget\packages\EntityFramework.Commands\7.0.0-rc1-final\lib\dnxcore50\EntityFramework.Commands.dll"
@@ -232,6 +234,7 @@
 "C:\Users\blaze\Source\Repos\iBaleka\iBalekaService\src\iBalekaService\Repository\RunRepository.cs"
 "C:\Users\blaze\Source\Repos\iBaleka\iBalekaService\src\iBalekaService\Repository\UserRepository.cs"
 =======
+>>>>>>> master
 "C:\Users\Tulonga\Source\Repos\iBaleka\iBalekaService\src\iBalekaService\obj\Debug\netcoreapp1.0\dotnet-compile.assemblyinfo.cs"
 -out:"C:\Users\Tulonga\Source\Repos\iBaleka\iBalekaService\src\iBalekaService\bin\Debug\netcoreapp1.0\iBalekaService.dll"
 -r:"C:\Users\Tulonga\.nuget\packages\Ix-Async\1.2.5\lib\portable-windows8+net45+wp8\System.Interactive.Async.dll"
@@ -466,4 +469,7 @@
 "C:\Users\Tulonga\Source\Repos\iBaleka\iBalekaService\src\iBalekaService\Repository\RouteRepository.cs"
 "C:\Users\Tulonga\Source\Repos\iBaleka\iBalekaService\src\iBalekaService\Repository\RunRepository.cs"
 "C:\Users\Tulonga\Source\Repos\iBaleka\iBalekaService\src\iBalekaService\Repository\UserRepository.cs"
+<<<<<<< HEAD
+=======
 >>>>>>> 975fcf772a18ef7199449e4e8de4e1ddc2dd5c5a
+>>>>>>> master
