@@ -18,14 +18,14 @@ namespace iBalekaService.Controllers
         }
         // GET: api/values
         [HttpGet]
-        public IActionResult Get()
+        public IActionResult GetAll()
         {
             return new JsonResult(_clubRepo.GetAll());
         }
 
         // GET api/values/5
         [HttpGet("{id}",Name = "GetClub")]
-        public IActionResult Get(int id)
+        public IActionResult GetClub(int id)
         {
             Club club = _clubRepo.Get(id);
             if(club==null)

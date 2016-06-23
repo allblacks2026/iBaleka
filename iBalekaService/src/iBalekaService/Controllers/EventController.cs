@@ -20,14 +20,14 @@ namespace iBalekaService.Controllers
         }
         // GET: api/values
         [HttpGet]
-        public IActionResult Get()
+        public IActionResult GetAll()
         {
             return new JsonResult(_eventRepo.GetAll());
         }
 
         // GET api/values/5
         [HttpGet("{id}",Name ="GetEvent")]
-        public IActionResult Get(int id)
+        public IActionResult GetEvent(int id)
         {
             Event evnt = _eventRepo.Get(id);
             if(evnt==null)

@@ -14,9 +14,11 @@ namespace iBalekaService.Controllers
     public class RunController : Controller
     {
         private IRunRepository<Run> _runRepo;
-        public RunController(IRunRepository<Run> _repo)
+        private IiBalekaRepository<Rating> _ratingRepo;
+        public RunController(IRunRepository<Run> _repo,IiBalekaRepository<Rating> _repo2)
         {
             _runRepo = _repo;
+            _ratingRepo = _repo2;
         }
         // GET: api/values
         [HttpGet("{id}")]
@@ -26,7 +28,7 @@ namespace iBalekaService.Controllers
         }
         // GET api/values/5
         [HttpGet("{id}",Name ="GetRun")]
-        public IActionResult Get(int id)
+        public IActionResult GetRun(int id)
         {
             Run run = _runRepo.Get(id);
             if(run==null)
@@ -47,11 +49,12 @@ namespace iBalekaService.Controllers
         }
         // POST api/values
         [HttpPost]
-        public IActionResult Add([FromBody]Run run)
+        public IActionResult Add([FromBody]Run run,[FromBody]Rating rating)
         {
             if(ModelState.IsValid)
             {
                 _runRepo.Add(run);
+                _ratingRepo.Add(rating);
                 return CreatedAtRoute("GetRun", new { Controller = "Run", run.RunID }, run);
             }
             else

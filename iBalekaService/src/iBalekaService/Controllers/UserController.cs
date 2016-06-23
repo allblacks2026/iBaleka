@@ -20,14 +20,14 @@ namespace iBalekaService.Controllers
         }
         // GET: api/values
         [HttpGet]
-        public IActionResult Get()
+        public IActionResult GetAll()
         {
             return new JsonResult(_userRepo.GetAll());
         }
 
         // GET api/values/5
         [HttpGet("{id}",Name = "GetUser")]
-        public IActionResult Get(int id)
+        public IActionResult GetUser(int id)
         {
             User user = _userRepo.Get(id);
             if(user==null)
