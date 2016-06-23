@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Microsoft.EntityFrameworkCore.InMemory</name>
+    </assembly>
+    <members>
+        <member name="M:Microsoft.EntityFrameworkCore.Internal.InMemoryStrings.LogSavedChanges(System.Object)">
+            <summary>
+            Saved {count} entities to in-memory store.
+            </summary>
+        </member>
+        <member name="P:Microsoft.EntityFrameworkCore.Internal.InMemoryStrings.TransactionsNotSupported">
+            <summary>
+            Transactions are not supported by the in-memory store. To suppress this Exception call IgnoreTransactions() when overriding DbContext.OnConfiguring.
+            </summary>
+        </member>
+        <member name="P:Microsoft.EntityFrameworkCore.Internal.InMemoryStrings.UpdateConcurrencyException">
+            <summary>
+            Attempted to update or delete an entity that does not exist in the store.
+            </summary>
+        </member>
+        <member name="M:Microsoft.EntityFrameworkCore.Storage.Internal.IInMemoryStore.EnsureCreated(Microsoft.EntityFrameworkCore.Metadata.IModel)">
+            <summary>
+                Returns true just after the Store has been created, false thereafter
+            </summary>
+            <returns>
+                true if the Store has just been created, false otherwise
+            </returns>
+        </member>
+        <member name="M:Microsoft.EntityFrameworkCore.Storage.Internal.InMemoryStore.EnsureCreated(Microsoft.EntityFrameworkCore.Metadata.IModel)">
+            <summary>
+                Returns true just after the database has been created, false thereafter
+            </summary>
+            <returns>
+                true if the database has just been created, false otherwise
+            </returns>
+        </member>
+    </members>
+</doc>
