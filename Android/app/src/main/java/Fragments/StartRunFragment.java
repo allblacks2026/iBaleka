@@ -2,16 +2,20 @@ package Fragments;
 
 
 import android.Manifest;
+import android.annotation.TargetApi;
 import android.app.AlertDialog;
 import android.app.Fragment;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.location.Location;
+import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.annotation.NonNull;
 import android.support.v4.app.ActivityCompat;
+import android.support.v4.content.ContextCompat;
+import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -57,6 +61,7 @@ import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.search.SearchAuth;
 
 import java.util.Calendar;
+import java.util.concurrent.RunnableFuture;
 import java.util.concurrent.TimeUnit;
 
 import Utilities.iBalekaSingleton;
@@ -87,13 +92,19 @@ public class StartRunFragment extends Fragment implements GoogleApiClient
     private boolean accessToFitness = true;
     private static final int REQUEST_SETTINGS = 2;
     private boolean initiated = false;
-    private float speed, caloriesBurnt, stepCount;
+    private float distanceCovered = 0, caloriesBurnt = 0, stepCount = 0;
     private Session startRunSession; //Session to start run
     private boolean canUpdateLabels = false;
 
-    private OnDataPointListener dataPointListener; //Data Listener for Google FIT api
+
     private PendingResult<Status> fitnessSessionResult;
     private DataType [] dataTypes;
+    private final static int REQUEST_APPLICATION_PERMISSIONS = 200;
+    private boolean accessGranted;
+    private OnDataPointListener stepCountDeltaListener;
+    private OnDataPointListener distanceDeltaListener;
+    private OnDataPointListener caloriesExpendedListener;
+
 
     public StartRunFragment() {
         // Required empty public constructor
@@ -107,18 +118,10 @@ public class StartRunFragment extends Fragment implements GoogleApiClient
         initializeComponents(savedInstanceState, myView);
         buildFitnessApi();
         buildLocationSettingsRequest();
-        initializeSessionDataTypes();
         return myView;
     }
 
 
-    private void initializeSessionDataTypes()
-    {
-        dataTypes = new DataType[] {DataType.AGGREGATE_CALORIES_EXPENDED, DataType
-                .TYPE_CALORIES_EXPENDED, DataType.TYPE_STEP_COUNT_DELTA, DataType
-                .TYPE_STEP_COUNT_CUMULATIVE, DataType.TYPE_DISTANCE_DELTA, DataType
-                .AGGREGATE_DISTANCE_DELTA, DataType.TYPE_SPEED, DataType.AGGREGATE_SPEED_SUMMARY};
-    }
 
     public void initializeComponents(Bundle savedInstanceState, View view) {
         MapsInitializer.initialize(this.getActivity());
@@ -128,7 +131,7 @@ public class StartRunFragment extends Fragment implements GoogleApiClient
         startRunMapLayout = (MapView) view.findViewById(R.id.startRunMapLayout);
         startRunMapLayout.getMapAsync(this);
         startRunMapLayout.onCreate(savedInstanceState);
-        distanceCoveredTextView = (TextView) view.findViewById(R.id.distanceCoveredLabel);
+        distanceCoveredTextView = (TextView) view.findViewById(R.id.distanceCoveredText);
         totalTimeTextView = (TextView) view.findViewById(R.id.elapsedTimeLabel);
         caloriesBurntTextView = (TextView) view.findViewById(R.id.totalCaloriesBurntTextView);
         runnerSpeedTextView = (TextView) view.findViewById(R.id.runnerSpeedTextView);
@@ -152,14 +155,15 @@ public class StartRunFragment extends Fragment implements GoogleApiClient
         Scope bodyReadWrite = new Scope(Scopes.FITNESS_BODY_READ_WRITE);
         Scope locationRead = new Scope(Scopes.FITNESS_LOCATION_READ);
         Scope locationReadWrite = new Scope(Scopes.FITNESS_LOCATION_READ_WRITE);
+
             googleApiClient = new GoogleApiClient.Builder(this.getActivity()).addApi(LocationServices.API)
-                    .addApi(Fitness.SENSORS_API).addApi(Fitness.SESSIONS_API).addApi(Fitness
+                    .addApi(Fitness.SENSORS_API).addApi(Fitness.HISTORY_API).addApi(Fitness.SESSIONS_API)
+                            .addApi(Fitness
                             .RECORDING_API).addScope(activityRead).addScope
                             (fitnessActivityReadWrite).addScope(bodyRead).addScope(bodyReadWrite)
                     .addScope(locationRead).addScope(locationReadWrite)
                             .addConnectionCallbacks(this)
                     .addOnConnectionFailedListener(this).build();
-        googleApiClient.connect();
     }
 
     //This method defines the location request - a location request specifies how location data
@@ -214,6 +218,7 @@ public class StartRunFragment extends Fragment implements GoogleApiClient
     }
 
     private void receiveLocationUpdate() {//Check to see if this can be solved - android 6
+        checkPermission();
         LocationServices.FusedLocationApi.requestLocationUpdates(googleApiClient,
                 locationRequest, this);
     }
@@ -228,7 +233,6 @@ public class StartRunFragment extends Fragment implements GoogleApiClient
     @Override
     public void onStop() {
         googleApiClient.disconnect();
-        removeFitnessDataListener();
         stopLocationUpdates();
         super.onStop();
 
@@ -236,14 +240,11 @@ public class StartRunFragment extends Fragment implements GoogleApiClient
 
     @Override
     public void onConnected(Bundle bundle) {
-        if (accessToFitness) {
-            receiveLocationUpdate();
-            //Get the Google Fit API Data Sources and Register these
-            getFitnessDataSources();
-
+        if (googleApiClient.isConnecting()) {
+            googleApiClient.connect();
         } else {
-            displayMessage("Error","Please ensure you have granted access to the app for google " +
-                    "fit");
+            receiveLocationUpdate();
+            getFitnessDataSources();
         }
     }
 
@@ -303,6 +304,7 @@ public class StartRunFragment extends Fragment implements GoogleApiClient
     @Override
     public void onResume() {
         super.onResume();
+        buildFitnessApi();
         startRunMapLayout.onResume();
     }
 
@@ -335,12 +337,8 @@ public class StartRunFragment extends Fragment implements GoogleApiClient
     @Override
     public void onLocationChanged(Location location) {
         runnerLocation = location;
-        if (!initiated) {
-            mapObject.moveCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(runnerLocation
-                    .getLatitude(), runnerLocation.getLongitude()), 16));
-            initiated = true;
-        }
-
+        mapObject.moveCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(runnerLocation
+                        .getLatitude(), runnerLocation.getLongitude()), 16));
     }
 
     @Override
@@ -348,7 +346,7 @@ public class StartRunFragment extends Fragment implements GoogleApiClient
         switch (v.getId()) {
             case R.id.startRunButton:
                 canUpdateLabels = true;
-                createFitnessSession();
+                //createFitnessSession();
 
 
 
@@ -359,8 +357,8 @@ public class StartRunFragment extends Fragment implements GoogleApiClient
 
                 break;
             case R.id.endRunButton:
-                stopFitnessSession();
-                unsubscripeFitnessData();
+                //stopFitnessSession();
+                //unsubscripeFitnessData();
                 canUpdateLabels = false;
 
                 break;
@@ -370,16 +368,12 @@ public class StartRunFragment extends Fragment implements GoogleApiClient
 
     @Override
     public void onMapReady(GoogleMap googleMap) {
+        checkPermission();
         mapObject = googleMap;
-        mapObject.setMapType(GoogleMap.MAP_TYPE_NORMAL);
         mapObject.setMyLocationEnabled(true);
 
     }
-
-    private Location getLastKnownLocation() {
-        return LocationServices.FusedLocationApi.getLastLocation(googleApiClient);
-    }
-
+    
     private void stopLocationUpdates()
     {
         LocationServices.FusedLocationApi.removeLocationUpdates(googleApiClient, this);
@@ -388,65 +382,115 @@ public class StartRunFragment extends Fragment implements GoogleApiClient
     //Reference:
     private void getFitnessDataSources()
     {
-        Fitness.SensorsApi.findDataSources(googleApiClient, new DataSourcesRequest.Builder()
-                .setDataTypes(dataTypes[0]).setDataTypes(dataTypes[1]).setDataTypes(dataTypes[2])
-                .setDataTypes(dataTypes[3]).setDataTypes(dataTypes[4]).setDataTypes(dataTypes[5])
-                .setDataTypes(dataTypes[6]).setDataTypes(dataTypes[7])
-                .setDataSourceTypes(DataSource.TYPE_RAW)
-                .build()).setResultCallback(new ResultCallback<DataSourcesResult>() {
-            @Override public void onResult(@NonNull DataSourcesResult dataSourcesResult) {
-                     for (DataSource dataSource : dataSourcesResult.getDataSources()) {
-                        displayToast("Data source found: "+dataSource.getName());
-                         registerFitnessDataListener(dataSource, dataSource.getDataType());
-                     }
-            }
-        });
+                Fitness.SensorsApi.findDataSources(googleApiClient, new DataSourcesRequest.Builder()
+                        .setDataTypes(DataType.TYPE_LOCATION_SAMPLE)
+                        .setDataTypes(DataType.TYPE_STEP_COUNT_DELTA)
+                        .setDataTypes(DataType.TYPE_DISTANCE_DELTA)
+                        .setDataTypes(DataType.TYPE_CALORIES_EXPENDED)
+                        .setDataTypes(DataType.TYPE_ACTIVITY_SEGMENT)
+                        .setDataSourceTypes(DataSource.TYPE_RAW)
+                        .build())
+                        .setResultCallback(new ResultCallback<DataSourcesResult>() {
+                            public void onResult(@NonNull DataSourcesResult dataSourcesResult) {
+                                displayMessage("Data Sources Result", dataSourcesResult.getStatus()
+                                        .toString());
+                                for (DataSource currentSource : dataSourcesResult.getDataSources()) {
+                                    displayToast("Data Source Found: "+currentSource.getDataType().getName());
+                                    if (currentSource.getDataType().equals(DataType.TYPE_STEP_COUNT_DELTA)) {
+                                        stepCountDeltaListener = new OnDataPointListener() {
+                                            @Override
+                                            public void onDataPoint(DataPoint dataPoint)  {
+                                                for (final Field currentField : dataPoint.getDataType()
+                                                        .getFields()) {
+                                                    final Value currentValue = dataPoint.getValue
+                                                            (currentField);
+                                                    getActivity().runOnUiThread(new Runnable() {
+                                                        @Override
+                                                        public void run() {
+                                                            displayToast("Steps Count: " + currentValue);
+                                                            stepCount = stepCount + currentValue.asFloat();
+                                                            updateLabels();
+
+
+                                                        }
+
+                                                    });
+
+
+
+                                                }
+                                            }
+                                        };
+                                        registerFitnessDataListener(currentSource, DataType.TYPE_STEP_COUNT_DELTA, stepCountDeltaListener);
+                                    }
+                                    else if (currentSource.getDataType().equals(DataType
+                                            .TYPE_DISTANCE_DELTA)) {
+                                        distanceDeltaListener = new OnDataPointListener() {
+                                            @Override
+                                            public void onDataPoint(DataPoint dataPoint) {
+                                                for (final Field currentField : dataPoint.getDataType()
+                                                        .getFields()) {
+                                                    final Value currentValue = dataPoint.getValue
+                                                            (currentField);
+                                                    getActivity().runOnUiThread(new Runnable() {
+                                                        @Override
+                                                        public void run() {
+                                                            displayToast("Distance Count: "+ currentValue);
+                                                            distanceCovered = distanceCovered + currentValue.asFloat();
+                                                            updateLabels();
+                                                        }
+                                                    });
+
+                                                }
+                                            }
+                                        };
+                                        registerFitnessDataListener(currentSource, DataType
+                                                .TYPE_DISTANCE_DELTA, distanceDeltaListener);
+                                    } else if (currentSource.getDataType().equals(DataType
+                                            .TYPE_CALORIES_EXPENDED)) {
+                                        caloriesExpendedListener = new OnDataPointListener() {
+                                            @Override
+                                            public void onDataPoint(DataPoint dataPoint) {
+                                                for (final Field currentField : dataPoint.getDataType()
+                                                        .getFields()) {
+                                                    final Value currentValue = dataPoint.getValue
+                                                            (currentField);
+                                                    getActivity().runOnUiThread(new Runnable() {
+                                                        @Override
+                                                        public void run() {
+                                                            displayToast("Calories Count: "+currentValue);
+                                                            caloriesBurnt = caloriesBurnt + currentValue
+                                                                    .asFloat();
+                                                            updateLabels();
+                                                        }
+                                                    });
+                                                }
+                                            }
+                                        };
+                                        registerFitnessDataListener(currentSource, DataType.TYPE_CALORIES_EXPENDED, caloriesExpendedListener);
+                                    }
+                                }
+                            }
+                        });
     }
 
-    private void createDataPointListener() {
-        if (dataPointListener == null) {
-            dataPointListener = new OnDataPointListener() {
-                public void onDataPoint(DataPoint dataPoint) {
-                    for (final Field field : dataPoint.getDataType().getFields()) {
-
-                        final Value dataValue = dataPoint.getValue(field);
-                        Runnable runnable = new Runnable() {
-                            @Override
-                            public void run() {
-                                displayToast("Data Field: "+field.getName() +" Value: "+dataValue);
-                            }
-                        };
-
-                    }
-
-                }
-            };
-        }
-    };
-
-    private void registerFitnessDataListener(DataSource dataSource, DataType dataType) {
-
-        createDataPointListener(); //Set up the data point listener
-        //Register listener
-        Fitness.SensorsApi.add(googleApiClient, new SensorRequest.Builder().setDataSource
-                (dataSource).setDataType(dataType).setSamplingRate(1, TimeUnit.SECONDS).build(),
-                dataPointListener).setResultCallback(new ResultCallback<Status>() {
+    private void registerFitnessDataListener(DataSource dataSource, DataType dataType,
+                                             OnDataPointListener listener) {
+        Fitness.SensorsApi.add(googleApiClient, new SensorRequest.Builder()
+                .setDataSource(dataSource)
+                .setDataType(dataType)
+                .setSamplingRate(1, TimeUnit.SECONDS).build(), listener)
+                .setResultCallback(new ResultCallback<Status>() {
             @Override
             public void onResult(@NonNull Status status) {
                 if (status.isSuccess()) {
-                    displayToast("Listener is registered");
+                    displayToast("Listener is registered: "+status.getStatusMessage());
                 } else {
-                    displayToast("Listener is not registered");
+                    displayToast("Listener is not registered: "+status.getStatusMessage());
                 }
             }
         });
-        //Add subscription to recording API
         subscribeToFitnessData(dataType);
-    }
-
-    private void removeFitnessDataListener()
-    {
-        Fitness.SensorsApi.remove(googleApiClient, dataPointListener);
     }
 
     private void displayToast(String message) {
@@ -460,7 +504,7 @@ public class StartRunFragment extends Fragment implements GoogleApiClient
             public void onResult(@NonNull Status status) {
                 if (status.isSuccess()) {
                     if (status.getStatusCode() == FitnessStatusCodes.SUCCESS_ALREADY_SUBSCRIBED) {
-                        displayToast("Already Subscribed");
+                        displayToast("You have already been subscribed to fitness data");
                     } else {
                         displayMessage("Error Subscribing to Recording API", "An error occurred " +
                                 "while subscribing to recording API");
@@ -486,9 +530,9 @@ public class StartRunFragment extends Fragment implements GoogleApiClient
                 @Override
                 public void onResult(@NonNull Status status) {
                     if (status.getStatusCode() == FitnessStatusCodes.SUCCESS_ALREADY_SUBSCRIBED) {
-                        displayToast("Already subscribed");
+                        displayToast("The session has already been started");
                     } else if (status.getStatusCode() == FitnessStatusCodes.SUCCESS) {
-                        displayToast("Subscribed");
+                        displayToast("The session has been started");
                     } else if (status.getStatusCode() == FitnessStatusCodes.ERROR) {
                         displayToast("Error Starting Session");
                     }
@@ -513,8 +557,46 @@ public class StartRunFragment extends Fragment implements GoogleApiClient
 
     private void updateLabels()
     {
-        totalTimeTextView.setText(Long.toString(startRunSession.getActiveTime(TimeUnit.SECONDS)));
-        displayToast("Total Steps taken: "+stepCount);
-        caloriesBurntTextView.setText(Double.toString(caloriesBurnt));
+        distanceCoveredTextView.setText(Float.toString(distanceCovered) + "metres");
+        runnerSpeedTextView.setText(Float.toString(stepCount) +" steps");
+        caloriesBurntTextView.setText(Float.toString(caloriesBurnt) +" kcal");
+    }
+
+    @TargetApi(Build.VERSION_CODES.M)
+    private void checkPermission()
+    {
+       if (ActivityCompat.checkSelfPermission(getActivity(), Manifest.permission.ACCESS_FINE_LOCATION) ==
+               PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission
+               (getActivity(), Manifest.permission.ACCESS_COARSE_LOCATION) == PackageManager
+               .PERMISSION_GRANTED) {
+            accessGranted = true;
+
+       } else {
+           accessGranted = false;
+           if (ActivityCompat.shouldShowRequestPermissionRationale(getActivity(),Manifest.permission
+                   .ACCESS_FINE_LOCATION)) {
+               displayMessage("Access GPS Receiver", "To collect your running information, we " +
+                       "need to make use of your GPS receiver, do you want to grant us permission");
+           }
+           ActivityCompat.requestPermissions(getActivity(), new String[] {Manifest.permission
+                   .ACCESS_FINE_LOCATION, Manifest.permission.ACCESS_COARSE_LOCATION}, REQUEST_APPLICATION_PERMISSIONS);
+       }
+    }
+
+    @Override
+    public void onRequestPermissionsResult(int requestCode, String[] permissions, int[] grantResults) {
+        if (requestCode == REQUEST_APPLICATION_PERMISSIONS) {
+            if (grantResults[0] == PackageManager.PERMISSION_GRANTED && grantResults[1] ==
+                    PackageManager.PERMISSION_GRANTED) {
+                //Set the needed booleans
+
+            } else {
+                displayMessage("Permission Denied", "You have denied permission for access to the" +
+                        " GPS Receiver. The application cannot continue");
+            }
+        } else {
+            super.onRequestPermissionsResult(requestCode, permissions, grantResults);
+        }
+
     }
 }
