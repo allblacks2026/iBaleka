@@ -50,7 +50,7 @@ namespace iBalekaService.Controllers
             }
             else
             {
-                return BadRequest();
+                return BadRequest(ModelState);
             }
         }
 
@@ -64,21 +64,22 @@ namespace iBalekaService.Controllers
                 try
                 {
                     _clubMemberRepo.SaveMember();
+                    return new NoContentResult();
                 }
                 catch(DbUpdateConcurrencyException)
                 {
-                    if (!MemberExists(member.MemberID) != null)
+                    if (!MemberExists(member.MemberID))
                     {
                         return NotFound();
                     }
                     else
                         throw;
                 }
-                return new NoContentResult();
+                ;
             }
             else
             {
-                return BadRequest();
+                return BadRequest(ModelState);
             }
         }
 
@@ -90,6 +91,7 @@ namespace iBalekaService.Controllers
             try
             {
                 _clubMemberRepo.SaveMember();
+                return Ok(new JsonResult(member));
             }
             catch (DbUpdateConcurrencyException)
             {
@@ -100,7 +102,7 @@ namespace iBalekaService.Controllers
                 else
                     throw;
             }
-            return Ok(new JsonResult(member));
+            
         }
         private bool MemberExists(int id)
         {

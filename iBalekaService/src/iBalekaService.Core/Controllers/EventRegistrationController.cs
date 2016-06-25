@@ -64,6 +64,7 @@ namespace iBalekaService.Core.Controllers
                 try
                 {
                     _eventRegRepo.SaveEventRegistration();
+                    return new NoContentResult();
                 }
                 catch(DbUpdateConcurrencyException)
                 {
@@ -81,17 +82,18 @@ namespace iBalekaService.Core.Controllers
             {
                 return BadRequest(ModelState);
             }
-            return new NoContentResult();
+            
         }
 
         // DELETE api/values/5
-        [HttpDelete("{id}")]
+        [HttpDelete]
         public IActionResult Delete([FromBody]EventRegistration evntReg)
         {
             _eventRegRepo.Delete(evntReg);
             try
             {
                 _eventRegRepo.SaveEventRegistration();
+                return Ok(new JsonResult(evntReg));
             }
             catch (DbUpdateConcurrencyException)
             {
@@ -104,7 +106,7 @@ namespace iBalekaService.Core.Controllers
                     throw;
                 }
             }
-            return Ok(new JsonResult(evntReg));
+            
         }
         private bool RegExist(int id)
         {

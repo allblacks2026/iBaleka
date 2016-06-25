@@ -29,7 +29,9 @@
           "Microsoft.EntityFrameworkCore": "1.0.0-rc2-final",
           "Microsoft.EntityFrameworkCore.InMemory": "1.0.0-rc2-final",
           "Microsoft.EntityFrameworkCore.SqlServer": "1.0.0-rc2-final",
-          "Microsoft.EntityFrameworkCore.Tools": "1.0.0-preview1-final"
+          "Microsoft.EntityFrameworkCore.Tools": "1.0.0-preview1-final",
+          "iBalekaService.Domain": "1.0.0",
+          "iBalekaService.Service": "1.0.0"
         },
         "runtime": {
           "iBalekaService.Core.dll": {}
@@ -3470,6 +3472,55 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XPath.XDocument.dll": {}
         }
+      },
+      "iBalekaService.Data/1.0.0": {
+        "dependencies": {
+          "Microsoft.NETCore.App": "1.0.0-rc2-3002702",
+          "iBalekaService.Domain": "1.0.0",
+          "Microsoft.EntityFrameworkCore": "1.0.0-rc2-final",
+          "Microsoft.EntityFrameworkCore.InMemory": "1.0.0-rc2-final",
+          "Microsoft.EntityFrameworkCore.Tools": "1.0.0-preview1-final",
+          "NETStandard.Library": "1.5.0-rc2-24027",
+          "Microsoft.EntityFrameworkCore.SqlServer": "1.0.0-rc2-final"
+        },
+        "runtime": {
+          "iBalekaService.Data.dll": {}
+        },
+        "compile": {
+          "iBalekaService.Data.dll": {}
+        }
+      },
+      "iBalekaService.Domain/1.0.0": {
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "1.0.0-rc2-final",
+          "Microsoft.EntityFrameworkCore.InMemory": "1.0.0-rc2-final",
+          "Microsoft.EntityFrameworkCore.SqlServer": "1.0.0-rc2-final",
+          "Microsoft.EntityFrameworkCore.Tools": "1.0.0-preview1-final",
+          "Microsoft.NETCore.App": "1.0.0-rc2-3002702",
+          "NETStandard.Library": "1.5.0-rc2-24027"
+        },
+        "runtime": {
+          "iBalekaService.Domain.dll": {}
+        },
+        "compile": {
+          "iBalekaService.Domain.dll": {}
+        }
+      },
+      "iBalekaService.Service/1.0.0": {
+        "dependencies": {
+          "Microsoft.NETCore.App": "1.0.0-rc2-3002702",
+          "iBalekaService.Data": "1.0.0",
+          "NETStandard.Library": "1.5.0-rc2-24027",
+          "Microsoft.EntityFrameworkCore": "1.0.0-rc2-final",
+          "Microsoft.EntityFrameworkCore.InMemory": "1.0.0-rc2-final",
+          "Microsoft.EntityFrameworkCore.Tools": "1.0.0-preview1-final"
+        },
+        "runtime": {
+          "iBalekaService.Service.dll": {}
+        },
+        "compile": {
+          "iBalekaService.Service.dll": {}
+        }
       }
     }
   },
@@ -4573,6 +4624,21 @@
       "type": "package",
       "serviceable": true,
       "sha512": "sha512-IxOLcwl5A0Lm1s2FIUh5klV+Fi0tUE/5OltvIkZdV7phcWVfgBlCRlgxweaXVrCTI+9TZ8TihVutVaA+PC95lg=="
+    },
+    "iBalekaService.Data/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "iBalekaService.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "iBalekaService.Service/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     }
   }
 }

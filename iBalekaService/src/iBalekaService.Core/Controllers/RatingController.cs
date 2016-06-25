@@ -2,8 +2,9 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using iBalekaService.Models;
-using iBalekaService.Repository;
+using iBalekaService.Domain.Models;
+using iBalekaService.Services;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Mvc;
 
 namespace iBalekaService.Controllers
@@ -11,8 +12,8 @@ namespace iBalekaService.Controllers
     [Route("api/[controller]")]
     public class RatingController:Controller
     {
-        private IiBalekaRepository<Rating> _ratingRepo;
-        public RatingController(IiBalekaRepository<Rating> _repo)
+        private IRatingService _ratingRepo;
+        public RatingController(IRatingService _repo)
         {
             _ratingRepo = _repo;
         }
@@ -25,14 +26,14 @@ namespace iBalekaService.Controllers
 
         // GET api/values/5
         [HttpGet("{id}", Name = "GetRating")]
-        public IActionResult GetUser(int id)
+        public IActionResult GetRating(int id)
         {
-            Rating rating = _ratingRepo.Get(id);
+            Rating rating = _ratingRepo.GetRatingByID(id);
             if (rating == null)
             {
                 return NotFound();
             }
-            return new JsonResult(rating);
+            return Ok(new JsonResult(rating));
         }
         // PUT api/values/5
         [HttpPut]
@@ -40,25 +41,59 @@ namespace iBalekaService.Controllers
         {
             if (ModelState.IsValid)
             {
-                Rating existingRating = _ratingRepo.Get(rating.RatingID);
-                if (existingRating == null)
+                _ratingRepo.UpdateRating(rating);
+                try
                 {
-                    return NotFound();
+                    _ratingRepo.SaveRating();
+                    return new NoContentResult();
                 }
-                _ratingRepo.Update(rating);
-                return new NoContentResult();
+                catch(DbUpdateConcurrencyException)
+                {
+                    if (!RatingExists(rating.RatingID))
+                    {
+                        return NotFound();
+                    }
+                    else
+                        throw;
+                }
             }
             else
             {
-                return BadRequest();
+                return BadRequest(ModelState);
             }
         }
 
         // DELETE api/values/5
-        [HttpDelete("{id}")]
-        public void Delete(int id)
+        [HttpDelete]
+        public IActionResult Delete([FromBody]Rating rating)
         {
-            _ratingRepo.Delete(id);
+            if (ModelState.IsValid)
+            {
+                _ratingRepo.DeleteRating(rating);
+                try
+                {
+                    _ratingRepo.SaveRating();
+                    return Ok(new JsonResult(rating));
+                }
+                catch (DbUpdateConcurrencyException)
+                {
+                    if (!RatingExists(rating.RatingID))
+                    {
+                        return NotFound();
+                    }
+                    else
+                        throw;
+                }
+            }
+            else
+            {
+                return BadRequest(ModelState);
+            }
+
+        }
+        private bool RatingExists(int id)
+        {
+            return _ratingRepo.GetRatingByID(id) != null;
         }
     }
 }

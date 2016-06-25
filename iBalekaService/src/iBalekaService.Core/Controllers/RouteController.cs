@@ -75,6 +75,7 @@ namespace iBalekaService.Core.Controllers
                 try
                 {
                     _routeRepo.SaveRoute();
+                    return new NoContentResult();
                 }
                 catch(DbUpdateConcurrencyException)
                 {
@@ -87,7 +88,7 @@ namespace iBalekaService.Core.Controllers
                         throw;
                     }
                 }
-                return new NoContentResult(); 
+                
             }
             else
             {
@@ -103,6 +104,7 @@ namespace iBalekaService.Core.Controllers
             try
             {
                 _routeRepo.SaveRoute();
+                return Ok(new JsonResult(route));
             }
             catch (DbUpdateConcurrencyException)
             {
@@ -115,7 +117,7 @@ namespace iBalekaService.Core.Controllers
                     throw;
                 }
             }
-            return Ok(new JsonResult(route));
+            
         }
         private bool RouteExists(int id)
         {

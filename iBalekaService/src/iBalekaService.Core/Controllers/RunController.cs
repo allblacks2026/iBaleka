@@ -56,7 +56,9 @@ namespace iBalekaService.Core.Controllers
             if(ModelState.IsValid)
             {
                 _runRepo.AddRun(run);
+                _runRepo.SaveRun();
                 _ratingRepo.AddRating(rating);
+                _ratingRepo.SaveRating();
                 return CreatedAtRoute("GetRun", new { Controller = "Run", run.RunID }, run);
             }
             else
@@ -75,6 +77,7 @@ namespace iBalekaService.Core.Controllers
             {
                 _runRepo.SaveRun();
                 _ratingRepo.SaveRating();
+                return Ok(new JsonResult(run));
             }
             catch(DbUpdateConcurrencyException)
             {
@@ -87,7 +90,7 @@ namespace iBalekaService.Core.Controllers
                     throw;
                 }
             }
-            return Ok(new JsonResult(run));
+            
         }
         private bool RunExists(int id)
         {

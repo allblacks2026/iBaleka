@@ -83,7 +83,7 @@ namespace iBalekaService.Core.Controllers
         }
 
         // DELETE api/values/5
-        [HttpDelete("{id}")]
+        [HttpDelete]
         public IActionResult Delete([FromBody]Club club)
         {
             _clubRepo.Delete(club);

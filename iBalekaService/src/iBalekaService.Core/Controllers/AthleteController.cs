@@ -23,7 +23,7 @@ namespace iBalekaService.Core.Controllers
         [HttpGet]
         public IActionResult GetAll()
         {
-            return new JsonResult(_athleteRepo.GetAll());
+            return new JsonResult(_athleteRepo.GetAthletes());
             
         }
 
@@ -31,12 +31,12 @@ namespace iBalekaService.Core.Controllers
         [HttpGet("{id}",Name="GetAthlete")]
         public IActionResult GetAthlete(int id)
         {
-            Athlete athlete = _athleteRepo.Get(id);
+            Athlete athlete = _athleteRepo.GetAthlete(id);
             if(athlete == null)
             {
                 return NotFound();
             }
-            return new JsonResult(athlete);
+            return Ok(new JsonResult(athlete));
         }
 
         // POST api/values
@@ -45,12 +45,13 @@ namespace iBalekaService.Core.Controllers
         {
             if(ModelState.IsValid)
             {
-                _athleteRepo.Add(athlete);
+                _athleteRepo.AddAthlete(athlete);
+                _athleteRepo.SaveAthlete();
                 return CreatedAtRoute("GetAthlete", new { Controller = "Athlete", id = athlete.AthleteID, athlete });
             }
             else
             {
-                return BadRequest();
+                return BadRequest(ModelState);
             }
         }
 
@@ -60,26 +61,51 @@ namespace iBalekaService.Core.Controllers
         {
             if(ModelState.IsValid)
             {
-                Athlete existingAthlete = _athleteRepo.Get(athlete.AthleteID);
-                if(existingAthlete==null)
+                _athleteRepo.UpdateAthlete(athlete);
+                try
                 {
-                    return NotFound();
+
                 }
-                _athleteRepo.Update(athlete);
+                catch(DbUpdateConcurrencyException)
+                {
+                    if (!AthleteExists(athlete.AthleteID))
+                    {
+                        return NotFound();
+                    }
+                    else
+                        throw;
+                }
                 return new NoContentResult();
             }
             else
             {
-                return BadRequest();
+                return BadRequest(ModelState);
             }
         }
 
         // DELETE api/values/5
-        [HttpDelete("{id}")]
-        public void Delete(int id)
+        [HttpDelete]
+        public IActionResult Delete([FromBody]Athlete athlete)
         {
-            _athleteRepo.Delete(id);
+            _athleteRepo.DeleteAthlete(athlete);
+            try
+            {
+                _athleteRepo.SaveAthlete();
+                return Ok(new JsonResult(athlete));
+            }
+            catch(DbUpdateConcurrencyException)
+            {
+                if (!AthleteExists(athlete.AthleteID))
+                {
+                    return NotFound();
+                }
+                else
+                    throw;
+            }
         }
-        
+        private bool AthleteExists(int id)
+        {
+            return _athleteRepo.GetAthlete(id) != null;
+        }
     }
 }
