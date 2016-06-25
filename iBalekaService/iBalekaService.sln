@@ -10,7 +10,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		global.json = global.json
 	EndProjectSection
 EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "iBalekaService", "src\iBalekaService\iBalekaService.xproj", "{A9E9A8D8-AFC5-4B16-87B8-18E67F0C01D6}"
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "iBalekaService.Core", "src\iBalekaService.Core\iBalekaService.Core.xproj", "{7A4836E1-307D-424D-A506-1485751F705B}"
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "iBalekaService.Domain", "src\iBalekaService.Domain\iBalekaService.Domain.xproj", "{9A6D7545-E102-474D-BEC0-70C0B2F92C31}"
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "iBalekaService.Data", "src\iBalekaService.Data\iBalekaService.Data.xproj", "{CA6E557B-6ED8-4032-8A1A-8C3C603BB0AD}"
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "iBalekaService.Service", "src\iBalekaService.Service\iBalekaService.Service.xproj", "{32D694E9-31C5-4F8B-8418-C34997EB55FA}"
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "iBalekaService.Tests", "src\iBalekaService.Tests\iBalekaService.Tests.xproj", "{47D17192-4264-4A79-9197-29AB6DAD8D1B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -18,15 +26,35 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{A9E9A8D8-AFC5-4B16-87B8-18E67F0C01D6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A9E9A8D8-AFC5-4B16-87B8-18E67F0C01D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A9E9A8D8-AFC5-4B16-87B8-18E67F0C01D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A9E9A8D8-AFC5-4B16-87B8-18E67F0C01D6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7A4836E1-307D-424D-A506-1485751F705B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A4836E1-307D-424D-A506-1485751F705B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7A4836E1-307D-424D-A506-1485751F705B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7A4836E1-307D-424D-A506-1485751F705B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9A6D7545-E102-474D-BEC0-70C0B2F92C31}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A6D7545-E102-474D-BEC0-70C0B2F92C31}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A6D7545-E102-474D-BEC0-70C0B2F92C31}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A6D7545-E102-474D-BEC0-70C0B2F92C31}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CA6E557B-6ED8-4032-8A1A-8C3C603BB0AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA6E557B-6ED8-4032-8A1A-8C3C603BB0AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA6E557B-6ED8-4032-8A1A-8C3C603BB0AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA6E557B-6ED8-4032-8A1A-8C3C603BB0AD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{32D694E9-31C5-4F8B-8418-C34997EB55FA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{32D694E9-31C5-4F8B-8418-C34997EB55FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{32D694E9-31C5-4F8B-8418-C34997EB55FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{32D694E9-31C5-4F8B-8418-C34997EB55FA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{47D17192-4264-4A79-9197-29AB6DAD8D1B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{47D17192-4264-4A79-9197-29AB6DAD8D1B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{47D17192-4264-4A79-9197-29AB6DAD8D1B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{47D17192-4264-4A79-9197-29AB6DAD8D1B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{A9E9A8D8-AFC5-4B16-87B8-18E67F0C01D6} = {B734EF57-8C1C-422B-A514-39CCE235CE15}
+		{7A4836E1-307D-424D-A506-1485751F705B} = {B734EF57-8C1C-422B-A514-39CCE235CE15}
+		{9A6D7545-E102-474D-BEC0-70C0B2F92C31} = {B734EF57-8C1C-422B-A514-39CCE235CE15}
+		{CA6E557B-6ED8-4032-8A1A-8C3C603BB0AD} = {B734EF57-8C1C-422B-A514-39CCE235CE15}
+		{32D694E9-31C5-4F8B-8418-C34997EB55FA} = {B734EF57-8C1C-422B-A514-39CCE235CE15}
+		{47D17192-4264-4A79-9197-29AB6DAD8D1B} = {B734EF57-8C1C-422B-A514-39CCE235CE15}
 	EndGlobalSection
 EndGlobal

@@ -1,9 +1,8 @@
-<<<<<<< HEAD
-#:C:\Users\Tulonga\Source\Repos\iBaleka\iBalekaService\src\iBalekaService\iBalekaService.xproj
-=======
-<<<<<<< HEAD
-#:C:\Users\blaze\Source\Repos\iBaleka\iBalekaService\src\iBalekaService\iBalekaService.xproj
-=======
-#:C:\Users\Tulonga\Source\Repos\iBaleka\iBalekaService\src\iBalekaService\iBalekaService.xproj
->>>>>>> 975fcf772a18ef7199449e4e8de4e1ddc2dd5c5a
->>>>>>> master
+#:C:\Users\Tulonga\Source\Repos\iBaleka\iBalekaService\src\iBalekaService.Service\iBalekaService.Service.xproj
+C:\Users\Tulonga\Source\Repos\iBaleka\iBalekaService\src\iBalekaService.Service\iBalekaService.Service.xproj|C:\Users\Tulonga\Source\Repos\iBaleka\iBalekaService\src\iBalekaService.Data\iBalekaService.Data.xproj
+C:\Users\Tulonga\Source\Repos\iBaleka\iBalekaService\src\iBalekaService.Data\iBalekaService.Data.xproj|C:\Users\Tulonga\Source\Repos\iBaleka\iBalekaService\src\iBalekaService.Domain\iBalekaService.Domain.xproj
+#:C:\Users\Tulonga\Source\Repos\iBaleka\iBalekaService\src\iBalekaService.Core\iBalekaService.Core.xproj
+C:\Users\Tulonga\Source\Repos\iBaleka\iBalekaService\src\iBalekaService.Core\iBalekaService.Core.xproj|C:\Users\Tulonga\Source\Repos\iBaleka\iBalekaService\src\iBalekaService.Domain\iBalekaService.Domain.xproj
+C:\Users\Tulonga\Source\Repos\iBaleka\iBalekaService\src\iBalekaService.Core\iBalekaService.Core.xproj|C:\Users\Tulonga\Source\Repos\iBaleka\iBalekaService\src\iBalekaService.Service\iBalekaService.Service.xproj
+C:\Users\Tulonga\Source\Repos\iBaleka\iBalekaService\src\iBalekaService.Service\iBalekaService.Service.xproj|C:\Users\Tulonga\Source\Repos\iBaleka\iBalekaService\src\iBalekaService.Data\iBalekaService.Data.xproj
+C:\Users\Tulonga\Source\Repos\iBaleka\iBalekaService\src\iBalekaService.Data\iBalekaService.Data.xproj|C:\Users\Tulonga\Source\Repos\iBaleka\iBalekaService\src\iBalekaService.Domain\iBalekaService.Domain.xproj
