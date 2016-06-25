@@ -10,8 +10,8 @@ import android.view.MenuItem;
 import android.widget.TextView;
 
 import Fragments.AthleteLandingFragment;
-import Fragments.MapRouteFragment;
 import Fragments.ProfileFragment;
+import Fragments.SearchFragment;
 import Fragments.StartRunFragment;
 import allblacks.com.ibaleka_android_prototype.R;
 
@@ -49,18 +49,6 @@ public class NavigationMenuOnItemSelectedListener implements NavigationView.OnNa
                 toolbarTextView.setText("Welcome, User"); //code to get the user falls here
                 drawerLayout.closeDrawers();
                 break;
-            case R.id.athleteMapRoute:
-                navigationView.getMenu().clear();
-                navigationView.inflateMenu(R.menu.map_route_navigation_menu);
-                MapRouteFragment mapRouteFragment = new MapRouteFragment();
-                FragmentTransaction secondTrans = mgr.beginTransaction();
-                secondTrans.replace(R.id.MainActivityContentArea, mapRouteFragment,
-                        "MapRouteFragment");
-                secondTrans.addToBackStack("MapRouteFragment");
-                secondTrans.commit();
-                toolbarTextView.setText("Map a Route");
-                drawerLayout.closeDrawers();
-                break;
             case R.id.athleteViewProfile:
                 navigationView.getMenu().clear();
                 navigationView.inflateMenu(R.menu.athlete_navigation_menu);
@@ -85,7 +73,19 @@ public class NavigationMenuOnItemSelectedListener implements NavigationView.OnNa
                 drawerLayout.closeDrawers();
                 startRunTransaction.commit();
                 break;
+            case R.id.searchEvents:
+                navigationView.getMenu().clear();
+                navigationView.inflateMenu(R.menu.athlete_navigation_menu);
+                SearchFragment searchFragment = new SearchFragment();
+                FragmentTransaction searchFragmentTransaction = mgr.beginTransaction();
+                searchFragmentTransaction.replace(R.id.MainActivityContentArea, searchFragment,
+                        "SearchFragment");
+                searchFragmentTransaction.addToBackStack("SearchFragment");
+                toolbarTextView.setText("Search Events");
+                drawerLayout.closeDrawers();
+                searchFragmentTransaction.commit();
+                break;
         }
-        return false;
+        return true;
     }
 }

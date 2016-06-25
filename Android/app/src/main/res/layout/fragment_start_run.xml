@@ -62,7 +62,7 @@
                 <TextView
                     style="@style/TextViewStyle"
                     android:id = "@+id/distanceCoveredText"
-                    android:text="0.0"
+                    android:text=""
                     android:layout_below="@id/elapsedTimeText"
                     android:layout_alignBaseline="@id/distanceCoveredLabel"
                     android:layout_alignParentEnd="true"/>
@@ -77,7 +77,7 @@
                     android:id = "@+id/totalCaloriesBurntTextView"
                     android:layout_below="@id/distanceCoveredText"
                     android:layout_alignParentEnd="true"
-                    android:text="0.0"/>
+                    android:text=""/>
                 <TextView
                     style="@style/TextViewStyle"
                     android:id = "@+id/runnerSpeedLabel"
@@ -89,7 +89,7 @@
                     android:id = "@+id/runnerSpeedTextView"
                     android:layout_alignParentEnd="true"
                     android:layout_below="@id/totalCaloriesBurntTextView"
-                    android:text="0.0"/>
+                    android:text=""/>
 
                 <Button
                     android:layout_width="wrap_content"

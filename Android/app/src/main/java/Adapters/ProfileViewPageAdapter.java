@@ -24,6 +24,7 @@ public class ProfileViewPageAdapter extends FragmentPagerAdapter {
     }
 
     public int getCount() {
+
         return fragmentList.size();
     }
 
