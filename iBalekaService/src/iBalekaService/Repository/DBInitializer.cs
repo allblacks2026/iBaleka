@@ -7,6 +7,6 @@ namespace iBalekaService.Repository
 {
     public class DBInitializer
     {
-        public 
+       
     }
 }
