@@ -1,5 +1,7 @@
 package Models;
 
+import java.util.Date;
+
 /**
  * Created by Okuhle on 5/26/2016.
  */
@@ -11,40 +13,24 @@ public class User {
     private String emailAddress;
     private String country;
     private String userType;
-    private String dateOfBirth;
+    private Date dateOfBirth;
 
-    public User(String userType, String country, String dateOfBirth, String emailAddress, String name, String surname, String userID) {
-        this.userType = userType;
-        this.country = country;
-        this.dateOfBirth = dateOfBirth;
-        this.emailAddress = emailAddress;
+    public User(String userID, String name, String surname, String emailAddress, String country, String userType, Date dateOfBirth) {
+        this.userID = userID;
         this.name = name;
         this.surname = surname;
-        this.userID = userID;
-    }
-
-    public String getCountry() {
-        return country;
-    }
-
-    public void setCountry(String country) {
+        this.emailAddress = emailAddress;
         this.country = country;
-    }
-
-    public String getDateOfBirth() {
-        return dateOfBirth;
-    }
-
-    public void setDateOfBirth(String dateOfBirth) {
+        this.userType = userType;
         this.dateOfBirth = dateOfBirth;
     }
 
-    public String getEmailAddress() {
-        return emailAddress;
+    public String getUserID() {
+        return userID;
     }
 
-    public void setEmailAddress(String emailAddress) {
-        this.emailAddress = emailAddress;
+    public void setUserID(String userID) {
+        this.userID = userID;
     }
 
     public String getName() {
@@ -63,12 +49,20 @@ public class User {
         this.surname = surname;
     }
 
-    public String getUserID() {
-        return userID;
+    public String getEmailAddress() {
+        return emailAddress;
     }
 
-    public void setUserID(String userID) {
-        this.userID = userID;
+    public void setEmailAddress(String emailAddress) {
+        this.emailAddress = emailAddress;
+    }
+
+    public String getCountry() {
+        return country;
+    }
+
+    public void setCountry(String country) {
+        this.country = country;
     }
 
     public String getUserType() {
@@ -77,5 +71,13 @@ public class User {
 
     public void setUserType(String userType) {
         this.userType = userType;
+    }
+
+    public Date getDateOfBirth() {
+        return dateOfBirth;
+    }
+
+    public void setDateOfBirth(Date dateOfBirth) {
+        this.dateOfBirth = dateOfBirth;
     }
 }

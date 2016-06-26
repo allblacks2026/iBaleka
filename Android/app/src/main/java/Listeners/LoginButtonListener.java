@@ -10,9 +10,12 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import org.w3c.dom.Text;
+
 import BackgroundTasks.UserGatewayBackgroundTask;
 import Fragments.CreateAccountStepOneFragment;
 import Fragments.ForgotPasswordFragment;
+import RetrofitClient.RetrofitData;
 import Utilities.TextSanitizer;
 import allblacks.com.ibaleka_android_prototype.MainActivity;
 import allblacks.com.ibaleka_android_prototype.R;
@@ -40,9 +43,28 @@ public class LoginButtonListener implements View.OnClickListener {
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.loginButton:
-                Intent mainActivity = new Intent(currentContext, MainActivity.class);
-                currentContext.startActivity(mainActivity);
-                currentContext.finish();
+                TextView usernameEditText = (TextView) currentContext.findViewById(R.id.usernameEditText);
+                TextView passwordEditText = (TextView) currentContext.findViewById(R.id.passwordEditText);
+
+                if (usernameEditText.getText().toString() != null && passwordEditText.getText().toString() != null) {
+                    String userName = TextSanitizer.sanitizeText(usernameEditText.getText().toString().trim(), false);
+                    String password = TextSanitizer.sanitizeText(passwordEditText.getText().toString().trim(), false);
+
+                    boolean isValidUsername = TextSanitizer.isValidText(userName, 1, 100);
+                    boolean isValidPassword = TextSanitizer.isValidText(password, 1, 100);
+
+                    if (isValidUsername && isValidPassword) {
+                        //The retrofit client would slip in here
+                        Intent mainActivity = new Intent(currentContext, MainActivity.class);
+                        currentContext.startActivity(mainActivity);
+                        currentContext.finish();
+                    } else {
+                        displayMessage("Login Error", "Please ensure your username and password is between 1 and 100 characters");
+                    }
+                } else {
+                    displayMessage("Login Error", "Please Enter a valid Username and Password");
+                }
+
                 break;
             case R.id.registerAccountbtn:
                 CreateAccountStepOneFragment registerAccountFragment = new
