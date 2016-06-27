@@ -39,17 +39,20 @@ public class ProfileFragment extends Fragment {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
             toolbar.setElevation(0);
         }
+        initializeComponents(myView);
+        return myView;
+    }
+
+    private void initializeComponents(View myView) {
         profileTabLayout = (TabLayout) myView.findViewById(R.id.ProfileTabLayout);
         profileViewPager = (ViewPager) myView.findViewById(R.id.ProfilePager);
         profileViewPageAdapter = new ProfileViewPageAdapter(getActivity().getFragmentManager());
         profileViewPageAdapter.addFragmentWithTitle(new UserProfileTabFragment(), "My Profile");
+        profileViewPageAdapter.addFragmentWithTitle(new EditProfileFragment(), "Edit Profile");
         profileViewPageAdapter.addFragmentWithTitle(new UserActivityTabFragment(), "My Activity");
         profileViewPager.setAdapter(profileViewPageAdapter);
         profileTabLayout.setupWithViewPager(profileViewPager);
-
-        return myView;
     }
-
     @Override
     public void onPause() {
         setRetainInstance(true);

@@ -139,4 +139,12 @@
     <string name="sort_by_date">Sort events by date (newest to oldest)</string>
     <string name="city_events_string">Show events in my current city</string>
     <string name="search_button_string">Search Events</string>
+<<<<<<< HEAD
+=======
+    <string name="edit_name_string">Your Name</string>
+    <string name="edit_surname_string">Your Surname</string>
+    <string name="edit_password_string">Edit Password</string>
+    <string name="save_changes">Save Profile Changes</string>
+    <string name="edit_profile_string">Edit Your Profile</string>
+>>>>>>> 8be16b6dcc6c546a4e3487ad4a1ee759e9d2a362
 </resources>
