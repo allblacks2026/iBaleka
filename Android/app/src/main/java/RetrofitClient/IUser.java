@@ -2,6 +2,10 @@ package RetrofitClient;
 
 import java.util.List;
 
+<<<<<<< HEAD
+=======
+import Models.Athlete;
+>>>>>>> 8be16b6dcc6c546a4e3487ad4a1ee759e9d2a362
 import Models.User;
 import retrofit2.Call;
 import retrofit2.http.Body;
@@ -20,7 +24,11 @@ public interface IUser {
 
     //Add a user's details to the system
     @POST("User/Add/user")
+<<<<<<< HEAD
     Call<User> addUser(@Body User newUser);
+=======
+    Call<User> addUser(@Body User newUser, @Body Athlete newAthlete);
+>>>>>>> 8be16b6dcc6c546a4e3487ad4a1ee759e9d2a362
 
 
 }
