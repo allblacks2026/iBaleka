@@ -5,19 +5,21 @@ using System.Text;
 using Microsoft.EntityFrameworkCore;
 using iBalekaService.Data.Configurations;
 using System.Threading.Tasks;
+using Microsoft.Extensions.DependencyInjection.Extensions;
 
 namespace iBalekaService.Data.Infastructure
 {
     public class DbFactory:Disposable,IDbFactory
     {
         IBalekaContext dbContext;
-        DbContextOptions<IBalekaContext> options;
+        DbContextOptionsBuilder<IBalekaContext> options;
   
         
         public IBalekaContext Init()
         {
-                       
-            return dbContext ?? (dbContext = new IBalekaContext(options));
+            options = new DbContextOptionsBuilder<IBalekaContext>();
+            
+                return dbContext ?? (dbContext = new IBalekaContext(options));
         }
         protected override void DisposeCore()
         {
