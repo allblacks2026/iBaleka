@@ -11,7 +11,9 @@ namespace iBalekaService.Services
 {
     public interface IEventService
     {
+        Event_Route AddEventRoute(Event_Route route);
         Event GetEventByID(int id);
+        IEnumerable<Event_Route> GetEventRoute(int id);
         IEnumerable<Event> GetAll();
         void AddEvent(Event evnt);
         void UpdateEvent(Event evnt);
@@ -35,6 +37,14 @@ namespace iBalekaService.Services
         public IEnumerable<Event> GetAll()
         {
             return _eventRepo.GetAll();
+        }
+        public IEnumerable<Event_Route> GetEventRoute(int id)
+        {
+            return _eventRepo.GetEventRoute(id);
+        }
+        public void AddEventRoute(Event_Route route)
+        {
+            _eventRepo.AddEventRoute(route);
         }
         public void AddEvent(Event evnt)
         {

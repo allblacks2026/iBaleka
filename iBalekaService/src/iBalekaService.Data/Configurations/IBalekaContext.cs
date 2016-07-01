@@ -79,6 +79,7 @@ namespace iBalekaService.Data.Configurations
         public virtual DbSet<Club> Club { get; set; }
         public virtual DbSet<Club_Athlete> ClubMember { get; set; }
         public virtual DbSet<Event> Event { get; set; }
+        public virtual DbSet<Event_Route> EventRoute { get; set; }
         public virtual DbSet<EventRegistration> EventRegistration { get; set; }
         public virtual DbSet<Rating> Rating { get; set; }
         public virtual DbSet<Route> Route { get; set; }

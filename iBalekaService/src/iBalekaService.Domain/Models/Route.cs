@@ -7,7 +7,7 @@ namespace iBalekaService.Domain.Models
 {
     public class Route
     {
-        public Route(int distance,string mapImage)
+        public Route(double distance,string mapImage)
         {
             Distance = distance;
             DateRecorded = DateTime.Now;
@@ -16,7 +16,7 @@ namespace iBalekaService.Domain.Models
         }
         [Key]
         public int RouteID { get; set; }
-        public int Distance { get; set; }
+        public double Distance { get; set; }
         public DateTime DateRecorded { get; set; }
         public DateTime DateModified { get; set; }
         public string MapImage { get; set; }
