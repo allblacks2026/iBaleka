@@ -4,6 +4,7 @@
   },
   "dependencies": {
 <<<<<<< HEAD
+<<<<<<< HEAD
     "Microsoft.NETCore.App": {
       "version": "1.0.0-rc2-3002702",
       "type": "platform"
@@ -15,6 +16,8 @@
     "NETStandard.Library": "1.5.0-rc2-24027",
     "Microsoft.EntityFrameworkCore.SqlServer": "1.0.0-rc2-final"
 =======
+=======
+>>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
     "iBalekaService.Domain": "1.0.0-*",
     "Microsoft.EntityFrameworkCore": "1.0.0",
     "Microsoft.EntityFrameworkCore.Design": "1.0.0-preview2-final",
@@ -30,6 +33,9 @@
       "version": "1.0.0"
     },
     "NETStandard.Library": "1.6.0"
+<<<<<<< HEAD
+>>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
+=======
 >>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
   },
   "frameworks": {
@@ -48,7 +54,11 @@
         "portable-net45+win8"
       ],
 <<<<<<< HEAD
+<<<<<<< HEAD
       "version": "1.0.0-preview1-final"
+=======
+      "version": "1.0.0-preview2-final"
+>>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
 =======
       "version": "1.0.0-preview2-final"
 >>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52

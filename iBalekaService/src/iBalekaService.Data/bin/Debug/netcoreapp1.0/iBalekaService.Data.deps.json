@@ -2,7 +2,11 @@
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v1.0",
 <<<<<<< HEAD
+<<<<<<< HEAD
     "signature": "9a8bc848023be2cc6247ae672ff1d8cb478cd8f8"
+=======
+    "signature": "4685f37e55e7b8bc57d9f0380fa7662ab0da04fd"
+>>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
 =======
     "signature": "4685f37e55e7b8bc57d9f0380fa7662ab0da04fd"
 >>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
@@ -13,6 +17,7 @@
       "iBalekaService.Data/1.0.0": {
         "dependencies": {
 <<<<<<< HEAD
+<<<<<<< HEAD
           "Microsoft.NETCore.App": "1.0.0-rc2-3002702",
           "iBalekaService.Domain": "1.0.0",
           "Microsoft.EntityFrameworkCore": "1.0.0-rc2-final",
@@ -21,6 +26,8 @@
           "NETStandard.Library": "1.5.0-rc2-24027",
           "Microsoft.EntityFrameworkCore.SqlServer": "1.0.0-rc2-final"
 =======
+=======
+>>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
           "iBalekaService.Domain": "1.0.0",
           "Microsoft.EntityFrameworkCore": "1.0.0",
           "Microsoft.EntityFrameworkCore.Design": "1.0.0-preview2-final",
@@ -33,12 +40,16 @@
           "Microsoft.Extensions.DependencyInjection.Abstractions": "1.0.0",
           "Microsoft.NETCore.App": "1.0.0",
           "NETStandard.Library": "1.6.0"
+<<<<<<< HEAD
+>>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
+=======
 >>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
         },
         "runtime": {
           "iBalekaService.Data.dll": {}
         }
       },
+<<<<<<< HEAD
 <<<<<<< HEAD
       "Ix-Async/1.2.5": {
         "runtime": {
@@ -54,6 +65,8 @@
           "Microsoft.Extensions.FileProviders.Abstractions": "1.0.0-rc2-final",
           "Microsoft.Extensions.Logging.Abstractions": "1.0.0-rc2-final"
 =======
+=======
+>>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
       "Libuv/1.9.0": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "1.0.1"
@@ -101,6 +114,9 @@
           "Microsoft.Extensions.DependencyInjection.Abstractions": "1.0.0",
           "Microsoft.Extensions.FileProviders.Abstractions": "1.0.0",
           "Microsoft.Extensions.Logging.Abstractions": "1.0.0"
+<<<<<<< HEAD
+>>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
+=======
 >>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
         },
         "runtime": {
@@ -108,21 +124,28 @@
         }
       },
 <<<<<<< HEAD
+<<<<<<< HEAD
       "Microsoft.AspNetCore.Hosting.Server.Abstractions/1.0.0-rc2-final": {
         "dependencies": {
           "Microsoft.AspNetCore.Http.Features": "1.0.0-rc2-final",
           "Microsoft.Extensions.Configuration.Abstractions": "1.0.0-rc2-final"
 =======
+=======
+>>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
       "Microsoft.AspNetCore.Hosting.Server.Abstractions/1.0.0": {
         "dependencies": {
           "Microsoft.AspNetCore.Http.Features": "1.0.0",
           "Microsoft.Extensions.Configuration.Abstractions": "1.0.0"
+<<<<<<< HEAD
+>>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
+=======
 >>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
         },
         "runtime": {
           "lib/netstandard1.3/Microsoft.AspNetCore.Hosting.Server.Abstractions.dll": {}
         }
       },
+<<<<<<< HEAD
 <<<<<<< HEAD
       "Microsoft.AspNetCore.Http.Abstractions/1.0.0-rc2-final": {
         "dependencies": {
@@ -133,6 +156,8 @@
           "System.Runtime.InteropServices": "4.1.0-rc2-24027",
           "System.Text.Encodings.Web": "4.0.0-rc2-24027"
 =======
+=======
+>>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
       "Microsoft.AspNetCore.Http.Abstractions/1.0.0": {
         "dependencies": {
           "Microsoft.AspNetCore.Http.Features": "1.0.0",
@@ -141,12 +166,16 @@
           "System.Reflection.TypeExtensions": "4.1.0",
           "System.Runtime.InteropServices": "4.1.0",
           "System.Text.Encodings.Web": "4.0.0"
+<<<<<<< HEAD
+>>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
+=======
 >>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
         },
         "runtime": {
           "lib/netstandard1.3/Microsoft.AspNetCore.Http.Abstractions.dll": {}
         }
       },
+<<<<<<< HEAD
 <<<<<<< HEAD
       "Microsoft.AspNetCore.Http.Features/1.0.0-rc2-final": {
         "dependencies": {
@@ -161,6 +190,8 @@
           "System.Security.Cryptography.X509Certificates": "4.1.0-rc2-24027",
           "System.Security.Principal": "4.0.1-rc2-24027"
 =======
+=======
+>>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
       "Microsoft.AspNetCore.Http.Features/1.0.0": {
         "dependencies": {
           "Microsoft.Extensions.Primitives": "1.0.0",
@@ -173,6 +204,9 @@
           "System.Security.Claims": "4.0.1",
           "System.Security.Cryptography.X509Certificates": "4.1.0",
           "System.Security.Principal": "4.0.1"
+<<<<<<< HEAD
+>>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
+=======
 >>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
         },
         "runtime": {
@@ -180,6 +214,7 @@
         }
       },
       "Microsoft.CodeAnalysis.Analyzers/1.1.0": {},
+<<<<<<< HEAD
 <<<<<<< HEAD
       "Microsoft.CodeAnalysis.Common/1.3.0-beta1-20160429-01": {
         "dependencies": {
@@ -223,6 +258,8 @@
           "System.Xml.XPath.XDocument": "4.0.1-rc2-24027",
           "System.Xml.XmlDocument": "4.0.1-rc2-24027"
 =======
+=======
+>>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
       "Microsoft.CodeAnalysis.Common/1.3.0": {
         "dependencies": {
           "Microsoft.CodeAnalysis.Analyzers": "1.1.0",
@@ -264,6 +301,9 @@
           "System.Xml.XDocument": "4.0.11",
           "System.Xml.XPath.XDocument": "4.0.1",
           "System.Xml.XmlDocument": "4.0.1"
+<<<<<<< HEAD
+>>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
+=======
 >>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
         },
         "runtime": {
@@ -271,9 +311,15 @@
         }
       },
 <<<<<<< HEAD
+<<<<<<< HEAD
       "Microsoft.CodeAnalysis.CSharp/1.3.0-beta1-20160429-01": {
         "dependencies": {
           "Microsoft.CodeAnalysis.Common": "1.3.0-beta1-20160429-01"
+=======
+      "Microsoft.CodeAnalysis.CSharp/1.3.0": {
+        "dependencies": {
+          "Microsoft.CodeAnalysis.Common": "1.3.0"
+>>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
 =======
       "Microsoft.CodeAnalysis.CSharp/1.3.0": {
         "dependencies": {
@@ -285,9 +331,15 @@
         }
       },
 <<<<<<< HEAD
+<<<<<<< HEAD
       "Microsoft.CodeAnalysis.VisualBasic/1.3.0-beta1-20160429-01": {
         "dependencies": {
           "Microsoft.CodeAnalysis.Common": "1.3.0-beta1-20160429-01"
+=======
+      "Microsoft.CodeAnalysis.VisualBasic/1.3.0": {
+        "dependencies": {
+          "Microsoft.CodeAnalysis.Common": "1.3.0"
+>>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
 =======
       "Microsoft.CodeAnalysis.VisualBasic/1.3.0": {
         "dependencies": {
@@ -298,6 +350,7 @@
           "lib/netstandard1.3/Microsoft.CodeAnalysis.VisualBasic.dll": {}
         }
       },
+<<<<<<< HEAD
 <<<<<<< HEAD
       "Microsoft.CSharp/4.0.1-rc2-24027": {
         "dependencies": {
@@ -318,6 +371,8 @@
           "System.Runtime.InteropServices": "4.1.0-rc2-24027",
           "System.Threading": "4.0.11-rc2-24027"
 =======
+=======
+>>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
       "Microsoft.CSharp/4.0.1": {
         "dependencies": {
           "System.Collections": "4.0.11",
@@ -336,12 +391,16 @@
           "System.Runtime.Extensions": "4.1.0",
           "System.Runtime.InteropServices": "4.1.0",
           "System.Threading": "4.0.11"
+<<<<<<< HEAD
+>>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
+=======
 >>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
         },
         "runtime": {
           "lib/netstandard1.3/Microsoft.CSharp.dll": {}
         }
       },
+<<<<<<< HEAD
 <<<<<<< HEAD
       "Microsoft.DotNet.Cli.Utils/1.0.0-preview1-002702": {
         "dependencies": {
@@ -367,6 +426,8 @@
           "System.Runtime.InteropServices": "4.1.0-rc2-24027",
           "System.Runtime.InteropServices.RuntimeInformation": "4.0.0-rc2-24027"
 =======
+=======
+>>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
       "Microsoft.DotNet.Cli.Utils/1.0.0-preview2-003121": {
         "dependencies": {
           "Microsoft.DotNet.ProjectModel": "1.0.0-rc3-003121",
@@ -390,12 +451,16 @@
           "System.Runtime.Extensions": "4.1.0",
           "System.Runtime.InteropServices": "4.1.0",
           "System.Runtime.InteropServices.RuntimeInformation": "4.0.0"
+<<<<<<< HEAD
+>>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
+=======
 >>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
         },
         "runtime": {
           "lib/netstandard1.3/Microsoft.DotNet.InternalAbstractions.dll": {}
         }
       },
+<<<<<<< HEAD
 <<<<<<< HEAD
       "Microsoft.DotNet.ProjectModel/1.0.0-rc2-002702": {
         "dependencies": {
@@ -430,6 +495,8 @@
           "System.Reflection.Extensions": "4.0.1-rc2-24027",
           "System.Reflection.TypeExtensions": "4.1.0-rc2-24027"
 =======
+=======
+>>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
       "Microsoft.DotNet.ProjectModel/1.0.0-rc3-003121": {
         "dependencies": {
           "Microsoft.CSharp": "4.0.1",
@@ -463,6 +530,9 @@
           "System.ObjectModel": "4.0.12",
           "System.Reflection.Extensions": "4.0.1",
           "System.Reflection.TypeExtensions": "4.1.0"
+<<<<<<< HEAD
+>>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
+=======
 >>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
         },
         "runtime": {
@@ -470,10 +540,13 @@
         }
       },
 <<<<<<< HEAD
+<<<<<<< HEAD
       "Microsoft.EntityFrameworkCore.InMemory/1.0.0-rc2-final": {
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "1.0.0-rc2-final"
 =======
+=======
+>>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
       "Microsoft.EntityFrameworkCore.Design/1.0.0-preview2-final": {
         "dependencies": {
           "Microsoft.EntityFrameworkCore.Design.Core": "1.0.0-preview2-final",
@@ -500,12 +573,16 @@
       "Microsoft.EntityFrameworkCore.InMemory/1.0.0-rc2-final": {
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "1.0.0"
+<<<<<<< HEAD
+>>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
+=======
 >>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
         },
         "runtime": {
           "lib/netstandard1.3/Microsoft.EntityFrameworkCore.InMemory.dll": {}
         }
       },
+<<<<<<< HEAD
 <<<<<<< HEAD
       "Microsoft.EntityFrameworkCore.Relational/1.0.0-rc2-final": {
         "dependencies": {
@@ -515,6 +592,8 @@
           "System.Diagnostics.DiagnosticSource": "4.0.0-rc2-24027",
           "System.Text.RegularExpressions": "4.0.12-rc2-24027"
 =======
+=======
+>>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
       "Microsoft.EntityFrameworkCore.Relational/1.0.0": {
         "dependencies": {
           "Microsoft.CSharp": "4.0.1",
@@ -522,6 +601,9 @@
           "System.Data.Common": "4.1.0",
           "System.Diagnostics.DiagnosticSource": "4.0.0",
           "System.Text.RegularExpressions": "4.1.0"
+<<<<<<< HEAD
+>>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
+=======
 >>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
         },
         "runtime": {
@@ -529,9 +611,15 @@
         }
       },
 <<<<<<< HEAD
+<<<<<<< HEAD
       "Microsoft.EntityFrameworkCore.Relational.Design/1.0.0-rc2-final": {
         "dependencies": {
           "Microsoft.EntityFrameworkCore.Relational": "1.0.0-rc2-final"
+=======
+      "Microsoft.EntityFrameworkCore.Relational.Design/1.0.0": {
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore.Relational": "1.0.0"
+>>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
 =======
       "Microsoft.EntityFrameworkCore.Relational.Design/1.0.0": {
         "dependencies": {
@@ -545,9 +633,15 @@
       "Microsoft.EntityFrameworkCore.SqlServer/1.0.0-rc2-final": {
         "dependencies": {
 <<<<<<< HEAD
+<<<<<<< HEAD
           "Microsoft.EntityFrameworkCore.Relational": "1.0.0-rc2-final",
           "System.Data.SqlClient": "4.1.0-rc2-24027",
           "System.Threading.Thread": "4.0.0-rc2-24027"
+=======
+          "Microsoft.EntityFrameworkCore.Relational": "1.0.0",
+          "System.Data.SqlClient": "4.1.0-rc2-24027",
+          "System.Threading.Thread": "4.0.0"
+>>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
 =======
           "Microsoft.EntityFrameworkCore.Relational": "1.0.0",
           "System.Data.SqlClient": "4.1.0-rc2-24027",
@@ -558,6 +652,7 @@
           "lib/netstandard1.3/Microsoft.EntityFrameworkCore.SqlServer.dll": {}
         }
       },
+<<<<<<< HEAD
 <<<<<<< HEAD
       "Microsoft.EntityFrameworkCore.Tools/1.0.0-preview1-final": {
         "dependencies": {
@@ -603,6 +698,8 @@
           "System.Threading": "4.0.11-rc2-24027",
           "System.Threading.Tasks": "4.0.11-rc2-24027"
 =======
+=======
+>>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
       "Microsoft.EntityFrameworkCore.SqlServer.Design/1.0.0-rc2-final": {
         "dependencies": {
           "Microsoft.EntityFrameworkCore.Relational.Design": "1.0.0",
@@ -631,12 +728,16 @@
           "System.Collections": "4.0.11",
           "System.Threading": "4.0.11",
           "System.Threading.Tasks": "4.0.11"
+<<<<<<< HEAD
+>>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
+=======
 >>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
         },
         "runtime": {
           "lib/netstandard1.0/Microsoft.Extensions.Caching.Abstractions.dll": {}
         }
       },
+<<<<<<< HEAD
 <<<<<<< HEAD
       "Microsoft.Extensions.Caching.Memory/1.0.0-rc2-final": {
         "dependencies": {
@@ -646,6 +747,8 @@
           "System.Linq": "4.1.0-rc2-24027",
           "System.Threading": "4.0.11-rc2-24027"
 =======
+=======
+>>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
       "Microsoft.Extensions.Caching.Memory/1.0.0": {
         "dependencies": {
           "Microsoft.Extensions.Caching.Abstractions": "1.0.0",
@@ -653,12 +756,16 @@
           "Microsoft.Extensions.Options": "1.0.0",
           "System.Linq": "4.1.0",
           "System.Threading": "4.0.11"
+<<<<<<< HEAD
+>>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
+=======
 >>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
         },
         "runtime": {
           "lib/netstandard1.3/Microsoft.Extensions.Caching.Memory.dll": {}
         }
       },
+<<<<<<< HEAD
 <<<<<<< HEAD
       "Microsoft.Extensions.CommandLineUtils/1.0.0-rc2-final": {
         "dependencies": {
@@ -668,6 +775,8 @@
           "System.Linq": "4.1.0-rc2-24027",
           "System.Resources.ResourceManager": "4.0.1-rc2-24027"
 =======
+=======
+>>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
       "Microsoft.Extensions.CommandLineUtils/1.0.0": {
         "dependencies": {
           "System.Collections": "4.0.11",
@@ -675,6 +784,9 @@
           "System.IO": "4.1.0",
           "System.Linq": "4.1.0",
           "System.Resources.ResourceManager": "4.0.1"
+<<<<<<< HEAD
+>>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
+=======
 >>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
         },
         "runtime": {
@@ -682,21 +794,28 @@
         }
       },
 <<<<<<< HEAD
+<<<<<<< HEAD
       "Microsoft.Extensions.Configuration.Abstractions/1.0.0-rc2-final": {
         "dependencies": {
           "Microsoft.Extensions.Primitives": "1.0.0-rc2-final",
           "System.Linq": "4.1.0-rc2-24027"
 =======
+=======
+>>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
       "Microsoft.Extensions.Configuration.Abstractions/1.0.0": {
         "dependencies": {
           "Microsoft.Extensions.Primitives": "1.0.0",
           "System.Linq": "4.1.0"
+<<<<<<< HEAD
+>>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
+=======
 >>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
         },
         "runtime": {
           "lib/netstandard1.0/Microsoft.Extensions.Configuration.Abstractions.dll": {}
         }
       },
+<<<<<<< HEAD
 <<<<<<< HEAD
       "Microsoft.Extensions.DependencyInjection/1.0.0-rc2-final": {
         "dependencies": {
@@ -707,6 +826,8 @@
           "System.Threading": "4.0.11-rc2-24027",
           "System.Threading.Tasks": "4.0.11-rc2-24027"
 =======
+=======
+>>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
       "Microsoft.Extensions.DependencyInjection/1.0.0": {
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection.Abstractions": "1.0.0",
@@ -715,12 +836,16 @@
           "System.Runtime.Extensions": "4.1.0",
           "System.Threading": "4.0.11",
           "System.Threading.Tasks": "4.0.11"
+<<<<<<< HEAD
+>>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
+=======
 >>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
         },
         "runtime": {
           "lib/netstandard1.1/Microsoft.Extensions.DependencyInjection.dll": {}
         }
       },
+<<<<<<< HEAD
 <<<<<<< HEAD
       "Microsoft.Extensions.DependencyInjection.Abstractions/1.0.0-rc2-final": {
         "dependencies": {
@@ -732,6 +857,8 @@
           "System.Reflection": "4.1.0-rc2-24027",
           "System.Resources.ResourceManager": "4.0.1-rc2-24027"
 =======
+=======
+>>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
       "Microsoft.Extensions.DependencyInjection.Abstractions/1.0.0": {
         "dependencies": {
           "System.ComponentModel": "4.0.1",
@@ -741,12 +868,16 @@
           "System.Linq.Expressions": "4.1.0",
           "System.Reflection": "4.1.0",
           "System.Resources.ResourceManager": "4.0.1"
+<<<<<<< HEAD
+>>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
+=======
 >>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
         },
         "runtime": {
           "lib/netstandard1.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {}
         }
       },
+<<<<<<< HEAD
 <<<<<<< HEAD
       "Microsoft.Extensions.DependencyModel/1.0.0-rc2-002702": {
         "dependencies": {
@@ -766,6 +897,8 @@
           "System.IO": "4.1.0-rc2-24027",
           "System.Resources.ResourceManager": "4.0.1-rc2-24027"
 =======
+=======
+>>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
       "Microsoft.Extensions.DependencyModel/1.0.0": {
         "dependencies": {
           "Microsoft.DotNet.InternalAbstractions": "1.0.0",
@@ -783,6 +916,9 @@
           "Microsoft.Extensions.Primitives": "1.0.0",
           "System.IO": "4.1.0",
           "System.Resources.ResourceManager": "4.0.1"
+<<<<<<< HEAD
+>>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
+=======
 >>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
         },
         "runtime": {
@@ -790,23 +926,30 @@
         }
       },
 <<<<<<< HEAD
+<<<<<<< HEAD
       "Microsoft.Extensions.Logging/1.0.0-rc2-final": {
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection.Abstractions": "1.0.0-rc2-final",
           "Microsoft.Extensions.Logging.Abstractions": "1.0.0-rc2-final",
           "System.Threading": "4.0.11-rc2-24027"
 =======
+=======
+>>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
       "Microsoft.Extensions.Logging/1.0.0": {
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection.Abstractions": "1.0.0",
           "Microsoft.Extensions.Logging.Abstractions": "1.0.0",
           "System.Threading": "4.0.11"
+<<<<<<< HEAD
+>>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
+=======
 >>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
         },
         "runtime": {
           "lib/netstandard1.1/Microsoft.Extensions.Logging.dll": {}
         }
       },
+<<<<<<< HEAD
 <<<<<<< HEAD
       "Microsoft.Extensions.Logging.Abstractions/1.0.0-rc2-final": {
         "dependencies": {
@@ -819,6 +962,8 @@
           "System.Runtime.Extensions": "4.1.0-rc2-24027",
           "System.Runtime.InteropServices": "4.1.0-rc2-24027"
 =======
+=======
+>>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
       "Microsoft.Extensions.Logging.Abstractions/1.0.0": {
         "dependencies": {
           "System.Collections": "4.0.11",
@@ -830,12 +975,16 @@
           "System.Resources.ResourceManager": "4.0.1",
           "System.Runtime.Extensions": "4.1.0",
           "System.Runtime.InteropServices": "4.1.0"
+<<<<<<< HEAD
+>>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
+=======
 >>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
         },
         "runtime": {
           "lib/netstandard1.1/Microsoft.Extensions.Logging.Abstractions.dll": {}
         }
       },
+<<<<<<< HEAD
 <<<<<<< HEAD
       "Microsoft.Extensions.Options/1.0.0-rc2-final": {
         "dependencies": {
@@ -851,6 +1000,8 @@
           "System.Runtime.Extensions": "4.1.0-rc2-24027",
           "System.Threading": "4.0.11-rc2-24027"
 =======
+=======
+>>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
       "Microsoft.Extensions.Options/1.0.0": {
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection.Abstractions": "1.0.0",
@@ -864,12 +1015,16 @@
           "System.Resources.ResourceManager": "4.0.1",
           "System.Runtime.Extensions": "4.1.0",
           "System.Threading": "4.0.11"
+<<<<<<< HEAD
+>>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
+=======
 >>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
         },
         "runtime": {
           "lib/netstandard1.0/Microsoft.Extensions.Options.dll": {}
         }
       },
+<<<<<<< HEAD
 <<<<<<< HEAD
       "Microsoft.Extensions.PlatformAbstractions/1.0.0-rc2-final": {
         "dependencies": {
@@ -894,16 +1049,22 @@
           "System.Resources.ResourceManager": "4.0.1-rc2-24027",
           "System.Runtime": "4.1.0-rc2-24027"
 =======
+=======
+>>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
       "Microsoft.Extensions.Primitives/1.0.0": {
         "dependencies": {
           "System.Resources.ResourceManager": "4.0.1",
           "System.Runtime": "4.1.0"
+<<<<<<< HEAD
+>>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
+=======
 >>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
         },
         "runtime": {
           "lib/netstandard1.0/Microsoft.Extensions.Primitives.dll": {}
         }
       },
+<<<<<<< HEAD
 <<<<<<< HEAD
       "Microsoft.NETCore.App/1.0.0-rc2-3002702": {
         "dependencies": {
@@ -997,6 +1158,8 @@
           "System.Runtime.InteropServices": "4.1.0-rc2-24027",
           "System.Threading": "4.0.11-rc2-24027"
 =======
+=======
+>>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
       "Microsoft.NETCore.App/1.0.0": {
         "dependencies": {
           "Libuv": "1.9.0",
@@ -1081,12 +1244,16 @@
           "System.Runtime.Extensions": "4.1.0",
           "System.Runtime.InteropServices": "4.1.0",
           "System.Threading": "4.0.11"
+<<<<<<< HEAD
+>>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
+=======
 >>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
         },
         "runtime": {
           "lib/netstandard1.3/Microsoft.VisualBasic.dll": {}
         }
       },
+<<<<<<< HEAD
 <<<<<<< HEAD
       "Microsoft.Win32.Primitives/4.0.1-rc2-24027": {
         "dependencies": {
@@ -1103,6 +1270,8 @@
           "System.Runtime.Handles": "4.0.1-rc2-24027",
           "System.Runtime.InteropServices": "4.1.0-rc2-24027"
 =======
+=======
+>>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
       "Microsoft.Win32.Primitives/4.0.1": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "1.0.1",
@@ -1120,6 +1289,9 @@
           "System.Runtime.Extensions": "4.1.0",
           "System.Runtime.Handles": "4.0.1",
           "System.Runtime.InteropServices": "4.1.0"
+<<<<<<< HEAD
+>>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
+=======
 >>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
         },
         "runtimeTargets": {
@@ -1133,6 +1305,7 @@
           }
         }
       },
+<<<<<<< HEAD
 <<<<<<< HEAD
       "NETStandard.Library/1.5.0-rc2-24027": {
         "dependencies": {
@@ -1190,6 +1363,8 @@
           "System.Security.Cryptography.Algorithms": "4.1.0-rc2-24027",
           "System.Threading.Thread": "4.0.0-rc2-24027"
 =======
+=======
+>>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
       "NETStandard.Library/1.6.0": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "1.0.1",
@@ -1273,6 +1448,9 @@
           "System.Diagnostics.Process": "4.1.0",
           "System.Security.Cryptography.Algorithms": "4.2.0",
           "System.Threading.Thread": "4.0.0"
+<<<<<<< HEAD
+>>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
+=======
 >>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
         },
         "runtime": {
@@ -1280,23 +1458,30 @@
         }
       },
 <<<<<<< HEAD
+<<<<<<< HEAD
       "NuGet.Configuration/3.5.0-beta-final": {
         "dependencies": {
           "NETStandard.Library": "1.5.0-rc2-24027",
           "NuGet.Common": "3.5.0-beta-final",
           "System.Xml.XDocument": "4.0.11-rc2-24027"
 =======
+=======
+>>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
       "NuGet.Configuration/3.5.0-beta2-1484": {
         "dependencies": {
           "NETStandard.Library": "1.6.0",
           "NuGet.Common": "3.5.0-beta2-1484",
           "System.Xml.XDocument": "4.0.11"
+<<<<<<< HEAD
+>>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
+=======
 >>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
         },
         "runtime": {
           "lib/netstandard1.3/NuGet.Configuration.dll": {}
         }
       },
+<<<<<<< HEAD
 <<<<<<< HEAD
       "NuGet.DependencyResolver.Core/3.5.0-beta-final": {
         "dependencies": {
@@ -1307,6 +1492,8 @@
           "NuGet.Repositories": "3.5.0-beta-final",
           "NuGet.RuntimeModel": "3.5.0-beta-final"
 =======
+=======
+>>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
       "NuGet.DependencyResolver.Core/3.5.0-beta2-1484": {
         "dependencies": {
           "NETStandard.Library": "1.6.0",
@@ -1315,6 +1502,9 @@
           "NuGet.Protocol.Core.v3": "3.5.0-beta2-1484",
           "NuGet.Repositories": "3.5.0-beta2-1484",
           "NuGet.RuntimeModel": "3.5.0-beta2-1484"
+<<<<<<< HEAD
+>>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
+=======
 >>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
         },
         "runtime": {
@@ -1322,10 +1512,16 @@
         }
       },
 <<<<<<< HEAD
+<<<<<<< HEAD
       "NuGet.Frameworks/3.5.0-beta-final": {
         "dependencies": {
           "NETStandard.Library": "1.5.0-rc2-24027",
           "NuGet.Versioning": "3.5.0-beta-final"
+=======
+      "NuGet.Frameworks/3.5.0-beta2-1484": {
+        "dependencies": {
+          "NETStandard.Library": "1.6.0"
+>>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
 =======
       "NuGet.Frameworks/3.5.0-beta2-1484": {
         "dependencies": {
@@ -1337,23 +1533,30 @@
         }
       },
 <<<<<<< HEAD
+<<<<<<< HEAD
       "NuGet.LibraryModel/3.5.0-beta-final": {
         "dependencies": {
           "NETStandard.Library": "1.5.0-rc2-24027",
           "NuGet.Frameworks": "3.5.0-beta-final",
           "NuGet.Versioning": "3.5.0-beta-final"
 =======
+=======
+>>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
       "NuGet.LibraryModel/3.5.0-beta2-1484": {
         "dependencies": {
           "NETStandard.Library": "1.6.0",
           "NuGet.Frameworks": "3.5.0-beta2-1484",
           "NuGet.Versioning": "3.5.0-beta2-1484"
+<<<<<<< HEAD
+>>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
+=======
 >>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
         },
         "runtime": {
           "lib/netstandard1.3/NuGet.LibraryModel.dll": {}
         }
       },
+<<<<<<< HEAD
 <<<<<<< HEAD
       "NuGet.Packaging/3.5.0-beta-final": {
         "dependencies": {
@@ -1362,12 +1565,17 @@
           "NuGet.Packaging.Core": "3.5.0-beta-final",
           "System.IO.Compression": "4.1.0-rc2-24027"
 =======
+=======
+>>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
       "NuGet.Packaging/3.5.0-beta2-1484": {
         "dependencies": {
           "NETStandard.Library": "1.6.0",
           "NuGet.Common": "3.5.0-beta2-1484",
           "NuGet.Packaging.Core": "3.5.0-beta2-1484",
           "System.IO.Compression": "4.1.0"
+<<<<<<< HEAD
+>>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
+=======
 >>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
         },
         "runtime": {
@@ -1375,18 +1583,24 @@
         }
       },
 <<<<<<< HEAD
+<<<<<<< HEAD
       "NuGet.Packaging.Core/3.5.0-beta-final": {
         "dependencies": {
           "NETStandard.Library": "1.5.0-rc2-24027",
           "NuGet.Packaging.Core.Types": "3.5.0-beta-final",
           "System.Xml.XDocument": "4.0.11-rc2-24027"
 =======
+=======
+>>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
       "NuGet.Packaging.Core/3.5.0-beta2-1484": {
         "dependencies": {
           "NETStandard.Library": "1.6.0",
           "NuGet.Common": "3.5.0-beta2-1484",
           "NuGet.Packaging.Core.Types": "3.5.0-beta2-1484",
           "System.Xml.XDocument": "4.0.11"
+<<<<<<< HEAD
+>>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
+=======
 >>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
         },
         "runtime": {
@@ -1394,22 +1608,29 @@
         }
       },
 <<<<<<< HEAD
+<<<<<<< HEAD
       "NuGet.Packaging.Core.Types/3.5.0-beta-final": {
         "dependencies": {
           "NETStandard.Library": "1.5.0-rc2-24027",
           "NuGet.Frameworks": "3.5.0-beta-final"
 =======
+=======
+>>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
       "NuGet.Packaging.Core.Types/3.5.0-beta2-1484": {
         "dependencies": {
           "NETStandard.Library": "1.6.0",
           "NuGet.Frameworks": "3.5.0-beta2-1484",
           "NuGet.Versioning": "3.5.0-beta2-1484"
+<<<<<<< HEAD
+>>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
+=======
 >>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
         },
         "runtime": {
           "lib/netstandard1.3/NuGet.Packaging.Core.Types.dll": {}
         }
       },
+<<<<<<< HEAD
 <<<<<<< HEAD
       "NuGet.ProjectModel/3.5.0-beta-final": {
         "dependencies": {
@@ -1419,6 +1640,8 @@
           "System.Dynamic.Runtime": "4.0.11-rc2-24027",
           "System.Threading.Thread": "4.0.0-rc2-24027"
 =======
+=======
+>>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
       "NuGet.ProjectModel/3.5.0-beta2-1484": {
         "dependencies": {
           "NETStandard.Library": "1.6.0",
@@ -1426,12 +1649,16 @@
           "NuGet.DependencyResolver.Core": "3.5.0-beta2-1484",
           "System.Dynamic.Runtime": "4.0.11",
           "System.Threading.Thread": "4.0.0"
+<<<<<<< HEAD
+>>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
+=======
 >>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
         },
         "runtime": {
           "lib/netstandard1.3/NuGet.ProjectModel.dll": {}
         }
       },
+<<<<<<< HEAD
 <<<<<<< HEAD
       "NuGet.Protocol.Core.Types/3.5.0-beta-final": {
         "dependencies": {
@@ -1441,6 +1668,8 @@
           "NuGet.Packaging": "3.5.0-beta-final",
           "System.Net.Http": "4.0.1-rc2-24027"
 =======
+=======
+>>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
       "NuGet.Protocol.Core.Types/3.5.0-beta2-1484": {
         "dependencies": {
           "NETStandard.Library": "1.6.0",
@@ -1448,12 +1677,16 @@
           "NuGet.Configuration": "3.5.0-beta2-1484",
           "NuGet.Packaging": "3.5.0-beta2-1484",
           "System.Net.Http": "4.1.0"
+<<<<<<< HEAD
+>>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
+=======
 >>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
         },
         "runtime": {
           "lib/netstandard1.3/NuGet.Protocol.Core.Types.dll": {}
         }
       },
+<<<<<<< HEAD
 <<<<<<< HEAD
       "NuGet.Protocol.Core.v3/3.5.0-beta-final": {
         "dependencies": {
@@ -1464,6 +1697,8 @@
           "NuGet.Protocol.Core.Types": "3.5.0-beta-final",
           "System.Dynamic.Runtime": "4.0.11-rc2-24027"
 =======
+=======
+>>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
       "NuGet.Protocol.Core.v3/3.5.0-beta2-1484": {
         "dependencies": {
           "NETStandard.Library": "1.6.0",
@@ -1472,6 +1707,9 @@
           "NuGet.Packaging": "3.5.0-beta2-1484",
           "NuGet.Protocol.Core.Types": "3.5.0-beta2-1484",
           "System.Dynamic.Runtime": "4.0.11"
+<<<<<<< HEAD
+>>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
+=======
 >>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
         },
         "runtime": {
@@ -1479,21 +1717,28 @@
         }
       },
 <<<<<<< HEAD
+<<<<<<< HEAD
       "NuGet.Repositories/3.5.0-beta-final": {
         "dependencies": {
           "NETStandard.Library": "1.5.0-rc2-24027",
           "NuGet.Packaging": "3.5.0-beta-final"
 =======
+=======
+>>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
       "NuGet.Repositories/3.5.0-beta2-1484": {
         "dependencies": {
           "NETStandard.Library": "1.6.0",
           "NuGet.Packaging": "3.5.0-beta2-1484"
+<<<<<<< HEAD
+>>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
+=======
 >>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
         },
         "runtime": {
           "lib/netstandard1.3/NuGet.Repositories.dll": {}
         }
       },
+<<<<<<< HEAD
 <<<<<<< HEAD
       "NuGet.RuntimeModel/3.5.0-beta-final": {
         "dependencies": {
@@ -1504,6 +1749,8 @@
           "System.Dynamic.Runtime": "4.0.11-rc2-24027",
           "System.ObjectModel": "4.0.12-rc2-24027"
 =======
+=======
+>>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
       "NuGet.RuntimeModel/3.5.0-beta2-1484": {
         "dependencies": {
           "NETStandard.Library": "1.6.0",
@@ -1512,6 +1759,9 @@
           "NuGet.Versioning": "3.5.0-beta2-1484",
           "System.Dynamic.Runtime": "4.0.11",
           "System.ObjectModel": "4.0.12"
+<<<<<<< HEAD
+>>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
+=======
 >>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
         },
         "runtime": {
@@ -1519,9 +1769,15 @@
         }
       },
 <<<<<<< HEAD
+<<<<<<< HEAD
       "NuGet.Versioning/3.5.0-beta-final": {
         "dependencies": {
           "NETStandard.Library": "1.5.0-rc2-24027"
+=======
+      "NuGet.Versioning/3.5.0-beta2-1484": {
+        "dependencies": {
+          "NETStandard.Library": "1.6.0"
+>>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
 =======
       "NuGet.Versioning/3.5.0-beta2-1484": {
         "dependencies": {
@@ -1533,6 +1789,7 @@
         }
       },
 <<<<<<< HEAD
+<<<<<<< HEAD
       "Remotion.Linq/2.0.2": {
         "runtime": {
           "lib/portable-net45+win+wpa81+wp80/Remotion.Linq.dll": {}
@@ -1540,6 +1797,8 @@
       },
       "runtime.native.System/4.0.0-rc2-24027": {},
 =======
+=======
+>>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
       "Remotion.Linq/2.1.1": {
         "dependencies": {
           "System.Collections": "4.0.11",
@@ -1564,6 +1823,9 @@
           "Microsoft.NETCore.Targets": "1.0.1"
         }
       },
+<<<<<<< HEAD
+>>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
+=======
 >>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
       "runtime.native.System.Data.SqlClient.sni/4.0.0-rc2-24027": {
         "dependencies": {
@@ -1572,11 +1834,14 @@
         }
       },
 <<<<<<< HEAD
+<<<<<<< HEAD
       "runtime.native.System.IO.Compression/4.1.0-rc2-24027": {},
       "runtime.native.System.Net.Http/4.0.1-rc2-24027": {},
       "runtime.native.System.Net.Security/4.0.1-rc2-24027": {},
       "runtime.native.System.Security.Cryptography/4.0.0-rc2-24027": {},
 =======
+=======
+>>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
       "runtime.native.System.IO.Compression/4.1.0": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "1.0.1",
@@ -1601,6 +1866,9 @@
           "Microsoft.NETCore.Targets": "1.0.1"
         }
       },
+<<<<<<< HEAD
+>>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
+=======
 >>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
       "runtime.win7-x64.runtime.native.System.Data.SqlClient.sni/4.0.1-rc2-24027": {
         "runtimeTargets": {
@@ -1619,6 +1887,7 @@
         }
       },
 <<<<<<< HEAD
+<<<<<<< HEAD
       "System.AppContext/4.1.0-rc2-24027": {
         "dependencies": {
           "System.Runtime": "4.1.0-rc2-24027"
@@ -1632,6 +1901,8 @@
           "System.Runtime": "4.1.0-rc2-24027",
           "System.Threading": "4.0.11-rc2-24027"
 =======
+=======
+>>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
       "System.AppContext/4.1.0": {
         "dependencies": {
           "System.Runtime": "4.1.0"
@@ -1647,12 +1918,16 @@
           "System.Resources.ResourceManager": "4.0.1",
           "System.Runtime": "4.1.0",
           "System.Threading": "4.0.11"
+<<<<<<< HEAD
+>>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
+=======
 >>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
         },
         "runtime": {
           "lib/netstandard1.1/System.Buffers.dll": {}
         }
       },
+<<<<<<< HEAD
 <<<<<<< HEAD
       "System.Collections/4.0.11-rc2-24027": {
         "dependencies": {
@@ -1672,6 +1947,8 @@
           "System.Threading": "4.0.11-rc2-24027",
           "System.Threading.Tasks": "4.0.11-rc2-24027"
 =======
+=======
+>>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
       "System.Collections/4.0.11": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "1.0.1",
@@ -1691,12 +1968,16 @@
           "System.Runtime.Extensions": "4.1.0",
           "System.Threading": "4.0.11",
           "System.Threading.Tasks": "4.0.11"
+<<<<<<< HEAD
+>>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
+=======
 >>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
         },
         "runtime": {
           "lib/netstandard1.3/System.Collections.Concurrent.dll": {}
         }
       },
+<<<<<<< HEAD
 <<<<<<< HEAD
       "System.Collections.Immutable/1.2.0-rc2-24027": {
         "dependencies": {
@@ -1709,6 +1990,8 @@
           "System.Runtime.Extensions": "4.1.0-rc2-24027",
           "System.Threading": "4.0.11-rc2-24027"
 =======
+=======
+>>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
       "System.Collections.Immutable/1.2.0": {
         "dependencies": {
           "System.Collections": "4.0.11",
@@ -1719,12 +2002,16 @@
           "System.Runtime": "4.1.0",
           "System.Runtime.Extensions": "4.1.0",
           "System.Threading": "4.0.11"
+<<<<<<< HEAD
+>>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
+=======
 >>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
         },
         "runtime": {
           "lib/netstandard1.0/System.Collections.Immutable.dll": {}
         }
       },
+<<<<<<< HEAD
 <<<<<<< HEAD
       "System.Collections.NonGeneric/4.0.1-rc2-24027": {
         "dependencies": {
@@ -1735,6 +2022,8 @@
           "System.Runtime.Extensions": "4.1.0-rc2-24027",
           "System.Threading": "4.0.11-rc2-24027"
 =======
+=======
+>>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
       "System.Collections.NonGeneric/4.0.1": {
         "dependencies": {
           "System.Diagnostics.Debug": "4.0.11",
@@ -1743,12 +2032,16 @@
           "System.Runtime": "4.1.0",
           "System.Runtime.Extensions": "4.1.0",
           "System.Threading": "4.0.11"
+<<<<<<< HEAD
+>>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
+=======
 >>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
         },
         "runtime": {
           "lib/netstandard1.3/System.Collections.NonGeneric.dll": {}
         }
       },
+<<<<<<< HEAD
 <<<<<<< HEAD
       "System.Collections.Specialized/4.0.1-rc2-24027": {
         "dependencies": {
@@ -1772,11 +2065,17 @@
         "dependencies": {
           "System.Runtime": "4.1.0"
 >>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
+=======
+      "System.ComponentModel/4.0.1": {
+        "dependencies": {
+          "System.Runtime": "4.1.0"
+>>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
         },
         "runtime": {
           "lib/netstandard1.3/System.ComponentModel.dll": {}
         }
       },
+<<<<<<< HEAD
 <<<<<<< HEAD
       "System.ComponentModel.Annotations/4.1.0-rc2-24027": {
         "dependencies": {
@@ -1792,6 +2091,8 @@
           "System.Text.RegularExpressions": "4.0.12-rc2-24027",
           "System.Threading": "4.0.11-rc2-24027"
 =======
+=======
+>>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
       "System.ComponentModel.Annotations/4.1.0": {
         "dependencies": {
           "System.Collections": "4.0.11",
@@ -1805,12 +2106,16 @@
           "System.Runtime.Extensions": "4.1.0",
           "System.Text.RegularExpressions": "4.1.0",
           "System.Threading": "4.0.11"
+<<<<<<< HEAD
+>>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
+=======
 >>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
         },
         "runtime": {
           "lib/netstandard1.4/System.ComponentModel.Annotations.dll": {}
         }
       },
+<<<<<<< HEAD
 <<<<<<< HEAD
       "System.Console/4.0.0-rc2-24027": {
         "dependencies": {
@@ -1833,6 +2138,8 @@
         "runtime": {
           "lib/netstandard1.0/System.Data.Common.dll": {}
 =======
+=======
+>>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
       "System.Console/4.0.0": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "1.0.1",
@@ -1855,11 +2162,15 @@
         },
         "runtime": {
           "lib/netstandard1.2/System.Data.Common.dll": {}
+<<<<<<< HEAD
+>>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
+=======
 >>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
         }
       },
       "System.Data.SqlClient/4.1.0-rc2-24027": {
         "dependencies": {
+<<<<<<< HEAD
 <<<<<<< HEAD
           "Microsoft.Win32.Primitives": "4.0.1-rc2-24027",
           "System.Collections": "4.0.11-rc2-24027",
@@ -1897,6 +2208,8 @@
           "System.Threading.Timer": "4.0.1-rc2-24027",
           "System.Xml.ReaderWriter": "4.0.11-rc2-24027",
 =======
+=======
+>>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
           "Microsoft.Win32.Primitives": "4.0.1",
           "System.Collections": "4.0.11",
           "System.Collections.Concurrent": "4.0.12",
@@ -1932,6 +2245,9 @@
           "System.Threading.ThreadPool": "4.0.10",
           "System.Threading.Timer": "4.0.1",
           "System.Xml.ReaderWriter": "4.0.11",
+<<<<<<< HEAD
+>>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
+=======
 >>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
           "runtime.native.System.Data.SqlClient.sni": "4.0.0-rc2-24027"
         },
@@ -1947,6 +2263,7 @@
         }
       },
 <<<<<<< HEAD
+<<<<<<< HEAD
       "System.Diagnostics.Debug/4.0.11-rc2-24027": {
         "dependencies": {
           "System.Runtime": "4.1.0-rc2-24027"
@@ -1960,6 +2277,8 @@
           "System.Runtime": "4.1.0-rc2-24027",
           "System.Threading": "4.0.11-rc2-24027"
 =======
+=======
+>>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
       "System.Diagnostics.Debug/4.0.11": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "1.0.1",
@@ -1974,12 +2293,16 @@
           "System.Reflection": "4.1.0",
           "System.Runtime": "4.1.0",
           "System.Threading": "4.0.11"
+<<<<<<< HEAD
+>>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
+=======
 >>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
         },
         "runtime": {
           "lib/netstandard1.3/System.Diagnostics.DiagnosticSource.dll": {}
         }
       },
+<<<<<<< HEAD
 <<<<<<< HEAD
       "System.Diagnostics.FileVersionInfo/4.0.0-rc2-24027": {
         "dependencies": {
@@ -1992,6 +2315,8 @@
           "System.Runtime.Extensions": "4.1.0-rc2-24027",
           "System.Runtime.InteropServices": "4.1.0-rc2-24027"
 =======
+=======
+>>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
       "System.Diagnostics.FileVersionInfo/4.0.0": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "1.0.1",
@@ -2003,6 +2328,9 @@
           "System.Runtime": "4.1.0",
           "System.Runtime.Extensions": "4.1.0",
           "System.Runtime.InteropServices": "4.1.0"
+<<<<<<< HEAD
+>>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
+=======
 >>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
         },
         "runtimeTargets": {
@@ -2011,8 +2339,13 @@
             "assetType": "runtime"
           },
 <<<<<<< HEAD
+<<<<<<< HEAD
           "runtimes/win7/lib/netstandard1.3/System.Diagnostics.FileVersionInfo.dll": {
             "rid": "win7",
+=======
+          "runtimes/win/lib/netstandard1.3/System.Diagnostics.FileVersionInfo.dll": {
+            "rid": "win",
+>>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
 =======
           "runtimes/win/lib/netstandard1.3/System.Diagnostics.FileVersionInfo.dll": {
             "rid": "win",
@@ -2021,6 +2354,7 @@
           }
         }
       },
+<<<<<<< HEAD
 <<<<<<< HEAD
       "System.Diagnostics.Process/4.1.0-rc2-24027": {
         "dependencies": {
@@ -2044,6 +2378,8 @@
           "System.Threading.Thread": "4.0.0-rc2-24027",
           "System.Threading.ThreadPool": "4.0.10-rc2-24027"
 =======
+=======
+>>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
       "System.Diagnostics.Process/4.1.0": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "1.0.1",
@@ -2067,6 +2403,9 @@
           "System.Threading.Thread": "4.0.0",
           "System.Threading.ThreadPool": "4.0.10",
           "runtime.native.System": "4.0.0"
+<<<<<<< HEAD
+>>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
+=======
 >>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
         },
         "runtimeTargets": {
@@ -2075,6 +2414,7 @@
             "assetType": "runtime"
           },
 <<<<<<< HEAD
+<<<<<<< HEAD
           "runtimes/osx.10.10/lib/netstandard1.4/System.Diagnostics.Process.dll": {
             "rid": "osx.10.10",
             "assetType": "runtime"
@@ -2082,23 +2422,31 @@
           "runtimes/win7/lib/netstandard1.4/System.Diagnostics.Process.dll": {
             "rid": "win7",
 =======
+=======
+>>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
           "runtimes/osx/lib/netstandard1.4/System.Diagnostics.Process.dll": {
             "rid": "osx",
             "assetType": "runtime"
           },
           "runtimes/win/lib/netstandard1.4/System.Diagnostics.Process.dll": {
             "rid": "win",
+<<<<<<< HEAD
+>>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
+=======
 >>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
             "assetType": "runtime"
           }
         }
       },
 <<<<<<< HEAD
+<<<<<<< HEAD
       "System.Diagnostics.StackTrace/4.0.1-rc2-24027": {
         "dependencies": {
           "System.Reflection": "4.1.0-rc2-24027",
           "System.Runtime": "4.1.0-rc2-24027"
 =======
+=======
+>>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
       "System.Diagnostics.StackTrace/4.0.1": {
         "dependencies": {
           "System.Collections.Immutable": "1.2.0",
@@ -2107,12 +2455,16 @@
           "System.Reflection.Metadata": "1.3.0",
           "System.Runtime": "4.1.0",
           "System.Runtime.Extensions": "4.1.0"
+<<<<<<< HEAD
+>>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
+=======
 >>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
         },
         "runtime": {
           "lib/netstandard1.3/System.Diagnostics.StackTrace.dll": {}
         }
       },
+<<<<<<< HEAD
 <<<<<<< HEAD
       "System.Diagnostics.Tools/4.0.1-rc2-24027": {
         "dependencies": {
@@ -2142,6 +2494,8 @@
           "System.Runtime.Extensions": "4.1.0-rc2-24027",
           "System.Threading": "4.0.11-rc2-24027"
 =======
+=======
+>>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
       "System.Diagnostics.Tools/4.0.1": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "1.0.1",
@@ -2173,12 +2527,16 @@
           "System.Runtime": "4.1.0",
           "System.Runtime.Extensions": "4.1.0",
           "System.Threading": "4.0.11"
+<<<<<<< HEAD
+>>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
+=======
 >>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
         },
         "runtime": {
           "lib/netstandard1.3/System.Dynamic.Runtime.dll": {}
         }
       },
+<<<<<<< HEAD
 <<<<<<< HEAD
       "System.Globalization/4.0.11-rc2-24027": {
         "dependencies": {
@@ -2199,6 +2557,8 @@
           "System.Runtime.Extensions": "4.1.0-rc2-24027",
           "System.Runtime.InteropServices": "4.1.0-rc2-24027"
 =======
+=======
+>>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
       "System.Globalization/4.0.11": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "1.0.1",
@@ -2222,6 +2582,9 @@
           "System.Runtime": "4.1.0",
           "System.Runtime.Extensions": "4.1.0",
           "System.Runtime.InteropServices": "4.1.0"
+<<<<<<< HEAD
+>>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
+=======
 >>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
         },
         "runtimeTargets": {
@@ -2230,8 +2593,13 @@
             "assetType": "runtime"
           },
 <<<<<<< HEAD
+<<<<<<< HEAD
           "runtimes/win7/lib/netstandard1.3/System.Globalization.Extensions.dll": {
             "rid": "win7",
+=======
+          "runtimes/win/lib/netstandard1.3/System.Globalization.Extensions.dll": {
+            "rid": "win",
+>>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
 =======
           "runtimes/win/lib/netstandard1.3/System.Globalization.Extensions.dll": {
             "rid": "win",
@@ -2240,6 +2608,7 @@
           }
         }
       },
+<<<<<<< HEAD
 <<<<<<< HEAD
       "System.IO/4.1.0-rc2-24027": {
         "dependencies": {
@@ -2263,6 +2632,8 @@
           "System.Threading.Tasks": "4.0.11-rc2-24027",
           "runtime.native.System.IO.Compression": "4.1.0-rc2-24027"
 =======
+=======
+>>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
       "System.Interactive.Async/3.0.0": {
         "dependencies": {
           "System.Collections": "4.0.11",
@@ -2303,6 +2674,9 @@
           "System.Threading.Tasks": "4.0.11",
           "runtime.native.System": "4.0.0",
           "runtime.native.System.IO.Compression": "4.1.0"
+<<<<<<< HEAD
+>>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
+=======
 >>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
         },
         "runtimeTargets": {
@@ -2311,8 +2685,13 @@
             "assetType": "runtime"
           },
 <<<<<<< HEAD
+<<<<<<< HEAD
           "runtimes/win7/lib/netstandard1.3/System.IO.Compression.dll": {
             "rid": "win7",
+=======
+          "runtimes/win/lib/netstandard1.3/System.IO.Compression.dll": {
+            "rid": "win",
+>>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
 =======
           "runtimes/win/lib/netstandard1.3/System.IO.Compression.dll": {
             "rid": "win",
@@ -2321,6 +2700,7 @@
           }
         }
       },
+<<<<<<< HEAD
 <<<<<<< HEAD
       "System.IO.Compression.ZipFile/4.0.1-rc2-24027": {
         "dependencies": {
@@ -2334,6 +2714,8 @@
           "System.Runtime.Extensions": "4.1.0-rc2-24027",
           "System.Text.Encoding": "4.0.11-rc2-24027"
 =======
+=======
+>>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
       "System.IO.Compression.ZipFile/4.0.1": {
         "dependencies": {
           "System.Buffers": "4.0.0",
@@ -2345,12 +2727,16 @@
           "System.Runtime": "4.1.0",
           "System.Runtime.Extensions": "4.1.0",
           "System.Text.Encoding": "4.0.11"
+<<<<<<< HEAD
+>>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
+=======
 >>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
         },
         "runtime": {
           "lib/netstandard1.3/System.IO.Compression.ZipFile.dll": {}
         }
       },
+<<<<<<< HEAD
 <<<<<<< HEAD
       "System.IO.FileSystem/4.0.1-rc2-24027": {
         "dependencies": {
@@ -2366,6 +2752,8 @@
         "dependencies": {
           "System.Runtime": "4.1.0-rc2-24027"
 =======
+=======
+>>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
       "System.IO.FileSystem/4.0.1": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "1.0.1",
@@ -2381,12 +2769,16 @@
       "System.IO.FileSystem.Primitives/4.0.1": {
         "dependencies": {
           "System.Runtime": "4.1.0"
+<<<<<<< HEAD
+>>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
+=======
 >>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
         },
         "runtime": {
           "lib/netstandard1.3/System.IO.FileSystem.Primitives.dll": {}
         }
       },
+<<<<<<< HEAD
 <<<<<<< HEAD
       "System.IO.FileSystem.Watcher/4.0.0-rc2-24027": {
         "dependencies": {
@@ -2406,6 +2798,8 @@
           "System.Threading.Thread": "4.0.0-rc2-24027",
           "runtime.native.System": "4.0.0-rc2-24027"
 =======
+=======
+>>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
       "System.IO.FileSystem.Watcher/4.0.0": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "1.0.1",
@@ -2424,6 +2818,9 @@
           "System.Threading.Tasks": "4.0.11",
           "System.Threading.Thread": "4.0.0",
           "runtime.native.System": "4.0.0"
+<<<<<<< HEAD
+>>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
+=======
 >>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
         },
         "runtimeTargets": {
@@ -2436,8 +2833,13 @@
             "assetType": "runtime"
           },
 <<<<<<< HEAD
+<<<<<<< HEAD
           "runtimes/win7/lib/netstandard1.3/System.IO.FileSystem.Watcher.dll": {
             "rid": "win7",
+=======
+          "runtimes/win/lib/netstandard1.3/System.IO.FileSystem.Watcher.dll": {
+            "rid": "win",
+>>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
 =======
           "runtimes/win/lib/netstandard1.3/System.IO.FileSystem.Watcher.dll": {
             "rid": "win",
@@ -2446,6 +2848,7 @@
           }
         }
       },
+<<<<<<< HEAD
 <<<<<<< HEAD
       "System.IO.MemoryMappedFiles/4.0.0-rc2-24027": {
         "dependencies": {
@@ -2461,6 +2864,8 @@
           "System.Threading": "4.0.11-rc2-24027",
           "System.Threading.Tasks": "4.0.11-rc2-24027"
 =======
+=======
+>>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
       "System.IO.MemoryMappedFiles/4.0.0": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "1.0.1",
@@ -2476,6 +2881,9 @@
           "System.Threading": "4.0.11",
           "System.Threading.Tasks": "4.0.11",
           "runtime.native.System": "4.0.0"
+<<<<<<< HEAD
+>>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
+=======
 >>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
         },
         "runtimeTargets": {
@@ -2484,8 +2892,13 @@
             "assetType": "runtime"
           },
 <<<<<<< HEAD
+<<<<<<< HEAD
           "runtimes/win7/lib/netstandard1.3/System.IO.MemoryMappedFiles.dll": {
             "rid": "win7",
+=======
+          "runtimes/win/lib/netstandard1.3/System.IO.MemoryMappedFiles.dll": {
+            "rid": "win",
+>>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
 =======
           "runtimes/win/lib/netstandard1.3/System.IO.MemoryMappedFiles.dll": {
             "rid": "win",
@@ -2496,6 +2909,7 @@
       },
       "System.IO.Pipes/4.0.0-rc2-24027": {
         "dependencies": {
+<<<<<<< HEAD
 <<<<<<< HEAD
           "System.Diagnostics.Debug": "4.0.11-rc2-24027",
           "System.IO": "4.1.0-rc2-24027",
@@ -2514,6 +2928,8 @@
           "System.Threading.Overlapped": "4.0.1-rc2-24027",
           "System.Threading.Tasks": "4.0.11-rc2-24027"
 =======
+=======
+>>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
           "System.Diagnostics.Debug": "4.0.11",
           "System.IO": "4.1.0",
           "System.IO.FileSystem.Primitives": "4.0.1",
@@ -2530,6 +2946,9 @@
           "System.Threading": "4.0.11",
           "System.Threading.Overlapped": "4.0.1",
           "System.Threading.Tasks": "4.0.11"
+<<<<<<< HEAD
+>>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
+=======
 >>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
         },
         "runtimeTargets": {
@@ -2544,6 +2963,7 @@
         }
       },
 <<<<<<< HEAD
+<<<<<<< HEAD
       "System.IO.UnmanagedMemoryStream/4.0.1-rc2-24027": {
         "dependencies": {
           "System.IO": "4.1.0-rc2-24027",
@@ -2554,6 +2974,8 @@
           "System.Threading": "4.0.11-rc2-24027",
           "System.Threading.Tasks": "4.0.11-rc2-24027"
 =======
+=======
+>>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
       "System.IO.UnmanagedMemoryStream/4.0.1": {
         "dependencies": {
           "System.IO": "4.1.0",
@@ -2563,12 +2985,16 @@
           "System.Runtime.InteropServices": "4.1.0",
           "System.Threading": "4.0.11",
           "System.Threading.Tasks": "4.0.11"
+<<<<<<< HEAD
+>>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
+=======
 >>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
         },
         "runtime": {
           "lib/netstandard1.3/System.IO.UnmanagedMemoryStream.dll": {}
         }
       },
+<<<<<<< HEAD
 <<<<<<< HEAD
       "System.Linq/4.1.0-rc2-24027": {
         "dependencies": {
@@ -2619,6 +3045,8 @@
           "System.Threading": "4.0.11-rc2-24027",
           "System.Threading.Tasks": "4.0.11-rc2-24027"
 =======
+=======
+>>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
       "System.Linq/4.1.0": {
         "dependencies": {
           "System.Collections": "4.0.11",
@@ -2667,12 +3095,16 @@
           "System.Runtime.Extensions": "4.1.0",
           "System.Threading": "4.0.11",
           "System.Threading.Tasks": "4.0.11"
+<<<<<<< HEAD
+>>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
+=======
 >>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
         },
         "runtime": {
           "lib/netstandard1.3/System.Linq.Parallel.dll": {}
         }
       },
+<<<<<<< HEAD
 <<<<<<< HEAD
       "System.Linq.Queryable/4.0.1-rc2-24027": {
         "dependencies": {
@@ -2685,6 +3117,8 @@
           "System.Resources.ResourceManager": "4.0.1-rc2-24027",
           "System.Runtime": "4.1.0-rc2-24027"
 =======
+=======
+>>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
       "System.Linq.Queryable/4.0.1": {
         "dependencies": {
           "System.Collections": "4.0.11",
@@ -2695,12 +3129,16 @@
           "System.Reflection.Extensions": "4.0.1",
           "System.Resources.ResourceManager": "4.0.1",
           "System.Runtime": "4.1.0"
+<<<<<<< HEAD
+>>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
+=======
 >>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
         },
         "runtime": {
           "lib/netstandard1.3/System.Linq.Queryable.dll": {}
         }
       },
+<<<<<<< HEAD
 <<<<<<< HEAD
       "System.Net.Http/4.0.1-rc2-24027": {
         "dependencies": {
@@ -2736,6 +3174,8 @@
           "runtimes/win7/lib/netstandard1.3/System.Net.Http.dll": {
             "rid": "win7",
 =======
+=======
+>>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
       "System.Net.Http/4.1.0": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "1.0.1",
@@ -2772,11 +3212,15 @@
           },
           "runtimes/win/lib/netstandard1.3/System.Net.Http.dll": {
             "rid": "win",
+<<<<<<< HEAD
+>>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
+=======
 >>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
             "assetType": "runtime"
           }
         }
       },
+<<<<<<< HEAD
 <<<<<<< HEAD
       "System.Net.NameResolution/4.0.0-rc2-24027": {
         "dependencies": {
@@ -2793,6 +3237,8 @@
           "System.Threading": "4.0.11-rc2-24027",
           "System.Threading.Tasks": "4.0.11-rc2-24027"
 =======
+=======
+>>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
       "System.Net.NameResolution/4.0.0": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "1.0.1",
@@ -2809,6 +3255,9 @@
           "System.Threading": "4.0.11",
           "System.Threading.Tasks": "4.0.11",
           "runtime.native.System": "4.0.0"
+<<<<<<< HEAD
+>>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
+=======
 >>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
         },
         "runtimeTargets": {
@@ -2817,8 +3266,13 @@
             "assetType": "runtime"
           },
 <<<<<<< HEAD
+<<<<<<< HEAD
           "runtimes/win7/lib/netstandard1.3/System.Net.NameResolution.dll": {
             "rid": "win7",
+=======
+          "runtimes/win/lib/netstandard1.3/System.Net.NameResolution.dll": {
+            "rid": "win",
+>>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
 =======
           "runtimes/win/lib/netstandard1.3/System.Net.NameResolution.dll": {
             "rid": "win",
@@ -2827,6 +3281,7 @@
           }
         }
       },
+<<<<<<< HEAD
 <<<<<<< HEAD
       "System.Net.Primitives/4.0.11-rc2-24027": {
         "dependencies": {
@@ -2849,6 +3304,8 @@
           "System.Threading": "4.0.11-rc2-24027",
           "System.Threading.Tasks": "4.0.11-rc2-24027"
 =======
+=======
+>>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
       "System.Net.Primitives/4.0.11": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "1.0.1",
@@ -2872,6 +3329,9 @@
           "System.Runtime": "4.1.0",
           "System.Threading": "4.0.11",
           "System.Threading.Tasks": "4.0.11"
+<<<<<<< HEAD
+>>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
+=======
 >>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
         },
         "runtimeTargets": {
@@ -2880,8 +3340,13 @@
             "assetType": "runtime"
           },
 <<<<<<< HEAD
+<<<<<<< HEAD
           "runtimes/win7/lib/netstandard1.3/System.Net.Requests.dll": {
             "rid": "win7",
+=======
+          "runtimes/win/lib/netstandard1.3/System.Net.Requests.dll": {
+            "rid": "win",
+>>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
 =======
           "runtimes/win/lib/netstandard1.3/System.Net.Requests.dll": {
             "rid": "win",
@@ -2890,6 +3355,7 @@
           }
         }
       },
+<<<<<<< HEAD
 <<<<<<< HEAD
       "System.Net.Security/4.0.0-rc2-24027": {
         "dependencies": {
@@ -2927,6 +3393,8 @@
           "runtimes/win7/lib/netstandard1.3/System.Net.Security.dll": {
             "rid": "win7",
 =======
+=======
+>>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
       "System.Net.Security/4.0.0": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "1.0.1",
@@ -2965,11 +3433,15 @@
           },
           "runtimes/win/lib/netstandard1.3/System.Net.Security.dll": {
             "rid": "win",
+<<<<<<< HEAD
+>>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
+=======
 >>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
             "assetType": "runtime"
           }
         }
       },
+<<<<<<< HEAD
 <<<<<<< HEAD
       "System.Net.Sockets/4.1.0-rc2-24027": {
         "dependencies": {
@@ -2987,6 +3459,8 @@
           "System.Runtime": "4.1.0-rc2-24027",
           "System.Runtime.Extensions": "4.1.0-rc2-24027"
 =======
+=======
+>>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
       "System.Net.Sockets/4.1.0": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "1.0.1",
@@ -3003,12 +3477,16 @@
           "System.Resources.ResourceManager": "4.0.1",
           "System.Runtime": "4.1.0",
           "System.Runtime.Extensions": "4.1.0"
+<<<<<<< HEAD
+>>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
+=======
 >>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
         },
         "runtime": {
           "lib/netstandard1.3/System.Net.WebHeaderCollection.dll": {}
         }
       },
+<<<<<<< HEAD
 <<<<<<< HEAD
       "System.Net.WebSockets/4.0.0-rc2-24027": {
         "dependencies": {
@@ -3017,18 +3495,24 @@
           "System.Runtime": "4.1.0-rc2-24027",
           "System.Threading.Tasks": "4.0.11-rc2-24027"
 =======
+=======
+>>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
       "System.Net.WebSockets/4.0.0": {
         "dependencies": {
           "Microsoft.Win32.Primitives": "4.0.1",
           "System.Resources.ResourceManager": "4.0.1",
           "System.Runtime": "4.1.0",
           "System.Threading.Tasks": "4.0.11"
+<<<<<<< HEAD
+>>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
+=======
 >>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
         },
         "runtime": {
           "lib/netstandard1.3/System.Net.WebSockets.dll": {}
         }
       },
+<<<<<<< HEAD
 <<<<<<< HEAD
       "System.Numerics.Vectors/4.1.1-rc2-24027": {
         "dependencies": {
@@ -3049,6 +3533,8 @@
           "System.Runtime": "4.1.0-rc2-24027",
           "System.Threading": "4.0.11-rc2-24027"
 =======
+=======
+>>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
       "System.Numerics.Vectors/4.1.1": {
         "dependencies": {
           "System.Globalization": "4.0.11",
@@ -3067,12 +3553,16 @@
           "System.Resources.ResourceManager": "4.0.1",
           "System.Runtime": "4.1.0",
           "System.Threading": "4.0.11"
+<<<<<<< HEAD
+>>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
+=======
 >>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
         },
         "runtime": {
           "lib/netstandard1.3/System.ObjectModel.dll": {}
         }
       },
+<<<<<<< HEAD
 <<<<<<< HEAD
       "System.Reflection/4.1.0-rc2-24027": {
         "dependencies": {
@@ -3094,6 +3584,8 @@
           "System.Runtime": "4.1.0-rc2-24027",
           "System.Threading": "4.0.11-rc2-24027"
 =======
+=======
+>>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
       "System.Reflection/4.1.0": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "1.0.1",
@@ -3115,12 +3607,16 @@
           "System.Resources.ResourceManager": "4.0.1",
           "System.Runtime": "4.1.0",
           "System.Threading": "4.0.11"
+<<<<<<< HEAD
+>>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
+=======
 >>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
         },
         "runtime": {
           "lib/netstandard1.3/System.Reflection.DispatchProxy.dll": {}
         }
       },
+<<<<<<< HEAD
 <<<<<<< HEAD
       "System.Reflection.Emit/4.0.1-rc2-24027": {
         "dependencies": {
@@ -3130,6 +3626,8 @@
           "System.Reflection.Primitives": "4.0.1-rc2-24027",
           "System.Runtime": "4.1.0-rc2-24027"
 =======
+=======
+>>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
       "System.Reflection.Emit/4.0.1": {
         "dependencies": {
           "System.IO": "4.1.0",
@@ -3137,6 +3635,9 @@
           "System.Reflection.Emit.ILGeneration": "4.0.1",
           "System.Reflection.Primitives": "4.0.1",
           "System.Runtime": "4.1.0"
+<<<<<<< HEAD
+>>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
+=======
 >>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
         },
         "runtime": {
@@ -3144,23 +3645,30 @@
         }
       },
 <<<<<<< HEAD
+<<<<<<< HEAD
       "System.Reflection.Emit.ILGeneration/4.0.1-rc2-24027": {
         "dependencies": {
           "System.Reflection": "4.1.0-rc2-24027",
           "System.Reflection.Primitives": "4.0.1-rc2-24027",
           "System.Runtime": "4.1.0-rc2-24027"
 =======
+=======
+>>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
       "System.Reflection.Emit.ILGeneration/4.0.1": {
         "dependencies": {
           "System.Reflection": "4.1.0",
           "System.Reflection.Primitives": "4.0.1",
           "System.Runtime": "4.1.0"
+<<<<<<< HEAD
+>>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
+=======
 >>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
         },
         "runtime": {
           "lib/netstandard1.3/System.Reflection.Emit.ILGeneration.dll": {}
         }
       },
+<<<<<<< HEAD
 <<<<<<< HEAD
       "System.Reflection.Emit.Lightweight/4.0.1-rc2-24027": {
         "dependencies": {
@@ -3169,18 +3677,24 @@
           "System.Reflection.Primitives": "4.0.1-rc2-24027",
           "System.Runtime": "4.1.0-rc2-24027"
 =======
+=======
+>>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
       "System.Reflection.Emit.Lightweight/4.0.1": {
         "dependencies": {
           "System.Reflection": "4.1.0",
           "System.Reflection.Emit.ILGeneration": "4.0.1",
           "System.Reflection.Primitives": "4.0.1",
           "System.Runtime": "4.1.0"
+<<<<<<< HEAD
+>>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
+=======
 >>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
         },
         "runtime": {
           "lib/netstandard1.3/System.Reflection.Emit.Lightweight.dll": {}
         }
       },
+<<<<<<< HEAD
 <<<<<<< HEAD
       "System.Reflection.Extensions/4.0.1-rc2-24027": {
         "dependencies": {
@@ -3206,6 +3720,8 @@
           "System.Text.Encoding.Extensions": "4.0.11-rc2-24027",
           "System.Threading": "4.0.11-rc2-24027"
 =======
+=======
+>>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
       "System.Reflection.Extensions/4.0.1": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "1.0.1",
@@ -3231,12 +3747,16 @@
           "System.Text.Encoding": "4.0.11",
           "System.Text.Encoding.Extensions": "4.0.11",
           "System.Threading": "4.0.11"
+<<<<<<< HEAD
+>>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
+=======
 >>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
         },
         "runtime": {
           "lib/netstandard1.1/System.Reflection.Metadata.dll": {}
         }
       },
+<<<<<<< HEAD
 <<<<<<< HEAD
       "System.Reflection.Primitives/4.0.1-rc2-24027": {
         "dependencies": {
@@ -3248,6 +3768,8 @@
           "System.Reflection": "4.1.0-rc2-24027",
           "System.Runtime": "4.1.0-rc2-24027"
 =======
+=======
+>>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
       "System.Reflection.Primitives/4.0.1": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "1.0.1",
@@ -3259,12 +3781,16 @@
         "dependencies": {
           "System.Reflection": "4.1.0",
           "System.Runtime": "4.1.0"
+<<<<<<< HEAD
+>>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
+=======
 >>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
         },
         "runtime": {
           "lib/netstandard1.5/System.Reflection.TypeExtensions.dll": {}
         }
       },
+<<<<<<< HEAD
 <<<<<<< HEAD
       "System.Resources.Reader/4.0.0-rc2-24027": {
         "dependencies": {
@@ -3274,6 +3800,8 @@
           "System.Text.Encoding": "4.0.11-rc2-24027",
           "System.Threading": "4.0.11-rc2-24027"
 =======
+=======
+>>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
       "System.Resources.Reader/4.0.0": {
         "dependencies": {
           "System.IO": "4.1.0",
@@ -3281,12 +3809,16 @@
           "System.Runtime": "4.1.0",
           "System.Text.Encoding": "4.0.11",
           "System.Threading": "4.0.11"
+<<<<<<< HEAD
+>>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
+=======
 >>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
         },
         "runtime": {
           "lib/netstandard1.0/System.Resources.Reader.dll": {}
         }
       },
+<<<<<<< HEAD
 <<<<<<< HEAD
       "System.Resources.ResourceManager/4.0.1-rc2-24027": {
         "dependencies": {
@@ -3335,6 +3867,8 @@
           "System.Reflection": "4.1.0-rc2-24027",
           "System.Runtime": "4.1.0-rc2-24027"
 =======
+=======
+>>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
       "System.Resources.ResourceManager/4.0.1": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "1.0.1",
@@ -3400,12 +3934,16 @@
           "System.IO": "4.1.0",
           "System.Reflection": "4.1.0",
           "System.Runtime": "4.1.0"
+<<<<<<< HEAD
+>>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
+=======
 >>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
         },
         "runtime": {
           "lib/netstandard1.5/System.Runtime.Loader.dll": {}
         }
       },
+<<<<<<< HEAD
 <<<<<<< HEAD
       "System.Runtime.Numerics/4.0.1-rc2-24027": {
         "dependencies": {
@@ -3414,12 +3952,17 @@
           "System.Runtime": "4.1.0-rc2-24027",
           "System.Runtime.Extensions": "4.1.0-rc2-24027"
 =======
+=======
+>>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
       "System.Runtime.Numerics/4.0.1": {
         "dependencies": {
           "System.Globalization": "4.0.11",
           "System.Resources.ResourceManager": "4.0.1",
           "System.Runtime": "4.1.0",
           "System.Runtime.Extensions": "4.1.0"
+<<<<<<< HEAD
+>>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
+=======
 >>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
         },
         "runtime": {
@@ -3427,21 +3970,28 @@
         }
       },
 <<<<<<< HEAD
+<<<<<<< HEAD
       "System.Runtime.Serialization.Primitives/4.1.1-rc2-24027": {
         "dependencies": {
           "System.Resources.ResourceManager": "4.0.1-rc2-24027",
           "System.Runtime": "4.1.0-rc2-24027"
 =======
+=======
+>>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
       "System.Runtime.Serialization.Primitives/4.1.1": {
         "dependencies": {
           "System.Resources.ResourceManager": "4.0.1",
           "System.Runtime": "4.1.0"
+<<<<<<< HEAD
+>>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
+=======
 >>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
         },
         "runtime": {
           "lib/netstandard1.3/System.Runtime.Serialization.Primitives.dll": {}
         }
       },
+<<<<<<< HEAD
 <<<<<<< HEAD
       "System.Security.Claims/4.0.1-rc2-24027": {
         "dependencies": {
@@ -3453,6 +4003,8 @@
           "System.Runtime.Extensions": "4.1.0-rc2-24027",
           "System.Security.Principal": "4.0.1-rc2-24027"
 =======
+=======
+>>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
       "System.Security.Claims/4.0.1": {
         "dependencies": {
           "System.Collections": "4.0.11",
@@ -3462,12 +4014,16 @@
           "System.Runtime": "4.1.0",
           "System.Runtime.Extensions": "4.1.0",
           "System.Security.Principal": "4.0.1"
+<<<<<<< HEAD
+>>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
+=======
 >>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
         },
         "runtime": {
           "lib/netstandard1.3/System.Security.Claims.dll": {}
         }
       },
+<<<<<<< HEAD
 <<<<<<< HEAD
       "System.Security.Cryptography.Algorithms/4.1.0-rc2-24027": {
         "dependencies": {
@@ -3488,6 +4044,8 @@
           "runtimes/win7/lib/netstandard1.4/System.Security.Cryptography.Algorithms.dll": {
             "rid": "win7",
 =======
+=======
+>>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
       "System.Security.Cryptography.Algorithms/4.2.0": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "1.0.1",
@@ -3511,11 +4069,15 @@
           },
           "runtimes/win/lib/netstandard1.6/System.Security.Cryptography.Algorithms.dll": {
             "rid": "win",
+<<<<<<< HEAD
+>>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
+=======
 >>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
             "assetType": "runtime"
           }
         }
       },
+<<<<<<< HEAD
 <<<<<<< HEAD
       "System.Security.Cryptography.Cng/4.1.0-rc2-24027": {
         "dependencies": {
@@ -3536,6 +4098,8 @@
           },
           "runtimes/win/lib/netstandard1.4/System.Security.Cryptography.Cng.dll": {
 =======
+=======
+>>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
       "System.Security.Cryptography.Cng/4.2.0": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "1.0.1",
@@ -3556,12 +4120,16 @@
             "assetType": "runtime"
           },
           "runtimes/win/lib/netstandard1.6/System.Security.Cryptography.Cng.dll": {
+<<<<<<< HEAD
+>>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
+=======
 >>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
             "rid": "win",
             "assetType": "runtime"
           }
         }
       },
+<<<<<<< HEAD
 <<<<<<< HEAD
       "System.Security.Cryptography.Csp/4.0.0-rc2-24027": {
         "dependencies": {
@@ -3578,6 +4146,8 @@
           "System.Text.Encoding": "4.0.11-rc2-24027",
           "System.Threading": "4.0.11-rc2-24027"
 =======
+=======
+>>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
       "System.Security.Cryptography.Csp/4.0.0": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "1.0.1",
@@ -3593,6 +4163,9 @@
           "System.Security.Cryptography.Primitives": "4.0.0",
           "System.Text.Encoding": "4.0.11",
           "System.Threading": "4.0.11"
+<<<<<<< HEAD
+>>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
+=======
 >>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
         },
         "runtimeTargets": {
@@ -3606,6 +4179,7 @@
           }
         }
       },
+<<<<<<< HEAD
 <<<<<<< HEAD
       "System.Security.Cryptography.Encoding/4.0.0-rc2-24027": {
         "dependencies": {
@@ -3622,6 +4196,8 @@
           "System.Text.Encoding": "4.0.11-rc2-24027",
           "runtime.native.System.Security.Cryptography": "4.0.0-rc2-24027"
 =======
+=======
+>>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
       "System.Security.Cryptography.Encoding/4.0.0": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "1.0.1",
@@ -3636,6 +4212,9 @@
           "System.Security.Cryptography.Primitives": "4.0.0",
           "System.Text.Encoding": "4.0.11",
           "runtime.native.System.Security.Cryptography": "4.0.0"
+<<<<<<< HEAD
+>>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
+=======
 >>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
         },
         "runtimeTargets": {
@@ -3643,6 +4222,7 @@
             "rid": "unix",
             "assetType": "runtime"
           },
+<<<<<<< HEAD
 <<<<<<< HEAD
           "runtimes/win7/lib/netstandard1.3/System.Security.Cryptography.Encoding.dll": {
             "rid": "win7",
@@ -3678,10 +4258,15 @@
           },
           "runtimes/win/lib/netstandard1.4/System.Security.Cryptography.OpenSsl.dll": {
             "rid": "win",
+=======
+          "runtimes/win/lib/netstandard1.3/System.Security.Cryptography.Encoding.dll": {
+            "rid": "win",
+>>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
             "assetType": "runtime"
           }
         }
       },
+<<<<<<< HEAD
       "System.Security.Cryptography.Primitives/4.0.0-rc2-24027": {
         "dependencies": {
           "System.Diagnostics.Debug": "4.0.11-rc2-24027",
@@ -3692,6 +4277,8 @@
           "System.Threading": "4.0.11-rc2-24027",
           "System.Threading.Tasks": "4.0.11-rc2-24027"
 =======
+=======
+>>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
       "System.Security.Cryptography.OpenSsl/4.0.0": {
         "dependencies": {
           "System.Collections": "4.0.11",
@@ -3727,12 +4314,16 @@
           "System.Runtime": "4.1.0",
           "System.Threading": "4.0.11",
           "System.Threading.Tasks": "4.0.11"
+<<<<<<< HEAD
+>>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
+=======
 >>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
         },
         "runtime": {
           "lib/netstandard1.3/System.Security.Cryptography.Primitives.dll": {}
         }
       },
+<<<<<<< HEAD
 <<<<<<< HEAD
       "System.Security.Cryptography.X509Certificates/4.1.0-rc2-24027": {
         "dependencies": {
@@ -3770,6 +4361,8 @@
           "runtimes/win7/lib/netstandard1.4/System.Security.Cryptography.X509Certificates.dll": {
             "rid": "win7",
 =======
+=======
+>>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
       "System.Security.Cryptography.X509Certificates/4.1.0": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "1.0.1",
@@ -3805,15 +4398,24 @@
           },
           "runtimes/win/lib/netstandard1.6/System.Security.Cryptography.X509Certificates.dll": {
             "rid": "win",
+<<<<<<< HEAD
+>>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
+=======
 >>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
             "assetType": "runtime"
           }
         }
       },
 <<<<<<< HEAD
+<<<<<<< HEAD
       "System.Security.Principal/4.0.1-rc2-24027": {
         "dependencies": {
           "System.Runtime": "4.1.0-rc2-24027"
+=======
+      "System.Security.Principal/4.0.1": {
+        "dependencies": {
+          "System.Runtime": "4.1.0"
+>>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
 =======
       "System.Security.Principal/4.0.1": {
         "dependencies": {
@@ -3824,6 +4426,7 @@
           "lib/netstandard1.0/System.Security.Principal.dll": {}
         }
       },
+<<<<<<< HEAD
 <<<<<<< HEAD
       "System.Security.Principal.Windows/4.0.0-rc2-24027": {
         "dependencies": {
@@ -3841,6 +4444,8 @@
           "System.Text.Encoding": "4.0.11-rc2-24027",
           "System.Threading": "4.0.11-rc2-24027"
 =======
+=======
+>>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
       "System.Security.Principal.Windows/4.0.0": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "1.0.1",
@@ -3857,6 +4462,9 @@
           "System.Security.Principal": "4.0.1",
           "System.Text.Encoding": "4.0.11",
           "System.Threading": "4.0.11"
+<<<<<<< HEAD
+>>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
+=======
 >>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
         },
         "runtimeTargets": {
@@ -3870,6 +4478,7 @@
           }
         }
       },
+<<<<<<< HEAD
 <<<<<<< HEAD
       "System.Text.Encoding/4.0.11-rc2-24027": {
         "dependencies": {
@@ -3890,6 +4499,8 @@
           "System.Text.Encoding": "4.0.11-rc2-24027",
           "System.Threading": "4.0.11-rc2-24027"
 =======
+=======
+>>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
       "System.Text.Encoding/4.0.11": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "1.0.1",
@@ -3911,6 +4522,9 @@
           "System.Runtime.InteropServices": "4.1.0",
           "System.Text.Encoding": "4.0.11",
           "System.Threading": "4.0.11"
+<<<<<<< HEAD
+>>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
+=======
 >>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
         },
         "runtimeTargets": {
@@ -3924,6 +4538,7 @@
           }
         }
       },
+<<<<<<< HEAD
 <<<<<<< HEAD
       "System.Text.Encoding.Extensions/4.0.11-rc2-24027": {
         "dependencies": {
@@ -3941,6 +4556,8 @@
           "System.Runtime.Extensions": "4.1.0-rc2-24027",
           "System.Threading": "4.0.11-rc2-24027"
 =======
+=======
+>>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
       "System.Text.Encoding.Extensions/4.0.11": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "1.0.1",
@@ -3958,12 +4575,16 @@
           "System.Runtime": "4.1.0",
           "System.Runtime.Extensions": "4.1.0",
           "System.Threading": "4.0.11"
+<<<<<<< HEAD
+>>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
+=======
 >>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
         },
         "runtime": {
           "lib/netstandard1.0/System.Text.Encodings.Web.dll": {}
         }
       },
+<<<<<<< HEAD
 <<<<<<< HEAD
       "System.Text.RegularExpressions/4.0.12-rc2-24027": {
         "dependencies": {
@@ -3983,6 +4604,8 @@
           "System.Runtime": "4.1.0-rc2-24027",
           "System.Threading.Tasks": "4.0.11-rc2-24027"
 =======
+=======
+>>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
       "System.Text.RegularExpressions/4.1.0": {
         "dependencies": {
           "System.Collections": "4.0.11",
@@ -4000,6 +4623,9 @@
         "dependencies": {
           "System.Runtime": "4.1.0",
           "System.Threading.Tasks": "4.0.11"
+<<<<<<< HEAD
+>>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
+=======
 >>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
         },
         "runtime": {
@@ -4007,18 +4633,24 @@
         }
       },
 <<<<<<< HEAD
+<<<<<<< HEAD
       "System.Threading.Overlapped/4.0.1-rc2-24027": {
         "dependencies": {
           "System.Resources.ResourceManager": "4.0.1-rc2-24027",
           "System.Runtime": "4.1.0-rc2-24027",
           "System.Runtime.Handles": "4.0.1-rc2-24027"
 =======
+=======
+>>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
       "System.Threading.Overlapped/4.0.1": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "1.0.1",
           "System.Resources.ResourceManager": "4.0.1",
           "System.Runtime": "4.1.0",
           "System.Runtime.Handles": "4.0.1"
+<<<<<<< HEAD
+>>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
+=======
 >>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
         },
         "runtimeTargets": {
@@ -4032,6 +4664,7 @@
           }
         }
       },
+<<<<<<< HEAD
 <<<<<<< HEAD
       "System.Threading.Tasks/4.0.11-rc2-24027": {
         "dependencies": {
@@ -4052,6 +4685,8 @@
           "System.Threading": "4.0.11-rc2-24027",
           "System.Threading.Tasks": "4.0.11-rc2-24027"
 =======
+=======
+>>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
       "System.Threading.Tasks/4.0.11": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "1.0.1",
@@ -4072,6 +4707,9 @@
           "System.Runtime.Extensions": "4.1.0",
           "System.Threading": "4.0.11",
           "System.Threading.Tasks": "4.0.11"
+<<<<<<< HEAD
+>>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
+=======
 >>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
         },
         "runtime": {
@@ -4079,23 +4717,30 @@
         }
       },
 <<<<<<< HEAD
+<<<<<<< HEAD
       "System.Threading.Tasks.Extensions/4.0.0-rc2-24027": {
         "dependencies": {
           "System.Collections": "4.0.11-rc2-24027",
           "System.Runtime": "4.1.0-rc2-24027",
           "System.Threading.Tasks": "4.0.11-rc2-24027"
 =======
+=======
+>>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
       "System.Threading.Tasks.Extensions/4.0.0": {
         "dependencies": {
           "System.Collections": "4.0.11",
           "System.Runtime": "4.1.0",
           "System.Threading.Tasks": "4.0.11"
+<<<<<<< HEAD
+>>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
+=======
 >>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
         },
         "runtime": {
           "lib/netstandard1.0/System.Threading.Tasks.Extensions.dll": {}
         }
       },
+<<<<<<< HEAD
 <<<<<<< HEAD
       "System.Threading.Tasks.Parallel/4.0.1-rc2-24027": {
         "dependencies": {
@@ -4108,6 +4753,8 @@
           "System.Threading": "4.0.11-rc2-24027",
           "System.Threading.Tasks": "4.0.11-rc2-24027"
 =======
+=======
+>>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
       "System.Threading.Tasks.Parallel/4.0.1": {
         "dependencies": {
           "System.Collections.Concurrent": "4.0.12",
@@ -4118,6 +4765,9 @@
           "System.Runtime.Extensions": "4.1.0",
           "System.Threading": "4.0.11",
           "System.Threading.Tasks": "4.0.11"
+<<<<<<< HEAD
+>>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
+=======
 >>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
         },
         "runtime": {
@@ -4125,9 +4775,15 @@
         }
       },
 <<<<<<< HEAD
+<<<<<<< HEAD
       "System.Threading.Thread/4.0.0-rc2-24027": {
         "dependencies": {
           "System.Runtime": "4.1.0-rc2-24027"
+=======
+      "System.Threading.Thread/4.0.0": {
+        "dependencies": {
+          "System.Runtime": "4.1.0"
+>>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
 =======
       "System.Threading.Thread/4.0.0": {
         "dependencies": {
@@ -4139,21 +4795,28 @@
         }
       },
 <<<<<<< HEAD
+<<<<<<< HEAD
       "System.Threading.ThreadPool/4.0.10-rc2-24027": {
         "dependencies": {
           "System.Runtime": "4.1.0-rc2-24027",
           "System.Runtime.Handles": "4.0.1-rc2-24027"
 =======
+=======
+>>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
       "System.Threading.ThreadPool/4.0.10": {
         "dependencies": {
           "System.Runtime": "4.1.0",
           "System.Runtime.Handles": "4.0.1"
+<<<<<<< HEAD
+>>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
+=======
 >>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
         },
         "runtime": {
           "lib/netstandard1.3/System.Threading.ThreadPool.dll": {}
         }
       },
+<<<<<<< HEAD
 <<<<<<< HEAD
       "System.Threading.Timer/4.0.1-rc2-24027": {
         "dependencies": {
@@ -4178,6 +4841,8 @@
           "System.Threading.Tasks": "4.0.11-rc2-24027",
           "System.Threading.Tasks.Extensions": "4.0.0-rc2-24027"
 =======
+=======
+>>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
       "System.Threading.Timer/4.0.1": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "1.0.1",
@@ -4202,12 +4867,16 @@
           "System.Text.RegularExpressions": "4.1.0",
           "System.Threading.Tasks": "4.0.11",
           "System.Threading.Tasks.Extensions": "4.0.0"
+<<<<<<< HEAD
+>>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
+=======
 >>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
         },
         "runtime": {
           "lib/netstandard1.3/System.Xml.ReaderWriter.dll": {}
         }
       },
+<<<<<<< HEAD
 <<<<<<< HEAD
       "System.Xml.XDocument/4.0.11-rc2-24027": {
         "dependencies": {
@@ -4224,6 +4893,8 @@
           "System.Threading": "4.0.11-rc2-24027",
           "System.Xml.ReaderWriter": "4.0.11-rc2-24027"
 =======
+=======
+>>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
       "System.Xml.XDocument/4.0.11": {
         "dependencies": {
           "System.Collections": "4.0.11",
@@ -4238,12 +4909,16 @@
           "System.Text.Encoding": "4.0.11",
           "System.Threading": "4.0.11",
           "System.Xml.ReaderWriter": "4.0.11"
+<<<<<<< HEAD
+>>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
+=======
 >>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
         },
         "runtime": {
           "lib/netstandard1.3/System.Xml.XDocument.dll": {}
         }
       },
+<<<<<<< HEAD
 <<<<<<< HEAD
       "System.Xml.XmlDocument/4.0.1-rc2-24027": {
         "dependencies": {
@@ -4258,6 +4933,8 @@
           "System.Threading": "4.0.11-rc2-24027",
           "System.Xml.ReaderWriter": "4.0.11-rc2-24027"
 =======
+=======
+>>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
       "System.Xml.XmlDocument/4.0.1": {
         "dependencies": {
           "System.Collections": "4.0.11",
@@ -4270,12 +4947,16 @@
           "System.Text.Encoding": "4.0.11",
           "System.Threading": "4.0.11",
           "System.Xml.ReaderWriter": "4.0.11"
+<<<<<<< HEAD
+>>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
+=======
 >>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
         },
         "runtime": {
           "lib/netstandard1.3/System.Xml.XmlDocument.dll": {}
         }
       },
+<<<<<<< HEAD
 <<<<<<< HEAD
       "System.Xml.XPath/4.0.1-rc2-24027": {
         "dependencies": {
@@ -4289,6 +4970,8 @@
           "System.Threading": "4.0.11-rc2-24027",
           "System.Xml.ReaderWriter": "4.0.11-rc2-24027"
 =======
+=======
+>>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
       "System.Xml.XPath/4.0.1": {
         "dependencies": {
           "System.Collections": "4.0.11",
@@ -4300,12 +4983,16 @@
           "System.Runtime.Extensions": "4.1.0",
           "System.Threading": "4.0.11",
           "System.Xml.ReaderWriter": "4.0.11"
+<<<<<<< HEAD
+>>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
+=======
 >>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
         },
         "runtime": {
           "lib/netstandard1.3/System.Xml.XPath.dll": {}
         }
       },
+<<<<<<< HEAD
 <<<<<<< HEAD
       "System.Xml.XPath.XDocument/4.0.1-rc2-24027": {
         "dependencies": {
@@ -4319,6 +5006,8 @@
           "System.Xml.XDocument": "4.0.11-rc2-24027",
           "System.Xml.XPath": "4.0.1-rc2-24027"
 =======
+=======
+>>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
       "System.Xml.XPath.XDocument/4.0.1": {
         "dependencies": {
           "System.Diagnostics.Debug": "4.0.11",
@@ -4330,6 +5019,9 @@
           "System.Xml.ReaderWriter": "4.0.11",
           "System.Xml.XDocument": "4.0.11",
           "System.Xml.XPath": "4.0.1"
+<<<<<<< HEAD
+>>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
+=======
 >>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
         },
         "runtime": {
@@ -4339,6 +5031,7 @@
       "iBalekaService.Domain/1.0.0": {
         "dependencies": {
 <<<<<<< HEAD
+<<<<<<< HEAD
           "Microsoft.EntityFrameworkCore": "1.0.0-rc2-final",
           "Microsoft.EntityFrameworkCore.InMemory": "1.0.0-rc2-final",
           "Microsoft.EntityFrameworkCore.SqlServer": "1.0.0-rc2-final",
@@ -4346,12 +5039,17 @@
           "Microsoft.NETCore.App": "1.0.0-rc2-3002702",
           "NETStandard.Library": "1.5.0-rc2-24027"
 =======
+=======
+>>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
           "Microsoft.EntityFrameworkCore": "1.0.0",
           "Microsoft.EntityFrameworkCore.InMemory": "1.0.0-rc2-final",
           "Microsoft.EntityFrameworkCore.SqlServer": "1.0.0-rc2-final",
           "Microsoft.EntityFrameworkCore.Tools": "1.0.0-preview2-final",
           "Microsoft.NETCore.App": "1.0.0",
           "NETStandard.Library": "1.6.0"
+<<<<<<< HEAD
+>>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
+=======
 >>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
         },
         "runtime": {
@@ -4366,6 +5064,7 @@
       "serviceable": false,
       "sha512": ""
     },
+<<<<<<< HEAD
 <<<<<<< HEAD
     "Ix-Async/1.2.5": {
       "type": "package",
@@ -4392,6 +5091,8 @@
       "serviceable": true,
       "sha512": "sha512-Wcn5RF+ZQgxHOuyb9u7H1jHSn7cTVyzKCl51xwBNd3tZAnxVSLhpwANSLGeMRd+MgIpd8rFqRhd8LCeB+BrlQA=="
 =======
+=======
+>>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
     "Libuv/1.9.0": {
       "type": "package",
       "serviceable": true,
@@ -4416,6 +5117,9 @@
       "type": "package",
       "serviceable": true,
       "sha512": "sha512-6x7zgfbTo1gL9xMEb7EMO2ES/48bqwnWyfH09z+ubWhnzxdhHls8rtqstPylu5FPD9nid6Vo2pgDm5vufRAy5Q=="
+<<<<<<< HEAD
+>>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
+=======
 >>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
     },
     "Microsoft.CodeAnalysis.Analyzers/1.1.0": {
@@ -4423,6 +5127,7 @@
       "serviceable": true,
       "sha512": "sha512-HS3iRWZKcUw/8eZ/08GXKY2Bn7xNzQPzf8gRPHGSowX7u7XXu9i9YEaBeBNKUXWfI7qjvT2zXtLUvbN0hds8vg=="
     },
+<<<<<<< HEAD
 <<<<<<< HEAD
     "Microsoft.CodeAnalysis.Common/1.3.0-beta1-20160429-01": {
       "type": "package",
@@ -4719,6 +5424,8 @@
       "serviceable": true,
       "sha512": "sha512-bC0GLcJTry9N+ra9qb+zYSQHnBpy4ZMVJXRRSuu7aD/cQoZPQtySql110ec9REOKsE6tf2ZoolczpCOmzwKW8g=="
 =======
+=======
+>>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
     "Microsoft.CodeAnalysis.Common/1.3.0": {
       "type": "package",
       "serviceable": true,
@@ -5008,6 +5715,9 @@
       "type": "package",
       "serviceable": true,
       "sha512": "sha512-QfS/nQI7k/BLgmLrw7qm7YBoULEvgWnPI+cYsbfCVFTW8Aj+i8JhccxcFMu1RWms0YZzF+UHguNBK4Qn89e2Sg=="
+<<<<<<< HEAD
+>>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
+=======
 >>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
     },
     "runtime.native.System.Data.SqlClient.sni/4.0.0-rc2-24027": {
@@ -5015,6 +5725,7 @@
       "serviceable": true,
       "sha512": "sha512-pMR+/wuMjt0fblON8ycjd/XCzKd6qHscOhQ7aYpzZI5qBl4ethwCCL/S6iITMtIOv5TvQ3J3GOKwtYz5hBpaTg=="
     },
+<<<<<<< HEAD
 <<<<<<< HEAD
     "runtime.native.System.IO.Compression/4.1.0-rc2-24027": {
       "type": "package",
@@ -5036,6 +5747,8 @@
       "serviceable": true,
       "sha512": "sha512-Xi58pn6uTrwo2hz2mhR7LbqaukuS3eRsVg6Y5BZGDtthJmv/LGh//3jtVASQMK14ByRVZoK3nP8S+l/2gt+R+g=="
 =======
+=======
+>>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
     "runtime.native.System.IO.Compression/4.1.0": {
       "type": "package",
       "serviceable": true,
@@ -5055,6 +5768,9 @@
       "type": "package",
       "serviceable": true,
       "sha512": "sha512-2CQK0jmO6Eu7ZeMgD+LOFbNJSXHFVQbCJJkEyEwowh1SCgYnrn9W9RykMfpeeVGw7h4IBvYikzpGUlmZTUafJw=="
+<<<<<<< HEAD
+>>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
+=======
 >>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
     },
     "runtime.win7-x64.runtime.native.System.Data.SqlClient.sni/4.0.1-rc2-24027": {
@@ -5067,6 +5783,7 @@
       "serviceable": true,
       "sha512": "sha512-Rk4a5IyEWxQ4Sg5lwbI9a2IamFzXggEg3l9ePRfuCop63TMYtQ70BsDqj7wI6iLehfmBkOKS1AC8yxTp0nsSmg=="
     },
+<<<<<<< HEAD
 <<<<<<< HEAD
     "System.AppContext/4.1.0-rc2-24027": {
       "type": "package",
@@ -5175,10 +5892,64 @@
 >>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
     },
     "System.Data.SqlClient/4.1.0-rc2-24027": {
+=======
+    "System.AppContext/4.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-3QjO4jNV7PdKkmQAVp9atA+usVnKRwI3Kx1nMwJ93T0LcQfx7pKAYk0nKz5wn1oP5iqlhZuy6RXOFdhr7rDwow=="
+    },
+    "System.Buffers/4.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-msXumHfjjURSkvxUjYuq4N2ghHoRi2VpXcKMA7gK6ujQfU3vGpl+B6ld0ATRg+FZFpRyA6PgEPA+VlIkTeNf2w=="
+    },
+    "System.Collections/4.0.11": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-YUJGz6eFKqS0V//mLt25vFGrrCvOnsXjlvFQs+KimpwNxug9x0Pzy4PlFMU3Q2IzqAa9G2L4LsK3+9vCBK7oTg=="
+    },
+    "System.Collections.Concurrent/4.0.12": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-2gBcbb3drMLgxlI0fBfxMA31ec6AEyYCHygGse4vxceJan8mRIWeKJ24BFzN7+bi/NFTgdIgufzb94LWO5EERQ=="
+    },
+    "System.Collections.Immutable/1.2.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Cma8cBW6di16ZLibL8LYQ+cLjGzoKxpOTu/faZfDcx94ZjAGq6Nv5RO7+T1YZXqEXTZP9rt1wLVEONVpURtUqw=="
+    },
+    "System.Collections.NonGeneric/4.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-hMxFT2RhhlffyCdKLDXjx8WEC5JfCvNozAZxCablAuFRH74SCV4AgzE8yJCh/73bFnEoZgJ9MJmkjQ0dJmnKqA=="
+    },
+    "System.ComponentModel/4.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-oBZFnm7seFiVfugsIyOvQCWobNZs7FzqDV/B7tx20Ep/l3UUFCPDkdTnCNaJZTU27zjeODmy2C/cP60u3D4c9w=="
+    },
+    "System.ComponentModel.Annotations/4.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-rhnz80h8NnHJzoi0nbQJLRR2cJznyqG168q1bgoSpe5qpaME2SguXzuEzpY68nFCi2kBgHpbU4bRN2cP3unYRA=="
+    },
+    "System.Console/4.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-qSKUSOIiYA/a0g5XXdxFcUFmv1hNICBD7QZ0QhGYVipPIhvpiydY8VZqr1thmCXvmn8aipMg64zuanB4eotK9A=="
+    },
+    "System.Data.Common/4.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-epU8jeTe7aE7RqGHq9rZ8b0Q4Ah7DgubzHQblgZMSqgW1saW868WmooSyC5ywf8upLBkcVLDu93W9GPWUYsU2Q=="
+    },
+    "System.Data.SqlClient/4.1.0-rc2-24027": {
+>>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
       "type": "package",
       "serviceable": true,
       "sha512": "sha512-8VbNFTQdss8/9HIGe4v59nQFWtQNUn+AHVYCvH76aOOTWjwBdE+EeES7j2yHJ4p6hrpSDDR2zJNWH02PTLry6w=="
     },
+<<<<<<< HEAD
 <<<<<<< HEAD
     "System.Diagnostics.Debug/4.0.11-rc2-24027": {
       "type": "package",
@@ -5595,6 +6366,8 @@
       "serviceable": true,
       "sha512": "sha512-IxOLcwl5A0Lm1s2FIUh5klV+Fi0tUE/5OltvIkZdV7phcWVfgBlCRlgxweaXVrCTI+9TZ8TihVutVaA+PC95lg=="
 =======
+=======
+>>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
     "System.Diagnostics.Debug/4.0.11": {
       "type": "package",
       "serviceable": true,
@@ -6009,6 +6782,9 @@
       "type": "package",
       "serviceable": true,
       "sha512": "sha512-FLhdYJx4331oGovQypQ8JIw2kEmNzCsjVOVYY/16kZTUoquZG85oVn7yUhBE2OZt1yGPSXAL0HTEfzjlbNpM7Q=="
+<<<<<<< HEAD
+>>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
+=======
 >>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
     },
     "iBalekaService.Domain/1.0.0": {

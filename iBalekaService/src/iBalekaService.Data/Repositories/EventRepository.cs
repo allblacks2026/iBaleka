@@ -11,7 +11,13 @@ namespace iBalekaService.Data.Repositories
     public interface IEventRepository : IRepository<Event>
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
         Event GetEventByID(int id);
+=======
+        void AddEventRoute(Event_Route route);
+        Event GetEventByID(int id);
+        IEnumerable<Event_Route> GetEventRoute(int id);
+>>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
 =======
         void AddEventRoute(Event_Route route);
         Event GetEventByID(int id);
@@ -23,8 +29,11 @@ namespace iBalekaService.Data.Repositories
         public EventRepository(IDbFactory dbFactory)
             : base(dbFactory) { }
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+=======
+>>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
         public void AddEventRoute(Event_Route route)
         {
             DbContext.EventRoute.Add(route);
@@ -33,6 +42,9 @@ namespace iBalekaService.Data.Repositories
         {
             return DbContext.EventRoute.Where(m => m.EventID == id && m.Deleted == false).ToList();
         }
+<<<<<<< HEAD
+>>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
+=======
 >>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
         public Event GetEventByID(int id)
         {

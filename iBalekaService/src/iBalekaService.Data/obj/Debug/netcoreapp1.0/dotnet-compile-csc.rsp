@@ -10,6 +10,7 @@
 "C:\Users\Tulonga\Source\Repos\iBaleka\iBalekaService\src\iBalekaService.Data\obj\Debug\netcoreapp1.0\dotnet-compile.assemblyinfo.cs"
 -out:"C:\Users\Tulonga\Source\Repos\iBaleka\iBalekaService\src\iBalekaService.Data\bin\Debug\netcoreapp1.0\iBalekaService.Data.dll"
 <<<<<<< HEAD
+<<<<<<< HEAD
 -r:"C:\Users\Tulonga\.nuget\packages\Ix-Async\1.2.5\lib\portable-windows8+net45+wp8\System.Interactive.Async.dll"
 -r:"C:\Users\Tulonga\.nuget\packages\Microsoft.AspNetCore.Hosting.Abstractions\1.0.0-rc2-final\lib\netstandard1.3\Microsoft.AspNetCore.Hosting.Abstractions.dll"
 -r:"C:\Users\Tulonga\.nuget\packages\Microsoft.AspNetCore.Hosting.Server.Abstractions\1.0.0-rc2-final\lib\netstandard1.3\Microsoft.AspNetCore.Hosting.Server.Abstractions.dll"
@@ -140,6 +141,8 @@
 -r:"C:\Users\Tulonga\Source\Repos\iBaleka\iBalekaService\src\iBalekaService.Domain\bin\Debug\netcoreapp1.0\iBalekaService.Domain.dll"
 "C:\Users\Tulonga\Source\Repos\iBaleka\iBalekaService\src\iBalekaService.Data\Program.cs"
 =======
+=======
+>>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
 -r:"C:\Users\Tulonga\.nuget\packages\Microsoft.AspNetCore.Hosting.Abstractions\1.0.0\lib\netstandard1.3\Microsoft.AspNetCore.Hosting.Abstractions.dll"
 -r:"C:\Users\Tulonga\.nuget\packages\Microsoft.AspNetCore.Hosting.Server.Abstractions\1.0.0\lib\netstandard1.3\Microsoft.AspNetCore.Hosting.Server.Abstractions.dll"
 -r:"C:\Users\Tulonga\.nuget\packages\Microsoft.AspNetCore.Http.Abstractions\1.0.0\lib\netstandard1.3\Microsoft.AspNetCore.Http.Abstractions.dll"
@@ -269,6 +272,9 @@
 -r:"C:\Users\Tulonga\Source\Repos\iBaleka\iBalekaService\src\iBalekaService.Domain\bin\Debug\netcoreapp1.0\iBalekaService.Domain.dll"
 "C:\Users\Tulonga\Source\Repos\iBaleka\iBalekaService\src\iBalekaService.Data\Program.cs"
 "C:\Users\Tulonga\Source\Repos\iBaleka\iBalekaService\src\iBalekaService.Data\Configurations\DbInitializer.cs"
+<<<<<<< HEAD
+>>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
+=======
 >>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
 "C:\Users\Tulonga\Source\Repos\iBaleka\iBalekaService\src\iBalekaService.Data\Configurations\IBalekaContext.cs"
 "C:\Users\Tulonga\Source\Repos\iBaleka\iBalekaService\src\iBalekaService.Data\Infrastructure\DbFactory.cs"
