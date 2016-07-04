@@ -17,11 +17,9 @@ namespace iBalekaService.Data.Configurations
         { }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-<<<<<<< HEAD:iBalekaService/src/iBalekaService.Data/Configurations/IBalekaContext.cs
+
             optionsBuilder.UseSqlServer(@"Server=(localdb)\mssqllocaldb;Database=iBalekaDB;Trusted_Connection=True;");
-=======
-            Init
->>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52:iBalekaService/src/iBalekaService.Data/Configurations/IBalekaContext.cs
+
         }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
