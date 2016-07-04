@@ -10,7 +10,7 @@ import android.widget.Button;
 import android.widget.EditText;
 
 import Listeners.LoginButtonListener;
-import allblacks.com.ibaleka_android_prototype.R;
+import allblacks.com.Activities.R;
 
 /**
  * A simple {@link Fragment} subclass.

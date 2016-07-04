@@ -6,7 +6,7 @@ import android.widget.CheckBox;
 import android.widget.TextView;
 
 import Utilities.TextSanitizer;
-import allblacks.com.ibaleka_android_prototype.R;
+import allblacks.com.Activities.R;
 
 /**
  * Created by Okuhle on 6/26/2016.

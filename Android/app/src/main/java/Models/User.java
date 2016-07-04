@@ -13,9 +13,9 @@ public class User {
     private String emailAddress;
     private String country;
     private String userType;
-    private Date dateOfBirth;
+    private String dateOfBirth;
 
-    public User(String userID, String name, String surname, String emailAddress, String country, String userType, Date dateOfBirth) {
+    public User(String userID, String name, String surname, String emailAddress, String country, String userType, String dateOfBirth) {
         this.userID = userID;
         this.name = name;
         this.surname = surname;
@@ -73,11 +73,11 @@ public class User {
         this.userType = userType;
     }
 
-    public Date getDateOfBirth() {
+    public String getDateOfBirth() {
         return dateOfBirth;
     }
 
-    public void setDateOfBirth(Date dateOfBirth) {
+    public void setDateOfBirth(String dateOfBirth) {
         this.dateOfBirth = dateOfBirth;
     }
 }

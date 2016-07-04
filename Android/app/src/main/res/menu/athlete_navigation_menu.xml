@@ -10,7 +10,6 @@
     <item android:title="View Profile"
         android:icon="@drawable/ic_person"
           android:id = "@+id/athleteViewProfile"/>
-
     <item
         android:title="Start Running"
         android:icon="@drawable/start_run"
