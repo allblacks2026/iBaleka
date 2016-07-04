@@ -17,7 +17,11 @@ namespace iBalekaService.Data.Configurations
         { }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
+<<<<<<< HEAD:iBalekaService/src/iBalekaService.Data/Configurations/IBalekaContext.cs
             optionsBuilder.UseSqlServer(@"Server=(localdb)\mssqllocaldb;Database=iBalekaDB;Trusted_Connection=True;");
+=======
+            Init
+>>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52:iBalekaService/src/iBalekaService.Data/Configurations/IBalekaContext.cs
         }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -79,6 +83,7 @@ namespace iBalekaService.Data.Configurations
         public virtual DbSet<Club> Club { get; set; }
         public virtual DbSet<Club_Athlete> ClubMember { get; set; }
         public virtual DbSet<Event> Event { get; set; }
+        public virtual DbSet<Event_Route> EventRoute { get; set; }
         public virtual DbSet<EventRegistration> EventRegistration { get; set; }
         public virtual DbSet<Rating> Rating { get; set; }
         public virtual DbSet<Route> Route { get; set; }

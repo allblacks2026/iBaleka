@@ -7,11 +7,12 @@ namespace iBalekaService.Domain.Models
 {
     public class Event
     {
-        public Event(string title,string desc,DateTime dateAndTime,string cityStateSuburb)
+        public Event(string title,string desc,DateTime dateAndTime,string suburbCityState,int clubID)
         {
             Title = title;
             Description = desc;
             DateAndTime = dateAndTime;
+            ClubID = clubID;
             DateCreated = DateTime.Now.Date;
             Deleted = false;
         }

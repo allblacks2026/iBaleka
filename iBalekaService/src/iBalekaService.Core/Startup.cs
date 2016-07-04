@@ -2,11 +2,19 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+<<<<<<< HEAD
+=======
+using Microsoft.AspNetCore.Server.IISIntegration;
+>>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
+<<<<<<< HEAD
+=======
+using iBalekaService.Data.Configurations;
+>>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
 
 namespace iBalekaService.Core
 {
@@ -36,8 +44,14 @@ namespace iBalekaService.Core
         {
             loggerFactory.AddConsole(Configuration.GetSection("Logging"));
             loggerFactory.AddDebug();
+<<<<<<< HEAD
 
             app.UseMvc();
+=======
+            app.UseMvc();
+            app.SeedData();
+            //app.UseMvcWithDefaultRoute();
+>>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
         }
     }
 }

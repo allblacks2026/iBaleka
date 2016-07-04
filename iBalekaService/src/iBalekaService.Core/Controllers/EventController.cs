@@ -38,10 +38,30 @@ namespace iBalekaService.Core.Controllers
 
             return Ok(new JsonResult(evnt));
         }
+<<<<<<< HEAD
 
         // POST api/values
         [HttpPost]
         public IActionResult Add([FromBody]Event evnt)
+=======
+        public IActionResult GetEventRoute(int id)
+        {
+            if (EventExists(id))
+            {
+                IEnumerable<Event_Route> evntRoutes = _eventRepo.GetEventRoute(id);
+                if(evntRoutes==null)
+                {
+                    return NotFound();
+                }
+                return new JsonResult(_eventRepo.GetEventRoute(id));
+            }
+            else
+                return NotFound();
+        }
+        // POST api/values
+        [HttpPost]
+        public IActionResult AddEvent([FromBody]Event evnt)
+>>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
         {
             if(ModelState.IsValid)
             {
@@ -54,10 +74,30 @@ namespace iBalekaService.Core.Controllers
                 return BadRequest(ModelState);
             }
         }
+<<<<<<< HEAD
 
         // PUT api/values/5
         [HttpPut]
         public IActionResult Update([FromBody]Event evnt)
+=======
+        [HttpPost]
+        public IActionResult AddEventRoute([FromBody]Event_Route evnt_route)
+        {
+            if (ModelState.IsValid)
+            {
+                _eventRepo.AddEventRoute(evnt_route);
+                _eventRepo.SaveEvent();
+                return CreatedAtRoute("GetEventRoute", new { Controller = "Event", id = evnt_route.EventID}, evnt_route);
+            }
+            else
+            {
+                return BadRequest(ModelState);
+            }
+        }
+        // PUT api/values/5
+        [HttpPut]
+        public IActionResult UpdateEvent([FromBody]Event evnt)
+>>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
         {
             if(ModelState.IsValid)
             {

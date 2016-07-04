@@ -8,7 +8,7 @@ namespace iBalekaService.Domain.Models
 {
     public class Run
     {
-        public Run(DateTime start,DateTime end,string caloriesBurnt,Event evnt,Athlete athlete)
+        public Run(DateTime start,DateTime end,double caloriesBurnt,Event evnt,Athlete athlete)
         {
             StartTime = start;
             EndTime = end;
@@ -18,7 +18,7 @@ namespace iBalekaService.Domain.Models
             AthleteID = athlete.AthleteID;
             Deleted = false;
         }
-        public Run(DateTime start, DateTime end, string caloriesBurnt, Route route, Athlete athlete)
+        public Run(DateTime start, DateTime end, double caloriesBurnt, Route route, Athlete athlete)
         {
             StartTime = start;
             EndTime = end;
@@ -32,7 +32,7 @@ namespace iBalekaService.Domain.Models
         public int RunID { get; set; }
         public DateTime StartTime { get; set; }
         public DateTime EndTime { get; set; }
-        public string CaloriesBurnt { get; set; }
+        public double CaloriesBurnt { get; set; }
         public DateTime DateRecorded { get; set; }
         public bool Deleted { get; set; }
         //foreign keys

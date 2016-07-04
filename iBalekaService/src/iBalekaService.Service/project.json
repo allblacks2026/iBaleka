@@ -4,6 +4,7 @@
   },
   "dependencies": {
     "Microsoft.NETCore.App": {
+<<<<<<< HEAD
       "version": "1.0.0-rc2-3002702",
       "type": "platform"
     },
@@ -12,6 +13,16 @@
     "Microsoft.EntityFrameworkCore": "1.0.0-rc2-final",
     "Microsoft.EntityFrameworkCore.InMemory": "1.0.0-rc2-final",
     "Microsoft.EntityFrameworkCore.Tools": "1.0.0-preview1-final"
+=======
+      "version": "1.0.0",
+      "type": "platform"
+    },
+    "iBalekaService.Data": "1.0.0-*",
+    "NETStandard.Library": "1.6.0",
+    "Microsoft.EntityFrameworkCore": "1.0.0",
+    "Microsoft.EntityFrameworkCore.InMemory": "1.0.0-rc2-final",
+    "Microsoft.EntityFrameworkCore.Tools": "1.0.0-preview2-final"
+>>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
   },
 
   "frameworks": {
@@ -29,7 +40,11 @@
         "portable-net45+win8+dnxcore50",
         "portable-net45+win8"
       ],
+<<<<<<< HEAD
       "version": "1.0.0-preview1-final"
+=======
+      "version": "1.0.0-preview2-final"
+>>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
     }
   },
   "version": "1.0.0-*"
