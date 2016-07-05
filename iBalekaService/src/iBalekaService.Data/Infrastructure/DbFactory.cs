@@ -13,19 +13,6 @@ namespace iBalekaService.Data.Infastructure
     public class DbFactory:Disposable,IDbFactory, IDbContextFactory<IBalekaContext>
     {
         IBalekaContext dbContext;
-<<<<<<< HEAD
-DbContextOptionsBuilder<IBalekaContext> options;
-  
-        
-        public IBalekaContext Init()
-        {  
-           
-
-            options = new DbContextOptionsBuilder<IBalekaContext>();
-            
-           return dbContext ?? (dbContext = new IBalekaContext(options));
-
-=======
         
   
         public IBalekaContext Create(DbContextFactoryOptions opt)
@@ -37,7 +24,6 @@ DbContextOptionsBuilder<IBalekaContext> options;
         public IBalekaContext Init(DbContextFactoryOptions opt)
         {
             return dbContext ?? (dbContext = Create(opt));
->>>>>>> 46f29f7612a55852ac7844e2286ab7a48bd60cd6
         }
         protected override void DisposeCore()
         {

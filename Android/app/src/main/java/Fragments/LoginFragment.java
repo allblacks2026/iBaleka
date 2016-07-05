@@ -1,8 +1,11 @@
 package Fragments;
 
 
+import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.app.Fragment;
+import android.preference.PreferenceManager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -10,7 +13,8 @@ import android.widget.Button;
 import android.widget.EditText;
 
 import Listeners.LoginButtonListener;
-import allblacks.com.ibaleka_android_prototype.R;
+import allblacks.com.Activities.MainActivity;
+import allblacks.com.Activities.R;
 
 public class LoginFragment extends Fragment {
 
@@ -20,6 +24,7 @@ public class LoginFragment extends Fragment {
     private Button createAccountButton;
     private Button forgotPasswordButton;
     private LoginButtonListener buttonListener;
+    private SharedPreferences preferencesObject;
 
     public LoginFragment() {
     }
@@ -41,6 +46,7 @@ public class LoginFragment extends Fragment {
         loginButton.setOnClickListener(buttonListener);
         forgotPasswordButton.setOnClickListener(buttonListener);
         createAccountButton.setOnClickListener(buttonListener);
+
     }
 
 }

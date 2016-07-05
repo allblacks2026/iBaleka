@@ -2,15 +2,7 @@
   "runtimeOptions": {
     "framework": {
       "name": "Microsoft.NETCore.App",
-<<<<<<< HEAD
-<<<<<<< HEAD
-      "version": "1.0.0-rc2-3002702"
-=======
       "version": "1.0.0"
->>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
-=======
-      "version": "1.0.0"
->>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
     }
   }
 }
