@@ -13,7 +13,7 @@ import Fragments.AthleteLandingFragment;
 import Fragments.ProfileFragment;
 import Fragments.SearchFragment;
 import Fragments.StartRunFragment;
-import allblacks.com.ibaleka_android_prototype.R;
+import allblacks.com.Activities.R;
 
 /**
  * Created by Okuhle on 3/28/2016.

@@ -1,7 +1,6 @@
 package Fragments;
 
 import android.os.Bundle;
-import android.support.annotation.Nullable;
 import android.app.Fragment;
 import android.support.v7.widget.CardView;
 import android.support.v7.widget.LinearLayoutManager;
@@ -11,14 +10,12 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import org.w3c.dom.Text;
-
 import java.util.ArrayList;
 import java.util.List;
 
 import Adapters.AthleteActivityAdapter;
 import Models.AthleteActivity;
-import allblacks.com.ibaleka_android_prototype.R;
+import allblacks.com.Activities.R;
 
 public class UserActivityTabFragment extends Fragment {
 
