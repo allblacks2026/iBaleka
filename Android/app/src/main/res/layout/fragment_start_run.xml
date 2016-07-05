@@ -61,8 +61,8 @@
                     android:layout_alignParentLeft="true"/>
                 <TextView
                     style="@style/TextViewStyle"
-                    android:id = "@+id/distanceCoveredText"
-                    android:text=""
+                    android:id = "@+id/distanceCoveredTextView"
+                    android:text="0.00"
                     android:layout_below="@id/elapsedTimeText"
                     android:layout_alignBaseline="@id/distanceCoveredLabel"
                     android:layout_alignParentEnd="true"/>
@@ -75,7 +75,7 @@
                 <TextView
                     style="@style/TextViewStyle"
                     android:id = "@+id/totalCaloriesBurntTextView"
-                    android:layout_below="@id/distanceCoveredText"
+                    android:layout_below="@id/distanceCoveredTextView"
                     android:layout_alignParentEnd="true"
                     android:text=""/>
                 <TextView
