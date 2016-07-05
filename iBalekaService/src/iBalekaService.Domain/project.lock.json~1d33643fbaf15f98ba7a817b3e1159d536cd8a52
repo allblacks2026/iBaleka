@@ -731,7 +731,26 @@
           }
         }
       },
+<<<<<<< HEAD:iBalekaService/src/iBalekaService.Domain/project.lock.json~1d33643fbaf15f98ba7a817b3e1159d536cd8a52
       "NETStandard.Library/1.5.0-rc2-24027": {
+=======
+      "Microsoft.AspNetCore.Server.IISIntegration.Tools/1.0.0-preview1-final": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.DotNet.ProjectModel": "1.0.0-rc2-002702",
+          "Microsoft.Extensions.CommandLineUtils": "1.0.0-rc2-final",
+          "Microsoft.NETCore.App": "1.0.0-rc2-3002702",
+          "System.Diagnostics.Process": "4.1.0-rc2-24027"
+        },
+        "compile": {
+          "lib/netcoreapp1.0/dotnet-publish-iis.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp1.0/dotnet-publish-iis.dll": {}
+        }
+      },
+      "Microsoft.AspNetCore.Server.Kestrel/1.0.0-rc2-final": {
+>>>>>>> 46f29f7612a55852ac7844e2286ab7a48bd60cd6:iBalekaService/src/iBalekaService.Core/project.lock.json
         "type": "package",
         "dependencies": {
           "Microsoft.NETCore.Platforms": "1.0.1-rc2-24027",
@@ -949,11 +968,18 @@
           "lib/netstandard1.3/NuGet.Protocol.Core.v3.dll": {}
         }
       },
+<<<<<<< HEAD:iBalekaService/src/iBalekaService.Domain/project.lock.json~1d33643fbaf15f98ba7a817b3e1159d536cd8a52
       "NuGet.Repositories/3.5.0-beta-final": {
         "type": "package",
         "dependencies": {
           "NETStandard.Library": "1.5.0-rc2-24027",
           "NuGet.Packaging": "3.5.0-beta-final"
+=======
+      "Microsoft.EntityFrameworkCore.InMemory/1.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "1.0.0"
+>>>>>>> 46f29f7612a55852ac7844e2286ab7a48bd60cd6:iBalekaService/src/iBalekaService.Core/project.lock.json
         },
         "compile": {
           "lib/netstandard1.3/NuGet.Repositories.dll": {}
@@ -991,8 +1017,18 @@
           "lib/netstandard1.0/NuGet.Versioning.dll": {}
         }
       },
+<<<<<<< HEAD:iBalekaService/src/iBalekaService.Domain/project.lock.json~1d33643fbaf15f98ba7a817b3e1159d536cd8a52
       "Remotion.Linq/2.0.2": {
         "type": "package",
+=======
+      "Microsoft.EntityFrameworkCore.SqlServer/1.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore.Relational": "1.0.0",
+          "System.Data.SqlClient": "4.1.0",
+          "System.Threading.Thread": "4.0.0"
+        },
+>>>>>>> 46f29f7612a55852ac7844e2286ab7a48bd60cd6:iBalekaService/src/iBalekaService.Core/project.lock.json
         "compile": {
           "lib/portable-net45+win+wpa81+wp80/Remotion.Linq.dll": {}
         },
@@ -1000,6 +1036,7 @@
           "lib/portable-net45+win+wpa81+wp80/Remotion.Linq.dll": {}
         }
       },
+<<<<<<< HEAD:iBalekaService/src/iBalekaService.Domain/project.lock.json~1d33643fbaf15f98ba7a817b3e1159d536cd8a52
       "runtime.native.System/4.0.0-rc2-24027": {
         "type": "package"
       },
@@ -1041,6 +1078,9 @@
         }
       },
       "System.AppContext/4.1.0-rc2-24027": {
+=======
+      "Microsoft.EntityFrameworkCore.Tools/1.0.0-preview2-final": {
+>>>>>>> 46f29f7612a55852ac7844e2286ab7a48bd60cd6:iBalekaService/src/iBalekaService.Core/project.lock.json
         "type": "package",
         "dependencies": {
           "System.Runtime": "4.1.0-rc2-24027"
@@ -1049,7 +1089,44 @@
           "ref/netstandard1.5/System.AppContext.dll": {}
         }
       },
+<<<<<<< HEAD:iBalekaService/src/iBalekaService.Domain/project.lock.json~1d33643fbaf15f98ba7a817b3e1159d536cd8a52
       "System.Buffers/4.0.0-rc2-24027": {
+=======
+      "Microsoft.EntityFrameworkCore.Tools.Cli/1.0.0-preview1-final": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.DotNet.Cli.Utils": "1.0.0-preview1-002702",
+          "Microsoft.DotNet.ProjectModel": "1.0.0-rc2-002702",
+          "Microsoft.EntityFrameworkCore.Tools.Core": "1.0.0-rc2-final",
+          "Microsoft.Extensions.CommandLineUtils": "1.0.0-rc2-final",
+          "Microsoft.Extensions.PlatformAbstractions": "1.0.0-rc2-final",
+          "Microsoft.NETCore.App": "1.0.0-rc2-3002702"
+        },
+        "compile": {
+          "lib/netcoreapp1.0/Microsoft.EntityFrameworkCore.Tools.Cli.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp1.0/Microsoft.EntityFrameworkCore.Tools.Cli.dll": {}
+        }
+      },
+      "Microsoft.EntityFrameworkCore.Tools.Core/1.0.0-rc2-final": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Hosting.Abstractions": "1.0.0-rc2-final",
+          "Microsoft.EntityFrameworkCore.Relational.Design": "1.0.0-rc2-final",
+          "System.Collections.NonGeneric": "4.0.1-rc2-24027",
+          "System.IO": "4.1.0-rc2-24027",
+          "System.IO.FileSystem": "4.0.1-rc2-24027"
+        },
+        "compile": {
+          "lib/netstandard1.3/Microsoft.EntityFrameworkCore.Tools.Core.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.3/Microsoft.EntityFrameworkCore.Tools.Core.dll": {}
+        }
+      },
+      "Microsoft.Extensions.Caching.Abstractions/1.0.0": {
+>>>>>>> 46f29f7612a55852ac7844e2286ab7a48bd60cd6:iBalekaService/src/iBalekaService.Core/project.lock.json
         "type": "package",
         "dependencies": {
           "System.Diagnostics.Debug": "4.0.11-rc2-24027",
@@ -2064,7 +2141,18 @@
           "ref/netstandard1.0/_._": {}
         },
         "runtime": {
+<<<<<<< HEAD:iBalekaService/src/iBalekaService.Domain/project.lock.json~1d33643fbaf15f98ba7a817b3e1159d536cd8a52
           "lib/netstandard1.3/System.Reflection.Emit.ILGeneration.dll": {}
+=======
+          "lib/netstandard1.0/_._": {}
+        }
+      },
+      "runtime.native.System.Data.SqlClient.sni/4.0.0": {
+        "type": "package",
+        "dependencies": {
+          "runtime.win7-x64.runtime.native.System.Data.SqlClient.sni": "4.0.1",
+          "runtime.win7-x86.runtime.native.System.Data.SqlClient.sni": "4.0.1"
+>>>>>>> 46f29f7612a55852ac7844e2286ab7a48bd60cd6:iBalekaService/src/iBalekaService.Core/project.lock.json
         }
       },
       "System.Reflection.Emit.Lightweight/4.0.1-rc2-24027": {
@@ -2082,6 +2170,7 @@
           "lib/netstandard1.3/System.Reflection.Emit.Lightweight.dll": {}
         }
       },
+<<<<<<< HEAD:iBalekaService/src/iBalekaService.Domain/project.lock.json~1d33643fbaf15f98ba7a817b3e1159d536cd8a52
       "System.Reflection.Extensions/4.0.1-rc2-24027": {
         "type": "package",
         "dependencies": {
@@ -2113,15 +2202,38 @@
           "System.Text.Encoding": "4.0.11-rc2-24027",
           "System.Text.Encoding.Extensions": "4.0.11-rc2-24027",
           "System.Threading": "4.0.11-rc2-24027"
+=======
+      "runtime.native.System.Security.Cryptography/4.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "1.0.1",
+          "Microsoft.NETCore.Targets": "1.0.1"
+>>>>>>> 46f29f7612a55852ac7844e2286ab7a48bd60cd6:iBalekaService/src/iBalekaService.Core/project.lock.json
         },
         "compile": {
           "lib/netstandard1.1/System.Reflection.Metadata.dll": {}
         },
         "runtime": {
+<<<<<<< HEAD:iBalekaService/src/iBalekaService.Domain/project.lock.json~1d33643fbaf15f98ba7a817b3e1159d536cd8a52
           "lib/netstandard1.1/System.Reflection.Metadata.dll": {}
         }
       },
       "System.Reflection.Primitives/4.0.1-rc2-24027": {
+=======
+          "lib/netstandard1.0/_._": {}
+        }
+      },
+      "runtime.win7-x64.runtime.native.System.Data.SqlClient.sni/4.0.1": {
+        "type": "package",
+        "runtimeTargets": {
+          "runtimes/win7-x64/native/sni.dll": {
+            "assetType": "native",
+            "rid": "win7-x64"
+          }
+        }
+      },
+      "runtime.win7-x86.runtime.native.System.Data.SqlClient.sni/4.0.1": {
+>>>>>>> 46f29f7612a55852ac7844e2286ab7a48bd60cd6:iBalekaService/src/iBalekaService.Core/project.lock.json
         "type": "package",
         "dependencies": {
           "System.Runtime": "4.1.0-rc2-24027"
@@ -2140,7 +2252,11 @@
           "System.Runtime": "4.1.0-rc2-24027"
         },
         "compile": {
+<<<<<<< HEAD:iBalekaService/src/iBalekaService.Domain/project.lock.json~1d33643fbaf15f98ba7a817b3e1159d536cd8a52
           "ref/netstandard1.5/System.Reflection.TypeExtensions.dll": {}
+=======
+          "ref/netstandard1.3/System.AppContext.dll": {}
+>>>>>>> 46f29f7612a55852ac7844e2286ab7a48bd60cd6:iBalekaService/src/iBalekaService.Core/project.lock.json
         },
         "runtime": {
           "lib/netstandard1.5/System.Reflection.TypeExtensions.dll": {}
@@ -2304,6 +2420,7 @@
           "lib/netstandard1.3/System.Security.Claims.dll": {}
         }
       },
+<<<<<<< HEAD:iBalekaService/src/iBalekaService.Domain/project.lock.json~1d33643fbaf15f98ba7a817b3e1159d536cd8a52
       "System.Security.Cryptography.Algorithms/4.1.0-rc2-24027": {
         "type": "package",
         "dependencies": {
@@ -2315,6 +2432,48 @@
           "System.Runtime.InteropServices": "4.1.0-rc2-24027",
           "System.Security.Cryptography.Primitives": "4.0.0-rc2-24027",
           "System.Text.Encoding": "4.0.11-rc2-24027"
+=======
+      "System.Data.SqlClient/4.1.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "1.0.1",
+          "Microsoft.Win32.Primitives": "4.0.1",
+          "System.Collections": "4.0.11",
+          "System.Collections.Concurrent": "4.0.12",
+          "System.Data.Common": "4.1.0",
+          "System.Diagnostics.Debug": "4.0.11",
+          "System.Diagnostics.DiagnosticSource": "4.0.0",
+          "System.Globalization": "4.0.11",
+          "System.IO": "4.1.0",
+          "System.IO.Pipes": "4.0.0",
+          "System.Linq": "4.1.0",
+          "System.Net.NameResolution": "4.0.0",
+          "System.Net.Primitives": "4.0.11",
+          "System.Net.Security": "4.0.0",
+          "System.Net.Sockets": "4.1.0",
+          "System.Reflection": "4.1.0",
+          "System.Reflection.TypeExtensions": "4.1.0",
+          "System.Resources.ResourceManager": "4.0.1",
+          "System.Runtime": "4.1.0",
+          "System.Runtime.Extensions": "4.1.0",
+          "System.Runtime.Handles": "4.0.1",
+          "System.Runtime.InteropServices": "4.1.0",
+          "System.Runtime.InteropServices.RuntimeInformation": "4.0.0",
+          "System.Security.Cryptography.X509Certificates": "4.1.0",
+          "System.Security.Principal": "4.0.1",
+          "System.Security.Principal.Windows": "4.0.0",
+          "System.Text.Encoding": "4.0.11",
+          "System.Text.Encoding.CodePages": "4.0.1",
+          "System.Text.Encoding.Extensions": "4.0.11",
+          "System.Text.RegularExpressions": "4.1.0",
+          "System.Threading": "4.0.11",
+          "System.Threading.Tasks": "4.0.11",
+          "System.Threading.Thread": "4.0.0",
+          "System.Threading.ThreadPool": "4.0.10",
+          "System.Threading.Timer": "4.0.1",
+          "System.Xml.ReaderWriter": "4.0.11",
+          "runtime.native.System.Data.SqlClient.sni": "4.0.0"
+>>>>>>> 46f29f7612a55852ac7844e2286ab7a48bd60cd6:iBalekaService/src/iBalekaService.Core/project.lock.json
         },
         "compile": {
           "ref/netstandard1.4/System.Security.Cryptography.Algorithms.dll": {}
@@ -2324,9 +2483,13 @@
             "assetType": "runtime",
             "rid": "unix"
           },
+<<<<<<< HEAD:iBalekaService/src/iBalekaService.Domain/project.lock.json~1d33643fbaf15f98ba7a817b3e1159d536cd8a52
           "runtimes/win7/lib/netstandard1.4/System.Security.Cryptography.Algorithms.dll": {
+=======
+          "runtimes/win/lib/netstandard1.3/System.Data.SqlClient.dll": {
+>>>>>>> 46f29f7612a55852ac7844e2286ab7a48bd60cd6:iBalekaService/src/iBalekaService.Core/project.lock.json
             "assetType": "runtime",
-            "rid": "win7"
+            "rid": "win"
           }
         }
       },
@@ -2654,12 +2817,36 @@
           "lib/netstandard1.3/System.Threading.dll": {}
         }
       },
+<<<<<<< HEAD:iBalekaService/src/iBalekaService.Domain/project.lock.json~1d33643fbaf15f98ba7a817b3e1159d536cd8a52
       "System.Threading.Overlapped/4.0.1-rc2-24027": {
         "type": "package",
         "dependencies": {
           "System.Resources.ResourceManager": "4.0.1-rc2-24027",
           "System.Runtime": "4.1.0-rc2-24027",
           "System.Runtime.Handles": "4.0.1-rc2-24027"
+=======
+      "System.IO.Pipes/4.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "1.0.1",
+          "System.Diagnostics.Debug": "4.0.11",
+          "System.IO": "4.1.0",
+          "System.IO.FileSystem.Primitives": "4.0.1",
+          "System.Net.Primitives": "4.0.11",
+          "System.Net.Sockets": "4.1.0",
+          "System.Reflection": "4.1.0",
+          "System.Resources.ResourceManager": "4.0.1",
+          "System.Runtime": "4.1.0",
+          "System.Runtime.Extensions": "4.1.0",
+          "System.Runtime.Handles": "4.0.1",
+          "System.Runtime.InteropServices": "4.1.0",
+          "System.Security.Principal": "4.0.1",
+          "System.Text.Encoding": "4.0.11",
+          "System.Threading": "4.0.11",
+          "System.Threading.Overlapped": "4.0.1",
+          "System.Threading.Tasks": "4.0.11",
+          "runtime.native.System": "4.0.0"
+>>>>>>> 46f29f7612a55852ac7844e2286ab7a48bd60cd6:iBalekaService/src/iBalekaService.Core/project.lock.json
         },
         "compile": {
           "ref/netstandard1.3/_._": {}
@@ -2669,7 +2856,11 @@
             "assetType": "runtime",
             "rid": "unix"
           },
+<<<<<<< HEAD:iBalekaService/src/iBalekaService.Domain/project.lock.json~1d33643fbaf15f98ba7a817b3e1159d536cd8a52
           "runtimes/win/lib/netstandard1.3/System.Threading.Overlapped.dll": {
+=======
+          "runtimes/win/lib/netstandard1.3/System.IO.Pipes.dll": {
+>>>>>>> 46f29f7612a55852ac7844e2286ab7a48bd60cd6:iBalekaService/src/iBalekaService.Core/project.lock.json
             "assetType": "runtime",
             "rid": "win"
           }
@@ -2690,6 +2881,7 @@
       "System.Threading.Tasks.Dataflow/4.6.0-rc2-24027": {
         "type": "package",
         "dependencies": {
+<<<<<<< HEAD:iBalekaService/src/iBalekaService.Domain/project.lock.json~1d33643fbaf15f98ba7a817b3e1159d536cd8a52
           "System.Collections": "4.0.11-rc2-24027",
           "System.Collections.Concurrent": "4.0.12-rc2-24027",
           "System.Diagnostics.Debug": "4.0.11-rc2-24027",
@@ -2704,6 +2896,13 @@
         },
         "compile": {
           "lib/netstandard1.1/System.Threading.Tasks.Dataflow.dll": {}
+=======
+          "System.Collections": "4.0.11",
+          "System.Runtime": "4.1.0"
+        },
+        "compile": {
+          "ref/netstandard1.0/System.Linq.dll": {}
+>>>>>>> 46f29f7612a55852ac7844e2286ab7a48bd60cd6:iBalekaService/src/iBalekaService.Core/project.lock.json
         },
         "runtime": {
           "lib/netstandard1.1/System.Threading.Tasks.Dataflow.dll": {}
@@ -2712,12 +2911,20 @@
       "System.Threading.Tasks.Extensions/4.0.0-rc2-24027": {
         "type": "package",
         "dependencies": {
+<<<<<<< HEAD:iBalekaService/src/iBalekaService.Domain/project.lock.json~1d33643fbaf15f98ba7a817b3e1159d536cd8a52
           "System.Collections": "4.0.11-rc2-24027",
           "System.Runtime": "4.1.0-rc2-24027",
           "System.Threading.Tasks": "4.0.11-rc2-24027"
         },
         "compile": {
           "lib/netstandard1.0/System.Threading.Tasks.Extensions.dll": {}
+=======
+          "System.Reflection": "4.1.0",
+          "System.Runtime": "4.1.0"
+        },
+        "compile": {
+          "ref/netstandard1.3/System.Linq.Expressions.dll": {}
+>>>>>>> 46f29f7612a55852ac7844e2286ab7a48bd60cd6:iBalekaService/src/iBalekaService.Core/project.lock.json
         },
         "runtime": {
           "lib/netstandard1.0/System.Threading.Tasks.Extensions.dll": {}
@@ -2754,11 +2961,39 @@
           "lib/netstandard1.3/System.Threading.Thread.dll": {}
         }
       },
+<<<<<<< HEAD:iBalekaService/src/iBalekaService.Domain/project.lock.json~1d33643fbaf15f98ba7a817b3e1159d536cd8a52
       "System.Threading.ThreadPool/4.0.10-rc2-24027": {
         "type": "package",
         "dependencies": {
           "System.Runtime": "4.1.0-rc2-24027",
           "System.Runtime.Handles": "4.0.1-rc2-24027"
+=======
+      "System.Net.Http/4.1.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "1.0.1",
+          "Microsoft.Win32.Primitives": "4.0.1",
+          "System.Collections": "4.0.11",
+          "System.Diagnostics.Debug": "4.0.11",
+          "System.Diagnostics.DiagnosticSource": "4.0.0",
+          "System.Diagnostics.Tracing": "4.1.0",
+          "System.Globalization": "4.0.11",
+          "System.IO": "4.1.0",
+          "System.IO.Compression": "4.1.0",
+          "System.Net.Primitives": "4.0.11",
+          "System.Resources.ResourceManager": "4.0.1",
+          "System.Runtime": "4.1.0",
+          "System.Runtime.Extensions": "4.1.0",
+          "System.Runtime.Handles": "4.0.1",
+          "System.Runtime.InteropServices": "4.1.0",
+          "System.Security.Cryptography.X509Certificates": "4.1.0",
+          "System.Text.Encoding": "4.0.11",
+          "System.Threading": "4.0.11",
+          "System.Threading.Tasks": "4.0.11"
+        },
+        "compile": {
+          "ref/netstandard1.3/System.Net.Http.dll": {}
+>>>>>>> 46f29f7612a55852ac7844e2286ab7a48bd60cd6:iBalekaService/src/iBalekaService.Core/project.lock.json
         },
         "compile": {
           "ref/netstandard1.3/System.Threading.ThreadPool.dll": {}
@@ -2779,6 +3014,7 @@
       "System.Xml.ReaderWriter/4.0.11-rc2-24027": {
         "type": "package",
         "dependencies": {
+<<<<<<< HEAD:iBalekaService/src/iBalekaService.Domain/project.lock.json~1d33643fbaf15f98ba7a817b3e1159d536cd8a52
           "System.Collections": "4.0.11-rc2-24027",
           "System.Diagnostics.Debug": "4.0.11-rc2-24027",
           "System.Globalization": "4.0.11-rc2-24027",
@@ -2794,6 +3030,857 @@
           "System.Text.RegularExpressions": "4.0.12-rc2-24027",
           "System.Threading.Tasks": "4.0.11-rc2-24027",
           "System.Threading.Tasks.Extensions": "4.0.0-rc2-24027"
+=======
+          "Microsoft.NETCore.Platforms": "1.0.1",
+          "Microsoft.NETCore.Targets": "1.0.1",
+          "System.Runtime": "4.1.0",
+          "System.Runtime.Handles": "4.0.1"
+        },
+        "compile": {
+          "ref/netstandard1.3/System.Net.Primitives.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+win8+wp8+wpa81/_._": {}
+        }
+      },
+      "System.Net.Requests/4.0.11": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "1.0.1",
+          "System.Collections": "4.0.11",
+          "System.Diagnostics.Debug": "4.0.11",
+          "System.Diagnostics.Tracing": "4.1.0",
+          "System.Globalization": "4.0.11",
+          "System.IO": "4.1.0",
+          "System.Net.Http": "4.1.0",
+          "System.Net.Primitives": "4.0.11",
+          "System.Net.WebHeaderCollection": "4.0.1",
+          "System.Resources.ResourceManager": "4.0.1",
+          "System.Runtime": "4.1.0",
+          "System.Threading": "4.0.11",
+          "System.Threading.Tasks": "4.0.11"
+        },
+        "compile": {
+          "ref/netstandard1.3/System.Net.Requests.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+win8+wp8+wpa81/_._": {}
+        },
+        "runtimeTargets": {
+          "runtimes/unix/lib/netstandard1.3/System.Net.Requests.dll": {
+            "assetType": "runtime",
+            "rid": "unix"
+          },
+          "runtimes/win/lib/netstandard1.3/System.Net.Requests.dll": {
+            "assetType": "runtime",
+            "rid": "win"
+          }
+        }
+      },
+      "System.Net.Security/4.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "1.0.1",
+          "Microsoft.Win32.Primitives": "4.0.1",
+          "System.Collections": "4.0.11",
+          "System.Collections.Concurrent": "4.0.12",
+          "System.Diagnostics.Tracing": "4.1.0",
+          "System.Globalization": "4.0.11",
+          "System.IO": "4.1.0",
+          "System.Net.Primitives": "4.0.11",
+          "System.Resources.ResourceManager": "4.0.1",
+          "System.Runtime": "4.1.0",
+          "System.Runtime.Extensions": "4.1.0",
+          "System.Runtime.Handles": "4.0.1",
+          "System.Runtime.InteropServices": "4.1.0",
+          "System.Security.Claims": "4.0.1",
+          "System.Security.Cryptography.Primitives": "4.0.0",
+          "System.Security.Cryptography.X509Certificates": "4.1.0",
+          "System.Security.Principal": "4.0.1",
+          "System.Security.Principal.Windows": "4.0.0",
+          "System.Threading": "4.0.11",
+          "System.Threading.Tasks": "4.0.11",
+          "System.Threading.ThreadPool": "4.0.10"
+        },
+        "compile": {
+          "ref/netstandard1.3/System.Net.Security.dll": {}
+        },
+        "runtimeTargets": {
+          "runtimes/unix/lib/netstandard1.6/System.Net.Security.dll": {
+            "assetType": "runtime",
+            "rid": "unix"
+          },
+          "runtimes/win/lib/netstandard1.3/System.Net.Security.dll": {
+            "assetType": "runtime",
+            "rid": "win"
+          }
+        }
+      },
+      "System.Net.Sockets/4.1.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "1.0.1",
+          "Microsoft.NETCore.Targets": "1.0.1",
+          "System.IO": "4.1.0",
+          "System.Net.Primitives": "4.0.11",
+          "System.Runtime": "4.1.0",
+          "System.Threading.Tasks": "4.0.11"
+        },
+        "compile": {
+          "ref/netstandard1.3/System.Net.Sockets.dll": {}
+        }
+      },
+      "System.Net.WebHeaderCollection/4.0.1": {
+        "type": "package",
+        "dependencies": {
+          "System.Collections": "4.0.11",
+          "System.Resources.ResourceManager": "4.0.1",
+          "System.Runtime": "4.1.0",
+          "System.Runtime.Extensions": "4.1.0"
+        },
+        "compile": {
+          "ref/netstandard1.3/System.Net.WebHeaderCollection.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.3/System.Net.WebHeaderCollection.dll": {}
+        }
+      },
+      "System.Net.WebSockets/4.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Win32.Primitives": "4.0.1",
+          "System.Resources.ResourceManager": "4.0.1",
+          "System.Runtime": "4.1.0",
+          "System.Threading.Tasks": "4.0.11"
+        },
+        "compile": {
+          "ref/netstandard1.3/System.Net.WebSockets.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.3/System.Net.WebSockets.dll": {}
+        }
+      },
+      "System.Numerics.Vectors/4.1.1": {
+        "type": "package",
+        "dependencies": {
+          "System.Globalization": "4.0.11",
+          "System.Resources.ResourceManager": "4.0.1",
+          "System.Runtime": "4.1.0",
+          "System.Runtime.Extensions": "4.1.0"
+        },
+        "compile": {
+          "ref/netstandard1.0/System.Numerics.Vectors.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.0/System.Numerics.Vectors.dll": {}
+        }
+      },
+      "System.ObjectModel/4.0.12": {
+        "type": "package",
+        "dependencies": {
+          "System.Collections": "4.0.11",
+          "System.Diagnostics.Debug": "4.0.11",
+          "System.Resources.ResourceManager": "4.0.1",
+          "System.Runtime": "4.1.0",
+          "System.Threading": "4.0.11"
+        },
+        "compile": {
+          "ref/netstandard1.3/System.ObjectModel.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.3/System.ObjectModel.dll": {}
+        }
+      },
+      "System.Reflection/4.1.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "1.0.1",
+          "Microsoft.NETCore.Targets": "1.0.1",
+          "System.IO": "4.1.0",
+          "System.Reflection.Primitives": "4.0.1",
+          "System.Runtime": "4.1.0"
+        },
+        "compile": {
+          "ref/netstandard1.5/System.Reflection.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+win8+wp8+wpa81/_._": {}
+        }
+      },
+      "System.Reflection.DispatchProxy/4.0.1": {
+        "type": "package",
+        "dependencies": {
+          "System.Collections": "4.0.11",
+          "System.Linq": "4.1.0",
+          "System.Reflection": "4.1.0",
+          "System.Reflection.Emit": "4.0.1",
+          "System.Reflection.Emit.ILGeneration": "4.0.1",
+          "System.Reflection.Extensions": "4.0.1",
+          "System.Reflection.Primitives": "4.0.1",
+          "System.Resources.ResourceManager": "4.0.1",
+          "System.Runtime": "4.1.0",
+          "System.Threading": "4.0.11"
+        },
+        "compile": {
+          "ref/netstandard1.3/System.Reflection.DispatchProxy.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.3/System.Reflection.DispatchProxy.dll": {}
+        }
+      },
+      "System.Reflection.Emit/4.0.1": {
+        "type": "package",
+        "dependencies": {
+          "System.IO": "4.1.0",
+          "System.Reflection": "4.1.0",
+          "System.Reflection.Emit.ILGeneration": "4.0.1",
+          "System.Reflection.Primitives": "4.0.1",
+          "System.Runtime": "4.1.0"
+        },
+        "compile": {
+          "ref/netstandard1.1/_._": {}
+        },
+        "runtime": {
+          "lib/netstandard1.3/System.Reflection.Emit.dll": {}
+        }
+      },
+      "System.Reflection.Emit.ILGeneration/4.0.1": {
+        "type": "package",
+        "dependencies": {
+          "System.Reflection": "4.1.0",
+          "System.Reflection.Primitives": "4.0.1",
+          "System.Runtime": "4.1.0"
+        },
+        "compile": {
+          "ref/netstandard1.0/_._": {}
+        },
+        "runtime": {
+          "lib/netstandard1.3/System.Reflection.Emit.ILGeneration.dll": {}
+        }
+      },
+      "System.Reflection.Extensions/4.0.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "1.0.1",
+          "Microsoft.NETCore.Targets": "1.0.1",
+          "System.Reflection": "4.1.0",
+          "System.Runtime": "4.1.0"
+        },
+        "compile": {
+          "ref/netstandard1.0/System.Reflection.Extensions.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+win8+wp8+wpa81/_._": {}
+        }
+      },
+      "System.Reflection.Metadata/1.3.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Collections": "4.0.11",
+          "System.Collections.Immutable": "1.2.0",
+          "System.Diagnostics.Debug": "4.0.11",
+          "System.IO": "4.1.0",
+          "System.Linq": "4.1.0",
+          "System.Reflection": "4.1.0",
+          "System.Reflection.Extensions": "4.0.1",
+          "System.Reflection.Primitives": "4.0.1",
+          "System.Resources.ResourceManager": "4.0.1",
+          "System.Runtime": "4.1.0",
+          "System.Runtime.Extensions": "4.1.0",
+          "System.Runtime.InteropServices": "4.1.0",
+          "System.Text.Encoding": "4.0.11",
+          "System.Text.Encoding.Extensions": "4.0.11",
+          "System.Threading": "4.0.11"
+        },
+        "compile": {
+          "lib/netstandard1.1/System.Reflection.Metadata.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.1/System.Reflection.Metadata.dll": {}
+        }
+      },
+      "System.Reflection.Primitives/4.0.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "1.0.1",
+          "Microsoft.NETCore.Targets": "1.0.1",
+          "System.Runtime": "4.1.0"
+        },
+        "compile": {
+          "ref/netstandard1.0/System.Reflection.Primitives.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+win8+wp8+wpa81/_._": {}
+        }
+      },
+      "System.Reflection.TypeExtensions/4.1.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Reflection": "4.1.0",
+          "System.Runtime": "4.1.0"
+        },
+        "compile": {
+          "ref/netstandard1.5/System.Reflection.TypeExtensions.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.5/System.Reflection.TypeExtensions.dll": {}
+        }
+      },
+      "System.Resources.Reader/4.0.0": {
+        "type": "package",
+        "dependencies": {
+          "System.IO": "4.1.0",
+          "System.Resources.ResourceManager": "4.0.1",
+          "System.Runtime": "4.1.0",
+          "System.Text.Encoding": "4.0.11",
+          "System.Threading": "4.0.11"
+        },
+        "compile": {
+          "lib/netstandard1.0/System.Resources.Reader.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.0/System.Resources.Reader.dll": {}
+        }
+      },
+      "System.Resources.ResourceManager/4.0.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "1.0.1",
+          "Microsoft.NETCore.Targets": "1.0.1",
+          "System.Globalization": "4.0.11",
+          "System.Reflection": "4.1.0",
+          "System.Runtime": "4.1.0"
+        },
+        "compile": {
+          "ref/netstandard1.0/System.Resources.ResourceManager.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+win8+wp8+wpa81/_._": {}
+        }
+      },
+      "System.Runtime/4.1.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "1.0.1",
+          "Microsoft.NETCore.Targets": "1.0.1"
+        },
+        "compile": {
+          "ref/netstandard1.5/System.Runtime.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+win8+wp80+wpa81/_._": {}
+        }
+      },
+      "System.Runtime.Extensions/4.1.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "1.0.1",
+          "Microsoft.NETCore.Targets": "1.0.1",
+          "System.Runtime": "4.1.0"
+        },
+        "compile": {
+          "ref/netstandard1.5/System.Runtime.Extensions.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+win8+wp8+wpa81/_._": {}
+        }
+      },
+      "System.Runtime.Handles/4.0.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "1.0.1",
+          "Microsoft.NETCore.Targets": "1.0.1",
+          "System.Runtime": "4.1.0"
+        },
+        "compile": {
+          "ref/netstandard1.3/System.Runtime.Handles.dll": {}
+        }
+      },
+      "System.Runtime.InteropServices/4.1.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "1.0.1",
+          "Microsoft.NETCore.Targets": "1.0.1",
+          "System.Reflection": "4.1.0",
+          "System.Reflection.Primitives": "4.0.1",
+          "System.Runtime": "4.1.0",
+          "System.Runtime.Handles": "4.0.1"
+        },
+        "compile": {
+          "ref/netstandard1.5/System.Runtime.InteropServices.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+win8+wpa81/_._": {}
+        }
+      },
+      "System.Runtime.InteropServices.RuntimeInformation/4.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "1.0.1",
+          "System.Reflection": "4.1.0",
+          "System.Resources.ResourceManager": "4.0.1",
+          "System.Runtime": "4.1.0",
+          "System.Runtime.InteropServices": "4.1.0",
+          "System.Threading": "4.0.11",
+          "runtime.native.System": "4.0.0"
+        },
+        "compile": {
+          "ref/netstandard1.1/System.Runtime.InteropServices.RuntimeInformation.dll": {}
+        },
+        "runtimeTargets": {
+          "runtimes/unix/lib/netstandard1.1/System.Runtime.InteropServices.RuntimeInformation.dll": {
+            "assetType": "runtime",
+            "rid": "unix"
+          },
+          "runtimes/win/lib/netstandard1.1/System.Runtime.InteropServices.RuntimeInformation.dll": {
+            "assetType": "runtime",
+            "rid": "win"
+          }
+        }
+      },
+      "System.Runtime.Loader/4.0.0": {
+        "type": "package",
+        "dependencies": {
+          "System.IO": "4.1.0",
+          "System.Reflection": "4.1.0",
+          "System.Runtime": "4.1.0"
+        },
+        "compile": {
+          "ref/netstandard1.5/System.Runtime.Loader.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.5/System.Runtime.Loader.dll": {}
+        }
+      },
+      "System.Runtime.Numerics/4.0.1": {
+        "type": "package",
+        "dependencies": {
+          "System.Globalization": "4.0.11",
+          "System.Resources.ResourceManager": "4.0.1",
+          "System.Runtime": "4.1.0",
+          "System.Runtime.Extensions": "4.1.0"
+        },
+        "compile": {
+          "ref/netstandard1.1/System.Runtime.Numerics.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.3/System.Runtime.Numerics.dll": {}
+        }
+      },
+      "System.Runtime.Serialization.Primitives/4.1.1": {
+        "type": "package",
+        "dependencies": {
+          "System.Resources.ResourceManager": "4.0.1",
+          "System.Runtime": "4.1.0"
+        },
+        "compile": {
+          "ref/netstandard1.3/System.Runtime.Serialization.Primitives.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.3/System.Runtime.Serialization.Primitives.dll": {}
+        }
+      },
+      "System.Security.Claims/4.0.1": {
+        "type": "package",
+        "dependencies": {
+          "System.Collections": "4.0.11",
+          "System.Globalization": "4.0.11",
+          "System.IO": "4.1.0",
+          "System.Resources.ResourceManager": "4.0.1",
+          "System.Runtime": "4.1.0",
+          "System.Runtime.Extensions": "4.1.0",
+          "System.Security.Principal": "4.0.1"
+        },
+        "compile": {
+          "ref/netstandard1.3/System.Security.Claims.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.3/System.Security.Claims.dll": {}
+        }
+      },
+      "System.Security.Cryptography.Algorithms/4.2.0": {
+        "type": "package",
+        "dependencies": {
+          "System.IO": "4.1.0",
+          "System.Runtime": "4.1.0",
+          "System.Security.Cryptography.Primitives": "4.0.0"
+        },
+        "compile": {
+          "ref/netstandard1.4/System.Security.Cryptography.Algorithms.dll": {}
+        },
+        "runtimeTargets": {
+          "runtimes/unix/lib/netstandard1.6/System.Security.Cryptography.Algorithms.dll": {
+            "assetType": "runtime",
+            "rid": "unix"
+          },
+          "runtimes/win/lib/netstandard1.6/System.Security.Cryptography.Algorithms.dll": {
+            "assetType": "runtime",
+            "rid": "win"
+          }
+        }
+      },
+      "System.Security.Cryptography.Encoding/4.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "1.0.1",
+          "System.Collections": "4.0.11",
+          "System.Collections.Concurrent": "4.0.12",
+          "System.Linq": "4.1.0",
+          "System.Resources.ResourceManager": "4.0.1",
+          "System.Runtime": "4.1.0",
+          "System.Runtime.Extensions": "4.1.0",
+          "System.Runtime.Handles": "4.0.1",
+          "System.Runtime.InteropServices": "4.1.0",
+          "System.Security.Cryptography.Primitives": "4.0.0",
+          "System.Text.Encoding": "4.0.11",
+          "runtime.native.System.Security.Cryptography": "4.0.0"
+        },
+        "compile": {
+          "ref/netstandard1.3/System.Security.Cryptography.Encoding.dll": {}
+        },
+        "runtimeTargets": {
+          "runtimes/unix/lib/netstandard1.3/System.Security.Cryptography.Encoding.dll": {
+            "assetType": "runtime",
+            "rid": "unix"
+          },
+          "runtimes/win/lib/netstandard1.3/System.Security.Cryptography.Encoding.dll": {
+            "assetType": "runtime",
+            "rid": "win"
+          }
+        }
+      },
+      "System.Security.Cryptography.Primitives/4.0.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Diagnostics.Debug": "4.0.11",
+          "System.Globalization": "4.0.11",
+          "System.IO": "4.1.0",
+          "System.Resources.ResourceManager": "4.0.1",
+          "System.Runtime": "4.1.0",
+          "System.Threading": "4.0.11",
+          "System.Threading.Tasks": "4.0.11"
+        },
+        "compile": {
+          "ref/netstandard1.3/System.Security.Cryptography.Primitives.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.3/System.Security.Cryptography.Primitives.dll": {}
+        }
+      },
+      "System.Security.Cryptography.X509Certificates/4.1.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Runtime": "4.1.0",
+          "System.Runtime.Handles": "4.0.1",
+          "System.Security.Cryptography.Algorithms": "4.2.0",
+          "System.Security.Cryptography.Encoding": "4.0.0"
+        },
+        "compile": {
+          "ref/netstandard1.4/System.Security.Cryptography.X509Certificates.dll": {}
+        },
+        "runtimeTargets": {
+          "runtimes/unix/lib/netstandard1.6/System.Security.Cryptography.X509Certificates.dll": {
+            "assetType": "runtime",
+            "rid": "unix"
+          },
+          "runtimes/win/lib/netstandard1.6/System.Security.Cryptography.X509Certificates.dll": {
+            "assetType": "runtime",
+            "rid": "win"
+          }
+        }
+      },
+      "System.Security.Principal/4.0.1": {
+        "type": "package",
+        "dependencies": {
+          "System.Runtime": "4.1.0"
+        },
+        "compile": {
+          "ref/netstandard1.0/System.Security.Principal.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.0/System.Security.Principal.dll": {}
+        }
+      },
+      "System.Security.Principal.Windows/4.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "1.0.1",
+          "Microsoft.Win32.Primitives": "4.0.1",
+          "System.Collections": "4.0.11",
+          "System.Diagnostics.Debug": "4.0.11",
+          "System.Reflection": "4.1.0",
+          "System.Resources.ResourceManager": "4.0.1",
+          "System.Runtime": "4.1.0",
+          "System.Runtime.Extensions": "4.1.0",
+          "System.Runtime.Handles": "4.0.1",
+          "System.Runtime.InteropServices": "4.1.0",
+          "System.Security.Claims": "4.0.1",
+          "System.Security.Principal": "4.0.1",
+          "System.Text.Encoding": "4.0.11",
+          "System.Threading": "4.0.11"
+        },
+        "compile": {
+          "ref/netstandard1.3/System.Security.Principal.Windows.dll": {}
+        },
+        "runtimeTargets": {
+          "runtimes/unix/lib/netstandard1.3/System.Security.Principal.Windows.dll": {
+            "assetType": "runtime",
+            "rid": "unix"
+          },
+          "runtimes/win/lib/netstandard1.3/System.Security.Principal.Windows.dll": {
+            "assetType": "runtime",
+            "rid": "win"
+          }
+        }
+      },
+      "System.Text.Encoding/4.0.11": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "1.0.1",
+          "Microsoft.NETCore.Targets": "1.0.1",
+          "System.Runtime": "4.1.0"
+        },
+        "compile": {
+          "ref/netstandard1.3/System.Text.Encoding.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+win8+wp8+wpa81/_._": {}
+        }
+      },
+      "System.Text.Encoding.CodePages/4.0.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "1.0.1",
+          "System.Collections": "4.0.11",
+          "System.Globalization": "4.0.11",
+          "System.IO": "4.1.0",
+          "System.Reflection": "4.1.0",
+          "System.Resources.ResourceManager": "4.0.1",
+          "System.Runtime": "4.1.0",
+          "System.Runtime.Extensions": "4.1.0",
+          "System.Runtime.Handles": "4.0.1",
+          "System.Runtime.InteropServices": "4.1.0",
+          "System.Text.Encoding": "4.0.11",
+          "System.Threading": "4.0.11"
+        },
+        "compile": {
+          "ref/netstandard1.3/_._": {}
+        },
+        "runtimeTargets": {
+          "runtimes/unix/lib/netstandard1.3/System.Text.Encoding.CodePages.dll": {
+            "assetType": "runtime",
+            "rid": "unix"
+          },
+          "runtimes/win/lib/netstandard1.3/System.Text.Encoding.CodePages.dll": {
+            "assetType": "runtime",
+            "rid": "win"
+          }
+        }
+      },
+      "System.Text.Encoding.Extensions/4.0.11": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "1.0.1",
+          "Microsoft.NETCore.Targets": "1.0.1",
+          "System.Runtime": "4.1.0",
+          "System.Text.Encoding": "4.0.11"
+        },
+        "compile": {
+          "ref/netstandard1.3/System.Text.Encoding.Extensions.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+win8+wp8+wpa81/_._": {}
+        }
+      },
+      "System.Text.Encodings.Web/4.0.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Diagnostics.Debug": "4.0.11",
+          "System.IO": "4.1.0",
+          "System.Reflection": "4.1.0",
+          "System.Resources.ResourceManager": "4.0.1",
+          "System.Runtime": "4.1.0",
+          "System.Runtime.Extensions": "4.1.0",
+          "System.Threading": "4.0.11"
+        },
+        "compile": {
+          "lib/netstandard1.0/System.Text.Encodings.Web.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.0/System.Text.Encodings.Web.dll": {}
+        }
+      },
+      "System.Text.RegularExpressions/4.1.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Runtime": "4.1.0"
+        },
+        "compile": {
+          "ref/netstandard1.3/System.Text.RegularExpressions.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.6/System.Text.RegularExpressions.dll": {}
+        }
+      },
+      "System.Threading/4.0.11": {
+        "type": "package",
+        "dependencies": {
+          "System.Runtime": "4.1.0",
+          "System.Threading.Tasks": "4.0.11"
+        },
+        "compile": {
+          "ref/netstandard1.3/System.Threading.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.3/System.Threading.dll": {}
+        }
+      },
+      "System.Threading.Overlapped/4.0.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "1.0.1",
+          "System.Resources.ResourceManager": "4.0.1",
+          "System.Runtime": "4.1.0",
+          "System.Runtime.Handles": "4.0.1"
+        },
+        "compile": {
+          "ref/netstandard1.3/_._": {}
+        },
+        "runtimeTargets": {
+          "runtimes/unix/lib/netstandard1.3/System.Threading.Overlapped.dll": {
+            "assetType": "runtime",
+            "rid": "unix"
+          },
+          "runtimes/win/lib/netstandard1.3/System.Threading.Overlapped.dll": {
+            "assetType": "runtime",
+            "rid": "win"
+          }
+        }
+      },
+      "System.Threading.Tasks/4.0.11": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "1.0.1",
+          "Microsoft.NETCore.Targets": "1.0.1",
+          "System.Runtime": "4.1.0"
+        },
+        "compile": {
+          "ref/netstandard1.3/System.Threading.Tasks.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+win8+wp8+wpa81/_._": {}
+        }
+      },
+      "System.Threading.Tasks.Dataflow/4.6.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Collections": "4.0.11",
+          "System.Collections.Concurrent": "4.0.12",
+          "System.Diagnostics.Debug": "4.0.11",
+          "System.Diagnostics.Tracing": "4.1.0",
+          "System.Dynamic.Runtime": "4.0.11",
+          "System.Linq": "4.1.0",
+          "System.Resources.ResourceManager": "4.0.1",
+          "System.Runtime": "4.1.0",
+          "System.Runtime.Extensions": "4.1.0",
+          "System.Threading": "4.0.11",
+          "System.Threading.Tasks": "4.0.11"
+        },
+        "compile": {
+          "lib/netstandard1.1/System.Threading.Tasks.Dataflow.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.1/System.Threading.Tasks.Dataflow.dll": {}
+        }
+      },
+      "System.Threading.Tasks.Extensions/4.0.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Collections": "4.0.11",
+          "System.Runtime": "4.1.0",
+          "System.Threading.Tasks": "4.0.11"
+        },
+        "compile": {
+          "lib/netstandard1.0/System.Threading.Tasks.Extensions.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.0/System.Threading.Tasks.Extensions.dll": {}
+        }
+      },
+      "System.Threading.Tasks.Parallel/4.0.1": {
+        "type": "package",
+        "dependencies": {
+          "System.Collections.Concurrent": "4.0.12",
+          "System.Diagnostics.Debug": "4.0.11",
+          "System.Diagnostics.Tracing": "4.1.0",
+          "System.Resources.ResourceManager": "4.0.1",
+          "System.Runtime": "4.1.0",
+          "System.Runtime.Extensions": "4.1.0",
+          "System.Threading": "4.0.11",
+          "System.Threading.Tasks": "4.0.11"
+        },
+        "compile": {
+          "ref/netstandard1.1/System.Threading.Tasks.Parallel.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.3/System.Threading.Tasks.Parallel.dll": {}
+        }
+      },
+      "System.Threading.Thread/4.0.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Runtime": "4.1.0"
+        },
+        "compile": {
+          "ref/netstandard1.3/System.Threading.Thread.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.3/System.Threading.Thread.dll": {}
+        }
+      },
+      "System.Threading.ThreadPool/4.0.10": {
+        "type": "package",
+        "dependencies": {
+          "System.Runtime": "4.1.0",
+          "System.Runtime.Handles": "4.0.1"
+        },
+        "compile": {
+          "ref/netstandard1.3/System.Threading.ThreadPool.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.3/System.Threading.ThreadPool.dll": {}
+        }
+      },
+      "System.Threading.Timer/4.0.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "1.0.1",
+          "Microsoft.NETCore.Targets": "1.0.1",
+          "System.Runtime": "4.1.0"
+        },
+        "compile": {
+          "ref/netstandard1.2/System.Threading.Timer.dll": {}
+        }
+      },
+      "System.Xml.ReaderWriter/4.0.11": {
+        "type": "package",
+        "dependencies": {
+          "System.Collections": "4.0.11",
+          "System.Diagnostics.Debug": "4.0.11",
+          "System.Globalization": "4.0.11",
+          "System.IO": "4.1.0",
+          "System.IO.FileSystem": "4.0.1",
+          "System.IO.FileSystem.Primitives": "4.0.1",
+          "System.Resources.ResourceManager": "4.0.1",
+          "System.Runtime": "4.1.0",
+          "System.Runtime.Extensions": "4.1.0",
+          "System.Runtime.InteropServices": "4.1.0",
+          "System.Text.Encoding": "4.0.11",
+          "System.Text.Encoding.Extensions": "4.0.11",
+          "System.Text.RegularExpressions": "4.1.0",
+          "System.Threading.Tasks": "4.0.11",
+          "System.Threading.Tasks.Extensions": "4.0.0"
+>>>>>>> 46f29f7612a55852ac7844e2286ab7a48bd60cd6:iBalekaService/src/iBalekaService.Core/project.lock.json
         },
         "compile": {
           "ref/netstandard1.3/System.Xml.ReaderWriter.dll": {}
@@ -2869,6 +3956,7 @@
       "System.Xml.XPath.XDocument/4.0.1-rc2-24027": {
         "type": "package",
         "dependencies": {
+<<<<<<< HEAD:iBalekaService/src/iBalekaService.Domain/project.lock.json~1d33643fbaf15f98ba7a817b3e1159d536cd8a52
           "System.Diagnostics.Debug": "4.0.11-rc2-24027",
           "System.Linq": "4.1.0-rc2-24027",
           "System.Resources.ResourceManager": "4.0.1-rc2-24027",
@@ -2878,6 +3966,82 @@
           "System.Xml.ReaderWriter": "4.0.11-rc2-24027",
           "System.Xml.XDocument": "4.0.11-rc2-24027",
           "System.Xml.XPath": "4.0.1-rc2-24027"
+=======
+          "System.Diagnostics.Debug": "4.0.11",
+          "System.Linq": "4.1.0",
+          "System.Resources.ResourceManager": "4.0.1",
+          "System.Runtime": "4.1.0",
+          "System.Runtime.Extensions": "4.1.0",
+          "System.Threading": "4.0.11",
+          "System.Xml.ReaderWriter": "4.0.11",
+          "System.Xml.XDocument": "4.0.11",
+          "System.Xml.XPath": "4.0.1"
+        },
+        "compile": {
+          "ref/netstandard1.3/_._": {}
+        },
+        "runtime": {
+          "lib/netstandard1.3/System.Xml.XPath.XDocument.dll": {}
+        }
+      },
+      "iBalekaService.Data/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v1.0",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "1.0.0",
+          "Microsoft.EntityFrameworkCore.SqlServer": "1.0.0",
+          "Microsoft.EntityFrameworkCore.Tools": "1.0.0-preview2-final",
+          "Microsoft.EntityFrameworkCore.Tools.Cli": "1.0.0-preview1-final",
+          "Microsoft.EntityFrameworkCore.Tools.Core": "1.0.0-rc2-final",
+          "Microsoft.Extensions.DependencyInjection": "1.0.0",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "1.0.0",
+          "Microsoft.NETCore.App": "1.0.0",
+          "NETStandard.Library": "1.6.0",
+          "iBalekaService.Domain": "1.0.0"
+        },
+        "compile": {
+          "netcoreapp1.0/iBalekaService.Data.dll": {}
+        },
+        "runtime": {
+          "netcoreapp1.0/iBalekaService.Data.dll": {}
+        }
+      },
+      "iBalekaService.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v1.0",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "1.0.0",
+          "Microsoft.EntityFrameworkCore.InMemory": "1.0.0",
+          "Microsoft.EntityFrameworkCore.SqlServer": "1.0.0",
+          "Microsoft.EntityFrameworkCore.Tools": "1.0.0-preview2-final",
+          "Microsoft.EntityFrameworkCore.Tools.Cli": "1.0.0-preview1-final",
+          "Microsoft.EntityFrameworkCore.Tools.Core": "1.0.0-rc2-final",
+          "Microsoft.NETCore.App": "1.0.0",
+          "NETStandard.Library": "1.6.0"
+        },
+        "compile": {
+          "netcoreapp1.0/iBalekaService.Domain.dll": {}
+        },
+        "runtime": {
+          "netcoreapp1.0/iBalekaService.Domain.dll": {}
+        }
+      },
+      "iBalekaService.Service/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v1.0",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "1.0.0",
+          "Microsoft.EntityFrameworkCore.InMemory": "1.0.0",
+          "Microsoft.EntityFrameworkCore.Tools": "1.0.0-preview2-final",
+          "Microsoft.EntityFrameworkCore.Tools.Cli": "1.0.0-preview1-final",
+          "Microsoft.EntityFrameworkCore.Tools.Core": "1.0.0-rc2-final",
+          "Microsoft.NETCore.App": "1.0.0",
+          "NETStandard.Library": "1.6.0",
+          "iBalekaService.Data": "1.0.0"
+        },
+        "compile": {
+          "netcoreapp1.0/iBalekaService.Service.dll": {}
+>>>>>>> 46f29f7612a55852ac7844e2286ab7a48bd60cd6:iBalekaService/src/iBalekaService.Core/project.lock.json
         },
         "compile": {
           "ref/netstandard1.3/_._": {}
@@ -2927,8 +4091,24 @@
         "lib/netstandard1.3/Microsoft.AspNetCore.Hosting.Server.Abstractions.xml"
       ]
     },
+<<<<<<< HEAD:iBalekaService/src/iBalekaService.Domain/project.lock.json~1d33643fbaf15f98ba7a817b3e1159d536cd8a52
     "Microsoft.AspNetCore.Http.Abstractions/1.0.0-rc2-final": {
       "sha512": "ndmI1ufOWIq7b9ntY5rX2D7GeLG1Y6yAycPdxzOnK5k9siKcEikr1dhiQpWjRIPv5EoehvkLeCuQ991rujInRw==",
+=======
+    "Microsoft.AspNetCore.Server.IISIntegration.Tools/1.0.0-preview1-final": {
+      "sha512": "QpwVNYVhruOZ/fEtSrlDftK+r0sXM9JM9zqFeYFm60eCPcX3BqzSEzCaxWXeaWek/GyxtIaJfsq/tyKIlzWoZA==",
+      "type": "package",
+      "files": [
+        "Microsoft.AspNetCore.Server.IISIntegration.Tools.1.0.0-preview1-final.nupkg.sha512",
+        "Microsoft.AspNetCore.Server.IISIntegration.Tools.nuspec",
+        "lib/netcoreapp1.0/dotnet-publish-iis.dll",
+        "lib/netcoreapp1.0/dotnet-publish-iis.runtimeconfig.json",
+        "lib/netcoreapp1.0/dotnet-publish-iis.xml"
+      ]
+    },
+    "Microsoft.AspNetCore.Server.Kestrel/1.0.0-rc2-final": {
+      "sha512": "ojeLfBZ+H7uVImuzqErcNv8hN8Z8+k99jSl2U+cwEMddJXnzqjND20NlwNW/g4/3roLB3F3+6kYTy3wWMYFQCg==",
+>>>>>>> 46f29f7612a55852ac7844e2286ab7a48bd60cd6:iBalekaService/src/iBalekaService.Core/project.lock.json
       "type": "package",
       "files": [
         "Microsoft.AspNetCore.Http.Abstractions.1.0.0-rc2-final.nupkg.sha512",
@@ -3111,11 +4291,46 @@
         "lib/netstandard1.3/Microsoft.EntityFrameworkCore.xml"
       ]
     },
+<<<<<<< HEAD:iBalekaService/src/iBalekaService.Domain/project.lock.json~1d33643fbaf15f98ba7a817b3e1159d536cd8a52
     "Microsoft.EntityFrameworkCore.InMemory/1.0.0-rc2-final": {
       "sha512": "dNx+TrLTM5VlKUevS0J36L4DTaN14V3GEWlSU9y7+OnAfsz4Eq3rokR2zLm5N9VhOU3Pbqgygj45uOuqcJQgtw==",
+=======
+    "Microsoft.EntityFrameworkCore.Design/1.0.0-preview2-final": {
+      "sha512": "RhyjntECuOVsrKjgFog9rv+V7oBsxBNxz5NviF7uHvDDQXLyHH3os/CewQxRNsve114AQH5RX/Bww6qAXlSORQ==",
       "type": "package",
+      "path": "Microsoft.EntityFrameworkCore.Design/1.0.0-preview2-final",
       "files": [
-        "Microsoft.EntityFrameworkCore.InMemory.1.0.0-rc2-final.nupkg.sha512",
+        "Microsoft.EntityFrameworkCore.Design.1.0.0-preview2-final.nupkg.sha512",
+        "Microsoft.EntityFrameworkCore.Design.nuspec",
+        "lib/net451/_._",
+        "lib/netcore50/_._",
+        "lib/netcoreapp1.0/Microsoft.EntityFrameworkCore.Design.dll",
+        "lib/netcoreapp1.0/Microsoft.EntityFrameworkCore.Design.runtimeconfig.json",
+        "lib/netcoreapp1.0/Microsoft.EntityFrameworkCore.Design.xml",
+        "runtimes/win7-x64/lib/net451/Microsoft.EntityFrameworkCore.Design.exe",
+        "runtimes/win7-x86/lib/net451/Microsoft.EntityFrameworkCore.Design.exe"
+      ]
+    },
+    "Microsoft.EntityFrameworkCore.Design.Core/1.0.0-preview2-final": {
+      "sha512": "H3pHksGErQSEwWyvISlDYMslIXftS4XB2m0AvqBS08ECGHagh27mqm/oIyUetzzRad+C2V0zpguJmR14eMiRaA==",
+      "type": "package",
+      "path": "Microsoft.EntityFrameworkCore.Design.Core/1.0.0-preview2-final",
+      "files": [
+        "Microsoft.EntityFrameworkCore.Design.Core.1.0.0-preview2-final.nupkg.sha512",
+        "Microsoft.EntityFrameworkCore.Design.Core.nuspec",
+        "lib/net451/Microsoft.EntityFrameworkCore.Design.Core.dll",
+        "lib/net451/Microsoft.EntityFrameworkCore.Design.Core.xml",
+        "lib/netstandard1.3/Microsoft.EntityFrameworkCore.Design.Core.dll",
+        "lib/netstandard1.3/Microsoft.EntityFrameworkCore.Design.Core.xml"
+      ]
+    },
+    "Microsoft.EntityFrameworkCore.InMemory/1.0.0": {
+      "sha512": "0HGcrblJnPlW9EHLFKZ4uSFXOVbvtIymPNsbD+PoAm2B12oe8ImTgWHAgeYbCDLWHyETyN3D1sn8sqkqbo+uog==",
+>>>>>>> 46f29f7612a55852ac7844e2286ab7a48bd60cd6:iBalekaService/src/iBalekaService.Core/project.lock.json
+      "type": "package",
+      "path": "Microsoft.EntityFrameworkCore.InMemory/1.0.0",
+      "files": [
+        "Microsoft.EntityFrameworkCore.InMemory.1.0.0.nupkg.sha512",
         "Microsoft.EntityFrameworkCore.InMemory.nuspec",
         "lib/net451/Microsoft.EntityFrameworkCore.InMemory.dll",
         "lib/net451/Microsoft.EntityFrameworkCore.InMemory.xml",
@@ -3151,11 +4366,12 @@
         "lib/netstandard1.3/Microsoft.EntityFrameworkCore.Relational.Design.xml"
       ]
     },
-    "Microsoft.EntityFrameworkCore.SqlServer/1.0.0-rc2-final": {
-      "sha512": "5BJ9VrgVbP/OqIuRow8nZkwbtr5CKjCyQGaXsBLZbzL8LZRkY1rb8kWYBusTJeZ2LjnnV0liQeNPRs3C15pIPQ==",
+    "Microsoft.EntityFrameworkCore.SqlServer/1.0.0": {
+      "sha512": "zLPrmmZ2b4jM3Hezf4dP2oIVREeXlXfcyNDX4mBZ6xcW+QauxyDpzrB86mnEF1quBdkpbZhv7T+ZbS9XS6Hqdg==",
       "type": "package",
+      "path": "Microsoft.EntityFrameworkCore.SqlServer/1.0.0",
       "files": [
-        "Microsoft.EntityFrameworkCore.SqlServer.1.0.0-rc2-final.nupkg.sha512",
+        "Microsoft.EntityFrameworkCore.SqlServer.1.0.0.nupkg.sha512",
         "Microsoft.EntityFrameworkCore.SqlServer.nuspec",
         "lib/net451/Microsoft.EntityFrameworkCore.SqlServer.dll",
         "lib/net451/Microsoft.EntityFrameworkCore.SqlServer.xml",
@@ -3163,8 +4379,13 @@
         "lib/netstandard1.3/Microsoft.EntityFrameworkCore.SqlServer.xml"
       ]
     },
+<<<<<<< HEAD:iBalekaService/src/iBalekaService.Domain/project.lock.json~1d33643fbaf15f98ba7a817b3e1159d536cd8a52
     "Microsoft.EntityFrameworkCore.Tools/1.0.0-preview1-final": {
       "sha512": "X+XFJwnjr+Bxf+H2ZgHlceVJf6AJDrD+MXyGpjpmdcLb8gKY33uzRIcxJNm2OI9oY3/BBecRaImHnOpjP3Zkzg==",
+=======
+    "Microsoft.EntityFrameworkCore.Tools/1.0.0-preview2-final": {
+      "sha512": "x+OkqEMERFJY9cAFBZsNPEmZEApAakay2yhE3CD+nyc+HtJDFbyX+spcnOxUjZ2w+YqAdzT6L3DzjlCbRLv9vQ==",
+>>>>>>> 46f29f7612a55852ac7844e2286ab7a48bd60cd6:iBalekaService/src/iBalekaService.Core/project.lock.json
       "type": "package",
       "files": [
         "Microsoft.EntityFrameworkCore.Tools.1.0.0-preview1-final.nupkg.sha512",
@@ -3189,6 +4410,10 @@
     "Microsoft.EntityFrameworkCore.Tools.Cli/1.0.0-preview1-final": {
       "sha512": "rB+lVCt2vZ7ASHweT2ltuNMPR2xLA45WL2CGmQtrR+ZUoVB++WJLGIDQxisKRcViDA5huwpZkcXW0R0kPSlE9g==",
       "type": "package",
+<<<<<<< HEAD:iBalekaService/src/iBalekaService.Domain/project.lock.json~1d33643fbaf15f98ba7a817b3e1159d536cd8a52
+=======
+      "path": "Microsoft.EntityFrameworkCore.Tools.Cli/1.0.0-preview1-final",
+>>>>>>> 46f29f7612a55852ac7844e2286ab7a48bd60cd6:iBalekaService/src/iBalekaService.Core/project.lock.json
       "files": [
         "Microsoft.EntityFrameworkCore.Tools.Cli.1.0.0-preview1-final.nupkg.sha512",
         "Microsoft.EntityFrameworkCore.Tools.Cli.nuspec",
@@ -3202,6 +4427,10 @@
     "Microsoft.EntityFrameworkCore.Tools.Core/1.0.0-rc2-final": {
       "sha512": "0L30NEnJaFdbc8a+B9nLb2kkMfnz94RFvJ8JWlO1u73wRChEafB7wLozyhCJFZziEEp8IbFYTzF3omR6gDfsmA==",
       "type": "package",
+<<<<<<< HEAD:iBalekaService/src/iBalekaService.Domain/project.lock.json~1d33643fbaf15f98ba7a817b3e1159d536cd8a52
+=======
+      "path": "Microsoft.EntityFrameworkCore.Tools.Core/1.0.0-rc2-final",
+>>>>>>> 46f29f7612a55852ac7844e2286ab7a48bd60cd6:iBalekaService/src/iBalekaService.Core/project.lock.json
       "files": [
         "Microsoft.EntityFrameworkCore.Tools.Core.1.0.0-rc2-final.nupkg.sha512",
         "Microsoft.EntityFrameworkCore.Tools.Core.nuspec",
@@ -3213,8 +4442,13 @@
         "lib/netstandard1.3/Microsoft.EntityFrameworkCore.Tools.Core.xml"
       ]
     },
+<<<<<<< HEAD:iBalekaService/src/iBalekaService.Domain/project.lock.json~1d33643fbaf15f98ba7a817b3e1159d536cd8a52
     "Microsoft.Extensions.Caching.Abstractions/1.0.0-rc2-final": {
       "sha512": "Seu7cdYLYDFjYGd9KgzbAa5G6Xkzw6f6mSJjWemal1qNL505ktHMSbve6IPGScipL578rPwPTVqrTWWKIvmvLg==",
+=======
+    "Microsoft.Extensions.Caching.Abstractions/1.0.0": {
+      "sha512": "IxlFDVOchL6tdR05bk7EiJvMtvZrVkZXBhkbXqc3GxOHOrHFGcN+92WoWFPeBpdpy8ot/Px5ZdXzt7k+2n1Bdg==",
+>>>>>>> 46f29f7612a55852ac7844e2286ab7a48bd60cd6:iBalekaService/src/iBalekaService.Core/project.lock.json
       "type": "package",
       "files": [
         "Microsoft.Extensions.Caching.Abstractions.1.0.0-rc2-final.nupkg.sha512",
@@ -3802,13 +5036,14 @@
         "runtime.native.System.nuspec"
       ]
     },
-    "runtime.native.System.Data.SqlClient.sni/4.0.0-rc2-24027": {
-      "sha512": "pMR+/wuMjt0fblON8ycjd/XCzKd6qHscOhQ7aYpzZI5qBl4ethwCCL/S6iITMtIOv5TvQ3J3GOKwtYz5hBpaTg==",
+    "runtime.native.System.Data.SqlClient.sni/4.0.0": {
+      "sha512": "DcMVtYwugo1LOc9MVchInxlLNoFe/+21MsEQU9yIZX561chzxDlFDWowWF+Kc262PyD3eLkDab1JyJrs73Qtkg==",
       "type": "package",
+      "path": "runtime.native.System.Data.SqlClient.sni/4.0.0",
       "files": [
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
-        "runtime.native.System.Data.SqlClient.sni.4.0.0-rc2-24027.nupkg.sha512",
+        "runtime.native.System.Data.SqlClient.sni.4.0.0.nupkg.sha512",
         "runtime.native.System.Data.SqlClient.sni.nuspec"
       ]
     },
@@ -3822,6 +5057,7 @@
         "runtime.native.System.IO.Compression.nuspec"
       ]
     },
+<<<<<<< HEAD:iBalekaService/src/iBalekaService.Domain/project.lock.json~1d33643fbaf15f98ba7a817b3e1159d536cd8a52
     "runtime.native.System.Net.Http/4.0.1-rc2-24027": {
       "sha512": "NtYGs9vDkR/XtJAA2batr1MxMM/JqtvCIMzJ3QdErd5HoALZSv5O9YQfBPvdsrGUPDyDgbIa8WB0Q/iFv+o12A==",
       "type": "package",
@@ -3844,6 +5080,10 @@
     },
     "runtime.native.System.Security.Cryptography/4.0.0-rc2-24027": {
       "sha512": "Xi58pn6uTrwo2hz2mhR7LbqaukuS3eRsVg6Y5BZGDtthJmv/LGh//3jtVASQMK14ByRVZoK3nP8S+l/2gt+R+g==",
+=======
+    "runtime.native.System.Security.Cryptography/4.0.0": {
+      "sha512": "2CQK0jmO6Eu7ZeMgD+LOFbNJSXHFVQbCJJkEyEwowh1SCgYnrn9W9RykMfpeeVGw7h4IBvYikzpGUlmZTUafJw==",
+>>>>>>> 46f29f7612a55852ac7844e2286ab7a48bd60cd6:iBalekaService/src/iBalekaService.Core/project.lock.json
       "type": "package",
       "files": [
         "ThirdPartyNotices.txt",
@@ -3852,24 +5092,26 @@
         "runtime.native.System.Security.Cryptography.nuspec"
       ]
     },
-    "runtime.win7-x64.runtime.native.System.Data.SqlClient.sni/4.0.1-rc2-24027": {
-      "sha512": "e+XMbd6jjySo5yGHc6P/EGAro9+Md19Q6dciNIQmss4wZaMrbIoZgif1uW2Kdv8CH/9uYVM0TluWz5Ic20apxw==",
+    "runtime.win7-x64.runtime.native.System.Data.SqlClient.sni/4.0.1": {
+      "sha512": "My20HZqJbDS4rWmdOcJ3TPf9iX6M/sTF2nBSUHBvfWp1iNip3eMS+K65oQgsLRxX6h21ic3YED06c2ye2sL7FQ==",
       "type": "package",
+      "path": "runtime.win7-x64.runtime.native.System.Data.SqlClient.sni/4.0.1",
       "files": [
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
-        "runtime.win7-x64.runtime.native.System.Data.SqlClient.sni.4.0.1-rc2-24027.nupkg.sha512",
+        "runtime.win7-x64.runtime.native.System.Data.SqlClient.sni.4.0.1.nupkg.sha512",
         "runtime.win7-x64.runtime.native.System.Data.SqlClient.sni.nuspec",
         "runtimes/win7-x64/native/sni.dll"
       ]
     },
-    "runtime.win7-x86.runtime.native.System.Data.SqlClient.sni/4.0.1-rc2-24027": {
-      "sha512": "Rk4a5IyEWxQ4Sg5lwbI9a2IamFzXggEg3l9ePRfuCop63TMYtQ70BsDqj7wI6iLehfmBkOKS1AC8yxTp0nsSmg==",
+    "runtime.win7-x86.runtime.native.System.Data.SqlClient.sni/4.0.1": {
+      "sha512": "ykiYCf/0hIc0xm+g6bVX8nw9St5Ool+r4US+B+56Lv/GFnDG5G9BK4n7WkrwEpuWV3XjMn38oHgHOnNMzBVNKA==",
       "type": "package",
+      "path": "runtime.win7-x86.runtime.native.System.Data.SqlClient.sni/4.0.1",
       "files": [
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
-        "runtime.win7-x86.runtime.native.System.Data.SqlClient.sni.4.0.1-rc2-24027.nupkg.sha512",
+        "runtime.win7-x86.runtime.native.System.Data.SqlClient.sni.4.0.1.nupkg.sha512",
         "runtime.win7-x86.runtime.native.System.Data.SqlClient.sni.nuspec",
         "runtimes/win7-x86/native/sni.dll"
       ]
@@ -4364,17 +5606,18 @@
         "ref/xamarinwatchos10/_._"
       ]
     },
-    "System.Data.SqlClient/4.1.0-rc2-24027": {
-      "sha512": "8VbNFTQdss8/9HIGe4v59nQFWtQNUn+AHVYCvH76aOOTWjwBdE+EeES7j2yHJ4p6hrpSDDR2zJNWH02PTLry6w==",
+    "System.Data.SqlClient/4.1.0": {
+      "sha512": "yqMZgzzKHdG84QmA/PPZUORaoisfvztvFqyPs7dPafJhNxlS7STf9OMCFrP/tITQCqImkm1+X4d2oiWOT2oTKg==",
       "type": "package",
+      "path": "System.Data.SqlClient/4.1.0",
       "files": [
-        "System.Data.SqlClient.4.1.0-rc2-24027.nupkg.sha512",
+        "System.Data.SqlClient.4.1.0.nupkg.sha512",
         "System.Data.SqlClient.nuspec",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
         "lib/MonoTouch10/_._",
-        "lib/net45/System.Data.SqlClient.dll",
+        "lib/net451/System.Data.SqlClient.dll",
         "lib/net46/System.Data.SqlClient.dll",
         "lib/xamarinios10/_._",
         "lib/xamarinmac20/_._",
@@ -4382,19 +5625,19 @@
         "lib/xamarinwatchos10/_._",
         "ref/MonoAndroid10/_._",
         "ref/MonoTouch10/_._",
-        "ref/net45/System.Data.SqlClient.dll",
+        "ref/net451/System.Data.SqlClient.dll",
         "ref/net46/System.Data.SqlClient.dll",
-        "ref/netstandard1.1/System.Data.SqlClient.dll",
-        "ref/netstandard1.1/System.Data.SqlClient.xml",
-        "ref/netstandard1.1/de/System.Data.SqlClient.xml",
-        "ref/netstandard1.1/es/System.Data.SqlClient.xml",
-        "ref/netstandard1.1/fr/System.Data.SqlClient.xml",
-        "ref/netstandard1.1/it/System.Data.SqlClient.xml",
-        "ref/netstandard1.1/ja/System.Data.SqlClient.xml",
-        "ref/netstandard1.1/ko/System.Data.SqlClient.xml",
-        "ref/netstandard1.1/ru/System.Data.SqlClient.xml",
-        "ref/netstandard1.1/zh-hans/System.Data.SqlClient.xml",
-        "ref/netstandard1.1/zh-hant/System.Data.SqlClient.xml",
+        "ref/netstandard1.2/System.Data.SqlClient.dll",
+        "ref/netstandard1.2/System.Data.SqlClient.xml",
+        "ref/netstandard1.2/de/System.Data.SqlClient.xml",
+        "ref/netstandard1.2/es/System.Data.SqlClient.xml",
+        "ref/netstandard1.2/fr/System.Data.SqlClient.xml",
+        "ref/netstandard1.2/it/System.Data.SqlClient.xml",
+        "ref/netstandard1.2/ja/System.Data.SqlClient.xml",
+        "ref/netstandard1.2/ko/System.Data.SqlClient.xml",
+        "ref/netstandard1.2/ru/System.Data.SqlClient.xml",
+        "ref/netstandard1.2/zh-hans/System.Data.SqlClient.xml",
+        "ref/netstandard1.2/zh-hant/System.Data.SqlClient.xml",
         "ref/netstandard1.3/System.Data.SqlClient.dll",
         "ref/netstandard1.3/System.Data.SqlClient.xml",
         "ref/netstandard1.3/de/System.Data.SqlClient.xml",
@@ -4411,7 +5654,9 @@
         "ref/xamarintvos10/_._",
         "ref/xamarinwatchos10/_._",
         "runtimes/unix/lib/netstandard1.3/System.Data.SqlClient.dll",
-        "runtimes/win7/lib/netstandard1.3/System.Data.SqlClient.dll"
+        "runtimes/win/lib/net451/System.Data.SqlClient.dll",
+        "runtimes/win/lib/net46/System.Data.SqlClient.dll",
+        "runtimes/win/lib/netstandard1.3/System.Data.SqlClient.dll"
       ]
     },
     "System.Diagnostics.Debug/4.0.11-rc2-24027": {
@@ -5299,11 +6544,12 @@
         "runtimes/win7/lib/netstandard1.3/System.IO.MemoryMappedFiles.dll"
       ]
     },
-    "System.IO.Pipes/4.0.0-rc2-24027": {
-      "sha512": "tBODHilZogxWltQXlZLkOznRlrARIWV7bVWWISM/rd5DJLw8PJfgUjF2C35KSNdw7fYlJgrWBqM6qAIRVAab8w==",
+    "System.IO.Pipes/4.0.0": {
+      "sha512": "L9QVhk8hIEix5KNA0kW58Ha+Y1dNGqqqIhAaJkhcGCWeQzUmN0njzI7SG/XAazpMecboOdFFlH3pH/qbwXLJAg==",
       "type": "package",
+      "path": "System.IO.Pipes/4.0.0",
       "files": [
-        "System.IO.Pipes.4.0.0-rc2-24027.nupkg.sha512",
+        "System.IO.Pipes.4.0.0.nupkg.sha512",
         "System.IO.Pipes.nuspec",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
@@ -5321,8 +6567,9 @@
         "ref/netstandard1.3/zh-hans/System.IO.Pipes.xml",
         "ref/netstandard1.3/zh-hant/System.IO.Pipes.xml",
         "runtimes/unix/lib/netstandard1.3/System.IO.Pipes.dll",
-        "runtimes/win7/lib/netcore50/_._",
-        "runtimes/win7/lib/netstandard1.3/System.IO.Pipes.dll"
+        "runtimes/win/lib/net46/System.IO.Pipes.dll",
+        "runtimes/win/lib/netstandard1.3/System.IO.Pipes.dll",
+        "runtimes/win7/lib/netcore50/_._"
       ]
     },
     "System.IO.UnmanagedMemoryStream/4.0.1-rc2-24027": {
@@ -6278,6 +7525,7 @@
         "runtimes/aot/lib/netcore50/_._"
       ]
     },
+<<<<<<< HEAD:iBalekaService/src/iBalekaService.Domain/project.lock.json~1d33643fbaf15f98ba7a817b3e1159d536cd8a52
     "System.Reflection.Emit.Lightweight/4.0.1-rc2-24027": {
       "sha512": "kDuurD3Z1bYJrW0VqBEoHWLUCWYtto/SF/dajEj8sXftap3zkqBF+3IMb8l4EfRuzytlS2TlmFxiApbB9C8JEA==",
       "type": "package",
@@ -6310,6 +7558,10 @@
     },
     "System.Reflection.Extensions/4.0.1-rc2-24027": {
       "sha512": "5N1tt+n0OHyaZ3Wb73FIfNsRrkFDW1I2fuAzojudgcZ0XcAHqLE0Wb9/JQ2eG6Lp89l2qntx4HvXcIDjVwvYuw==",
+=======
+    "System.Reflection.Extensions/4.0.1": {
+      "sha512": "GYrtRsZcMuHF3sbmRHfMYpvxZoIN2bQGrYGerUiWLEkqdEUQZhH3TRSaC/oI4wO0II1RKBPlpIa1TOMxIcOOzQ==",
+>>>>>>> 46f29f7612a55852ac7844e2286ab7a48bd60cd6:iBalekaService/src/iBalekaService.Core/project.lock.json
       "type": "package",
       "files": [
         "System.Reflection.Extensions.4.0.1-rc2-24027.nupkg.sha512",
@@ -7094,6 +8346,7 @@
         "runtimes/win7/lib/netstandard1.4/System.Security.Cryptography.Algorithms.dll"
       ]
     },
+<<<<<<< HEAD:iBalekaService/src/iBalekaService.Domain/project.lock.json~1d33643fbaf15f98ba7a817b3e1159d536cd8a52
     "System.Security.Cryptography.Cng/4.1.0-rc2-24027": {
       "sha512": "QILmzqCpi0F9+DK5Z4/w0VW7gu07CpXksTxhkjqGspxuh7KSd+G2lsIM7vUEZaWvuwJQyQRCNRMALC7u/tgY+g==",
       "type": "package",
@@ -7142,6 +8395,10 @@
     },
     "System.Security.Cryptography.Encoding/4.0.0-rc2-24027": {
       "sha512": "71AE+Bd68o0t6R0OEwHNRxcpcCI2kYfY0EOP+mAzIohObJKLoaDW6t8CunWOnr7hzvHI4W2UdNgmZzX2HSSuOA==",
+=======
+    "System.Security.Cryptography.Encoding/4.0.0": {
+      "sha512": "FbKgE5MbxSQMPcSVRgwM6bXN3GtyAh04NkV8E5zKCBE26X0vYW0UtTa2FIgkH33WVqBVxRgxljlVYumWtU+HcQ==",
+>>>>>>> 46f29f7612a55852ac7844e2286ab7a48bd60cd6:iBalekaService/src/iBalekaService.Core/project.lock.json
       "type": "package",
       "files": [
         "System.Security.Cryptography.Encoding.4.0.0-rc2-24027.nupkg.sha512",
@@ -7177,6 +8434,7 @@
         "runtimes/win7/lib/netstandard1.3/System.Security.Cryptography.Encoding.dll"
       ]
     },
+<<<<<<< HEAD:iBalekaService/src/iBalekaService.Domain/project.lock.json~1d33643fbaf15f98ba7a817b3e1159d536cd8a52
     "System.Security.Cryptography.OpenSsl/4.0.0-rc2-24027": {
       "sha512": "DZ3OjJC6O1qmYksZ45fuyHpB0julRXuohxGyDg2S4flOb8BIJYtzNZPapkkTNazDVAHohK4J8c7OLx3kFE2LVw==",
       "type": "package",
@@ -7192,6 +8450,10 @@
     },
     "System.Security.Cryptography.Primitives/4.0.0-rc2-24027": {
       "sha512": "0uZrfk+oxQTpQ/4qTLCTTPXMvjkf0a7YUsYP2GkIeTirphSTZ090LISz4WLXf5AbuO/hYEI7k0MSxp0uqFB0tQ==",
+=======
+    "System.Security.Cryptography.Primitives/4.0.0": {
+      "sha512": "Wkd7QryWYjkQclX0bngpntW5HSlMzeJU24UaLJQ7YTfI8ydAVAaU2J+HXLLABOVJlKTVvAeL0Aj39VeTe7L+oA==",
+>>>>>>> 46f29f7612a55852ac7844e2286ab7a48bd60cd6:iBalekaService/src/iBalekaService.Core/project.lock.json
       "type": "package",
       "files": [
         "System.Security.Cryptography.Primitives.4.0.0-rc2-24027.nupkg.sha512",
@@ -8204,25 +9466,67 @@
   },
   "projectFileDependencyGroups": {
     "": [
+<<<<<<< HEAD:iBalekaService/src/iBalekaService.Domain/project.lock.json~1d33643fbaf15f98ba7a817b3e1159d536cd8a52
       "Microsoft.EntityFrameworkCore >= 1.0.0-rc2-final",
       "Microsoft.EntityFrameworkCore.InMemory >= 1.0.0-rc2-final",
       "Microsoft.EntityFrameworkCore.SqlServer >= 1.0.0-rc2-final",
       "Microsoft.EntityFrameworkCore.Tools >= 1.0.0-preview1-final",
       "Microsoft.NETCore.App >= 1.0.0-rc2-3002702",
       "NETStandard.Library >= 1.5.0-rc2-24027"
+=======
+      "Microsoft.AspNetCore.Mvc >= 1.0.0-rc2-final",
+      "Microsoft.AspNetCore.Server.IISIntegration >= 1.0.0-rc2-final",
+      "Microsoft.AspNetCore.Server.IISIntegration.Tools >= 1.0.0-preview1-final",
+      "Microsoft.AspNetCore.Server.Kestrel >= 1.0.0-rc2-final",
+      "Microsoft.EntityFrameworkCore >= 1.0.0",
+      "Microsoft.EntityFrameworkCore.InMemory >= 1.0.0",
+      "Microsoft.EntityFrameworkCore.SqlServer >= 1.0.0",
+      "Microsoft.EntityFrameworkCore.Tools >= 1.0.0-preview2-final",
+      "Microsoft.EntityFrameworkCore.Tools.Cli >= 1.0.0-preview1-final",
+      "Microsoft.EntityFrameworkCore.Tools.Core >= 1.0.0-rc2-final",
+      "Microsoft.Extensions.Configuration.EnvironmentVariables >= 1.0.0-rc2-final",
+      "Microsoft.Extensions.Configuration.FileExtensions >= 1.0.0-rc2-final",
+      "Microsoft.Extensions.Configuration.Json >= 1.0.0-rc2-final",
+      "Microsoft.Extensions.Logging >= 1.0.0",
+      "Microsoft.Extensions.Logging.Console >= 1.0.0-rc2-final",
+      "Microsoft.Extensions.Logging.Debug >= 1.0.0-rc2-final",
+      "NETStandard.Library >= 1.6.0",
+      "iBalekaService.Domain >= 1.0.0-*",
+      "iBalekaService.Service >= 1.0.0-*"
+>>>>>>> 46f29f7612a55852ac7844e2286ab7a48bd60cd6:iBalekaService/src/iBalekaService.Core/project.lock.json
     ],
     ".NETCoreApp,Version=v1.0": []
   },
   "tools": {
     ".NETCoreApp,Version=v1.0": {
+<<<<<<< HEAD:iBalekaService/src/iBalekaService.Domain/project.lock.json~1d33643fbaf15f98ba7a817b3e1159d536cd8a52
       "Microsoft.EntityFrameworkCore.Tools/1.0.0-preview1-final": {
+=======
+      "Microsoft.AspNetCore.Server.IISIntegration.Tools/1.0.0-preview1-final": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Hosting.Abstractions": "1.0.0-rc2-final",
-          "Microsoft.EntityFrameworkCore.Tools.Cli": "1.0.0-preview1-final",
-          "Microsoft.EntityFrameworkCore.Tools.Core": "1.0.0-rc2-final",
-          "Microsoft.Extensions.PlatformAbstractions": "1.0.0-rc2-final",
-          "Microsoft.NETCore.App": "1.0.0-rc2-3002702"
+          "Microsoft.DotNet.ProjectModel": "1.0.0-rc2-002702",
+          "Microsoft.Extensions.CommandLineUtils": "1.0.0-rc2-final",
+          "Microsoft.NETCore.App": "1.0.0-rc2-3002702",
+          "System.Diagnostics.Process": "4.1.0-rc2-24027"
+        },
+        "compile": {
+          "lib/netcoreapp1.0/dotnet-publish-iis.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp1.0/dotnet-publish-iis.dll": {}
+        }
+      },
+      "Microsoft.EntityFrameworkCore.Tools/1.0.0-preview2-final": {
+>>>>>>> 46f29f7612a55852ac7844e2286ab7a48bd60cd6:iBalekaService/src/iBalekaService.Core/project.lock.json
+        "type": "package",
+        "dependencies": {
+          "Microsoft.DotNet.Cli.Utils": "1.0.0-preview2-003121",
+          "Microsoft.DotNet.ProjectModel": "1.0.0-rc3-003121",
+          "Microsoft.EntityFrameworkCore.Design": "1.0.0-preview2-final",
+          "Microsoft.Extensions.CommandLineUtils": "1.0.0",
+          "Microsoft.NETCore.App": "1.0.0",
+          "System.Runtime.InteropServices.RuntimeInformation": "4.0.0"
         },
         "compile": {
           "lib/netcoreapp1.0/dotnet-ef.dll": {}
@@ -8235,7 +9539,12 @@
   },
   "projectFileToolGroups": {
     ".NETCoreApp,Version=v1.0": [
+<<<<<<< HEAD:iBalekaService/src/iBalekaService.Domain/project.lock.json~1d33643fbaf15f98ba7a817b3e1159d536cd8a52
       "Microsoft.EntityFrameworkCore.Tools >= 1.0.0-preview1-final"
+=======
+      "Microsoft.AspNetCore.Server.IISIntegration.Tools >= 1.0.0-preview1-final",
+      "Microsoft.EntityFrameworkCore.Tools >= 1.0.0-preview2-final"
+>>>>>>> 46f29f7612a55852ac7844e2286ab7a48bd60cd6:iBalekaService/src/iBalekaService.Core/project.lock.json
     ]
   }
 }

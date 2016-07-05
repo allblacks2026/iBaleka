@@ -4,23 +4,25 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using iBalekaService.Domain.Models;
-using Microsoft.EntityFrameworkCore.Infrastructure;
+
 
 
 
 namespace iBalekaService.Data.Configurations
 {
     public class IBalekaContext : DbContext
-    {
+    { 
         public IBalekaContext(DbContextOptions<IBalekaContext> options)
             : base(options)
-        { }
-        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
 
+<<<<<<< HEAD
             optionsBuilder.UseSqlServer(@"Server=(localdb)\mssqllocaldb;Database=iBalekaDB;Trusted_Connection=True;");
 
+=======
+>>>>>>> 46f29f7612a55852ac7844e2286ab7a48bd60cd6
         }
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             //run - route optional one-to-many
@@ -93,8 +95,5 @@ namespace iBalekaService.Data.Configurations
         {
             base.SaveChanges();
         }
-
-    
-
     }
 }

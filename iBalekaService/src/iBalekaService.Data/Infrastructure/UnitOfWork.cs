@@ -4,6 +4,7 @@ using System.Linq;
 using iBalekaService.Data.Configurations;
 using System.Text;
 using System.Threading.Tasks;
+using Microsoft.EntityFrameworkCore.Infrastructure;
 
 namespace iBalekaService.Data.Infastructure
 {
@@ -11,6 +12,7 @@ namespace iBalekaService.Data.Infastructure
     {
         private readonly IDbFactory dbFactory;
         private IBalekaContext dbContext;
+        DbContextFactoryOptions opt { get; set; }
 
         public UnitOfWork(IDbFactory dbFactory)
         {
@@ -19,7 +21,8 @@ namespace iBalekaService.Data.Infastructure
 
         public IBalekaContext DbContext
         {
-            get { return dbContext ?? (dbContext = dbFactory.Init()); }
+            
+            get { return dbContext ?? (dbContext = dbFactory.Init(opt)); }
         }
 
         public void Commit()

@@ -603,13 +603,17 @@
         }
       },
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
 =======
 >>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
       "Microsoft.EntityFrameworkCore.InMemory/1.0.0-rc2-final": {
+=======
+      "Microsoft.EntityFrameworkCore.InMemory/1.0.0": {
+>>>>>>> 46f29f7612a55852ac7844e2286ab7a48bd60cd6
         "type": "package",
         "dependencies": {
-          "Microsoft.EntityFrameworkCore": "1.0.0-rc2-final"
+          "Microsoft.EntityFrameworkCore": "1.0.0"
         },
         "compile": {
           "lib/netstandard1.3/Microsoft.EntityFrameworkCore.InMemory.dll": {}
@@ -676,12 +680,12 @@
           "lib/netstandard1.3/Microsoft.EntityFrameworkCore.Relational.Design.dll": {}
         }
       },
-      "Microsoft.EntityFrameworkCore.SqlServer/1.0.0-rc2-final": {
+      "Microsoft.EntityFrameworkCore.SqlServer/1.0.0": {
         "type": "package",
         "dependencies": {
-          "Microsoft.EntityFrameworkCore.Relational": "1.0.0-rc2-final",
-          "System.Data.SqlClient": "4.1.0-rc2-24027",
-          "System.Threading.Thread": "4.0.0-rc2-24027"
+          "Microsoft.EntityFrameworkCore.Relational": "1.0.0",
+          "System.Data.SqlClient": "4.1.0",
+          "System.Threading.Thread": "4.0.0"
         },
         "compile": {
           "lib/netstandard1.3/Microsoft.EntityFrameworkCore.SqlServer.dll": {}
@@ -690,6 +694,7 @@
           "lib/netstandard1.3/Microsoft.EntityFrameworkCore.SqlServer.dll": {}
         }
       },
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       "Microsoft.EntityFrameworkCore.Tools/1.0.0-preview1-final": {
@@ -764,6 +769,8 @@
           "lib/netstandard1.3/Microsoft.EntityFrameworkCore.SqlServer.Design.dll": {}
         }
       },
+=======
+>>>>>>> 46f29f7612a55852ac7844e2286ab7a48bd60cd6
       "Microsoft.EntityFrameworkCore.Tools/1.0.0-preview2-final": {
         "type": "package",
         "dependencies": {
@@ -779,6 +786,39 @@
         },
         "runtime": {
           "lib/netcoreapp1.0/dotnet-ef.dll": {}
+        }
+      },
+      "Microsoft.EntityFrameworkCore.Tools.Cli/1.0.0-preview1-final": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.DotNet.Cli.Utils": "1.0.0-preview1-002702",
+          "Microsoft.DotNet.ProjectModel": "1.0.0-rc2-002702",
+          "Microsoft.EntityFrameworkCore.Tools.Core": "1.0.0-rc2-final",
+          "Microsoft.Extensions.CommandLineUtils": "1.0.0-rc2-final",
+          "Microsoft.Extensions.PlatformAbstractions": "1.0.0-rc2-final",
+          "Microsoft.NETCore.App": "1.0.0-rc2-3002702"
+        },
+        "compile": {
+          "lib/netcoreapp1.0/Microsoft.EntityFrameworkCore.Tools.Cli.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp1.0/Microsoft.EntityFrameworkCore.Tools.Cli.dll": {}
+        }
+      },
+      "Microsoft.EntityFrameworkCore.Tools.Core/1.0.0-rc2-final": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Hosting.Abstractions": "1.0.0-rc2-final",
+          "Microsoft.EntityFrameworkCore.Relational.Design": "1.0.0-rc2-final",
+          "System.Collections.NonGeneric": "4.0.1-rc2-24027",
+          "System.IO": "4.1.0-rc2-24027",
+          "System.IO.FileSystem": "4.0.1-rc2-24027"
+        },
+        "compile": {
+          "lib/netstandard1.3/Microsoft.EntityFrameworkCore.Tools.Core.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.3/Microsoft.EntityFrameworkCore.Tools.Core.dll": {}
         }
       },
       "Microsoft.Extensions.Caching.Abstractions/1.0.0": {
@@ -1142,6 +1182,9 @@
       },
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 46f29f7612a55852ac7844e2286ab7a48bd60cd6
       "Microsoft.Extensions.PlatformAbstractions/1.0.0-rc2-final": {
         "type": "package",
         "dependencies": {
@@ -1164,6 +1207,7 @@
           "lib/netstandard1.3/Microsoft.Extensions.PlatformAbstractions.dll": {}
         }
       },
+<<<<<<< HEAD
       "Microsoft.Extensions.Primitives/1.0.0-rc2-final": {
         "type": "package",
         "dependencies": {
@@ -1172,6 +1216,8 @@
 =======
 =======
 >>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
+=======
+>>>>>>> 46f29f7612a55852ac7844e2286ab7a48bd60cd6
       "Microsoft.Extensions.Primitives/1.0.0": {
         "type": "package",
         "dependencies": {
@@ -2117,11 +2163,11 @@
 =======
 >>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
       },
-      "runtime.native.System.Data.SqlClient.sni/4.0.0-rc2-24027": {
+      "runtime.native.System.Data.SqlClient.sni/4.0.0": {
         "type": "package",
         "dependencies": {
-          "runtime.win7-x64.runtime.native.System.Data.SqlClient.sni": "4.0.1-rc2-24027",
-          "runtime.win7-x86.runtime.native.System.Data.SqlClient.sni": "4.0.1-rc2-24027"
+          "runtime.win7-x64.runtime.native.System.Data.SqlClient.sni": "4.0.1",
+          "runtime.win7-x86.runtime.native.System.Data.SqlClient.sni": "4.0.1"
         }
       },
 <<<<<<< HEAD
@@ -2166,32 +2212,6 @@
           "lib/netstandard1.0/_._": {}
         }
       },
-      "runtime.native.System.Net.Http/4.0.1": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.NETCore.Platforms": "1.0.1",
-          "Microsoft.NETCore.Targets": "1.0.1"
-        },
-        "compile": {
-          "lib/netstandard1.0/_._": {}
-        },
-        "runtime": {
-          "lib/netstandard1.0/_._": {}
-        }
-      },
-      "runtime.native.System.Net.Security/4.0.1": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.NETCore.Platforms": "1.0.1",
-          "Microsoft.NETCore.Targets": "1.0.1"
-        },
-        "compile": {
-          "lib/netstandard1.0/_._": {}
-        },
-        "runtime": {
-          "lib/netstandard1.0/_._": {}
-        }
-      },
       "runtime.native.System.Security.Cryptography/4.0.0": {
         "type": "package",
         "dependencies": {
@@ -2205,7 +2225,7 @@
           "lib/netstandard1.0/_._": {}
         }
       },
-      "runtime.win7-x64.runtime.native.System.Data.SqlClient.sni/4.0.1-rc2-24027": {
+      "runtime.win7-x64.runtime.native.System.Data.SqlClient.sni/4.0.1": {
         "type": "package",
         "runtimeTargets": {
           "runtimes/win7-x64/native/sni.dll": {
@@ -2214,7 +2234,7 @@
           }
         }
       },
-      "runtime.win7-x86.runtime.native.System.Data.SqlClient.sni/4.0.1-rc2-24027": {
+      "runtime.win7-x86.runtime.native.System.Data.SqlClient.sni/4.0.1": {
         "type": "package",
         "runtimeTargets": {
 <<<<<<< HEAD
@@ -2255,7 +2275,7 @@
           "System.Runtime": "4.1.0"
         },
         "compile": {
-          "ref/netstandard1.6/System.AppContext.dll": {}
+          "ref/netstandard1.3/System.AppContext.dll": {}
         },
         "runtime": {
           "lib/netstandard1.6/System.AppContext.dll": {}
@@ -2586,45 +2606,46 @@
 >>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
         }
       },
-      "System.Data.SqlClient/4.1.0-rc2-24027": {
+      "System.Data.SqlClient/4.1.0": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Win32.Primitives": "4.0.1-rc2-24027",
-          "System.Collections": "4.0.11-rc2-24027",
-          "System.Collections.Concurrent": "4.0.12-rc2-24027",
-          "System.Collections.NonGeneric": "4.0.1-rc2-24027",
-          "System.Data.Common": "4.0.1-rc2-24027",
-          "System.Diagnostics.Debug": "4.0.11-rc2-24027",
-          "System.Globalization": "4.0.11-rc2-24027",
-          "System.IO": "4.1.0-rc2-24027",
-          "System.IO.Pipes": "4.0.0-rc2-24027",
-          "System.Linq": "4.1.0-rc2-24027",
-          "System.Net.NameResolution": "4.0.0-rc2-24027",
-          "System.Net.Primitives": "4.0.11-rc2-24027",
-          "System.Net.Security": "4.0.0-rc2-24027",
-          "System.Net.Sockets": "4.1.0-rc2-24027",
-          "System.Reflection": "4.1.0-rc2-24027",
-          "System.Reflection.TypeExtensions": "4.1.0-rc2-24027",
-          "System.Resources.ResourceManager": "4.0.1-rc2-24027",
-          "System.Runtime": "4.1.0-rc2-24027",
-          "System.Runtime.Extensions": "4.1.0-rc2-24027",
-          "System.Runtime.Handles": "4.0.1-rc2-24027",
-          "System.Runtime.InteropServices": "4.1.0-rc2-24027",
-          "System.Runtime.InteropServices.RuntimeInformation": "4.0.0-rc2-24027",
-          "System.Security.Cryptography.X509Certificates": "4.1.0-rc2-24027",
-          "System.Security.Principal": "4.0.1-rc2-24027",
-          "System.Security.Principal.Windows": "4.0.0-rc2-24027",
-          "System.Text.Encoding": "4.0.11-rc2-24027",
-          "System.Text.Encoding.CodePages": "4.0.1-rc2-24027",
-          "System.Text.Encoding.Extensions": "4.0.11-rc2-24027",
-          "System.Text.RegularExpressions": "4.0.12-rc2-24027",
-          "System.Threading": "4.0.11-rc2-24027",
-          "System.Threading.Tasks": "4.0.11-rc2-24027",
-          "System.Threading.Thread": "4.0.0-rc2-24027",
-          "System.Threading.ThreadPool": "4.0.10-rc2-24027",
-          "System.Threading.Timer": "4.0.1-rc2-24027",
-          "System.Xml.ReaderWriter": "4.0.11-rc2-24027",
-          "runtime.native.System.Data.SqlClient.sni": "4.0.0-rc2-24027"
+          "Microsoft.NETCore.Platforms": "1.0.1",
+          "Microsoft.Win32.Primitives": "4.0.1",
+          "System.Collections": "4.0.11",
+          "System.Collections.Concurrent": "4.0.12",
+          "System.Data.Common": "4.1.0",
+          "System.Diagnostics.Debug": "4.0.11",
+          "System.Diagnostics.DiagnosticSource": "4.0.0",
+          "System.Globalization": "4.0.11",
+          "System.IO": "4.1.0",
+          "System.IO.Pipes": "4.0.0",
+          "System.Linq": "4.1.0",
+          "System.Net.NameResolution": "4.0.0",
+          "System.Net.Primitives": "4.0.11",
+          "System.Net.Security": "4.0.0",
+          "System.Net.Sockets": "4.1.0",
+          "System.Reflection": "4.1.0",
+          "System.Reflection.TypeExtensions": "4.1.0",
+          "System.Resources.ResourceManager": "4.0.1",
+          "System.Runtime": "4.1.0",
+          "System.Runtime.Extensions": "4.1.0",
+          "System.Runtime.Handles": "4.0.1",
+          "System.Runtime.InteropServices": "4.1.0",
+          "System.Runtime.InteropServices.RuntimeInformation": "4.0.0",
+          "System.Security.Cryptography.X509Certificates": "4.1.0",
+          "System.Security.Principal": "4.0.1",
+          "System.Security.Principal.Windows": "4.0.0",
+          "System.Text.Encoding": "4.0.11",
+          "System.Text.Encoding.CodePages": "4.0.1",
+          "System.Text.Encoding.Extensions": "4.0.11",
+          "System.Text.RegularExpressions": "4.1.0",
+          "System.Threading": "4.0.11",
+          "System.Threading.Tasks": "4.0.11",
+          "System.Threading.Thread": "4.0.0",
+          "System.Threading.ThreadPool": "4.0.10",
+          "System.Threading.Timer": "4.0.1",
+          "System.Xml.ReaderWriter": "4.0.11",
+          "runtime.native.System.Data.SqlClient.sni": "4.0.0"
         },
         "compile": {
           "ref/netstandard1.3/System.Data.SqlClient.dll": {}
@@ -2634,9 +2655,9 @@
             "assetType": "runtime",
             "rid": "unix"
           },
-          "runtimes/win7/lib/netstandard1.3/System.Data.SqlClient.dll": {
+          "runtimes/win/lib/netstandard1.3/System.Data.SqlClient.dll": {
             "assetType": "runtime",
-            "rid": "win7"
+            "rid": "win"
           }
         }
       },
@@ -3428,25 +3449,27 @@
           }
         }
       },
-      "System.IO.Pipes/4.0.0-rc2-24027": {
+      "System.IO.Pipes/4.0.0": {
         "type": "package",
         "dependencies": {
-          "System.Diagnostics.Debug": "4.0.11-rc2-24027",
-          "System.IO": "4.1.0-rc2-24027",
-          "System.IO.FileSystem.Primitives": "4.0.1-rc2-24027",
-          "System.Net.Primitives": "4.0.11-rc2-24027",
-          "System.Net.Sockets": "4.1.0-rc2-24027",
-          "System.Reflection": "4.1.0-rc2-24027",
-          "System.Resources.ResourceManager": "4.0.1-rc2-24027",
-          "System.Runtime": "4.1.0-rc2-24027",
-          "System.Runtime.Extensions": "4.1.0-rc2-24027",
-          "System.Runtime.Handles": "4.0.1-rc2-24027",
-          "System.Runtime.InteropServices": "4.1.0-rc2-24027",
-          "System.Security.Principal": "4.0.1-rc2-24027",
-          "System.Text.Encoding": "4.0.11-rc2-24027",
-          "System.Threading": "4.0.11-rc2-24027",
-          "System.Threading.Overlapped": "4.0.1-rc2-24027",
-          "System.Threading.Tasks": "4.0.11-rc2-24027"
+          "Microsoft.NETCore.Platforms": "1.0.1",
+          "System.Diagnostics.Debug": "4.0.11",
+          "System.IO": "4.1.0",
+          "System.IO.FileSystem.Primitives": "4.0.1",
+          "System.Net.Primitives": "4.0.11",
+          "System.Net.Sockets": "4.1.0",
+          "System.Reflection": "4.1.0",
+          "System.Resources.ResourceManager": "4.0.1",
+          "System.Runtime": "4.1.0",
+          "System.Runtime.Extensions": "4.1.0",
+          "System.Runtime.Handles": "4.0.1",
+          "System.Runtime.InteropServices": "4.1.0",
+          "System.Security.Principal": "4.0.1",
+          "System.Text.Encoding": "4.0.11",
+          "System.Threading": "4.0.11",
+          "System.Threading.Overlapped": "4.0.1",
+          "System.Threading.Tasks": "4.0.11",
+          "runtime.native.System": "4.0.0"
         },
         "compile": {
           "ref/netstandard1.3/_._": {}
@@ -3456,9 +3479,9 @@
             "assetType": "runtime",
             "rid": "unix"
           },
-          "runtimes/win7/lib/netstandard1.3/System.IO.Pipes.dll": {
+          "runtimes/win/lib/netstandard1.3/System.IO.Pipes.dll": {
             "assetType": "runtime",
-            "rid": "win7"
+            "rid": "win"
           }
         }
       },
@@ -3565,13 +3588,10 @@
         "type": "package",
         "dependencies": {
           "System.Collections": "4.0.11",
-          "System.Diagnostics.Debug": "4.0.11",
-          "System.Resources.ResourceManager": "4.0.1",
-          "System.Runtime": "4.1.0",
-          "System.Runtime.Extensions": "4.1.0"
+          "System.Runtime": "4.1.0"
         },
         "compile": {
-          "ref/netstandard1.6/System.Linq.dll": {}
+          "ref/netstandard1.0/System.Linq.dll": {}
         },
         "runtime": {
           "lib/netstandard1.6/System.Linq.dll": {}
@@ -3580,26 +3600,11 @@
       "System.Linq.Expressions/4.1.0": {
         "type": "package",
         "dependencies": {
-          "System.Collections": "4.0.11",
-          "System.Diagnostics.Debug": "4.0.11",
-          "System.Globalization": "4.0.11",
-          "System.IO": "4.1.0",
-          "System.Linq": "4.1.0",
-          "System.ObjectModel": "4.0.12",
           "System.Reflection": "4.1.0",
-          "System.Reflection.Emit": "4.0.1",
-          "System.Reflection.Emit.ILGeneration": "4.0.1",
-          "System.Reflection.Emit.Lightweight": "4.0.1",
-          "System.Reflection.Extensions": "4.0.1",
-          "System.Reflection.Primitives": "4.0.1",
-          "System.Reflection.TypeExtensions": "4.1.0",
-          "System.Resources.ResourceManager": "4.0.1",
-          "System.Runtime": "4.1.0",
-          "System.Runtime.Extensions": "4.1.0",
-          "System.Threading": "4.0.11"
+          "System.Runtime": "4.1.0"
         },
         "compile": {
-          "ref/netstandard1.6/System.Linq.Expressions.dll": {}
+          "ref/netstandard1.3/System.Linq.Expressions.dll": {}
         },
         "runtime": {
           "lib/netstandard1.6/System.Linq.Expressions.dll": {}
@@ -3734,31 +3739,24 @@
         "type": "package",
         "dependencies": {
           "Microsoft.NETCore.Platforms": "1.0.1",
+          "Microsoft.Win32.Primitives": "4.0.1",
           "System.Collections": "4.0.11",
           "System.Diagnostics.Debug": "4.0.11",
           "System.Diagnostics.DiagnosticSource": "4.0.0",
           "System.Diagnostics.Tracing": "4.1.0",
           "System.Globalization": "4.0.11",
-          "System.Globalization.Extensions": "4.0.1",
           "System.IO": "4.1.0",
-          "System.IO.FileSystem": "4.0.1",
+          "System.IO.Compression": "4.1.0",
           "System.Net.Primitives": "4.0.11",
           "System.Resources.ResourceManager": "4.0.1",
           "System.Runtime": "4.1.0",
           "System.Runtime.Extensions": "4.1.0",
           "System.Runtime.Handles": "4.0.1",
           "System.Runtime.InteropServices": "4.1.0",
-          "System.Security.Cryptography.Algorithms": "4.2.0",
-          "System.Security.Cryptography.Encoding": "4.0.0",
-          "System.Security.Cryptography.OpenSsl": "4.0.0",
-          "System.Security.Cryptography.Primitives": "4.0.0",
           "System.Security.Cryptography.X509Certificates": "4.1.0",
           "System.Text.Encoding": "4.0.11",
           "System.Threading": "4.0.11",
-          "System.Threading.Tasks": "4.0.11",
-          "runtime.native.System": "4.0.0",
-          "runtime.native.System.Net.Http": "4.0.1",
-          "runtime.native.System.Security.Cryptography": "4.0.0"
+          "System.Threading.Tasks": "4.0.11"
         },
         "compile": {
           "ref/netstandard1.3/System.Net.Http.dll": {}
@@ -3954,7 +3952,6 @@
           "System.Collections.Concurrent": "4.0.12",
           "System.Diagnostics.Tracing": "4.1.0",
           "System.Globalization": "4.0.11",
-          "System.Globalization.Extensions": "4.0.1",
           "System.IO": "4.1.0",
           "System.Net.Primitives": "4.0.11",
           "System.Resources.ResourceManager": "4.0.1",
@@ -3963,15 +3960,13 @@
           "System.Runtime.Handles": "4.0.1",
           "System.Runtime.InteropServices": "4.1.0",
           "System.Security.Claims": "4.0.1",
-          "System.Security.Cryptography.Algorithms": "4.2.0",
-          "System.Security.Cryptography.Encoding": "4.0.0",
-          "System.Security.Cryptography.OpenSsl": "4.0.0",
           "System.Security.Cryptography.Primitives": "4.0.0",
           "System.Security.Cryptography.X509Certificates": "4.1.0",
           "System.Security.Principal": "4.0.1",
-          "System.Text.Encoding": "4.0.11",
+          "System.Security.Principal.Windows": "4.0.0",
           "System.Threading": "4.0.11",
           "System.Threading.Tasks": "4.0.11",
+<<<<<<< HEAD
           "System.Threading.ThreadPool": "4.0.10",
           "runtime.native.System": "4.0.0",
           "runtime.native.System.Net.Security": "4.0.1",
@@ -3980,6 +3975,9 @@
 >>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
 =======
 >>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
+=======
+          "System.Threading.ThreadPool": "4.0.10"
+>>>>>>> 46f29f7612a55852ac7844e2286ab7a48bd60cd6
         },
         "compile": {
           "ref/netstandard1.3/System.Net.Security.dll": {}
@@ -4299,6 +4297,7 @@
       },
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       "System.Reflection.Emit.Lightweight/4.0.1-rc2-24027": {
         "type": "package",
         "dependencies": {
@@ -4338,6 +4337,8 @@
 =======
 =======
 >>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
+=======
+>>>>>>> 46f29f7612a55852ac7844e2286ab7a48bd60cd6
       "System.Reflection.Extensions/4.0.1": {
         "type": "package",
         "dependencies": {
@@ -4868,22 +4869,12 @@
       "System.Security.Cryptography.Algorithms/4.2.0": {
         "type": "package",
         "dependencies": {
-          "Microsoft.NETCore.Platforms": "1.0.1",
-          "System.Collections": "4.0.11",
           "System.IO": "4.1.0",
-          "System.Resources.ResourceManager": "4.0.1",
           "System.Runtime": "4.1.0",
-          "System.Runtime.Extensions": "4.1.0",
-          "System.Runtime.Handles": "4.0.1",
-          "System.Runtime.InteropServices": "4.1.0",
-          "System.Runtime.Numerics": "4.0.1",
-          "System.Security.Cryptography.Encoding": "4.0.0",
-          "System.Security.Cryptography.Primitives": "4.0.0",
-          "System.Text.Encoding": "4.0.11",
-          "runtime.native.System.Security.Cryptography": "4.0.0"
+          "System.Security.Cryptography.Primitives": "4.0.0"
         },
         "compile": {
-          "ref/netstandard1.6/System.Security.Cryptography.Algorithms.dll": {}
+          "ref/netstandard1.4/System.Security.Cryptography.Algorithms.dll": {}
         },
         "runtimeTargets": {
           "runtimes/unix/lib/netstandard1.6/System.Security.Cryptography.Algorithms.dll": {
@@ -4896,6 +4887,7 @@
           }
         }
       },
+<<<<<<< HEAD
       "System.Security.Cryptography.Cng/4.2.0": {
         "type": "package",
         "dependencies": {
@@ -5004,6 +4996,8 @@
 =======
 =======
 >>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
+=======
+>>>>>>> 46f29f7612a55852ac7844e2286ab7a48bd60cd6
       "System.Security.Cryptography.Encoding/4.0.0": {
         "type": "package",
         "dependencies": {
@@ -5090,36 +5084,6 @@
           }
         }
       },
-      "System.Security.Cryptography.OpenSsl/4.0.0": {
-        "type": "package",
-        "dependencies": {
-          "System.Collections": "4.0.11",
-          "System.IO": "4.1.0",
-          "System.Resources.ResourceManager": "4.0.1",
-          "System.Runtime": "4.1.0",
-          "System.Runtime.Extensions": "4.1.0",
-          "System.Runtime.Handles": "4.0.1",
-          "System.Runtime.InteropServices": "4.1.0",
-          "System.Runtime.Numerics": "4.0.1",
-          "System.Security.Cryptography.Algorithms": "4.2.0",
-          "System.Security.Cryptography.Encoding": "4.0.0",
-          "System.Security.Cryptography.Primitives": "4.0.0",
-          "System.Text.Encoding": "4.0.11",
-          "runtime.native.System.Security.Cryptography": "4.0.0"
-        },
-        "compile": {
-          "ref/netstandard1.6/_._": {}
-        },
-        "runtime": {
-          "lib/netstandard1.6/System.Security.Cryptography.OpenSsl.dll": {}
-        },
-        "runtimeTargets": {
-          "runtimes/unix/lib/netstandard1.6/System.Security.Cryptography.OpenSsl.dll": {
-            "assetType": "runtime",
-            "rid": "unix"
-          }
-        }
-      },
       "System.Security.Cryptography.Primitives/4.0.0": {
         "type": "package",
         "dependencies": {
@@ -5178,21 +5142,10 @@
       "System.Security.Cryptography.X509Certificates/4.1.0": {
         "type": "package",
         "dependencies": {
-          "Microsoft.NETCore.Platforms": "1.0.1",
-          "System.Collections": "4.0.11",
-          "System.Diagnostics.Debug": "4.0.11",
-          "System.Globalization": "4.0.11",
-          "System.Globalization.Calendars": "4.0.1",
-          "System.IO": "4.1.0",
-          "System.IO.FileSystem": "4.0.1",
-          "System.IO.FileSystem.Primitives": "4.0.1",
-          "System.Resources.ResourceManager": "4.0.1",
           "System.Runtime": "4.1.0",
-          "System.Runtime.Extensions": "4.1.0",
           "System.Runtime.Handles": "4.0.1",
-          "System.Runtime.InteropServices": "4.1.0",
-          "System.Runtime.Numerics": "4.0.1",
           "System.Security.Cryptography.Algorithms": "4.2.0",
+<<<<<<< HEAD
           "System.Security.Cryptography.Cng": "4.2.0",
           "System.Security.Cryptography.Csp": "4.0.0",
           "System.Security.Cryptography.Encoding": "4.0.0",
@@ -5207,6 +5160,9 @@
 >>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
 =======
 >>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
+=======
+          "System.Security.Cryptography.Encoding": "4.0.0"
+>>>>>>> 46f29f7612a55852ac7844e2286ab7a48bd60cd6
         },
         "compile": {
           "ref/netstandard1.4/System.Security.Cryptography.X509Certificates.dll": {}
@@ -5490,15 +5446,10 @@
       "System.Text.RegularExpressions/4.1.0": {
         "type": "package",
         "dependencies": {
-          "System.Collections": "4.0.11",
-          "System.Globalization": "4.0.11",
-          "System.Resources.ResourceManager": "4.0.1",
-          "System.Runtime": "4.1.0",
-          "System.Runtime.Extensions": "4.1.0",
-          "System.Threading": "4.0.11"
+          "System.Runtime": "4.1.0"
         },
         "compile": {
-          "ref/netstandard1.6/System.Text.RegularExpressions.dll": {}
+          "ref/netstandard1.3/System.Text.RegularExpressions.dll": {}
         },
         "runtime": {
           "lib/netstandard1.6/System.Text.RegularExpressions.dll": {}
@@ -6003,12 +5954,14 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v1.0",
         "dependencies": {
-          "Microsoft.EntityFrameworkCore": "1.0.0-rc2-final",
-          "Microsoft.EntityFrameworkCore.InMemory": "1.0.0-rc2-final",
-          "Microsoft.EntityFrameworkCore.SqlServer": "1.0.0-rc2-final",
-          "Microsoft.EntityFrameworkCore.Tools": "1.0.0-preview1-final",
-          "Microsoft.NETCore.App": "1.0.0-rc2-3002702",
-          "NETStandard.Library": "1.5.0-rc2-24027"
+          "Microsoft.EntityFrameworkCore": "1.0.0",
+          "Microsoft.EntityFrameworkCore.InMemory": "1.0.0",
+          "Microsoft.EntityFrameworkCore.SqlServer": "1.0.0",
+          "Microsoft.EntityFrameworkCore.Tools": "1.0.0-preview2-final",
+          "Microsoft.EntityFrameworkCore.Tools.Cli": "1.0.0-preview1-final",
+          "Microsoft.EntityFrameworkCore.Tools.Core": "1.0.0-rc2-final",
+          "Microsoft.NETCore.App": "1.0.0",
+          "NETStandard.Library": "1.6.0"
         },
         "compile": {
           "netcoreapp1.0/iBalekaService.Domain.dll": {}
@@ -6471,14 +6424,20 @@
       ]
     },
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
 =======
 >>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
     "Microsoft.EntityFrameworkCore.InMemory/1.0.0-rc2-final": {
       "sha512": "dNx+TrLTM5VlKUevS0J36L4DTaN14V3GEWlSU9y7+OnAfsz4Eq3rokR2zLm5N9VhOU3Pbqgygj45uOuqcJQgtw==",
+=======
+    "Microsoft.EntityFrameworkCore.InMemory/1.0.0": {
+      "sha512": "0HGcrblJnPlW9EHLFKZ4uSFXOVbvtIymPNsbD+PoAm2B12oe8ImTgWHAgeYbCDLWHyETyN3D1sn8sqkqbo+uog==",
+>>>>>>> 46f29f7612a55852ac7844e2286ab7a48bd60cd6
       "type": "package",
+      "path": "Microsoft.EntityFrameworkCore.InMemory/1.0.0",
       "files": [
-        "Microsoft.EntityFrameworkCore.InMemory.1.0.0-rc2-final.nupkg.sha512",
+        "Microsoft.EntityFrameworkCore.InMemory.1.0.0.nupkg.sha512",
         "Microsoft.EntityFrameworkCore.InMemory.nuspec",
         "lib/net451/Microsoft.EntityFrameworkCore.InMemory.dll",
         "lib/net451/Microsoft.EntityFrameworkCore.InMemory.xml",
@@ -6550,11 +6509,12 @@
         "lib/netstandard1.3/Microsoft.EntityFrameworkCore.Relational.Design.xml"
       ]
     },
-    "Microsoft.EntityFrameworkCore.SqlServer/1.0.0-rc2-final": {
-      "sha512": "5BJ9VrgVbP/OqIuRow8nZkwbtr5CKjCyQGaXsBLZbzL8LZRkY1rb8kWYBusTJeZ2LjnnV0liQeNPRs3C15pIPQ==",
+    "Microsoft.EntityFrameworkCore.SqlServer/1.0.0": {
+      "sha512": "zLPrmmZ2b4jM3Hezf4dP2oIVREeXlXfcyNDX4mBZ6xcW+QauxyDpzrB86mnEF1quBdkpbZhv7T+ZbS9XS6Hqdg==",
       "type": "package",
+      "path": "Microsoft.EntityFrameworkCore.SqlServer/1.0.0",
       "files": [
-        "Microsoft.EntityFrameworkCore.SqlServer.1.0.0-rc2-final.nupkg.sha512",
+        "Microsoft.EntityFrameworkCore.SqlServer.1.0.0.nupkg.sha512",
         "Microsoft.EntityFrameworkCore.SqlServer.nuspec",
         "lib/net451/Microsoft.EntityFrameworkCore.SqlServer.dll",
         "lib/net451/Microsoft.EntityFrameworkCore.SqlServer.xml",
@@ -6562,6 +6522,7 @@
         "lib/netstandard1.3/Microsoft.EntityFrameworkCore.SqlServer.xml"
       ]
     },
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
     "Microsoft.EntityFrameworkCore.Tools/1.0.0-preview1-final": {
@@ -6599,6 +6560,8 @@
         "lib/netstandard1.3/Microsoft.EntityFrameworkCore.SqlServer.Design.xml"
       ]
     },
+=======
+>>>>>>> 46f29f7612a55852ac7844e2286ab7a48bd60cd6
     "Microsoft.EntityFrameworkCore.Tools/1.0.0-preview2-final": {
       "sha512": "x+OkqEMERFJY9cAFBZsNPEmZEApAakay2yhE3CD+nyc+HtJDFbyX+spcnOxUjZ2w+YqAdzT6L3DzjlCbRLv9vQ==",
       "type": "package",
@@ -6628,9 +6591,16 @@
     },
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     "Microsoft.EntityFrameworkCore.Tools.Cli/1.0.0-preview1-final": {
       "sha512": "rB+lVCt2vZ7ASHweT2ltuNMPR2xLA45WL2CGmQtrR+ZUoVB++WJLGIDQxisKRcViDA5huwpZkcXW0R0kPSlE9g==",
       "type": "package",
+=======
+    "Microsoft.EntityFrameworkCore.Tools.Cli/1.0.0-preview1-final": {
+      "sha512": "rB+lVCt2vZ7ASHweT2ltuNMPR2xLA45WL2CGmQtrR+ZUoVB++WJLGIDQxisKRcViDA5huwpZkcXW0R0kPSlE9g==",
+      "type": "package",
+      "path": "Microsoft.EntityFrameworkCore.Tools.Cli/1.0.0-preview1-final",
+>>>>>>> 46f29f7612a55852ac7844e2286ab7a48bd60cd6
       "files": [
         "Microsoft.EntityFrameworkCore.Tools.Cli.1.0.0-preview1-final.nupkg.sha512",
         "Microsoft.EntityFrameworkCore.Tools.Cli.nuspec",
@@ -6644,6 +6614,10 @@
     "Microsoft.EntityFrameworkCore.Tools.Core/1.0.0-rc2-final": {
       "sha512": "0L30NEnJaFdbc8a+B9nLb2kkMfnz94RFvJ8JWlO1u73wRChEafB7wLozyhCJFZziEEp8IbFYTzF3omR6gDfsmA==",
       "type": "package",
+<<<<<<< HEAD
+=======
+      "path": "Microsoft.EntityFrameworkCore.Tools.Core/1.0.0-rc2-final",
+>>>>>>> 46f29f7612a55852ac7844e2286ab7a48bd60cd6
       "files": [
         "Microsoft.EntityFrameworkCore.Tools.Core.1.0.0-rc2-final.nupkg.sha512",
         "Microsoft.EntityFrameworkCore.Tools.Core.nuspec",
@@ -6655,6 +6629,7 @@
         "lib/netstandard1.3/Microsoft.EntityFrameworkCore.Tools.Core.xml"
       ]
     },
+<<<<<<< HEAD
     "Microsoft.Extensions.Caching.Abstractions/1.0.0-rc2-final": {
       "sha512": "Seu7cdYLYDFjYGd9KgzbAa5G6Xkzw6f6mSJjWemal1qNL505ktHMSbve6IPGScipL578rPwPTVqrTWWKIvmvLg==",
       "type": "package",
@@ -6666,6 +6641,8 @@
 =======
 =======
 >>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
+=======
+>>>>>>> 46f29f7612a55852ac7844e2286ab7a48bd60cd6
     "Microsoft.Extensions.Caching.Abstractions/1.0.0": {
       "sha512": "IxlFDVOchL6tdR05bk7EiJvMtvZrVkZXBhkbXqc3GxOHOrHFGcN+92WoWFPeBpdpy8ot/Px5ZdXzt7k+2n1Bdg==",
       "type": "package",
@@ -6953,9 +6930,16 @@
     },
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     "Microsoft.Extensions.PlatformAbstractions/1.0.0-rc2-final": {
       "sha512": "OjXClhPcccu39GNAs6SH6J2iC2R883Wco7LKvPqnjo1aKJQRp9vFVFVueutJFABncZO7BZINgZCwgLxVQN3yIg==",
       "type": "package",
+=======
+    "Microsoft.Extensions.PlatformAbstractions/1.0.0-rc2-final": {
+      "sha512": "OjXClhPcccu39GNAs6SH6J2iC2R883Wco7LKvPqnjo1aKJQRp9vFVFVueutJFABncZO7BZINgZCwgLxVQN3yIg==",
+      "type": "package",
+      "path": "Microsoft.Extensions.PlatformAbstractions/1.0.0-rc2-final",
+>>>>>>> 46f29f7612a55852ac7844e2286ab7a48bd60cd6
       "files": [
         "Microsoft.Extensions.PlatformAbstractions.1.0.0-rc2-final.nupkg.sha512",
         "Microsoft.Extensions.PlatformAbstractions.nuspec",
@@ -6967,6 +6951,7 @@
         "lib/netstandard1.3/Microsoft.Extensions.PlatformAbstractions.xml"
       ]
     },
+<<<<<<< HEAD
     "Microsoft.Extensions.Primitives/1.0.0-rc2-final": {
       "sha512": "5lXETW9MI0CIOOCtgeJcrX3jODcFkX04tr+K/MB+cRspPvYD3URbf4MRIwWgI5r7cu+8+efPxEH0tG1g8ldhQA==",
       "type": "package",
@@ -6978,6 +6963,8 @@
 =======
 =======
 >>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
+=======
+>>>>>>> 46f29f7612a55852ac7844e2286ab7a48bd60cd6
     "Microsoft.Extensions.Primitives/1.0.0": {
       "sha512": "3q2vzfKEDjL6JFkRpk5SFA3zarYsO6+ZYgoucNImrUMzDn0mFbEOL5p9oPoWiypwypbJVVjWTf557bXZ0YFLig==",
       "type": "package",
@@ -7905,13 +7892,14 @@
         "runtime.native.System.nuspec"
       ]
     },
-    "runtime.native.System.Data.SqlClient.sni/4.0.0-rc2-24027": {
-      "sha512": "pMR+/wuMjt0fblON8ycjd/XCzKd6qHscOhQ7aYpzZI5qBl4ethwCCL/S6iITMtIOv5TvQ3J3GOKwtYz5hBpaTg==",
+    "runtime.native.System.Data.SqlClient.sni/4.0.0": {
+      "sha512": "DcMVtYwugo1LOc9MVchInxlLNoFe/+21MsEQU9yIZX561chzxDlFDWowWF+Kc262PyD3eLkDab1JyJrs73Qtkg==",
       "type": "package",
+      "path": "runtime.native.System.Data.SqlClient.sni/4.0.0",
       "files": [
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
-        "runtime.native.System.Data.SqlClient.sni.4.0.0-rc2-24027.nupkg.sha512",
+        "runtime.native.System.Data.SqlClient.sni.4.0.0.nupkg.sha512",
         "runtime.native.System.Data.SqlClient.sni.nuspec"
       ]
     },
@@ -7969,30 +7957,6 @@
         "runtime.native.System.IO.Compression.nuspec"
       ]
     },
-    "runtime.native.System.Net.Http/4.0.1": {
-      "sha512": "Nh0UPZx2Vifh8r+J+H2jxifZUD3sBrmolgiFWJd2yiNrxO0xTa6bAw3YwRn1VOiSen/tUXMS31ttNItCZ6lKuA==",
-      "type": "package",
-      "path": "runtime.native.System.Net.Http/4.0.1",
-      "files": [
-        "ThirdPartyNotices.txt",
-        "dotnet_library_license.txt",
-        "lib/netstandard1.0/_._",
-        "runtime.native.System.Net.Http.4.0.1.nupkg.sha512",
-        "runtime.native.System.Net.Http.nuspec"
-      ]
-    },
-    "runtime.native.System.Net.Security/4.0.1": {
-      "sha512": "Az6Ff6rZFb8nYGAaejFR6jr8ktt9f3e1Q/yKdw0pwHNTLaO/1eCAC9vzBoR9YAb0QeZD6fZXl1A9tRB5stpzXA==",
-      "type": "package",
-      "path": "runtime.native.System.Net.Security/4.0.1",
-      "files": [
-        "ThirdPartyNotices.txt",
-        "dotnet_library_license.txt",
-        "lib/netstandard1.0/_._",
-        "runtime.native.System.Net.Security.4.0.1.nupkg.sha512",
-        "runtime.native.System.Net.Security.nuspec"
-      ]
-    },
     "runtime.native.System.Security.Cryptography/4.0.0": {
       "sha512": "2CQK0jmO6Eu7ZeMgD+LOFbNJSXHFVQbCJJkEyEwowh1SCgYnrn9W9RykMfpeeVGw7h4IBvYikzpGUlmZTUafJw==",
       "type": "package",
@@ -8009,24 +7973,26 @@
         "runtime.native.System.Security.Cryptography.nuspec"
       ]
     },
-    "runtime.win7-x64.runtime.native.System.Data.SqlClient.sni/4.0.1-rc2-24027": {
-      "sha512": "e+XMbd6jjySo5yGHc6P/EGAro9+Md19Q6dciNIQmss4wZaMrbIoZgif1uW2Kdv8CH/9uYVM0TluWz5Ic20apxw==",
+    "runtime.win7-x64.runtime.native.System.Data.SqlClient.sni/4.0.1": {
+      "sha512": "My20HZqJbDS4rWmdOcJ3TPf9iX6M/sTF2nBSUHBvfWp1iNip3eMS+K65oQgsLRxX6h21ic3YED06c2ye2sL7FQ==",
       "type": "package",
+      "path": "runtime.win7-x64.runtime.native.System.Data.SqlClient.sni/4.0.1",
       "files": [
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
-        "runtime.win7-x64.runtime.native.System.Data.SqlClient.sni.4.0.1-rc2-24027.nupkg.sha512",
+        "runtime.win7-x64.runtime.native.System.Data.SqlClient.sni.4.0.1.nupkg.sha512",
         "runtime.win7-x64.runtime.native.System.Data.SqlClient.sni.nuspec",
         "runtimes/win7-x64/native/sni.dll"
       ]
     },
-    "runtime.win7-x86.runtime.native.System.Data.SqlClient.sni/4.0.1-rc2-24027": {
-      "sha512": "Rk4a5IyEWxQ4Sg5lwbI9a2IamFzXggEg3l9ePRfuCop63TMYtQ70BsDqj7wI6iLehfmBkOKS1AC8yxTp0nsSmg==",
+    "runtime.win7-x86.runtime.native.System.Data.SqlClient.sni/4.0.1": {
+      "sha512": "ykiYCf/0hIc0xm+g6bVX8nw9St5Ool+r4US+B+56Lv/GFnDG5G9BK4n7WkrwEpuWV3XjMn38oHgHOnNMzBVNKA==",
       "type": "package",
+      "path": "runtime.win7-x86.runtime.native.System.Data.SqlClient.sni/4.0.1",
       "files": [
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
-        "runtime.win7-x86.runtime.native.System.Data.SqlClient.sni.4.0.1-rc2-24027.nupkg.sha512",
+        "runtime.win7-x86.runtime.native.System.Data.SqlClient.sni.4.0.1.nupkg.sha512",
         "runtime.win7-x86.runtime.native.System.Data.SqlClient.sni.nuspec",
         "runtimes/win7-x86/native/sni.dll"
       ]
@@ -8777,17 +8743,18 @@
         "ref/xamarinwatchos10/_._"
       ]
     },
-    "System.Data.SqlClient/4.1.0-rc2-24027": {
-      "sha512": "8VbNFTQdss8/9HIGe4v59nQFWtQNUn+AHVYCvH76aOOTWjwBdE+EeES7j2yHJ4p6hrpSDDR2zJNWH02PTLry6w==",
+    "System.Data.SqlClient/4.1.0": {
+      "sha512": "yqMZgzzKHdG84QmA/PPZUORaoisfvztvFqyPs7dPafJhNxlS7STf9OMCFrP/tITQCqImkm1+X4d2oiWOT2oTKg==",
       "type": "package",
+      "path": "System.Data.SqlClient/4.1.0",
       "files": [
-        "System.Data.SqlClient.4.1.0-rc2-24027.nupkg.sha512",
+        "System.Data.SqlClient.4.1.0.nupkg.sha512",
         "System.Data.SqlClient.nuspec",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
         "lib/MonoTouch10/_._",
-        "lib/net45/System.Data.SqlClient.dll",
+        "lib/net451/System.Data.SqlClient.dll",
         "lib/net46/System.Data.SqlClient.dll",
         "lib/xamarinios10/_._",
         "lib/xamarinmac20/_._",
@@ -8795,19 +8762,19 @@
         "lib/xamarinwatchos10/_._",
         "ref/MonoAndroid10/_._",
         "ref/MonoTouch10/_._",
-        "ref/net45/System.Data.SqlClient.dll",
+        "ref/net451/System.Data.SqlClient.dll",
         "ref/net46/System.Data.SqlClient.dll",
-        "ref/netstandard1.1/System.Data.SqlClient.dll",
-        "ref/netstandard1.1/System.Data.SqlClient.xml",
-        "ref/netstandard1.1/de/System.Data.SqlClient.xml",
-        "ref/netstandard1.1/es/System.Data.SqlClient.xml",
-        "ref/netstandard1.1/fr/System.Data.SqlClient.xml",
-        "ref/netstandard1.1/it/System.Data.SqlClient.xml",
-        "ref/netstandard1.1/ja/System.Data.SqlClient.xml",
-        "ref/netstandard1.1/ko/System.Data.SqlClient.xml",
-        "ref/netstandard1.1/ru/System.Data.SqlClient.xml",
-        "ref/netstandard1.1/zh-hans/System.Data.SqlClient.xml",
-        "ref/netstandard1.1/zh-hant/System.Data.SqlClient.xml",
+        "ref/netstandard1.2/System.Data.SqlClient.dll",
+        "ref/netstandard1.2/System.Data.SqlClient.xml",
+        "ref/netstandard1.2/de/System.Data.SqlClient.xml",
+        "ref/netstandard1.2/es/System.Data.SqlClient.xml",
+        "ref/netstandard1.2/fr/System.Data.SqlClient.xml",
+        "ref/netstandard1.2/it/System.Data.SqlClient.xml",
+        "ref/netstandard1.2/ja/System.Data.SqlClient.xml",
+        "ref/netstandard1.2/ko/System.Data.SqlClient.xml",
+        "ref/netstandard1.2/ru/System.Data.SqlClient.xml",
+        "ref/netstandard1.2/zh-hans/System.Data.SqlClient.xml",
+        "ref/netstandard1.2/zh-hant/System.Data.SqlClient.xml",
         "ref/netstandard1.3/System.Data.SqlClient.dll",
         "ref/netstandard1.3/System.Data.SqlClient.xml",
         "ref/netstandard1.3/de/System.Data.SqlClient.xml",
@@ -8824,7 +8791,9 @@
         "ref/xamarintvos10/_._",
         "ref/xamarinwatchos10/_._",
         "runtimes/unix/lib/netstandard1.3/System.Data.SqlClient.dll",
-        "runtimes/win7/lib/netstandard1.3/System.Data.SqlClient.dll"
+        "runtimes/win/lib/net451/System.Data.SqlClient.dll",
+        "runtimes/win/lib/net46/System.Data.SqlClient.dll",
+        "runtimes/win/lib/netstandard1.3/System.Data.SqlClient.dll"
       ]
     },
 <<<<<<< HEAD
@@ -10032,11 +10001,12 @@
 >>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
       ]
     },
-    "System.IO.Pipes/4.0.0-rc2-24027": {
-      "sha512": "tBODHilZogxWltQXlZLkOznRlrARIWV7bVWWISM/rd5DJLw8PJfgUjF2C35KSNdw7fYlJgrWBqM6qAIRVAab8w==",
+    "System.IO.Pipes/4.0.0": {
+      "sha512": "L9QVhk8hIEix5KNA0kW58Ha+Y1dNGqqqIhAaJkhcGCWeQzUmN0njzI7SG/XAazpMecboOdFFlH3pH/qbwXLJAg==",
       "type": "package",
+      "path": "System.IO.Pipes/4.0.0",
       "files": [
-        "System.IO.Pipes.4.0.0-rc2-24027.nupkg.sha512",
+        "System.IO.Pipes.4.0.0.nupkg.sha512",
         "System.IO.Pipes.nuspec",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
@@ -10054,8 +10024,9 @@
         "ref/netstandard1.3/zh-hans/System.IO.Pipes.xml",
         "ref/netstandard1.3/zh-hant/System.IO.Pipes.xml",
         "runtimes/unix/lib/netstandard1.3/System.IO.Pipes.dll",
-        "runtimes/win7/lib/netcore50/_._",
-        "runtimes/win7/lib/netstandard1.3/System.IO.Pipes.dll"
+        "runtimes/win/lib/net46/System.IO.Pipes.dll",
+        "runtimes/win/lib/netstandard1.3/System.IO.Pipes.dll",
+        "runtimes/win7/lib/netcore50/_._"
       ]
     },
 <<<<<<< HEAD
@@ -11470,6 +11441,7 @@
     },
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     "System.Reflection.Emit.Lightweight/4.0.1-rc2-24027": {
       "sha512": "kDuurD3Z1bYJrW0VqBEoHWLUCWYtto/SF/dajEj8sXftap3zkqBF+3IMb8l4EfRuzytlS2TlmFxiApbB9C8JEA==",
       "type": "package",
@@ -11523,6 +11495,8 @@
 =======
 =======
 >>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
+=======
+>>>>>>> 46f29f7612a55852ac7844e2286ab7a48bd60cd6
     "System.Reflection.Extensions/4.0.1": {
       "sha512": "GYrtRsZcMuHF3sbmRHfMYpvxZoIN2bQGrYGerUiWLEkqdEUQZhH3TRSaC/oI4wO0II1RKBPlpIa1TOMxIcOOzQ==",
       "type": "package",
@@ -12598,6 +12572,7 @@
         "runtimes/win/lib/netstandard1.6/System.Security.Cryptography.Algorithms.dll"
       ]
     },
+<<<<<<< HEAD
     "System.Security.Cryptography.Cng/4.2.0": {
       "sha512": "cUJ2h+ZvONDe28Szw3st5dOHdjndhJzQ2WObDEXAWRPEQBtVItVoxbXM/OEsTthl3cNn2dk2k0I3y45igCQcLw==",
       "type": "package",
@@ -12697,6 +12672,8 @@
 =======
 =======
 >>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
+=======
+>>>>>>> 46f29f7612a55852ac7844e2286ab7a48bd60cd6
     "System.Security.Cryptography.Encoding/4.0.0": {
       "sha512": "FbKgE5MbxSQMPcSVRgwM6bXN3GtyAh04NkV8E5zKCBE26X0vYW0UtTa2FIgkH33WVqBVxRgxljlVYumWtU+HcQ==",
       "type": "package",
@@ -12764,20 +12741,6 @@
 >>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
         "runtimes/win/lib/net46/System.Security.Cryptography.Encoding.dll",
         "runtimes/win/lib/netstandard1.3/System.Security.Cryptography.Encoding.dll"
-      ]
-    },
-    "System.Security.Cryptography.OpenSsl/4.0.0": {
-      "sha512": "HUG/zNUJwEiLkoURDixzkzZdB5yGA5pQhDP93ArOpDPQMteURIGERRNzzoJlmTreLBWr5lkFSjjMSk8ySEpQMw==",
-      "type": "package",
-      "path": "System.Security.Cryptography.OpenSsl/4.0.0",
-      "files": [
-        "System.Security.Cryptography.OpenSsl.4.0.0.nupkg.sha512",
-        "System.Security.Cryptography.OpenSsl.nuspec",
-        "ThirdPartyNotices.txt",
-        "dotnet_library_license.txt",
-        "lib/netstandard1.6/System.Security.Cryptography.OpenSsl.dll",
-        "ref/netstandard1.6/System.Security.Cryptography.OpenSsl.dll",
-        "runtimes/unix/lib/netstandard1.6/System.Security.Cryptography.OpenSsl.dll"
       ]
     },
     "System.Security.Cryptography.Primitives/4.0.0": {
@@ -14214,14 +14177,12 @@
 >>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
       "Microsoft.EntityFrameworkCore >= 1.0.0",
       "Microsoft.EntityFrameworkCore.Design >= 1.0.0-preview2-final",
-      "Microsoft.EntityFrameworkCore.InMemory >= 1.0.0-rc2-final",
-      "Microsoft.EntityFrameworkCore.Relational.Design >= 1.0.0",
-      "Microsoft.EntityFrameworkCore.SqlServer >= 1.0.0-rc2-final",
-      "Microsoft.EntityFrameworkCore.SqlServer.Design >= 1.0.0-rc2-final",
+      "Microsoft.EntityFrameworkCore.SqlServer >= 1.0.0",
       "Microsoft.EntityFrameworkCore.Tools >= 1.0.0-preview2-final",
+      "Microsoft.EntityFrameworkCore.Tools.Cli >= 1.0.0-preview1-final",
+      "Microsoft.EntityFrameworkCore.Tools.Core >= 1.0.0-rc2-final",
       "Microsoft.Extensions.DependencyInjection >= 1.0.0",
       "Microsoft.Extensions.DependencyInjection.Abstractions >= 1.0.0",
-      "Microsoft.NETCore.App >= 1.0.0",
       "NETStandard.Library >= 1.6.0",
 <<<<<<< HEAD
 >>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
@@ -14229,7 +14190,9 @@
 >>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
       "iBalekaService.Domain >= 1.0.0-*"
     ],
-    ".NETCoreApp,Version=v1.0": []
+    ".NETCoreApp,Version=v1.0": [
+      "Microsoft.NETCore.App >= 1.0.0-*"
+    ]
   },
   "tools": {
     ".NETCoreApp,Version=v1.0": {
