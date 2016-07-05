@@ -604,10 +604,14 @@
       },
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
 =======
 >>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
       "Microsoft.EntityFrameworkCore.InMemory/1.0.0-rc2-final": {
+=======
+      "Microsoft.EntityFrameworkCore.InMemory/1.0.0": {
+>>>>>>> 46f29f7612a55852ac7844e2286ab7a48bd60cd6
 =======
       "Microsoft.EntityFrameworkCore.InMemory/1.0.0": {
 >>>>>>> 46f29f7612a55852ac7844e2286ab7a48bd60cd6
@@ -697,6 +701,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       "Microsoft.EntityFrameworkCore.Tools/1.0.0-preview1-final": {
         "type": "package",
         "dependencies": {
@@ -769,6 +774,8 @@
           "lib/netstandard1.3/Microsoft.EntityFrameworkCore.SqlServer.Design.dll": {}
         }
       },
+=======
+>>>>>>> 46f29f7612a55852ac7844e2286ab7a48bd60cd6
 =======
 >>>>>>> 46f29f7612a55852ac7844e2286ab7a48bd60cd6
       "Microsoft.EntityFrameworkCore.Tools/1.0.0-preview2-final": {
@@ -1183,6 +1190,9 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 46f29f7612a55852ac7844e2286ab7a48bd60cd6
 =======
 >>>>>>> 46f29f7612a55852ac7844e2286ab7a48bd60cd6
       "Microsoft.Extensions.PlatformAbstractions/1.0.0-rc2-final": {
@@ -1208,6 +1218,7 @@
         }
       },
 <<<<<<< HEAD
+<<<<<<< HEAD
       "Microsoft.Extensions.Primitives/1.0.0-rc2-final": {
         "type": "package",
         "dependencies": {
@@ -1216,6 +1227,8 @@
 =======
 =======
 >>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
+=======
+>>>>>>> 46f29f7612a55852ac7844e2286ab7a48bd60cd6
 =======
 >>>>>>> 46f29f7612a55852ac7844e2286ab7a48bd60cd6
       "Microsoft.Extensions.Primitives/1.0.0": {
@@ -2184,6 +2197,7 @@
       "runtime.native.System.Security.Cryptography/4.0.0-rc2-24027": {
         "type": "package"
       },
+<<<<<<< HEAD
       "runtime.win7-x64.runtime.native.System.Data.SqlClient.sni/4.0.1-rc2-24027": {
         "type": "package",
         "runtimeTargets": {
@@ -2212,6 +2226,8 @@
           "lib/netstandard1.0/_._": {}
         }
       },
+=======
+>>>>>>> 46f29f7612a55852ac7844e2286ab7a48bd60cd6
       "runtime.native.System.Security.Cryptography/4.0.0": {
         "type": "package",
         "dependencies": {
@@ -3967,6 +3983,7 @@
           "System.Threading": "4.0.11",
           "System.Threading.Tasks": "4.0.11",
 <<<<<<< HEAD
+<<<<<<< HEAD
           "System.Threading.ThreadPool": "4.0.10",
           "runtime.native.System": "4.0.0",
           "runtime.native.System.Net.Security": "4.0.1",
@@ -3975,6 +3992,9 @@
 >>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
 =======
 >>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
+=======
+          "System.Threading.ThreadPool": "4.0.10"
+>>>>>>> 46f29f7612a55852ac7844e2286ab7a48bd60cd6
 =======
           "System.Threading.ThreadPool": "4.0.10"
 >>>>>>> 46f29f7612a55852ac7844e2286ab7a48bd60cd6
@@ -4298,6 +4318,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       "System.Reflection.Emit.Lightweight/4.0.1-rc2-24027": {
         "type": "package",
         "dependencies": {
@@ -4337,6 +4358,8 @@
 =======
 =======
 >>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
+=======
+>>>>>>> 46f29f7612a55852ac7844e2286ab7a48bd60cd6
 =======
 >>>>>>> 46f29f7612a55852ac7844e2286ab7a48bd60cd6
       "System.Reflection.Extensions/4.0.1": {
@@ -4888,6 +4911,7 @@
         }
       },
 <<<<<<< HEAD
+<<<<<<< HEAD
       "System.Security.Cryptography.Cng/4.2.0": {
         "type": "package",
         "dependencies": {
@@ -4998,6 +5022,8 @@
 >>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
 =======
 >>>>>>> 46f29f7612a55852ac7844e2286ab7a48bd60cd6
+=======
+>>>>>>> 46f29f7612a55852ac7844e2286ab7a48bd60cd6
       "System.Security.Cryptography.Encoding/4.0.0": {
         "type": "package",
         "dependencies": {
@@ -5034,6 +5060,7 @@
           }
         }
       },
+<<<<<<< HEAD
       "System.Security.Cryptography.OpenSsl/4.0.0-rc2-24027": {
         "type": "package",
         "dependencies": {
@@ -5084,6 +5111,8 @@
           }
         }
       },
+=======
+>>>>>>> 46f29f7612a55852ac7844e2286ab7a48bd60cd6
       "System.Security.Cryptography.Primitives/4.0.0": {
         "type": "package",
         "dependencies": {
@@ -5146,6 +5175,7 @@
           "System.Runtime.Handles": "4.0.1",
           "System.Security.Cryptography.Algorithms": "4.2.0",
 <<<<<<< HEAD
+<<<<<<< HEAD
           "System.Security.Cryptography.Cng": "4.2.0",
           "System.Security.Cryptography.Csp": "4.0.0",
           "System.Security.Cryptography.Encoding": "4.0.0",
@@ -5160,6 +5190,9 @@
 >>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
 =======
 >>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
+=======
+          "System.Security.Cryptography.Encoding": "4.0.0"
+>>>>>>> 46f29f7612a55852ac7844e2286ab7a48bd60cd6
 =======
           "System.Security.Cryptography.Encoding": "4.0.0"
 >>>>>>> 46f29f7612a55852ac7844e2286ab7a48bd60cd6
@@ -6425,11 +6458,16 @@
     },
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
 =======
 >>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
     "Microsoft.EntityFrameworkCore.InMemory/1.0.0-rc2-final": {
       "sha512": "dNx+TrLTM5VlKUevS0J36L4DTaN14V3GEWlSU9y7+OnAfsz4Eq3rokR2zLm5N9VhOU3Pbqgygj45uOuqcJQgtw==",
+=======
+    "Microsoft.EntityFrameworkCore.InMemory/1.0.0": {
+      "sha512": "0HGcrblJnPlW9EHLFKZ4uSFXOVbvtIymPNsbD+PoAm2B12oe8ImTgWHAgeYbCDLWHyETyN3D1sn8sqkqbo+uog==",
+>>>>>>> 46f29f7612a55852ac7844e2286ab7a48bd60cd6
 =======
     "Microsoft.EntityFrameworkCore.InMemory/1.0.0": {
       "sha512": "0HGcrblJnPlW9EHLFKZ4uSFXOVbvtIymPNsbD+PoAm2B12oe8ImTgWHAgeYbCDLWHyETyN3D1sn8sqkqbo+uog==",
@@ -6525,6 +6563,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     "Microsoft.EntityFrameworkCore.Tools/1.0.0-preview1-final": {
       "sha512": "X+XFJwnjr+Bxf+H2ZgHlceVJf6AJDrD+MXyGpjpmdcLb8gKY33uzRIcxJNm2OI9oY3/BBecRaImHnOpjP3Zkzg==",
       "type": "package",
@@ -6562,6 +6601,8 @@
     },
 =======
 >>>>>>> 46f29f7612a55852ac7844e2286ab7a48bd60cd6
+=======
+>>>>>>> 46f29f7612a55852ac7844e2286ab7a48bd60cd6
     "Microsoft.EntityFrameworkCore.Tools/1.0.0-preview2-final": {
       "sha512": "x+OkqEMERFJY9cAFBZsNPEmZEApAakay2yhE3CD+nyc+HtJDFbyX+spcnOxUjZ2w+YqAdzT6L3DzjlCbRLv9vQ==",
       "type": "package",
@@ -6592,14 +6633,20 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     "Microsoft.EntityFrameworkCore.Tools.Cli/1.0.0-preview1-final": {
       "sha512": "rB+lVCt2vZ7ASHweT2ltuNMPR2xLA45WL2CGmQtrR+ZUoVB++WJLGIDQxisKRcViDA5huwpZkcXW0R0kPSlE9g==",
       "type": "package",
 =======
+=======
+>>>>>>> 46f29f7612a55852ac7844e2286ab7a48bd60cd6
     "Microsoft.EntityFrameworkCore.Tools.Cli/1.0.0-preview1-final": {
       "sha512": "rB+lVCt2vZ7ASHweT2ltuNMPR2xLA45WL2CGmQtrR+ZUoVB++WJLGIDQxisKRcViDA5huwpZkcXW0R0kPSlE9g==",
       "type": "package",
       "path": "Microsoft.EntityFrameworkCore.Tools.Cli/1.0.0-preview1-final",
+<<<<<<< HEAD
+>>>>>>> 46f29f7612a55852ac7844e2286ab7a48bd60cd6
+=======
 >>>>>>> 46f29f7612a55852ac7844e2286ab7a48bd60cd6
       "files": [
         "Microsoft.EntityFrameworkCore.Tools.Cli.1.0.0-preview1-final.nupkg.sha512",
@@ -6615,6 +6662,10 @@
       "sha512": "0L30NEnJaFdbc8a+B9nLb2kkMfnz94RFvJ8JWlO1u73wRChEafB7wLozyhCJFZziEEp8IbFYTzF3omR6gDfsmA==",
       "type": "package",
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+      "path": "Microsoft.EntityFrameworkCore.Tools.Core/1.0.0-rc2-final",
+>>>>>>> 46f29f7612a55852ac7844e2286ab7a48bd60cd6
 =======
       "path": "Microsoft.EntityFrameworkCore.Tools.Core/1.0.0-rc2-final",
 >>>>>>> 46f29f7612a55852ac7844e2286ab7a48bd60cd6
@@ -6630,6 +6681,7 @@
       ]
     },
 <<<<<<< HEAD
+<<<<<<< HEAD
     "Microsoft.Extensions.Caching.Abstractions/1.0.0-rc2-final": {
       "sha512": "Seu7cdYLYDFjYGd9KgzbAa5G6Xkzw6f6mSJjWemal1qNL505ktHMSbve6IPGScipL578rPwPTVqrTWWKIvmvLg==",
       "type": "package",
@@ -6641,6 +6693,8 @@
 =======
 =======
 >>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
+=======
+>>>>>>> 46f29f7612a55852ac7844e2286ab7a48bd60cd6
 =======
 >>>>>>> 46f29f7612a55852ac7844e2286ab7a48bd60cd6
     "Microsoft.Extensions.Caching.Abstractions/1.0.0": {
@@ -6931,14 +6985,20 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     "Microsoft.Extensions.PlatformAbstractions/1.0.0-rc2-final": {
       "sha512": "OjXClhPcccu39GNAs6SH6J2iC2R883Wco7LKvPqnjo1aKJQRp9vFVFVueutJFABncZO7BZINgZCwgLxVQN3yIg==",
       "type": "package",
 =======
+=======
+>>>>>>> 46f29f7612a55852ac7844e2286ab7a48bd60cd6
     "Microsoft.Extensions.PlatformAbstractions/1.0.0-rc2-final": {
       "sha512": "OjXClhPcccu39GNAs6SH6J2iC2R883Wco7LKvPqnjo1aKJQRp9vFVFVueutJFABncZO7BZINgZCwgLxVQN3yIg==",
       "type": "package",
       "path": "Microsoft.Extensions.PlatformAbstractions/1.0.0-rc2-final",
+<<<<<<< HEAD
+>>>>>>> 46f29f7612a55852ac7844e2286ab7a48bd60cd6
+=======
 >>>>>>> 46f29f7612a55852ac7844e2286ab7a48bd60cd6
       "files": [
         "Microsoft.Extensions.PlatformAbstractions.1.0.0-rc2-final.nupkg.sha512",
@@ -6952,6 +7012,7 @@
       ]
     },
 <<<<<<< HEAD
+<<<<<<< HEAD
     "Microsoft.Extensions.Primitives/1.0.0-rc2-final": {
       "sha512": "5lXETW9MI0CIOOCtgeJcrX3jODcFkX04tr+K/MB+cRspPvYD3URbf4MRIwWgI5r7cu+8+efPxEH0tG1g8ldhQA==",
       "type": "package",
@@ -6963,6 +7024,8 @@
 =======
 =======
 >>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
+=======
+>>>>>>> 46f29f7612a55852ac7844e2286ab7a48bd60cd6
 =======
 >>>>>>> 46f29f7612a55852ac7844e2286ab7a48bd60cd6
     "Microsoft.Extensions.Primitives/1.0.0": {
@@ -7915,6 +7978,7 @@
         "runtime.native.System.IO.Compression.nuspec"
       ]
     },
+<<<<<<< HEAD
     "runtime.native.System.Net.Http/4.0.1-rc2-24027": {
       "sha512": "NtYGs9vDkR/XtJAA2batr1MxMM/JqtvCIMzJ3QdErd5HoALZSv5O9YQfBPvdsrGUPDyDgbIa8WB0Q/iFv+o12A==",
       "type": "package",
@@ -7957,6 +8021,8 @@
         "runtime.native.System.IO.Compression.nuspec"
       ]
     },
+=======
+>>>>>>> 46f29f7612a55852ac7844e2286ab7a48bd60cd6
     "runtime.native.System.Security.Cryptography/4.0.0": {
       "sha512": "2CQK0jmO6Eu7ZeMgD+LOFbNJSXHFVQbCJJkEyEwowh1SCgYnrn9W9RykMfpeeVGw7h4IBvYikzpGUlmZTUafJw==",
       "type": "package",
@@ -11442,6 +11508,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     "System.Reflection.Emit.Lightweight/4.0.1-rc2-24027": {
       "sha512": "kDuurD3Z1bYJrW0VqBEoHWLUCWYtto/SF/dajEj8sXftap3zkqBF+3IMb8l4EfRuzytlS2TlmFxiApbB9C8JEA==",
       "type": "package",
@@ -11495,6 +11562,8 @@
 =======
 =======
 >>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
+=======
+>>>>>>> 46f29f7612a55852ac7844e2286ab7a48bd60cd6
 =======
 >>>>>>> 46f29f7612a55852ac7844e2286ab7a48bd60cd6
     "System.Reflection.Extensions/4.0.1": {
@@ -12573,6 +12642,7 @@
       ]
     },
 <<<<<<< HEAD
+<<<<<<< HEAD
     "System.Security.Cryptography.Cng/4.2.0": {
       "sha512": "cUJ2h+ZvONDe28Szw3st5dOHdjndhJzQ2WObDEXAWRPEQBtVItVoxbXM/OEsTthl3cNn2dk2k0I3y45igCQcLw==",
       "type": "package",
@@ -12674,6 +12744,8 @@
 >>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
 =======
 >>>>>>> 46f29f7612a55852ac7844e2286ab7a48bd60cd6
+=======
+>>>>>>> 46f29f7612a55852ac7844e2286ab7a48bd60cd6
     "System.Security.Cryptography.Encoding/4.0.0": {
       "sha512": "FbKgE5MbxSQMPcSVRgwM6bXN3GtyAh04NkV8E5zKCBE26X0vYW0UtTa2FIgkH33WVqBVxRgxljlVYumWtU+HcQ==",
       "type": "package",
@@ -12718,6 +12790,7 @@
         "runtimes/win7/lib/netstandard1.3/System.Security.Cryptography.Encoding.dll"
       ]
     },
+<<<<<<< HEAD
     "System.Security.Cryptography.OpenSsl/4.0.0-rc2-24027": {
       "sha512": "DZ3OjJC6O1qmYksZ45fuyHpB0julRXuohxGyDg2S4flOb8BIJYtzNZPapkkTNazDVAHohK4J8c7OLx3kFE2LVw==",
       "type": "package",
@@ -12743,6 +12816,8 @@
         "runtimes/win/lib/netstandard1.3/System.Security.Cryptography.Encoding.dll"
       ]
     },
+=======
+>>>>>>> 46f29f7612a55852ac7844e2286ab7a48bd60cd6
     "System.Security.Cryptography.Primitives/4.0.0": {
       "sha512": "Wkd7QryWYjkQclX0bngpntW5HSlMzeJU24UaLJQ7YTfI8ydAVAaU2J+HXLLABOVJlKTVvAeL0Aj39VeTe7L+oA==",
       "type": "package",
@@ -14166,6 +14241,7 @@
     "": [
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       "Microsoft.EntityFrameworkCore >= 1.0.0-rc2-final",
       "Microsoft.EntityFrameworkCore.InMemory >= 1.0.0-rc2-final",
       "Microsoft.EntityFrameworkCore.SqlServer >= 1.0.0-rc2-final",
@@ -14175,6 +14251,8 @@
 =======
 =======
 >>>>>>> 1d33643fbaf15f98ba7a817b3e1159d536cd8a52
+=======
+>>>>>>> 46f29f7612a55852ac7844e2286ab7a48bd60cd6
       "Microsoft.EntityFrameworkCore >= 1.0.0",
       "Microsoft.EntityFrameworkCore.Design >= 1.0.0-preview2-final",
       "Microsoft.EntityFrameworkCore.SqlServer >= 1.0.0",

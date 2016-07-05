@@ -17,8 +17,11 @@ namespace iBalekaService.Data.Configurations
         {
 
 <<<<<<< HEAD
+<<<<<<< HEAD
             optionsBuilder.UseSqlServer(@"Server=(localdb)\mssqllocaldb;Database=iBalekaDB;Trusted_Connection=True;");
 
+=======
+>>>>>>> 46f29f7612a55852ac7844e2286ab7a48bd60cd6
 =======
 >>>>>>> 46f29f7612a55852ac7844e2286ab7a48bd60cd6
         }

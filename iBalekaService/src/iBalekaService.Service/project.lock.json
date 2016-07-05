@@ -176,9 +176,26 @@
       "Microsoft.NETCore.Runtime/1.0.2-rc2-24027": {
         "type": "package",
         "dependencies": {
+<<<<<<< HEAD
           "Microsoft.NETCore.Runtime.CoreCLR": "1.0.2-rc2-24027",
           "Microsoft.NETCore.Runtime.Native": "1.0.2-rc2-24027"
 =======
+=======
+          "Microsoft.AspNetCore.Hosting.Abstractions": "1.0.0",
+          "Microsoft.EntityFrameworkCore.Relational.Design": "1.0.0",
+          "System.AppContext": "4.1.0",
+          "System.Collections.NonGeneric": "4.0.1",
+          "System.IO": "4.1.0",
+          "System.IO.FileSystem": "4.0.1"
+        },
+        "compile": {
+          "lib/netstandard1.3/Microsoft.EntityFrameworkCore.Design.Core.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.3/Microsoft.EntityFrameworkCore.Design.Core.dll": {}
+        }
+      },
+>>>>>>> 46f29f7612a55852ac7844e2286ab7a48bd60cd6
       "Microsoft.EntityFrameworkCore.InMemory/1.0.0": {
         "type": "package",
         "dependencies": {
@@ -205,11 +222,14 @@
       "Microsoft.NETCore.Targets/1.0.1-rc2-24027": {
         "type": "package"
       },
+<<<<<<< HEAD
       "Microsoft.NETCore.Windows.ApiSets/1.0.1-rc2-24027": {
         "type": "package"
       },
       "Microsoft.VisualBasic/10.0.1-rc2-24027": {
 =======
+=======
+>>>>>>> 46f29f7612a55852ac7844e2286ab7a48bd60cd6
       "Microsoft.EntityFrameworkCore.SqlServer/1.0.0": {
         "type": "package",
         "dependencies": {
@@ -253,9 +273,46 @@
         }
       },
 <<<<<<< HEAD
+<<<<<<< HEAD
       "Microsoft.Win32.Primitives/4.0.1-rc2-24027": {
 =======
       "Microsoft.EntityFrameworkCore.Tools.Cli/1.0.0-preview1-final": {
+=======
+      "Microsoft.EntityFrameworkCore.Tools.Cli/1.0.0-preview1-final": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.DotNet.Cli.Utils": "1.0.0-preview1-002702",
+          "Microsoft.DotNet.ProjectModel": "1.0.0-rc2-002702",
+          "Microsoft.EntityFrameworkCore.Tools.Core": "1.0.0-rc2-final",
+          "Microsoft.Extensions.CommandLineUtils": "1.0.0-rc2-final",
+          "Microsoft.Extensions.PlatformAbstractions": "1.0.0-rc2-final",
+          "Microsoft.NETCore.App": "1.0.0-rc2-3002702"
+        },
+        "compile": {
+          "lib/netcoreapp1.0/Microsoft.EntityFrameworkCore.Tools.Cli.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp1.0/Microsoft.EntityFrameworkCore.Tools.Cli.dll": {}
+        }
+      },
+      "Microsoft.EntityFrameworkCore.Tools.Core/1.0.0-rc2-final": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Hosting.Abstractions": "1.0.0-rc2-final",
+          "Microsoft.EntityFrameworkCore.Relational.Design": "1.0.0-rc2-final",
+          "System.Collections.NonGeneric": "4.0.1-rc2-24027",
+          "System.IO": "4.1.0-rc2-24027",
+          "System.IO.FileSystem": "4.0.1-rc2-24027"
+        },
+        "compile": {
+          "lib/netstandard1.3/Microsoft.EntityFrameworkCore.Tools.Core.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.3/Microsoft.EntityFrameworkCore.Tools.Core.dll": {}
+        }
+      },
+      "Microsoft.Extensions.Caching.Abstractions/1.0.0": {
+>>>>>>> 46f29f7612a55852ac7844e2286ab7a48bd60cd6
         "type": "package",
         "dependencies": {
           "Microsoft.DotNet.Cli.Utils": "1.0.0-preview1-002702",
@@ -1235,12 +1292,55 @@
           "lib/netstandard1.4/_._": {}
         }
       },
+<<<<<<< HEAD
       "System.Console/4.0.0-rc2-24027": {
         "type": "package",
         "dependencies": {
           "System.IO": "4.1.0-rc2-24027",
           "System.Runtime": "4.1.0-rc2-24027",
           "System.Text.Encoding": "4.0.11-rc2-24027"
+=======
+      "System.Data.SqlClient/4.1.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "1.0.1",
+          "Microsoft.Win32.Primitives": "4.0.1",
+          "System.Collections": "4.0.11",
+          "System.Collections.Concurrent": "4.0.12",
+          "System.Data.Common": "4.1.0",
+          "System.Diagnostics.Debug": "4.0.11",
+          "System.Diagnostics.DiagnosticSource": "4.0.0",
+          "System.Globalization": "4.0.11",
+          "System.IO": "4.1.0",
+          "System.IO.Pipes": "4.0.0",
+          "System.Linq": "4.1.0",
+          "System.Net.NameResolution": "4.0.0",
+          "System.Net.Primitives": "4.0.11",
+          "System.Net.Security": "4.0.0",
+          "System.Net.Sockets": "4.1.0",
+          "System.Reflection": "4.1.0",
+          "System.Reflection.TypeExtensions": "4.1.0",
+          "System.Resources.ResourceManager": "4.0.1",
+          "System.Runtime": "4.1.0",
+          "System.Runtime.Extensions": "4.1.0",
+          "System.Runtime.Handles": "4.0.1",
+          "System.Runtime.InteropServices": "4.1.0",
+          "System.Runtime.InteropServices.RuntimeInformation": "4.0.0",
+          "System.Security.Cryptography.X509Certificates": "4.1.0",
+          "System.Security.Principal": "4.0.1",
+          "System.Security.Principal.Windows": "4.0.0",
+          "System.Text.Encoding": "4.0.11",
+          "System.Text.Encoding.CodePages": "4.0.1",
+          "System.Text.Encoding.Extensions": "4.0.11",
+          "System.Text.RegularExpressions": "4.1.0",
+          "System.Threading": "4.0.11",
+          "System.Threading.Tasks": "4.0.11",
+          "System.Threading.Thread": "4.0.0",
+          "System.Threading.ThreadPool": "4.0.10",
+          "System.Threading.Timer": "4.0.1",
+          "System.Xml.ReaderWriter": "4.0.11",
+          "runtime.native.System.Data.SqlClient.sni": "4.0.0"
+>>>>>>> 46f29f7612a55852ac7844e2286ab7a48bd60cd6
         },
         "compile": {
           "ref/netstandard1.3/System.Console.dll": {}
@@ -1600,6 +1700,7 @@
           }
         }
       },
+<<<<<<< HEAD
       "System.IO.UnmanagedMemoryStream/4.0.1-rc2-24027": {
         "type": "package",
         "dependencies": {
@@ -1612,6 +1713,56 @@
           "System.Threading.Tasks": "4.0.11-rc2-24027"
         },
         "compile": {
+=======
+      "System.IO.Pipes/4.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "1.0.1",
+          "System.Diagnostics.Debug": "4.0.11",
+          "System.IO": "4.1.0",
+          "System.IO.FileSystem.Primitives": "4.0.1",
+          "System.Net.Primitives": "4.0.11",
+          "System.Net.Sockets": "4.1.0",
+          "System.Reflection": "4.1.0",
+          "System.Resources.ResourceManager": "4.0.1",
+          "System.Runtime": "4.1.0",
+          "System.Runtime.Extensions": "4.1.0",
+          "System.Runtime.Handles": "4.0.1",
+          "System.Runtime.InteropServices": "4.1.0",
+          "System.Security.Principal": "4.0.1",
+          "System.Text.Encoding": "4.0.11",
+          "System.Threading": "4.0.11",
+          "System.Threading.Overlapped": "4.0.1",
+          "System.Threading.Tasks": "4.0.11",
+          "runtime.native.System": "4.0.0"
+        },
+        "compile": {
+          "ref/netstandard1.3/_._": {}
+        },
+        "runtimeTargets": {
+          "runtimes/unix/lib/netstandard1.3/System.IO.Pipes.dll": {
+            "assetType": "runtime",
+            "rid": "unix"
+          },
+          "runtimes/win/lib/netstandard1.3/System.IO.Pipes.dll": {
+            "assetType": "runtime",
+            "rid": "win"
+          }
+        }
+      },
+      "System.IO.UnmanagedMemoryStream/4.0.1": {
+        "type": "package",
+        "dependencies": {
+          "System.IO": "4.1.0",
+          "System.IO.FileSystem.Primitives": "4.0.1",
+          "System.Resources.ResourceManager": "4.0.1",
+          "System.Runtime": "4.1.0",
+          "System.Runtime.InteropServices": "4.1.0",
+          "System.Threading": "4.0.11",
+          "System.Threading.Tasks": "4.0.11"
+        },
+        "compile": {
+>>>>>>> 46f29f7612a55852ac7844e2286ab7a48bd60cd6
           "ref/netstandard1.3/System.IO.UnmanagedMemoryStream.dll": {}
         },
         "runtime": {
@@ -1636,6 +1787,9 @@
         },
         "compile": {
           "ref/netstandard1.0/System.Linq.dll": {}
+<<<<<<< HEAD
+>>>>>>> 46f29f7612a55852ac7844e2286ab7a48bd60cd6
+=======
 >>>>>>> 46f29f7612a55852ac7844e2286ab7a48bd60cd6
         },
         "runtime": {
@@ -1645,6 +1799,7 @@
       "System.Linq.Expressions/4.0.11-rc2-24027": {
         "type": "package",
         "dependencies": {
+<<<<<<< HEAD
 <<<<<<< HEAD
           "System.Collections": "4.0.11-rc2-24027",
           "System.Diagnostics.Debug": "4.0.11-rc2-24027",
@@ -1663,6 +1818,10 @@
           "System.Runtime": "4.1.0-rc2-24027",
           "System.Runtime.Extensions": "4.1.0-rc2-24027",
           "System.Threading": "4.0.11-rc2-24027"
+=======
+          "System.Reflection": "4.1.0",
+          "System.Runtime": "4.1.0"
+>>>>>>> 46f29f7612a55852ac7844e2286ab7a48bd60cd6
 =======
           "System.Reflection": "4.1.0",
           "System.Runtime": "4.1.0"
@@ -1763,15 +1922,21 @@
           "System.Text.Encoding": "4.0.11",
           "System.Threading": "4.0.11",
           "System.Threading.Tasks": "4.0.11"
+<<<<<<< HEAD
+>>>>>>> 46f29f7612a55852ac7844e2286ab7a48bd60cd6
+=======
 >>>>>>> 46f29f7612a55852ac7844e2286ab7a48bd60cd6
         },
         "compile": {
           "ref/netstandard1.1/System.Net.Http.dll": {}
         },
 <<<<<<< HEAD
+<<<<<<< HEAD
         "runtime": {
           "lib/netstandard1.4/_._": {}
         },
+=======
+>>>>>>> 46f29f7612a55852ac7844e2286ab7a48bd60cd6
 =======
 >>>>>>> 46f29f7612a55852ac7844e2286ab7a48bd60cd6
         "runtimeTargets": {
@@ -1894,6 +2059,9 @@
           "System.Threading": "4.0.11",
           "System.Threading.Tasks": "4.0.11",
           "System.Threading.ThreadPool": "4.0.10"
+<<<<<<< HEAD
+>>>>>>> 46f29f7612a55852ac7844e2286ab7a48bd60cd6
+=======
 >>>>>>> 46f29f7612a55852ac7844e2286ab7a48bd60cd6
         },
         "compile": {
@@ -2028,6 +2196,7 @@
         }
       },
 <<<<<<< HEAD
+<<<<<<< HEAD
       "System.Reflection.Emit.Lightweight/4.0.1-rc2-24027": {
         "type": "package",
         "dependencies": {
@@ -2045,6 +2214,8 @@
       },
       "System.Reflection.Extensions/4.0.1-rc2-24027": {
 =======
+=======
+>>>>>>> 46f29f7612a55852ac7844e2286ab7a48bd60cd6
       "System.Reflection.Extensions/4.0.1": {
 >>>>>>> 46f29f7612a55852ac7844e2286ab7a48bd60cd6
         "type": "package",
@@ -2241,6 +2412,7 @@
         "type": "package",
         "dependencies": {
 <<<<<<< HEAD
+<<<<<<< HEAD
           "System.IO": "4.1.0-rc2-24027",
           "System.Resources.ResourceManager": "4.0.1-rc2-24027",
           "System.Runtime": "4.1.0-rc2-24027",
@@ -2249,6 +2421,11 @@
           "System.Runtime.InteropServices": "4.1.0-rc2-24027",
           "System.Security.Cryptography.Primitives": "4.0.0-rc2-24027",
           "System.Text.Encoding": "4.0.11-rc2-24027"
+=======
+          "System.IO": "4.1.0",
+          "System.Runtime": "4.1.0",
+          "System.Security.Cryptography.Primitives": "4.0.0"
+>>>>>>> 46f29f7612a55852ac7844e2286ab7a48bd60cd6
 =======
           "System.IO": "4.1.0",
           "System.Runtime": "4.1.0",
@@ -2265,6 +2442,7 @@
           }
         }
       },
+<<<<<<< HEAD
 <<<<<<< HEAD
       "System.Security.Cryptography.Cng/4.1.0-rc2-24027": {
         "type": "package",
@@ -2317,6 +2495,8 @@
       },
       "System.Security.Cryptography.Encoding/4.0.0-rc2-24027": {
 =======
+=======
+>>>>>>> 46f29f7612a55852ac7844e2286ab7a48bd60cd6
       "System.Security.Cryptography.Encoding/4.0.0": {
 >>>>>>> 46f29f7612a55852ac7844e2286ab7a48bd60cd6
         "type": "package",
@@ -2344,6 +2524,7 @@
           }
         }
       },
+<<<<<<< HEAD
 <<<<<<< HEAD
       "System.Security.Cryptography.OpenSsl/4.0.0-rc2-24027": {
         "type": "package",
@@ -2374,6 +2555,8 @@
       },
       "System.Security.Cryptography.Primitives/4.0.0-rc2-24027": {
 =======
+=======
+>>>>>>> 46f29f7612a55852ac7844e2286ab7a48bd60cd6
       "System.Security.Cryptography.Primitives/4.0.0": {
 >>>>>>> 46f29f7612a55852ac7844e2286ab7a48bd60cd6
         "type": "package",
@@ -2396,6 +2579,7 @@
       "System.Security.Cryptography.X509Certificates/4.1.0-rc2-24027": {
         "type": "package",
         "dependencies": {
+<<<<<<< HEAD
 <<<<<<< HEAD
           "System.Collections": "4.0.11-rc2-24027",
           "System.Diagnostics.Debug": "4.0.11-rc2-24027",
@@ -2423,10 +2607,15 @@
           "runtime.native.System.Net.Http": "4.0.1-rc2-24027",
           "runtime.native.System.Security.Cryptography": "4.0.0-rc2-24027"
 =======
+=======
+>>>>>>> 46f29f7612a55852ac7844e2286ab7a48bd60cd6
           "System.Runtime": "4.1.0",
           "System.Runtime.Handles": "4.0.1",
           "System.Security.Cryptography.Algorithms": "4.2.0",
           "System.Security.Cryptography.Encoding": "4.0.0"
+<<<<<<< HEAD
+>>>>>>> 46f29f7612a55852ac7844e2286ab7a48bd60cd6
+=======
 >>>>>>> 46f29f7612a55852ac7844e2286ab7a48bd60cd6
         },
         "compile": {
@@ -2520,11 +2709,33 @@
         },
         "compile": {
           "ref/netstandard1.3/System.Text.Encoding.Extensions.dll": {}
+<<<<<<< HEAD
+=======
+        }
+      },
+      "System.Text.Encodings.Web/4.0.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Diagnostics.Debug": "4.0.11",
+          "System.IO": "4.1.0",
+          "System.Reflection": "4.1.0",
+          "System.Resources.ResourceManager": "4.0.1",
+          "System.Runtime": "4.1.0",
+          "System.Runtime.Extensions": "4.1.0",
+          "System.Threading": "4.0.11"
+        },
+        "compile": {
+          "lib/netstandard1.0/System.Text.Encodings.Web.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.0/System.Text.Encodings.Web.dll": {}
+>>>>>>> 46f29f7612a55852ac7844e2286ab7a48bd60cd6
         }
       },
       "System.Text.RegularExpressions/4.0.12-rc2-24027": {
         "type": "package",
         "dependencies": {
+<<<<<<< HEAD
 <<<<<<< HEAD
           "System.Collections": "4.0.11-rc2-24027",
           "System.Globalization": "4.0.11-rc2-24027",
@@ -2532,6 +2743,9 @@
           "System.Runtime": "4.1.0-rc2-24027",
           "System.Runtime.Extensions": "4.1.0-rc2-24027",
           "System.Threading": "4.0.11-rc2-24027"
+=======
+          "System.Runtime": "4.1.0"
+>>>>>>> 46f29f7612a55852ac7844e2286ab7a48bd60cd6
 =======
           "System.Runtime": "4.1.0"
 >>>>>>> 46f29f7612a55852ac7844e2286ab7a48bd60cd6
@@ -3510,9 +3724,12 @@
       ]
     },
 <<<<<<< HEAD
+<<<<<<< HEAD
     "runtime.native.System.IO.Compression/4.1.0-rc2-24027": {
       "sha512": "r84dFA/jE921UfQNrFyNUAdvU//SNzdAv2eMb4YXH4DlXF0V/FM5QqYodZQkr4tVNbQM3KqIn1eIjbWcDCB7Dg==",
 =======
+=======
+>>>>>>> 46f29f7612a55852ac7844e2286ab7a48bd60cd6
     "runtime.native.System.Data.SqlClient.sni/4.0.0": {
       "sha512": "DcMVtYwugo1LOc9MVchInxlLNoFe/+21MsEQU9yIZX561chzxDlFDWowWF+Kc262PyD3eLkDab1JyJrs73Qtkg==",
       "type": "package",
@@ -3535,6 +3752,7 @@
         "runtime.native.System.IO.Compression.nuspec"
       ]
     },
+<<<<<<< HEAD
 <<<<<<< HEAD
     "runtime.native.System.Net.Http/4.0.1-rc2-24027": {
       "sha512": "NtYGs9vDkR/XtJAA2batr1MxMM/JqtvCIMzJ3QdErd5HoALZSv5O9YQfBPvdsrGUPDyDgbIa8WB0Q/iFv+o12A==",
@@ -3559,6 +3777,8 @@
     "runtime.native.System.Security.Cryptography/4.0.0-rc2-24027": {
       "sha512": "Xi58pn6uTrwo2hz2mhR7LbqaukuS3eRsVg6Y5BZGDtthJmv/LGh//3jtVASQMK14ByRVZoK3nP8S+l/2gt+R+g==",
 =======
+=======
+>>>>>>> 46f29f7612a55852ac7844e2286ab7a48bd60cd6
     "runtime.native.System.Security.Cryptography/4.0.0": {
       "sha512": "2CQK0jmO6Eu7ZeMgD+LOFbNJSXHFVQbCJJkEyEwowh1SCgYnrn9W9RykMfpeeVGw7h4IBvYikzpGUlmZTUafJw==",
 >>>>>>> 46f29f7612a55852ac7844e2286ab7a48bd60cd6
@@ -3571,9 +3791,12 @@
       ]
     },
 <<<<<<< HEAD
+<<<<<<< HEAD
     "System.AppContext/4.1.0-rc2-24027": {
       "sha512": "brLKF/+Dhn1ylN+VoN/tcur89LFerCUmqBFug+hbMHTKw3UVIghn+fS9rk0mad8jCr1LjHx2TWQhrg9peDEkmg==",
 =======
+=======
+>>>>>>> 46f29f7612a55852ac7844e2286ab7a48bd60cd6
     "runtime.win7-x64.runtime.native.System.Data.SqlClient.sni/4.0.1": {
       "sha512": "My20HZqJbDS4rWmdOcJ3TPf9iX6M/sTF2nBSUHBvfWp1iNip3eMS+K65oQgsLRxX6h21ic3YED06c2ye2sL7FQ==",
       "type": "package",
@@ -5064,6 +5287,9 @@
         "runtimes/win/lib/net46/System.IO.Pipes.dll",
         "runtimes/win/lib/netstandard1.3/System.IO.Pipes.dll",
         "runtimes/win7/lib/netcore50/_._"
+<<<<<<< HEAD
+>>>>>>> 46f29f7612a55852ac7844e2286ab7a48bd60cd6
+=======
 >>>>>>> 46f29f7612a55852ac7844e2286ab7a48bd60cd6
       ]
     },
@@ -5985,6 +6211,7 @@
       ]
     },
 <<<<<<< HEAD
+<<<<<<< HEAD
     "System.Reflection.Emit.Lightweight/4.0.1-rc2-24027": {
       "sha512": "kDuurD3Z1bYJrW0VqBEoHWLUCWYtto/SF/dajEj8sXftap3zkqBF+3IMb8l4EfRuzytlS2TlmFxiApbB9C8JEA==",
       "type": "package",
@@ -6018,6 +6245,8 @@
     "System.Reflection.Extensions/4.0.1-rc2-24027": {
       "sha512": "5N1tt+n0OHyaZ3Wb73FIfNsRrkFDW1I2fuAzojudgcZ0XcAHqLE0Wb9/JQ2eG6Lp89l2qntx4HvXcIDjVwvYuw==",
 =======
+=======
+>>>>>>> 46f29f7612a55852ac7844e2286ab7a48bd60cd6
     "System.Reflection.Extensions/4.0.1": {
       "sha512": "GYrtRsZcMuHF3sbmRHfMYpvxZoIN2bQGrYGerUiWLEkqdEUQZhH3TRSaC/oI4wO0II1RKBPlpIa1TOMxIcOOzQ==",
 >>>>>>> 46f29f7612a55852ac7844e2286ab7a48bd60cd6
@@ -6736,6 +6965,7 @@
       ]
     },
 <<<<<<< HEAD
+<<<<<<< HEAD
     "System.Security.Cryptography.Cng/4.1.0-rc2-24027": {
       "sha512": "QILmzqCpi0F9+DK5Z4/w0VW7gu07CpXksTxhkjqGspxuh7KSd+G2lsIM7vUEZaWvuwJQyQRCNRMALC7u/tgY+g==",
       "type": "package",
@@ -6785,6 +7015,8 @@
     "System.Security.Cryptography.Encoding/4.0.0-rc2-24027": {
       "sha512": "71AE+Bd68o0t6R0OEwHNRxcpcCI2kYfY0EOP+mAzIohObJKLoaDW6t8CunWOnr7hzvHI4W2UdNgmZzX2HSSuOA==",
 =======
+=======
+>>>>>>> 46f29f7612a55852ac7844e2286ab7a48bd60cd6
     "System.Security.Cryptography.Encoding/4.0.0": {
       "sha512": "FbKgE5MbxSQMPcSVRgwM6bXN3GtyAh04NkV8E5zKCBE26X0vYW0UtTa2FIgkH33WVqBVxRgxljlVYumWtU+HcQ==",
 >>>>>>> 46f29f7612a55852ac7844e2286ab7a48bd60cd6
@@ -6824,6 +7056,7 @@
       ]
     },
 <<<<<<< HEAD
+<<<<<<< HEAD
     "System.Security.Cryptography.OpenSsl/4.0.0-rc2-24027": {
       "sha512": "DZ3OjJC6O1qmYksZ45fuyHpB0julRXuohxGyDg2S4flOb8BIJYtzNZPapkkTNazDVAHohK4J8c7OLx3kFE2LVw==",
       "type": "package",
@@ -6840,6 +7073,8 @@
     "System.Security.Cryptography.Primitives/4.0.0-rc2-24027": {
       "sha512": "0uZrfk+oxQTpQ/4qTLCTTPXMvjkf0a7YUsYP2GkIeTirphSTZ090LISz4WLXf5AbuO/hYEI7k0MSxp0uqFB0tQ==",
 =======
+=======
+>>>>>>> 46f29f7612a55852ac7844e2286ab7a48bd60cd6
     "System.Security.Cryptography.Primitives/4.0.0": {
       "sha512": "Wkd7QryWYjkQclX0bngpntW5HSlMzeJU24UaLJQ7YTfI8ydAVAaU2J+HXLLABOVJlKTVvAeL0Aj39VeTe7L+oA==",
 >>>>>>> 46f29f7612a55852ac7844e2286ab7a48bd60cd6
