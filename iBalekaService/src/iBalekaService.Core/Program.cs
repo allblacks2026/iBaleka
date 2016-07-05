@@ -18,6 +18,7 @@ namespace iBalekaService.Core
                 .UseStartup<Startup>()
                 .Build();
 
+
             host.Run();
         }
     }

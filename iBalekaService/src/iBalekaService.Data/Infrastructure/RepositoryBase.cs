@@ -6,6 +6,7 @@ using iBalekaService.Data.Configurations;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using System.Linq.Expressions;
+using Microsoft.EntityFrameworkCore.Infrastructure;
 
 namespace iBalekaService.Data.Infastructure
 {
@@ -14,13 +15,14 @@ namespace iBalekaService.Data.Infastructure
         #region Properties
         private IBalekaContext dbContext;
         private readonly DbSet<T> dbSet;
+        private DbContextFactoryOptions opt;
 
         protected IDbFactory DbFactory
         { get; private set; }
 
         protected IBalekaContext DbContext
         {
-            get { return dbContext ?? (dbContext = DbFactory.Init()); }
+            get { return dbContext ?? (dbContext = DbFactory.Init(opt)); }
         }
         #endregion
 
