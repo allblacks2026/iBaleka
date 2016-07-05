@@ -4,40 +4,6 @@
     "preserveCompilationContext": true
   },
   "dependencies": {
-<<<<<<< HEAD
-
-    "Microsoft.NETCore.App": {
-      "type": "platform",
-      "version": "1.0.0-rc2-3002702",
-
-      "iBalekaService.Domain": "1.0.0-*",
-      "iBalekaService.Service": "1.0.0-*",
-      "Microsoft.AspNetCore.Mvc": "1.0.0-rc2-final",
-      "Microsoft.AspNetCore.Server.IISIntegration": "1.0.0-rc2-final",
-      "Microsoft.AspNetCore.Server.Kestrel": "1.0.0-rc2-final",
-      "Microsoft.EntityFrameworkCore": "1.0.0-rc2-final",
-      "Microsoft.EntityFrameworkCore.InMemory": "1.0.0-rc2-final",
-      "Microsoft.EntityFrameworkCore.SqlServer": "1.0.0-rc2-final",
-      "Microsoft.EntityFrameworkCore.Tools": "1.0.0-preview1-final",
-      "Microsoft.Extensions.Configuration.EnvironmentVariables": "1.0.0-rc2-final",
-      "Microsoft.Extensions.Configuration.FileExtensions": "1.0.0-rc2-final",
-      "Microsoft.Extensions.Configuration.Json": "1.0.0-rc2-final",
-      "Microsoft.Extensions.Logging": "1.0.0-rc2-final",
-      "Microsoft.Extensions.Logging.Console": "1.0.0-rc2-final",
-      "Microsoft.Extensions.Logging.Debug": "1.0.0-rc2-final"
-    }
-
-  }
-  
-  
-  ,
-  "frameworks": {
-    "netcoreapp1.0": {
-      "imports": [
-        "dotnet5.6",
-        "dnxcore50",
-        "portable-net45+win8"
-=======
     "iBalekaService.Domain": "1.0.0-*",
     "iBalekaService.Service": "1.0.0-*",
     "Microsoft.AspNetCore.Mvc": "1.0.0-rc2-final",
@@ -71,10 +37,6 @@
         "dotnet5.6",
         "dnxcore50",
         "portable-net451+win8"
-<<<<<<< HEAD
->>>>>>> 46f29f7612a55852ac7844e2286ab7a48bd60cd6
-=======
->>>>>>> 46f29f7612a55852ac7844e2286ab7a48bd60cd6
       ]
     }
   },
