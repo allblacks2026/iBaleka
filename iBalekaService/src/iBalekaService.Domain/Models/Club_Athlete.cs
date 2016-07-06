@@ -7,6 +7,7 @@ namespace iBalekaService.Domain.Models
 {
     public class Club_Athlete
     {
+        public Club_Athlete() { }
         public Club_Athlete(Club club,Athlete athlete)
         {
             ClubID = club.ClubID;
@@ -17,7 +18,7 @@ namespace iBalekaService.Domain.Models
         [Key]
         public int MemberID { get; set; }
         public DateTime DateJoined { get; set; }
-        public DateTime? DateLeft { get; set; }
+        public DateTime DateLeft { get; set; }
         public bool IsaMember { get; set; }
         //foreign key
         public int ClubID { get; set; }

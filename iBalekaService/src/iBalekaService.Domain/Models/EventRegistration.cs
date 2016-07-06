@@ -7,12 +7,13 @@ namespace iBalekaService.Domain.Models
 {
     public class EventRegistration
     {
+        public EventRegistration() { }
         public EventRegistration(Event_Route route,Athlete athlete)
         {
             DateRegistered = DateTime.Now;
             SelectedRoute = route.RouteID;
-            EventID = route.EventID;
-            AthleteID = athlete.AthleteID;
+            Event = route.Event;
+            Athlete = athlete;
             Arrived = false;
             Deleted = false;
         }

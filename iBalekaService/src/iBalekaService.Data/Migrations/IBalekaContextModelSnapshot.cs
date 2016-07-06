@@ -53,7 +53,8 @@ namespace iBalekaService.Data.Migrations
 
                     b.Property<double>("Longitude");
 
-                    b.Property<int?>("RouteID");
+                    b.Property<int?>("RouteID")
+                        .IsRequired();
 
                     b.HasKey("CheckpointID");
 
@@ -103,8 +104,7 @@ namespace iBalekaService.Data.Migrations
 
                     b.HasKey("MemberID");
 
-                    b.HasIndex("AthleteID")
-                        .IsUnique();
+                    b.HasIndex("AthleteID");
 
                     b.HasIndex("ClubID");
 
@@ -296,7 +296,8 @@ namespace iBalekaService.Data.Migrations
                 {
                     b.HasOne("iBalekaService.Domain.Models.Route", "Route")
                         .WithMany("Checkpoints")
-                        .HasForeignKey("RouteID");
+                        .HasForeignKey("RouteID")
+                        .OnDelete(DeleteBehavior.Cascade);
                 });
 
             modelBuilder.Entity("iBalekaService.Domain.Models.Club", b =>
@@ -310,8 +311,8 @@ namespace iBalekaService.Data.Migrations
             modelBuilder.Entity("iBalekaService.Domain.Models.Club_Athlete", b =>
                 {
                     b.HasOne("iBalekaService.Domain.Models.Athlete", "Athlete")
-                        .WithOne("Club")
-                        .HasForeignKey("iBalekaService.Domain.Models.Club_Athlete", "AthleteID")
+                        .WithMany("Clubs")
+                        .HasForeignKey("AthleteID")
                         .OnDelete(DeleteBehavior.Cascade);
 
                     b.HasOne("iBalekaService.Domain.Models.Club", "Club")

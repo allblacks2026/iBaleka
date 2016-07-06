@@ -7,6 +7,7 @@ namespace iBalekaService.Domain.Models
 {
     public class Route
     {
+        public Route() { }
         public Route(double distance,string mapImage)
         {
             Distance = distance;

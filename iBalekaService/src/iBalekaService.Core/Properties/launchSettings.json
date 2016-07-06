@@ -13,7 +13,7 @@
       "launchBrowser": true,
       "launchUrl": "api/athlete/getall",
       "environmentVariables": {
-        "ASPNETCORE_ENVIRONMENT": "Development"
+        "ASPNETCORE_ENVIRONMENT": "Production"
       }
     },
     "iBalekaService.Core": {

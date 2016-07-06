@@ -8,12 +8,13 @@ namespace iBalekaService.Domain.Models
 {
     public class Club
     {
-        public Club(string name,string cityCountry,string desc,int userID)
+        public Club() { }
+        public Club(string name,string cityCountry,string desc,User user)
         {
             Name = name;
             Location = cityCountry;
             Description = desc;
-            UserID = userID;
+            User = user;
             DateCreated = DateTime.Now.Date;
             Deleted = false;
         }

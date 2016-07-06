@@ -7,11 +7,12 @@ namespace iBalekaService.Domain.Models
 {
     public class Event_Route
     {
+        public Event_Route() { }
         public Event_Route(string desc,Event evnt,Route route)
         {
             Description = desc;
-            EventID = evnt.EventID;
-            RouteID = route.RouteID;
+            Event = evnt;
+            Route = route;
             DateAdded = DateTime.Now;
             Deleted = false;
         }

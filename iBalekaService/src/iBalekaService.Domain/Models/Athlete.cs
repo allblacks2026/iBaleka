@@ -7,6 +7,7 @@ namespace iBalekaService.Domain.Models
 {
     public class Athlete
     {
+        public Athlete() { }
         public Athlete(string first,string surname,double weight,double height,char gender)
         {
             Firstname = first;
@@ -38,7 +39,7 @@ namespace iBalekaService.Domain.Models
         public bool Deleted { get; set; }
         //navigational properties
         public virtual ICollection<EventRegistration> EventsRegistered { get; set; }
-        public virtual Club_Athlete Club { get; set; }
+        public virtual ICollection<Club_Athlete> Clubs { get; set; }
         public virtual ICollection<Run> Runs { get; set; }
 
     }
