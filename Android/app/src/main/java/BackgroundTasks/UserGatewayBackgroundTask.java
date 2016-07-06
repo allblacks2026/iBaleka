@@ -21,9 +21,9 @@ import java.io.OutputStreamWriter;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.net.URLEncoder;
-
 import Fragments.AthleteLandingFragment;
 import Models.User;
+import Utilities.iBalekaSingleton;
 
 /**
  * Created by Okuhle on 5/6/2016.
@@ -37,6 +37,8 @@ public class UserGatewayBackgroundTask extends AsyncTask<String, String, String>
 
     public UserGatewayBackgroundTask(Activity currentContext) {
         this.currentContext = currentContext;
+        iBalekaSingleton singleton = iBalekaSingleton.getInstance();
+
     }
 
     @Override
@@ -217,20 +219,10 @@ public class UserGatewayBackgroundTask extends AsyncTask<String, String, String>
                 JSONObject loginObject = loginArray.getJSONObject(0); //We are only getting one
                 // login object
                 //Let us load the object data into an athlete model
-                    User athlete = new User(loginObject.getString("UserType"), loginObject
-                            .getString("Country"), loginObject.getString("DateOfBirth"),
-                            loginObject.getString("EmailAddress"), loginObject.getString("Name"),
-                            loginObject.getString("Surname"), loginObject.getString("UserID"));
-                if (athlete.getUserType().equalsIgnoreCase("Athlete")) {
-                    //If the logged in person is an athlete, we can continue with the logging in
-                    //load an intent and screen?
+                User loggedInUser = new User(loginObject.getString("UserID"), loginObject.getString("Name"), loginObject.getString("Surname"), loginObject.getString("EmailAddress"), loginObject.getString("Country"), loginObject.getString("UserType"),loginObject.getString("DateOfBirth"));
 
 
 
-                } else {
-                    displayMessage("Login Not Allowed", "Our mobile app allows athletes to login." +
-                            " Event Organizers must log in to our website");
-                }
             }
         } catch (Exception error) {
             if (actionMode == 0){

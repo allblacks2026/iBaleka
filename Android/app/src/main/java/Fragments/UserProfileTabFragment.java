@@ -1,13 +1,12 @@
 package Fragments;
 
 import android.os.Bundle;
-import android.support.annotation.Nullable;
 import android.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import allblacks.com.ibaleka_android_prototype.R;
+import allblacks.com.Activities.R;
 
 /**
  * Created by Okuhle on 3/28/2016.

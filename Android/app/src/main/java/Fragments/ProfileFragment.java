@@ -10,10 +10,9 @@ import android.support.v7.widget.Toolbar;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.TableLayout;
 
 import Adapters.ProfileViewPageAdapter;
-import allblacks.com.ibaleka_android_prototype.R;
+import allblacks.com.Activities.R;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -39,17 +38,20 @@ public class ProfileFragment extends Fragment {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
             toolbar.setElevation(0);
         }
-        profileTabLayout = (TabLayout) myView.findViewById(R.id.ProfileTabLayout);
-        profileViewPager = (ViewPager) myView.findViewById(R.id.ProfilePager);
-        profileViewPageAdapter = new ProfileViewPageAdapter(getActivity().getFragmentManager());
-        profileViewPageAdapter.addFragmentWithTitle(new UserProfileTabFragment(), "My Profile");
-        profileViewPageAdapter.addFragmentWithTitle(new UserActivityTabFragment(), "My Activity");
-        profileViewPager.setAdapter(profileViewPageAdapter);
-        profileTabLayout.setupWithViewPager(profileViewPager);
-
+        initializeComponents(myView);
         return myView;
     }
 
+    private void initializeComponents(View myView) {
+        profileTabLayout = (TabLayout) myView.findViewById(R.id.ProfileTabLayout);
+        profileViewPager = (ViewPager) myView.findViewById(R.id.ProfilePager);
+        profileViewPageAdapter = new ProfileViewPageAdapter(getChildFragmentManager());
+        profileViewPageAdapter.addFragmentWithTitle(new UserProfileTabFragment(), "My Profile");
+        profileViewPageAdapter.addFragmentWithTitle(new EditProfileFragment(), "Edit Profile");
+        profileViewPageAdapter.addFragmentWithTitle(new UserActivityTabFragment(), "My Activity");
+        profileViewPager.setAdapter(profileViewPageAdapter);
+        profileTabLayout.setupWithViewPager(profileViewPager);
+    }
     @Override
     public void onPause() {
         setRetainInstance(true);
