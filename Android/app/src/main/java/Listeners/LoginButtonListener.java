@@ -6,6 +6,8 @@ import android.app.FragmentManager;
 import android.app.FragmentTransaction;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.SharedPreferences;
+import android.preference.PreferenceManager;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -14,8 +16,8 @@ import BackgroundTasks.UserGatewayBackgroundTask;
 import Fragments.CreateAccountStepOneFragment;
 import Fragments.ForgotPasswordFragment;
 import Utilities.TextSanitizer;
-import allblacks.com.ibaleka_android_prototype.MainActivity;
-import allblacks.com.ibaleka_android_prototype.R;
+import allblacks.com.Activities.MainActivity;
+import allblacks.com.Activities.R;
 
 /**
  * Created by Okuhle on 5/26/2016.
@@ -26,6 +28,8 @@ public class LoginButtonListener implements View.OnClickListener {
     private TextView toolbarTextView;
     private FragmentManager fragmentManager;
     private UserGatewayBackgroundTask userGatewayTask;
+    private SharedPreferences applicationPreferences;
+    private SharedPreferences.Editor editor;
 
     private EditText forgotPasswordEmailEditText;
 
@@ -34,15 +38,49 @@ public class LoginButtonListener implements View.OnClickListener {
         toolbarTextView = (TextView) currentContext.findViewById(R.id.LoginActivityToolbarTextView);
         fragmentManager = currentContext.getFragmentManager();
         userGatewayTask = new UserGatewayBackgroundTask(currentContext);
+        applicationPreferences = PreferenceManager.getDefaultSharedPreferences(currentContext);
+        editor = applicationPreferences.edit();
     }
 
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.loginButton:
-                Intent mainActivity = new Intent(currentContext, MainActivity.class);
-                currentContext.startActivity(mainActivity);
-                currentContext.finish();
+                TextView usernameEditText = (TextView) currentContext.findViewById(R.id.usernameEditText);
+                TextView passwordEditText = (TextView) currentContext.findViewById(R.id.passwordEditText);
+
+                if (usernameEditText.getText().toString() != null && passwordEditText.getText().toString() != null) {
+                    String userName = TextSanitizer.sanitizeText(usernameEditText.getText().toString().trim(), false);
+                    String password = TextSanitizer.sanitizeText(passwordEditText.getText().toString().trim(), false);
+
+                    boolean isValidUsername = TextSanitizer.isValidText(userName, 1, 100);
+                    boolean isValidPassword = TextSanitizer.isValidText(password, 1, 100);
+
+                    if (isValidUsername && isValidPassword) {
+                        //The retrofit client would slip in here
+                        //Before we start the login, let us check the Shared Preference setting
+                        boolean rememberPassword = applicationPreferences.getBoolean("remember_credentials", false);
+                        if (rememberPassword) {
+                            //Save the username and password into the shared preference and login
+                            editor.putString("Username", userName);
+                            editor.putString("Password", password);
+                            editor.commit();
+
+                            Intent mainActivity = new Intent(currentContext, MainActivity.class);
+                            currentContext.startActivity(mainActivity);
+                            currentContext.finish();
+                        } else {
+                            Intent mainActivity = new Intent(currentContext, MainActivity.class);
+                            currentContext.startActivity(mainActivity);
+                            currentContext.finish();
+                        }
+                    } else {
+                        displayMessage("Login Error", "Please ensure your username and password is between 1 and 100 characters");
+                    }
+                } else {
+                    displayMessage("Login Error", "Please Enter a valid Username and Password");
+                }
+
                 break;
             case R.id.registerAccountbtn:
                 CreateAccountStepOneFragment registerAccountFragment = new
@@ -72,13 +110,10 @@ public class LoginButtonListener implements View.OnClickListener {
                 if (isValidText) {
                     userGatewayTask.setExecutionMode(1); //Forgot Password Action
                     userGatewayTask.execute(enteredEmail);
-
-
                 } else {
                     displayMessage("Invalid Email Entered", "Please enter an email address that " +
                             "is betweeen 10 and 100 characters");
                 }
-
                 break;
         }
 
