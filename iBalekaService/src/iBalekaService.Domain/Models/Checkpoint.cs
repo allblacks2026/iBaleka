@@ -6,11 +6,12 @@ namespace iBalekaService.Domain.Models
 {
     public class Checkpoint
     {
-        public Checkpoint(double lat,double lng,int routeID)
+        public Checkpoint() { }
+        public Checkpoint(double lat,double lng,Route route)
         {
             Latitude = lat;
             Longitude = lng;
-            RouteID = routeID;
+            Route = route;
             Deleted = false;
         }
         [Key]

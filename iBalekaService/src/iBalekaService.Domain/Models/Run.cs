@@ -8,14 +8,15 @@ namespace iBalekaService.Domain.Models
 {
     public class Run
     {
+        public Run() { }
         public Run(DateTime start,DateTime end,double caloriesBurnt,Event evnt,Athlete athlete)
         {
             StartTime = start;
             EndTime = end;
             CaloriesBurnt = caloriesBurnt;
             DateRecorded = DateTime.Now;
-            EventID = evnt.EventID;
-            AthleteID = athlete.AthleteID;
+            Event = evnt;
+            Athlete = athlete;
             Deleted = false;
         }
         public Run(DateTime start, DateTime end, double caloriesBurnt, Route route, Athlete athlete)
@@ -24,8 +25,8 @@ namespace iBalekaService.Domain.Models
             EndTime = end;
             CaloriesBurnt = caloriesBurnt;
             DateRecorded = DateTime.Now;
-            RouteID = route.RouteID;
-            AthleteID = athlete.AthleteID;
+            Route = route;
+            Athlete = athlete;
             Deleted = false;
         }
         [Key]

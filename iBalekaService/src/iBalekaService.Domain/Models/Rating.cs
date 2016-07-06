@@ -8,12 +8,13 @@ namespace iBalekaService.Domain.Models
 {
     public class Rating
     {
+        public Rating() { }
         public Rating(int value, string comment, Run run)
         {
             Value = value;
             Comment = comment;
             DateAdded = DateTime.Now;
-            RunID = run.RunID;
+            Run = run;
             Deleted = false;
         }
         [Key]

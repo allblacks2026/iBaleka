@@ -7,6 +7,7 @@ namespace iBalekaService.Domain.Models
 {
     public class User
     {
+        public User() { }
         public User(string name,string surname,string country,DateTime dob)
         {
             Name = name;

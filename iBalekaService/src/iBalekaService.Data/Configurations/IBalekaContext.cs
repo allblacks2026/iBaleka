@@ -56,29 +56,33 @@ namespace iBalekaService.Data.Configurations
                 .WithMany(c => c.Members)
                 .HasForeignKey(ca => ca.ClubID);
             //club_athlete - athlete(member) one to many
-            modelBuilder.Entity<Club_Athlete>().HasOne(c => c.Athlete)
-                .WithOne(j => j.Club);
+            modelBuilder.Entity<Club_Athlete>().HasOne(ca => ca.Athlete)
+                .WithMany(c => c.Clubs)
+                .HasForeignKey(c => c.AthleteID);
             //club - event one-to-many
             modelBuilder.Entity<Event>().HasOne(e => e.Club)
                 .WithMany(c => c.Events)
-                .HasForeignKey(e => e.ClubID);
+                .HasForeignKey(e => e.ClubID)
+                .IsRequired();
             //user - club one-to-many
             modelBuilder.Entity<Club>().HasOne(c => c.User)
                 .WithMany(u => u.Clubs)
-                .HasForeignKey(c => c.UserID);
+                .HasForeignKey(c => c.UserID)
+                .IsRequired();
             //route - checkpoint one-to-many 
             modelBuilder.Entity<Checkpoint>().HasOne(c => c.Route)
                 .WithMany(r => r.Checkpoints)
-                .HasForeignKey(p => p.RouteID);
+                .HasForeignKey(p => p.RouteID)
+                .IsRequired();
             base.OnModelCreating(modelBuilder);
         }
         //relationships
         public virtual DbSet<Athlete> Athlete { get; set; }
-        public virtual DbSet<Checkpoint> Checkpoint { get; set; }
+        public virtual DbSet<Checkpoint>Checkpoint { get; set; }
         public virtual DbSet<Club> Club { get; set; }
         public virtual DbSet<Club_Athlete> ClubMember { get; set; }
         public virtual DbSet<Event> Event { get; set; }
-        public virtual DbSet<Event_Route> EventRoute { get; set; }
+        public virtual DbSet<Event_Route>EventRoute { get; set; }
         public virtual DbSet<EventRegistration> EventRegistration { get; set; }
         public virtual DbSet<Rating> Rating { get; set; }
         public virtual DbSet<Route> Route { get; set; }
