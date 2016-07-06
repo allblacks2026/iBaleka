@@ -23,9 +23,6 @@ import java.net.URLEncoder;
 
 import AppConstants.ExecutionMode;
 
-/**
- * Created by Okuhle on 7/2/2016.
- */
 public class ApplicationBackgroundTask extends AsyncTask<String, String, String> {
 
     private Activity currentActivity;
@@ -56,6 +53,10 @@ public class ApplicationBackgroundTask extends AsyncTask<String, String, String>
         } else if (executionMode == ExecutionMode.EXECUTE_GET_ATHLETE_ACTIVITY) {
             progressDialog.setTitle("Fetching Your Activity Data");
             progressDialog.setMessage("Please wait while we fetch your activity information");
+            progressDialog.show();
+        } else if (executionMode == ExecutionMode.GET_ATHLETE_SUMMARY) {
+            progressDialog.setTitle("Fetching Athlete Summary");
+            progressDialog.setMessage("Please wait while we fetch your summary details");
             progressDialog.show();
         }
     }
@@ -158,6 +159,36 @@ public class ApplicationBackgroundTask extends AsyncTask<String, String, String>
                     displayMessage("Error Getting Athlete Profile", error.getMessage());
 
                 }break;
+
+            case GET_ATHLETE_SUMMARY:
+                try {
+                    String line = "";
+                    String response = "";
+                    String athleteLink = baseUrl + "/Athlete/Summary";
+                    String athleteID = params[0].trim();
+                    String request = URLEncoder.encode("AthleteID", "UTF-8")+"="+URLEncoder.encode(athleteID, "UTF-8");
+                    URL summaryUrl = new URL(athleteLink);
+                    HttpURLConnection athleteConnection = (HttpURLConnection) summaryUrl.openConnection();
+                    athleteConnection.setDoInput(true);
+                    athleteConnection.setDoOutput(true);
+                    athleteConnection.setRequestMethod("GET");
+                    OutputStream toServerStream = athleteConnection.getOutputStream();
+                    BufferedWriter toServer = new BufferedWriter(new OutputStreamWriter(toServerStream, "UTF-8"));
+                    toServer.write(request);
+                    toServer.flush();
+                    toServer.close();
+                    InputStream fromServerStream = athleteConnection.getInputStream();
+                    BufferedReader fromServer = new BufferedReader(new InputStreamReader(fromServerStream, "ISO-8859-1"));
+                    while ((line = fromServer.readLine()) != null) {
+                        response = response + line;
+                    }
+                    return response;
+                } catch (Exception errror) {
+                    displayMessage("Error Fetching Summary Details", "An error occurred when collecting your latest summary information");
+
+                }
+                break;
+            
             default:
 
                 break;

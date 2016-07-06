@@ -18,7 +18,6 @@ import allblacks.com.Activities.R;
 public class AthleteActivityAdapter extends RecyclerView.Adapter<AthleteActivityAdapter.AthleteViewHolder> {
 
     private List<AthleteActivity> athleteActivityList;
-
     public List<AthleteActivity> getAthleteActivityList()
     {
         return athleteActivityList;
